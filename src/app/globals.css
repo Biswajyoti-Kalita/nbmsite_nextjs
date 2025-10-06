@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import '@splidejs/react-splide/css';
 
 :root {
   --background: #ffffff;
@@ -24,3 +25,168 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.gradient-border-1, .marketing-card.collapsed {
+  background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
+  border: 2px solid;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.marketing-card.collapsed button {
+    background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
+    border: 2px solid;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.marketing-card.collapsed {
+    background-color: white;
+}
+.marketing-card.collapsed button span{
+    display: none;
+}
+.marketing-card.collapsed .master-card-bg-container, .marketing-card.collapsed h6 {
+    display: none;
+    height: 0;
+}
+.marketing-card.expanded h6 {
+    height: auto;
+}
+.marketing-card.expanded .master-card-bg-container, .marketing-card.expanded h6 {
+    display: block;
+}
+.marketing-card.expanded .master-card-content h5 {
+    color: white;
+}
+.gradient-bg-button {
+  background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
+}
+
+.gradient-text, .marketing-card.collapsed h5 {
+    background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Marketing Cards Animation */
+.marketing-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.marketing-card.expanded {
+    max-width: 630px;
+    flex: 1;
+}
+
+.marketing-card.collapsed {
+    /* max-width: 330px; */
+}
+
+.marketing-cards-container:hover .marketing-card:not(:hover) {
+    max-width: 330px;
+}
+
+.marketing-cards-container:hover .marketing-card:hover {
+    max-width: 630px;
+    flex: 1;
+}
+
+/* Content visibility based on card state */
+.marketing-card.expanded .collapsed-content {
+    display: none;
+}
+
+.marketing-card.expanded .expanded-content {
+    display: block;
+}
+
+.marketing-card.collapsed .collapsed-content {
+    display: block;
+}
+
+.marketing-card.collapsed .expanded-content {
+    display: none;
+}
+
+/* Hide utility class */
+.hidden {
+    display: none !important;
+}
+.color-1 {
+    color: #344054;
+  }
+  .color-2 {
+    color: #091a3a;
+  }
+  .color-3 {
+    color: #f11f68;
+  }
+  .color-4 {
+    color: #fffeff;
+  }
+  .color-5 {
+    color: #262626;
+  }
+  .color-6 {
+    color: #d8d8d8;
+  }
+  .color-7 {
+    color: #e5e5e5;
+  }
+  .color-8 {
+    color: #98a2b3;
+  }
+  .bg-color-1 {
+    background-color: #fff9fe;
+  }
+  .bg-color-2 {
+    background-color: #fffeff;
+  }
+  .border-color-1 {
+    border-color: #d0d5dd;
+  }
+  .border-color-2 {
+    border-color: #e5e5e5;
+  }
+  .border-color-3 {
+    border-color: #f11f68;
+  }
+  .border-color-4 {
+    border: 1px solid var(--Other-Transparent, #0000001a);
+  }
+  .border-color-5 {
+    border: 1px solid #e5e5e5;
+  }
+  .border-color-6 {
+    border: 1px solid #d0d5dd;
+  }
+  .splide__pagination{
+    display: none;
+  }  
+  #brands .splide__arrows,
+      .splide__pagination {
+        display: none;
+      }
+      
+  @media (max-width: 768px) {
+    .marketing-card.expanded {
+        flex: none;
+        max-width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+  .md-gradient-text {
+    background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
