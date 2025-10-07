@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import '@splidejs/react-splide/css';
+@import 'aos/dist/aos.css';
 
 :root {
   --background: #ffffff;

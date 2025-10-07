@@ -12,7 +12,7 @@ interface MarketingCardProps {
 }
 
 export default function MarketingCard({ title, description, buttonText, buttonText2, image, expanded, onMouseEnter, onMouseLeave }: MarketingCardProps) {
-  return <div className={` ${expanded ? 'expanded' : 'collapsed'} marketing-card p-6 md:p-[40px] rounded-[16px] flex flex-row md:flex-col w-full md:w-auto lg:max-w-[630px] h-[116px] md:h-[300px] items-start justify-between relative`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+  return <div className={`bg-white ${expanded ? 'expanded' : 'collapsed'} marketing-card p-6 md:p-[40px] rounded-[16px] flex flex-row md:flex-col w-full md:w-auto lg:max-w-[630px] h-[116px] md:h-[300px] items-start justify-between relative`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
   <div className="absolute top-0 left-0 w-full h-full rounded-[16px] master-card-bg-container">
     <img
       src={image}
@@ -60,7 +60,7 @@ export default function MarketingCard({ title, description, buttonText, buttonTe
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop stopColor="#F11F68" />
-                  <stop offset="1" stop-color="#162ABF" />
+                  <stop offset="1" stopColor="#162ABF" />
                 </linearGradient>
               </defs>
             </svg>
@@ -91,8 +91,8 @@ export default function MarketingCard({ title, description, buttonText, buttonTe
                   y2="7.88971"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#F11F68" />
-                  <stop offset="1" stop-color="#162ABF" />
+                  <stop stopColor="#F11F68" />
+                  <stop offset="1" stopColor="#162ABF" />
                 </linearGradient>
               </defs>
             </svg>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import AOSProvider from "../components/AOSProvider";
 
 const switzer = localFont({
   src: [
@@ -33,7 +34,9 @@ export default function RootLayout({
       <body
         className={`${switzer.variable} antialiased bg-white`}
       >
-        {children}
+        <AOSProvider>
+          {children}
+        </AOSProvider>
       </body>
     </html>
   );

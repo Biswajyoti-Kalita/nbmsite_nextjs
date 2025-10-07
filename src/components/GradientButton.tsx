@@ -3,9 +3,10 @@ interface GradientButtonProps {
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
   text: string;
+  fullWidth?: boolean;
 }
 
-export default function GradientButton({ type, text, leftIcon, rightIcon }: GradientButtonProps) {
+export default function GradientButton({ type, text, leftIcon, rightIcon, fullWidth =false }: GradientButtonProps) {
   return (
     type == "tertiary" ? (
         <button className="border-[#FFFEFF] border-2  px-2 md:px-4 py-1.5 md:py-2.5 rounded-md text-xs md:text-sm lg:text-base font-semibold cursor-pointer">
@@ -23,12 +24,11 @@ export default function GradientButton({ type, text, leftIcon, rightIcon }: Grad
             </div>
         </button>
     ) : (
-
-<button className="text-white gradient-bg-button px-2 md:px-4 py-1.5 md:py-2.5 rounded-md text-xs md:text-sm lg:text-base font-semibold  text-center cursor-pointer">
-{leftIcon ? leftIcon : null}
-<span className="text-nowrap">{text}</span>
-{rightIcon ? rightIcon : null}
-</button>
+        <button className={` ${fullWidth ? "w-full" : ""} text-white gradient-bg-button px-2 md:px-4 py-1.5 md:py-2.5 rounded-md text-xs md:text-sm lg:text-base font-semibold  text-center cursor-pointer flex flex-row items-center justify-center gap-3`}>    
+        {leftIcon ? leftIcon : null}
+        <span className="text-nowrap">{text}</span>
+        {rightIcon ? rightIcon : null}
+        </button>
     )
   ));
 }

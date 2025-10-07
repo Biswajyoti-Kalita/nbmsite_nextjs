@@ -11,13 +11,14 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen h-full bg-white flex flex-col lg:max-w-[1440px]">
-      <Navbar />
+      <Navbar bgColor="bg-white" isPrimary={true} />
 
       <section
-        className="w-full bg-white rounded-xl p-4 mt-[64px] md:mt-0 md:p-[80px]"
+        className="w-full bg-white rounded-xl p-4 mt-[64px] md:mt-[120px] md:mt-0 md:p-[80px] relative"
         id="home"
         data-aos="fade-up"
       >
+
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <div>
             <h1 className="font-semibold text-[48px] md:text-5xl lg:text-[60px] leading-[54px] md:leading-[72px] -tracking-[2%] text-[#262626]">
@@ -30,14 +31,17 @@ export default function Home() {
             </h6>
           </div>
         </div>
+      {/* Wave Background Section */}
+      <div 
+        className="w-full bg-no-repeat absolute left-0 right-0 opacity-50"
+      >
+        <img src="./assets/images/waves.png" alt="hero-image" className="w-full bg-bottom bg-no-repeat h-[230px]" />
+      </div>
 
-        <div className="inset-0 flex items-center justify-center z-15 left-0 right-0"></div>
-
-        <div className="mt-8 md:mt-[64px]" data-aos="fade-up">
+        <div className="mt-8 md:mt-[64px] z-10" data-aos="fade-up">
           <MarketingCardGroup />
         </div>
       </section>
-
 
       <BrandsScroller />
 
