@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
     return (
  
-        <footer className="bg-white" data-aos="fade-up">
+        <footer className="bg-white w-full" data-aos="fade-up">
         <div
           className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 md:py-[64px] bg-[#FFFEFF]"
         >

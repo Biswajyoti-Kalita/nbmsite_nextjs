@@ -12,7 +12,7 @@ import ActionSidebar from "@/components/ActionSidebar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen h-full  w-full flex flex-col items-center justify-center">
+    <div className="min-h-screen h-full  w-full flex flex-col items-center justify-center bg-white">
     <div className="bg-white lg:max-w-[1440px]">
       <Navbar bgColor="bg-white" bgColorOnOpen="bg-[#F11F68]" isPrimary={true} />
 
@@ -190,7 +190,7 @@ export default function Home() {
       </section>
 
       <section
-        className="w-full bg-[#FFF9FE] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
+        className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
         data-aos="fade-up"
       >
         <div
@@ -403,11 +403,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Footer />
-
       <ActionSidebar />
     </div>
+    <Footer />
+
     </div>
   );
 }
