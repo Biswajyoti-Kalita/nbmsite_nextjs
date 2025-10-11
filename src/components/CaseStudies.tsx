@@ -24,7 +24,7 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
     return (
         <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:h-[300px] border-1 border-[#E8E8E8] grid grid-cols-1 md:grid-cols-2 items-start justify-between">
           <div className="flex flex-col items-start p-[10px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl">
-            <h1 className="border-[#344054] border-1 px-3 py-2 rounded-3xl text-[14px] leading-[22px]text-[#344054]">
+            <h1 className="border-[#344054] border-1 px-3 py-2 rounded-3xl text-[14px] leading-[22px] text-[#344054]">
               {caseStudy.left_title}
             </h1>
             <div className="flex flex-row items-center justify-center gap-[16px] w-full">

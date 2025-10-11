@@ -14,7 +14,7 @@ import Image from "next/image";
 
 export default function Advertisers() {
   return (
-    <div className="min-h-screen h-full flex flex-col items-center justify-center">
+    <div className="min-h-screen h-full flex flex-col items-center justify-center bg-white">
       <Navbar bgColor="bg-[#B11E86]" bgColorOnOpen="bg-[#B11E86]" linkColor="#FFFEFF" />
         <div className="absolute top-[80px] lg:top-[100px] left-[10px] lg:left-[100px] flex flex-row items-start justify-center pl-[17px] gap-[12px]">
             <svg
@@ -426,12 +426,12 @@ export default function Advertisers() {
                         <input
                           type="text"
                           name="brand"
-                          className="border border-color-1 placeholder-color-1 text-base rounded-lg block w-full p-2.5 mb-3"
+                          className="border border-color-1 placeholder-color-1 text-base rounded-lg block w-full p-2.5 mb-3 text-[#98A2B3]"
                           placeholder="Enter brand name"
                         />
                         <textarea
                           name="content"
-                          className="border border-color-1 placeholder-color-1 text-base rounded-lg block w-full p-2.5 mb-3"
+                          className="border border-color-1 placeholder-color-1 text-base rounded-lg block w-full p-2.5 mb-3 text-[#98A2B3]"
                           placeholder="Write an outline of your product/services, target audience, and call to action"
                           rows={5}
                         ></textarea>
