@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
     return (
  
@@ -12,10 +14,12 @@ export default function Footer() {
               className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]"
               data-aos="fade-up"
             >
-              <img
-                src="./assets/images/logo.png"
+              <Image
+                src="/assets/images/logo.png"
                 alt="Logo"
                 className="max-h-[60px] w-auto"
+                width={60}
+                height={60}
               />
             </div>
 

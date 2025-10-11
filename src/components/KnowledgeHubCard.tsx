@@ -1,5 +1,6 @@
+import Image from "next/image";
+
 interface KnowledgeHubCardProps {
-    title: string;
     description: string;
     image?: string;
     authorImage: string;
@@ -7,7 +8,7 @@ interface KnowledgeHubCardProps {
     date: string;
 }
 
-export default function KnowledgeHubCard({ title, description, image, authorImage, author, date }: KnowledgeHubCardProps) {
+export default function KnowledgeHubCard({ description, image, authorImage, author, date }: KnowledgeHubCardProps) {
     return (
 
         <div
@@ -16,10 +17,12 @@ export default function KnowledgeHubCard({ title, description, image, authorImag
         <div
           className="flex flex-row items-start justify-start p-[16px] gap-[11px]"
         >
-          <img
+          <Image
             src={authorImage}
             alt="icon"
             className="w-[44px] h-[44px]"
+            width={44}
+            height={44}
           />
           <div className="w-full">
             <h6
@@ -56,10 +59,12 @@ export default function KnowledgeHubCard({ title, description, image, authorImag
         {
             image && (
                 <div className="w-full">
-                    <img
+                    <Image
                         src={image}
                         alt="icon"
                         className="w-full h-auto rounded-b-[16px]"
+                        width={400}
+                        height={265}
                     />
                 </div>
             )

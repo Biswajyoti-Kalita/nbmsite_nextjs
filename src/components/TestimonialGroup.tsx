@@ -5,13 +5,13 @@ import { useEffect, useState } from 'react';
 import Testimonial from "./Testimonial";
 
 export default function TestimonialGroup() {
-  const [splideWidth, setSplideWidth] = useState(0);
+  const [splideWidth, setSplideWidth] = useState(100);
 
   useEffect(() => {
     const updateWidth = () => {
-      const home = document.getElementById('home');
-      if (home) {
-        setSplideWidth(home.clientWidth);
+      const testimonials = document.getElementById('testimonials');
+      if (testimonials) {
+        setSplideWidth(testimonials.clientWidth);
       }
     };
 
@@ -82,12 +82,11 @@ export default function TestimonialGroup() {
       <Splide options={splideOptions}>
         {testimonials.map((testimonial, index) => (
           <SplideSlide key={index}>
-            <Testimonial 
+            <Testimonial
               quote={testimonial.quote}
               stars={testimonial.stars}
               name={testimonial.name}
               title={testimonial.title}
-              image={testimonial.image}
             />
           </SplideSlide>
         ))}

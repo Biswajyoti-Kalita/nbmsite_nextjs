@@ -7,11 +7,14 @@ import KnowledgeHubCard2 from "@/components/KnowledgeHubCard2";
 import Testimonial from "@/components/Testimonial";
 import TestimonialGroup from "@/components/TestimonialGroup";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import ActionSidebar from "@/components/ActionSidebar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen h-full bg-white flex flex-col lg:max-w-[1440px]">
-      <Navbar bgColor="bg-white" isPrimary={true} />
+    <div className="min-h-screen h-full  w-full flex flex-col items-center justify-center">
+    <div className="bg-white lg:max-w-[1440px]">
+      <Navbar bgColor="bg-white" bgColorOnOpen="bg-[#F11F68]" isPrimary={true} />
 
       <section
         className="w-full bg-white rounded-xl p-4 mt-[64px] md:mt-[120px] md:mt-0 md:p-[80px] relative"
@@ -35,7 +38,7 @@ export default function Home() {
       <div 
         className="w-full bg-no-repeat absolute left-0 right-0 opacity-50"
       >
-        <img src="./assets/images/waves.png" alt="hero-image" className="w-full bg-bottom bg-no-repeat h-[230px]" />
+        <img src="/assets/images/waves.png" alt="hero-image" className="w-full bg-bottom bg-no-repeat h-[230px]" />
       </div>
 
         <div className="mt-8 md:mt-[64px] z-10" data-aos="fade-up">
@@ -44,7 +47,6 @@ export default function Home() {
       </section>
 
       <BrandsScroller />
-
 
       <section
         className="w-full bg-[#FFF9FE] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
@@ -93,9 +95,9 @@ export default function Home() {
                 <path
                   d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
                   stroke="#FFFEFF"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
@@ -187,8 +189,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
       <section
         className="w-full bg-[#FFF9FE] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
         data-aos="fade-up"
@@ -223,9 +223,9 @@ export default function Home() {
                 <path
                   d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
                   stroke="#FFFEFF"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
@@ -239,11 +239,8 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
       <section
-        className="w-full bg-[#FFFEFF] flex flex-col items-start justify-start py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
+        className=" max-w-[360px] lg:max-w-[1440px] w-full bg-[#FFFEFF] flex flex-col items-start justify-start py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
         data-aos="fade-up"
       >
         <div
@@ -264,44 +261,41 @@ export default function Home() {
               feed
             </h6>
           </div>
-        </div>
+        </div>  
 
         <div
-          className="max-w-[1440px] flex flex-col lg:flex-row w-full justify-between items-center gap-4 px-4 lg:px-0 md:gap-[20px]"
+          className="max-w-[1440px] hidden  lg:flex flex-row w-full justify-between items-center gap-4 px-4 lg:px-0 md:gap-[20px] overflow-x-scroll"
           data-aos="fade-up"
         >
           <div
-            className="flex flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
+            className="flex  flex-row lg:flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
           >
-            <KnowledgeHubCard title="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" image="./assets/images/card-bg.jpg" authorImage="./assets/images/person.png" author="Shekhar Verma" date="20h" />
+            <KnowledgeHubCard description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" image="/assets/images/card-bg.jpg" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
 
-            <KnowledgeHubCard title="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" authorImage="./assets/images/person.png" author="Shekhar Verma" date="20h" />
-            
-            
+            <KnowledgeHubCard  description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
+                        
 
           </div>
 
           <div
-            className="flex flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
+            className="flex flex-row lg:flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
           >
 
 
-            <KnowledgeHubCard title="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" authorImage="./assets/images/person.png" author="Shekhar Verma" date="20h" />
-            <KnowledgeHubCard title="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" image="./assets/images/card-bg.jpg" authorImage="./assets/images/person.png" author="Shekhar Verma" date="20h" />
+            <KnowledgeHubCard description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
+            <KnowledgeHubCard description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" image="/assets/images/card-bg.jpg" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
           
           </div>
 
           <div
-            className="flex flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
+            className="flex flex-row lg:flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
           >
-            <KnowledgeHubCard2 title="Webinar" description="Podcast Advertising vs Social Media Marketing: Which Drives Better Engagement" image="./assets/images/card-bg-22.jpg" author="Shekhar Verma" date="16 June 2025" />
-            <KnowledgeHubCard2 title="Webinar" description="Podcast Advertising vs Social Media Marketing: Which Drives Better Engagement" image="./assets/images/card-bg-22.jpg" author="Shekhar Verma" date="16 June 2025" />
+            <KnowledgeHubCard2 title="Webinar" description="Podcast Advertising vs Social Media Marketing: Which Drives Better Engagement" image="/assets/images/card-bg-22.jpg" date="16 June 2025" />
+            <KnowledgeHubCard2 title="Webinar" description="Podcast Advertising vs Social Media Marketing: Which Drives Better Engagement" image="/assets/images/card-bg-22.jpg"  date="16 June 2025" />
           </div>
         </div>
       </section>
-
-
-
+        
       <section
         className="w-full bg-[#FFFFFF] flex flex-col items-end justify-end md:py-[80px] px-4 md:px-[96px] gap-[64px]"
         data-aos="fade-up"
@@ -330,26 +324,27 @@ export default function Home() {
             <div
               className="flex flex-row items-center justify-center gap-4 md:gap-[24px]"
             >
-              <img
-                src="./assets/images/left.png"
+              <Image
+                src="/assets/images/left.png"
                 alt="left-arrow"
                 className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
                 id="prevTestimonial"
+                width={20}
+                height={20}
               />
-              <img
-                src="./assets/images/right.png"
+              <Image
+                src="/assets/images/right.png"
                 alt="right-arrow"
                 className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
                 id="nextTestimonial"
+                width={20}
+                height={20}
               />
             </div>
           </div>
         </div>
         <TestimonialGroup />
-      </section>
-
-
-
+      </section> 
 
       <section
         className="w-full bg-[#FFFFFF] flex flex-col items-end justify-end py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
@@ -397,20 +392,22 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <img
-                src="./assets/images/image-4.png"
+              <Image
+                src="/assets/images/image-4.png"
                 alt="ready-to-launch"
                 className="w-full h-auto"
+                width={475}
+                height={320}
               />
             </div>
           </div>
         </div>
       </section>
 
-
       <Footer />
 
-
+      <ActionSidebar />
+    </div>
     </div>
   );
 }

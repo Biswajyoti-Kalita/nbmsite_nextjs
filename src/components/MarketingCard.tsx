@@ -1,3 +1,4 @@
+import Image from "next/image";
 import GradientButton from "./GradientButton";
 
 interface MarketingCardProps {
@@ -14,10 +15,12 @@ interface MarketingCardProps {
 export default function MarketingCard({ title, description, buttonText, buttonText2, image, expanded, onMouseEnter, onMouseLeave }: MarketingCardProps) {
   return <div className={`bg-white ${expanded ? 'expanded' : 'collapsed'} marketing-card p-6 md:p-[40px] rounded-[16px] flex flex-row md:flex-col w-full md:w-auto lg:max-w-[630px] h-[116px] md:h-[300px] items-start justify-between relative`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
   <div className="absolute top-0 left-0 w-full h-full rounded-[16px] master-card-bg-container">
-    <img
+    <Image
       src={image}
       alt="illustration"
       className="w-full h-full object-cover rounded-[16px]"
+      width={525}
+      height={300}
     />
     <div
       className="absolute top-0 left-0 w-full h-full bg-black/50 opacity-50 rounded-[16px]"

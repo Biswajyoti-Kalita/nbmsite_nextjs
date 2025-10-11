@@ -2,6 +2,8 @@
 import GradientButton from "./GradientButton";
 import { useEffect, useState } from "react";
 import isMobile from "@/util/util";
+import Image from "next/image";
+import Link from "next/link";
 
 
 const isMobileScreen = isMobile();
@@ -10,8 +12,9 @@ interface NavbarProps {
   bgColor?: string;
   linkColor?: string;
   isPrimary?: boolean;
+  bgColorOnOpen?: string;
 }
-export default function Navbar({ bgColor = "bg-white", linkColor = "#262626", isPrimary = false }: NavbarProps) {
+export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11F68]", linkColor = "#262626", isPrimary = false }: NavbarProps) {
 
   const [isMobileScreenMenuOpen, setisMobileScreenMenuOpen] = useState(false);
   
@@ -23,36 +26,41 @@ export default function Navbar({ bgColor = "bg-white", linkColor = "#262626", is
   }, [isMobileScreen]);
 
   return (
-    <div className={`${isMobileScreenMenuOpen ? 'bg-[#F11F68] h-screen' : bgColor} flex justify-center items-center fixed top-0 left-0 right-0 z-20 mb-2 w-full  h-16 md:h-20`}>
+    <div className={`${isMobileScreenMenuOpen ? bgColorOnOpen+ '' : bgColor} flex justify-start items-start fixed top-0 left-0 right-0 z-20 mb-2 w-full  h-16 md:h-20`}>
       <div className="w-full p-4 py-8 md:p-8 xl:max-w-[1440px]">
         <div className="w-full mt-4 md:mt-0">
           <nav className="fixed w-full z-20 top-0 start-0">
             <div
-              className={`${isMobileScreenMenuOpen ? 'bg-[#F11F68] h-screen' : bgColor}  max-w-[1440px] h-16 md:h-20 mx-auto flex items-center justify-between gap-2 md:gap-4 px-4 lg:px-20 py-2 transition-shadow duration-300`}
+              className={`${isMobileScreenMenuOpen ? bgColorOnOpen + ' h-screen' : bgColor}  max-w-[1440px] h-[80px] mx-auto flex items-start justify-between gap-2 md:gap-4 px-4 lg:px-20 py-2 transition-shadow duration-300`}
               id="navbar"
+              style={{height: '80px'}}
             >
-              <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+              <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
               {
                 (isMobileScreen && isMobileScreenMenuOpen) || !isPrimary ? (
-                  <img
-                    src="./assets/images/logo-white.svg"
+                  <Image
+                    src="/assets/images/logo-white.svg"
                     className="w-auto h-[50px] md:h-[64px]"
                     alt="NextBroadcastMedia Logo"
+                    width={50}
+                    height={50}
                   />
                 ) : (
-                  <img
-                    src="./assets/images/logo.svg"
+                  <Image
+                    src="/assets/images/logo.svg"
                     className="w-auto h-[50px] md:h-[64px]"
                     alt="NextBroadcastMedia Logo"
+                    width={50}
+                    height={50}
                   />
                 )
               }
-              </a>
+              </Link>
 
               {
                 !isMobileScreen  &&
                   <div
-                  className={`lg:flex flex-row w-full items-start gap-[24px] text-[${linkColor}] text-base font-semibold`}
+                  className={`lg:flex flex-row w-full items-center gap-[24px] h-[64px] text-[${linkColor}] text-base font-semibold`}
                 >
                   <a href="/advertisers" className={`text-[${linkColor}]`}
                     >For Advertisers</a
@@ -60,10 +68,10 @@ export default function Navbar({ bgColor = "bg-white", linkColor = "#262626", is
                   <a href="#how-it-works" className={`text-[${linkColor}]`}
                     >For Publishers</a
                   >
-                  <a href="https://nextbroadcast.media" className={`text-[${linkColor}]`}
+                  <a href="/podcasters" className={`text-[${linkColor}]`}
                     >For Podcasters</a
                   >
-                  <a href="#pricing" className={`text-[${linkColor}]`}>About Us</a>
+                  <a href="/about-us" className={`text-[${linkColor}]`}>About Us</a>
                 </div>   
               }
 
@@ -80,23 +88,27 @@ export default function Navbar({ bgColor = "bg-white", linkColor = "#262626", is
                     <span className="sr-only">Open main menu</span>
                     {
                       isMobileScreenMenuOpen ? (
-                        <img
-                          src="./assets/images/x-close.png"
+                        <Image
+                          src="/assets/images/x-close.png"
                           alt="Menu"
                           className="w-6 h-6"
+                          width={40}
+                          height={40}
                         />
                       ) : (
-                        <img
-                          src="./assets/images/menu.png"
+                        <Image
+                          src="/assets/images/menu.png"
                           alt="Menu"
                           className="w-6 h-6"
+                          width={40}
+                          height={40}
                         />
                       )
                     }
                   </button>
                 ):
                 (
-                  <div className="flex flex-row gap-[12px]">
+                  <div className="flex flex-row gap-[12px] h-[64px] items-center">
                   <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" />
                   <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" />
                 </div>
@@ -107,35 +119,39 @@ export default function Navbar({ bgColor = "bg-white", linkColor = "#262626", is
 
             {
               isMobileScreen && isMobileScreenMenuOpen &&
-              <div className="max-w-[1440px] mx-auto bg-[#F11F68] h-screen px-4 py-2">
+              <div className={`max-w-[1440px] mx-auto ${bgColorOnOpen} h-screen px-4 py-2`}>
                 <div id="mobile-menu" className="lg:hidden px-4 py-2">
                   <ul className="flex flex-col gap-[20px]  my-[40px]">
                     <li>
-                      <a href="/nbmaistudio" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
-                        >AI Ad-Studio</a
+                      <a href="/advertisers" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
+                        >For Advertisers</a
                       >
                     </li>
                     <li>
-                      <a href="#how-it-works" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
-                        >How it works</a
+                      <a href="/publishers" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
+                        >For Publishers</a
                       >
                     </li>
                     <li>
-                      <a href="#pricing" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
-                        >Pricing</a
+                      <a href="/podcasters" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
+                        >For Podcasters</a
                       >
                     </li>
                     <li>
                       <a
-                        href="https://nextbroadcast.media"
+                        href="/about-us"
                         className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
                         >About Us</a
                       >
                     </li>
                   </ul>
-                  <div className="flex flex-row gap-[20px]">
-                    <GradientButton type="tertiary" text="Share a Brief" />
-                    <GradientButton type="secondary" text="Сall Me Back" />
+                  <div className="flex flex-row gap-[20px] justify-center items-center w-full">
+                    <div className="w-full flex flex-row justify-center items-center">
+                      <GradientButton type="tertiary" text="Share a Brief" className="w-[160px] h-[40px]" />
+                    </div>
+                    <div className="w-full flex flex-row justify-center items-center">
+                      <GradientButton type="secondary" text="Сall Me Back" className="w-[160px] h-[40px]" />
+                    </div>
                   </div>
                 </div>
               </div>

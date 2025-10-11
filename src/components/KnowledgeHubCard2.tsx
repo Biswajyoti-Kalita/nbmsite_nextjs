@@ -2,13 +2,12 @@ interface KnowledgeHubCard2Props {
     title: string;
     description: string;
     image: string;
-    author: string;
     date: string;
 }
 
 
 
-export default function KnowledgeHubCard2({ title, description, image, author, date }: KnowledgeHubCard2Props) {
+export default function KnowledgeHubCard2({ title, description, image, date }: KnowledgeHubCard2Props) {
     return (
         <div className="w-full relative">
         <div
