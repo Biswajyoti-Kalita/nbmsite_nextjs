@@ -13,9 +13,14 @@ interface MarketingCardProps {
 }
 
 export default function MarketingCard({ title, description, buttonText, buttonText2, image, expanded, onMouseEnter, onMouseLeave }: MarketingCardProps) {
-  return <div className={`bg-white ${expanded ? 'expanded' : 'collapsed'} marketing-card p-6 md:p-[40px] rounded-[16px] flex flex-row md:flex-col w-full md:w-auto lg:max-w-[630px] h-[116px] md:h-[300px] items-start justify-between relative`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+  return <div className={`bg-white ${expanded ? 'expanded' : 'collapsed'} marketing-card p-6 md:p-[40px] rounded-[16px] flex flex-row md:flex-col w-full md:w-auto lg:max-w-[630px] h-[116px] md:h-[300px] items-start justify-between relative`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}
+    style={{ background: !expanded ? 'linear-gradient(90deg, #f11f68 0%, #162abf 100%)' : 'white' }}
+  >
   <div className="absolute top-0 left-0 w-full h-full rounded-[16px] master-card-bg-container">
-    <Image
+    {
+        expanded ? (
+            <>
+                <Image
       src={image}
       alt="illustration"
       className="w-full h-full object-cover rounded-[16px]"
@@ -23,13 +28,18 @@ export default function MarketingCard({ title, description, buttonText, buttonTe
       height={300}
     />
     <div
-      className="absolute top-0 left-0 w-full h-full bg-black/50 opacity-50 rounded-[16px]"
+      className="absolute top-0 left-0 w-full h-full bg-[#00000066] rounded-[16px]"
       style={{ backdropFilter: "blur(0px)" }}
     ></div>
+
+</>
+        ):    <div className="top-[2px] bottom-[2px] left-[2px] right-[2px] bg-white rounded-[16px] absolute "></div>
+
+    }
   </div>
 
   <div className="z-10 flex flex-col items-start justify-start gap-2 md:gap-[16px] master-card-content">
-    <h5 className="font-semibold text-[28px] leading-[34px] md:text-2xl lg:text-[32px] leading-tight md:leading-[40px] -tracking-[2%] z-10">
+    <h5 className="font-semibold text-[28px] leading-[34px] md:text-2xl lg:text-[32px] leading-tight md:leading-[40px] tracking-[-0.02em] z-10">
       {title}
     </h5>
     <h6 className="z-10 font-normal text-sm md:text-base lg:text-[20px] leading-tight md:leading-[28px] -tracking-[0%] text-[#FFFFFF]">
@@ -69,7 +79,7 @@ export default function MarketingCard({ title, description, buttonText, buttonTe
             </svg>
     } />
 
-    {expanded && (
+    {expanded && buttonText2 && (
     <GradientButton type="secondary" text={expanded ? buttonText2 : ''} rightIcon={
               <svg
               width="14"

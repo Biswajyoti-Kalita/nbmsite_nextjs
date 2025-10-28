@@ -100,7 +100,7 @@ export default function Advertisers() {
           <section className=" pt-[84px] lg:pt-[96px] pb-[48px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF] lg:max-w-[1440px]">
             <div className="w-full flex flex-col lg:flex-row px-[16px] lg:px-[80px] items-center justify-center gap-[16px] lg:gap-[24px]">
               <div className="w-full text-start">
-                <h1 className="gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] -tracking-[2%]">
+                <h1 className="gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
                   Brands That Trust Us
                 </h1>
               </div>
@@ -116,7 +116,7 @@ export default function Advertisers() {
           <section className="pt-[84px] lg:pt-[96px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF]">
             <div className="w-full flex flex-col lg:flex-row  items-center justify-center gap-[24px]">
               <div className="w-full text-start">
-                <h1 className="gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] -tracking-[2%]">
+                <h1 className="gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
                   Choose Your Audio Advertising Solution
                 </h1>
               </div>

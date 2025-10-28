@@ -60,18 +60,19 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
               {
                 !isMobileScreen  &&
                   <div
-                  className={`lg:flex flex-row w-full items-center gap-[24px] h-[64px] text-[${linkColor}] text-base font-semibold`}
+                  className="lg:flex flex-row w-full items-center gap-[24px] h-[64px] text-base leading-[24px] font-semibold"
+                  style={{ color: linkColor }}
                 >
-                  <a href="/advertisers" className={`text-[${linkColor}]`}
+                  <a href="/advertisers" className="hover:underline transition-all" style={{ color: linkColor }}
                     >For Advertisers</a
                   >
-                  <a href="#how-it-works" className={`text-[${linkColor}]`}
+                  <a href="#how-it-works" className="hover:underline transition-all" style={{ color: linkColor }}
                     >For Publishers</a
                   >
-                  <a href="/podcasters" className={`text-[${linkColor}]`}
+                  <a href="/podcasters" className="hover:underline transition-all" style={{ color: linkColor }}
                     >For Podcasters</a
                   >
-                  <a href="/about-us" className={`text-[${linkColor}]`}>About Us</a>
+                  <a href="/about-us" className="hover:underline transition-all" style={{ color: linkColor }}>About Us</a>
                 </div>   
               }
 
@@ -109,8 +110,8 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                 ):
                 (
                   <div className="flex flex-row gap-[12px] h-[64px] items-center">
-                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" />
-                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" />
+                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" className="h-[44px]" />
+                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[44px]" />
                 </div>
                 )
                 }
@@ -123,24 +124,24 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                 <div id="mobile-menu" className="lg:hidden px-4 py-2">
                   <ul className="flex flex-col gap-[20px]  my-[40px]">
                     <li>
-                      <a href="/advertisers" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
+                      <a href="/advertisers" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold hover:underline transition-all"
                         >For Advertisers</a
                       >
                     </li>
                     <li>
-                      <a href="/publishers" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
+                      <a href="/publishers" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold hover:underline transition-all"
                         >For Publishers</a
                       >
                     </li>
                     <li>
-                      <a href="/podcasters" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
+                      <a href="/podcasters" className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold hover:underline transition-all"
                         >For Podcasters</a
                       >
                     </li>
                     <li>
                       <a
                         href="/about-us"
-                        className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold"
+                        className="text-[#FFFEFF] text-[24px] leading-[32px] font-semibold hover:underline transition-all"
                         >About Us</a
                       >
                     </li>

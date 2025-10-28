@@ -4,6 +4,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import GradientButton from './GradientButton';
 
 interface Analytics {
     title: string;
@@ -22,9 +23,9 @@ interface CaseStudyCardProps {
 
 const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
     return (
-        <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:h-[300px] border-1 border-[#E8E8E8] grid grid-cols-1 md:grid-cols-2 items-start justify-between">
-          <div className="flex flex-col items-start p-[10px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl">
-            <h1 className="border-[#344054] border-1 px-3 py-2 rounded-3xl text-[14px] leading-[22px] text-[#344054]">
+        <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:h-[300px] border-1 border-[#E8E8E8] flex  flex-col md:flex-row items-start justify-start">
+          <div className="flex flex-col items-start p-[10px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl w-[305px]">
+            <h1 className="border-[#344054] border-1 px-[16px] py-[4px] rounded-3xl text-[14px] leading-[22px] text-[#344054]">
               {caseStudy.left_title}
             </h1>
             <div className="flex flex-row items-center justify-center gap-[16px] w-full">
@@ -41,16 +42,16 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
                   <h2 className="text-[#262626] font-semibold text-[22px] leading-[30px] md:text-[26px] md:leading-[34px]">{caseStudy.right_subtitle}</h2>
                   <div className="flex flex-col md:flex-row items-start md:items-center justify-start gap-[11px]">
                     <span className="text-[#344054] text-[14px] leading-[16px] md:leading-[22px] font-normal">{caseStudy.right_point_1}</span>
-                    <span className="md:block hidden">
-                      <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="2" cy="2.95898" r="2" fill="#344054"/>
-                      </svg>                            
+                    <span className="hidden md:block">
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="2" cy="2" r="2" fill="#344054"/>
+                    </svg>                        
                     </span>
                     <span className="text-[#344054] text-[14px] leading-[16px] md:leading-[22px] font-normal text-nowrap">{caseStudy.right_point_2}</span>
                   </div>
                 </div>
               </div>
-              <div className=" border-[#E8E8E8] border-t-1 p-4 w-full">
+              <div className=" border-[#E8E8E8] border-t-1 p-4 pl-0 w-full">
                 <div className="flex flex-row items-center justify-between gap-[11px] w-full">
                   {
                     caseStudy.analytics.map((analytics: Analytics, index:number) => (
@@ -69,22 +70,22 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
                 </div>  
               </div>
             </div>
-            <button
-            className="gradient-border-1 min-w-[130px] border-2 px-4 py-2.5 rounded-md text-sm md:text-base font-semibold cursor-pointer flex flex-row items-center justify-center gap-[6px]"
-          >
-            <span className="gradient-text text-[16px] leading-[24px] -tracking-[0%] font-semibold">View Case Study</span>
-            <span>
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898" stroke="url(#paint0_linear_1858_6122)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <defs>
-                <linearGradient id="paint0_linear_1858_6122" x1="1" y1="7.95898" x2="13" y2="7.95898" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#F11F68"/>
-                <stop offset="1" stopColor="#162ABF"/>
-                </linearGradient>
-                </defs>
-                </svg>                    
-            </span>
-          </button>
+                  <GradientButton
+                  text="View Case Study"
+                  type="secondary"
+                  
+                  rightIcon={
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898" stroke="url(#paint0_linear_1858_6122)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_1858_6122" x1="1" y1="7.95898" x2="13" y2="7.95898" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#F11F68"/>
+                          <stop offset="1" stopColor="#162ABF"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  }
+                  />
           </div>
         </div>
     )
@@ -108,7 +109,7 @@ export default function CaseStudies() {
 
   const caseStudies = [
     {
-      left_title: "BEL",
+      left_title: "FMCG",
       left_image: "/assets/images/bel.png",
       right_title: "Targeting mothers of young children",
       right_subtitle: "BEL Group",
@@ -120,7 +121,7 @@ export default function CaseStudies() {
           subtitle: "Interest Rate",
         },
         {
-          title: "95",
+          title: "95%",
           subtitle: "Listen Through Rate",
         },
       ],
@@ -211,21 +212,23 @@ export default function CaseStudies() {
     type: 'slide' as const,
     drag: 'free' as const,
     gap: 20,
-    width: splideWidth < 700 ? splideWidth : splideWidth - 200,
+    width: 3000,
     autoWidth: true,
     autoScroll: false,    
   };
 
   return (
-    <Splide
-      options={splideOptions3}
-      extensions={{ AutoScroll }}
-    >
-      {caseStudies.map((caseStudy, index) => (
-        <SplideSlide key={index}>
-          <CaseStudyCard {...caseStudy} />
-        </SplideSlide>
-      ))}
-    </Splide>
+    <div className="w-full overflow-visible">
+      <Splide
+        options={splideOptions3}
+        extensions={{ AutoScroll }}
+      >
+        {caseStudies.map((caseStudy, index) => (
+          <SplideSlide key={index}>
+            <CaseStudyCard {...caseStudy} />
+          </SplideSlide>
+        ))}
+      </Splide>
+    </div>
   );
 }

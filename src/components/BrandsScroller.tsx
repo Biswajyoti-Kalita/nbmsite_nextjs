@@ -22,33 +22,33 @@ export default function BrandsScroller() {
   }, []);
 
   const brands1 = [
-    { src: '/assets/images/brands/loreal.png', alt: 'Loreal' },
-    { src: '/assets/images/brands/gmc.png', alt: 'GMC' },
-    { src: '/assets/images/brands/qatar.png', alt: 'Qatar' },
-    { src: '/assets/images/brands/dentsu.png', alt: 'Dentsu' },
-    { src: '/assets/images/brands/png.png', alt: 'PNG' },
-    { src: '/assets/images/brands/visa_logo.jpg', alt: 'Visa' },
-    { src: '/assets/images/brands/capital.svg', alt: 'Capital' },
-    { src: '/assets/images/brands/citibank.png', alt: 'Citibank' },
-    { src: '/assets/images/brands/omd.png', alt: 'OMD' },
-    { src: '/assets/images/brands/mastercard.png', alt: 'Mastercard' },
-    { src: '/assets/images/brands/mindashare.png', alt: 'Mindshare' },
-    { src: '/assets/images/brands/wordpress.png', alt: 'WordPress' },
+    { src: '/assets/images/brands/loreal.png', alt: 'Loreal', width: 119, height: 25 },
+    { src: '/assets/images/brands/gmc.png', alt: 'GMC', width: 119, height: 25 },
+    { src: '/assets/images/brands/qatar.png', alt: 'Qatar', width: 92, height: 22 },
+    { src: '/assets/images/brands/dentsu.png', alt: 'Dentsu', width: 92, height: 24 },
+    { src: '/assets/images/brands/png.png', alt: 'PNG', width:70, height: 30 },
+    { src: '/assets/images/brands/visa_logo.jpg', alt: 'Visa', width: 200, height: 100 },
+    { src: '/assets/images/brands/capital.svg', alt: 'Capital', width: 119, height: 30 },
+    { src: '/assets/images/brands/citibank.png', alt: 'Citibank', width: 119, height: 25 },
+    { src: '/assets/images/brands/omd.png', alt: 'OMD', width: 65, height: 25 },
+    { src: '/assets/images/brands/mastercard.png', alt: 'Mastercard', width: 65, height: 25 },
+    { src: '/assets/images/brands/mindashare.png', alt: 'Mindshare', width: 119, height: 25 },
+    { src: '/assets/images/brands/wordpress.png', alt: 'WordPress', width: 50, height: 25 },
+    { src: '/assets/images/brands/emirates.png', alt: 'Emirates', width: 119, height: 25 }
   ];
 
   const brands2 = [
-    { src: '/assets/images/brands/tunein.png', alt: 'TuneIn' },
-    { src: '/assets/images/brands/spotify.png', alt: 'Spotify' },
-    { src: '/assets/images/brands/bbc.png', alt: 'BBC' },
-    { src: '/assets/images/brands/apple.png', alt: 'Apple' },
-    { src: '/assets/images/brands/iheart.png', alt: 'iHeart' },
-    { src: '/assets/images/brands/yt.png', alt: 'YouTube' },
-    { src: '/assets/images/brands/sirius_.png', alt: 'Sirius' },
-    { src: '/assets/images/brands/newyork.png', alt: 'New York' },
-    { src: '/assets/images/brands/castbox.png', alt: 'Castbox' },
-    { src: '/assets/images/brands/ft.png', alt: 'Financial Times' },
-    { src: '/assets/images/brands/skynews.png', alt: 'Sky News' },
-    { src: '/assets/images/brands/emirates.png', alt: 'Emirates' },
+    { src: '/assets/images/brands/tunein.png', alt: 'TuneIn', width: 150, height: 50 },
+    { src: '/assets/images/brands/spotify.png', alt: 'Spotify', width: 110, height: 25 },
+    { src: '/assets/images/brands/bbc.png', alt: 'BBC', width: 110, height: 25 },
+    { src: '/assets/images/brands/apple.png', alt: 'Apple', width: 120, height: 25 },
+    { src: '/assets/images/brands/iheart.png', alt: 'iHeart', width: 110, height: 80 },
+    { src: '/assets/images/brands/yt.png', alt: 'YouTube', width: 110, height: 80 },
+    { src: '/assets/images/brands/sirius.png', alt: 'Sirius', width: 250, height: 80 },
+    { src: '/assets/images/brands/newyork.png', alt: 'New York', width: 125, height: 35 },
+    { src: '/assets/images/brands/castbox.png', alt: 'Castbox', width: 119, height: 25 },
+    { src: '/assets/images/brands/ft.png', alt: 'Financial Times', width: 200, height: 80 },
+    { src: '/assets/images/brands/skynews.png', alt: 'Sky News', width: 119, height: 25 },
   ];
 
   const splideOptions1 = {
@@ -86,13 +86,13 @@ export default function BrandsScroller() {
       >
         <div className="min-w-[150px] md:min-w-[200px]">
           <h6 className="color-1 font-semibold text-[14px] leading-[22px] md:text-base md:text-lg">
-            Trusted By
+            Trusted by
           </h6>
           <h5 className="color-3 font-semibold text-[18px] leading-[26px] md:text-xl md:text-2xl">
-            400+ brands
+            300+ brands
           </h5>
         </div>
-        <div className="relative lg:max-w-[50%] md:max-w-full">                                                                    
+        <div className="relative max-w-[50%] md:max-w-full">                                                                    
           <div className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[150px] top-0 -left-5 z-5 rounded-lg p-4 [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_20.9%,#ffffff_99.44%)]"></div>
           <div className="overflow-hidden" style={{maxWidth: '90%'}}>
           <Splide
@@ -102,16 +102,15 @@ export default function BrandsScroller() {
           >
             {brands1.map((brand, index) => (
               <SplideSlide key={index}>
-                <div className="flex items-center justify-center min-w-48 max-w-48 h-20 rounded-lg bg-white p-2">
+                <div className="flex items-center justify-center min-w-48 max-w-48 h-20 rounded-[16px] bg-white p-2 border border-[#E5E5E5]">
                   <Image
                     src={brand.src}
                     alt={brand.alt}
                     className={`max-h-full max-w-full object-contain ${
                       brand.src.includes('png.png') ? 'max-h-[50px]' : ''
                     }`}
-                    style={brand.src.includes('png.png') ? { maxHeight: '50px' } : {}}
-                    width={200}
-                    height={80}
+                    width={brand.width}
+                    height={brand.height}
                   />
                 </div>
               </SplideSlide>
@@ -143,13 +142,13 @@ export default function BrandsScroller() {
           >
             {brands2.map((brand, index) => (
               <SplideSlide key={index}>
-                <div className="flex items-center justify-center max-w-[135px] max-h-[60px] md:min-w-48 md:max-w-48 h-20 rounded-lg bg-white p-2">
-                  <Image
+                <div className="flex items-center justify-center min-w-48 max-w-48 h-20 rounded-[16px] bg-white p-2 border border-[#E5E5E5]">
+                <Image
                     src={brand.src}
                     alt={brand.alt}
                     className="max-h-full max-w-full object-contain"
-                    width={200}
-                    height={80}
+                    width={brand.width}
+                    height={brand.height}
                   />
                 </div>
               </SplideSlide>

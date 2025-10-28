@@ -1,106 +1,84 @@
 import Image from "next/image";
 
+const baseLinkClasses = "py-[8px] text-[#344054] hover:underline cursor-pointer";
 export default function Footer() {
-    return (
- 
-        <footer className="bg-white w-full" data-aos="fade-up">
-        <div
-          className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 md:py-[64px] bg-[#FFFEFF]"
-        >
+  return (
+    <footer className="bg-white w-full" data-aos="fade-up">
+      <div className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 md:py-[64px] bg-[#FFFEFF]">
+        <div className="grid grid-cols-2 lg:grid-cols-6 justify-between gap-8 md:gap-[54px] w-full">
           <div
-            className="grid grid-cols-2 lg:grid-cols-6 justify-between gap-8 md:gap-[54px] w-full"
+            className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]"
+            data-aos="fade-up"
           >
-            <div
-              className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]"
-              data-aos="fade-up"
-            >
-              <Image
-                src="/assets/images/logo.png"
-                alt="Logo"
-                className="max-h-[60px] w-auto"
-                width={60}
-                height={60}
-              />
-            </div>
+            <Image
+              src="/assets/images/nbm_logo.png"
+              alt="Logo"
+              className="max-h-[100px] w-auto"
+              width={100}
+              height={100}
+            />
+          </div>
 
+          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+            <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
+              Who We Help
+            </h1>
+            <a href="/advertisers" className={baseLinkClasses}>Advertisers</a>
+            <a href="/publishers" className={baseLinkClasses}>Publishers</a>
+            <a className={baseLinkClasses}>Podcasters</a>
+          </div>
 
-            <div data-aos="fade-up" className="flex flex-col gap-[16px]">
-              <h1
-                className="text-[#262626] font-semibold text-[20px] leading-[28px]"
-              >
-                Who We Help
-              </h1>
-              <h5 className="py-[8px] text-[#344054]">Advertisers</h5>
-              <h5 className="py-[8px] text-[#344054]">Publishers</h5>
-              <h5 className="py-[8px] text-[#344054]">Podcasters</h5>
-            </div>
+          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+            <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
+              Solutions
+            </h1>
+            <a href="/ai-ad-studio" className={baseLinkClasses}>AI Ad Studio</a>
+            <a href="/admanager" className={baseLinkClasses}>Admanager</a>
+          </div>
 
+          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+            <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
+              Resources
+            </h1>
+            <a href="/knowledge-hub" className={baseLinkClasses}>Knowledge Hub</a>
+            <a href="/case-studies" className={baseLinkClasses}>Case Studies</a>
+            <h5 href="/advertiser-media-kit" className={baseLinkClasses}>Advertiser Media Kit</h5>
+            <a href="/publisher-deck" className={baseLinkClasses}>Publisher Deck</a>
+          </div>
 
-            <div data-aos="fade-up" className="flex flex-col gap-[16px]">
-              <h1
-                className="text-[#262626] font-semibold text-[20px] leading-[28px]"
-              >
-                Solutions
-              </h1>
-              <h5 className="py-[8px] text-[#344054]">AI Ad Studio</h5>
-              <h5 className="py-[8px] text-[#344054]">Admanager</h5>
-            </div>
-
-            <div data-aos="fade-up" className="flex flex-col gap-[16px]">
-              <h1
-                className="text-[#262626] font-semibold text-[20px] leading-[28px]"
-              >
-                Resources
-              </h1>
-              <h5 className="py-[8px] text-[#344054]">Knowledge Hub</h5>
-              <h5 className="py-[8px] text-[#344054]">Case Studies</h5>
-              <h5 className="py-[8px] text-[#344054]">Advertiser Media Kit</h5>
-              <h5 className="py-[8px] text-[#344054]">Publisher Deck</h5>
-            </div>
-
-            <div data-aos="fade-up" className="flex flex-col gap-[16px]">
-              <h1
-                className="text-[#262626] font-semibold text-[20px] leading-[28px]"
-              >
-                Company
-              </h1>
-              <h5 className="py-[8px] text-[#344054]">About Us</h5>
-              <h5 className="py-[8px] text-[#344054]">Contact Us</h5>
-              <h5 className="py-[8px] text-[#344054]">Why Audio</h5>
-            </div>
-
-
+          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+            <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
+              Company
+            </h1>
+            <a href="/about-us" className={baseLinkClasses}>About Us</a>
+            <a href="/contact-us" className={baseLinkClasses}>Contact Us</a>
+            <a href="/why-audio" className={baseLinkClasses}>Why Audio</a>
           </div>
         </div>
+      </div>
 
-        <div
-        className="bg-[#F8F9FA] flex flex-row justify-between items-center gap-[64px] px-[24px] lg:px-[80px] py-4 lg:py-[24px]"
-      >
-        <div
-          className="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center w-full"
-        >
-          <div>
-            <h1 className="text-[#344054] font-normal text-[16px] leading-[24px]">
+      <div className="bg-[#F8F9FA] flex flex-row justify-between items-center gap-[64px] px-[24px] lg:px-[80px] py-4 lg:py-[24px]">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-3 lg:grid-cols-6 gap-[10px] md:gap-[54px] justify-start lg:justify-between items-start lg:items-center w-full">
+          <div className="col-span-2 order-first lg:col-span-2">
+            <a href="/" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
               © Next Broadcast Media 2025
-            </h1>
+            </a>
           </div>
 
-          <div>
-            <h1 className="text-[#344054] font-normal text-[16px] leading-[24px]">
+          <div className="col-span-3 lg:col-span-1">
+            <a href="/privacy-policy" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
               Privacy Policy
-            </h1>
+            </a>
           </div>
 
-          <div>
-            <h1 className="text-[#344054] font-normal text-[16px] leading-[24px]">
+          <div className="col-span-3 lg:col-span-1">
+            <a href="/terms-of-use" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
               Terms of Use
-            </h1>
+            </a>
           </div>
 
-          <div>
-            <h1
-              className="text-[#344054] font-normal text-[16px] leading-[24px] flex flex-row gap-[18px] items-center"
-            >
+          <div className="order-first lg:order-last">
+            <h1 className="text-[#344054] font-normal text-[16px] leading-[24px] flex flex-row gap-[18px] justify-end lg:justify-start lg:items-center">
               <span>
                 <svg
                   width="20"
@@ -116,19 +94,34 @@ export default function Footer() {
                 </svg>
               </span>
               <span>
-
-            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clipPath="url(#clip0_1918_1473)">
-                <path d="M19.6014 6.11406C19.4883 5.68857 19.2654 5.30025 18.9551 4.98794C18.6448 4.67564 18.2579 4.45031 17.8332 4.33452C16.2695 3.91406 10.0195 3.91406 10.0195 3.91406C10.0195 3.91406 3.76953 3.91406 2.20589 4.33452C1.78114 4.45031 1.39425 4.67564 1.08394 4.98794C0.773628 5.30025 0.550786 5.68857 0.437713 6.11406C0.0195313 7.68452 0.0195312 10.9595 0.0195312 10.9595C0.0195312 10.9595 0.0195313 14.2345 0.437713 15.805C0.550786 16.2305 0.773628 16.6188 1.08394 16.9311C1.39425 17.2434 1.78114 17.4687 2.20589 17.5845C3.76953 18.005 10.0195 18.005 10.0195 18.005C10.0195 18.005 16.2695 18.005 17.8332 17.5845C18.2579 17.4687 18.6448 17.2434 18.9551 16.9311C19.2654 16.6188 19.4883 16.2305 19.6014 15.805C20.0195 14.2345 20.0195 10.9595 20.0195 10.9595C20.0195 10.9595 20.0195 7.68452 19.6014 6.11406Z" fill="#344054"/>
-                <path d="M7.97461 13.9331V7.98535L13.2019 10.9592L7.97461 13.9331Z" fill="#FFFEFF"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_1918_1473">
-                <rect width="20" height="20" fill="white" transform="translate(0 0.958984)"/>
-                </clipPath>
-                </defs>
-            </svg>
-
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_1918_1473)">
+                    <path
+                      d="M19.6014 6.11406C19.4883 5.68857 19.2654 5.30025 18.9551 4.98794C18.6448 4.67564 18.2579 4.45031 17.8332 4.33452C16.2695 3.91406 10.0195 3.91406 10.0195 3.91406C10.0195 3.91406 3.76953 3.91406 2.20589 4.33452C1.78114 4.45031 1.39425 4.67564 1.08394 4.98794C0.773628 5.30025 0.550786 5.68857 0.437713 6.11406C0.0195313 7.68452 0.0195312 10.9595 0.0195312 10.9595C0.0195312 10.9595 0.0195313 14.2345 0.437713 15.805C0.550786 16.2305 0.773628 16.6188 1.08394 16.9311C1.39425 17.2434 1.78114 17.4687 2.20589 17.5845C3.76953 18.005 10.0195 18.005 10.0195 18.005C10.0195 18.005 16.2695 18.005 17.8332 17.5845C18.2579 17.4687 18.6448 17.2434 18.9551 16.9311C19.2654 16.6188 19.4883 16.2305 19.6014 15.805C20.0195 14.2345 20.0195 10.9595 20.0195 10.9595C20.0195 10.9595 20.0195 7.68452 19.6014 6.11406Z"
+                      fill="#344054"
+                    />
+                    <path
+                      d="M7.97461 13.9331V7.98535L13.2019 10.9592L7.97461 13.9331Z"
+                      fill="#FFFEFF"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1918_1473">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0 0.958984)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </span>
             </h1>
           </div>
@@ -136,10 +129,6 @@ export default function Footer() {
           <div></div>
         </div>
       </div>
-      </footer>
-
-
-
-
- )
+    </footer>
+  );
 }

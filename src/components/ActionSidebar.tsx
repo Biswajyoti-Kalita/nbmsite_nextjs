@@ -6,18 +6,36 @@ export default function ActionSidebar() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setShowSidebar(true);
-      } else {
-        setShowSidebar(false);
-      }
-    };
+    // Find the About Us section by its ID
+    const aboutUsSection = document.getElementById('about-us');
 
-    window.addEventListener("scroll", handleScroll);
+    if (!aboutUsSection) {
+      console.warn('About Us section not found');
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Show sidebar when About Us section is in view
+          if (entry.isIntersecting) {
+            setShowSidebar(true);
+          } else if (entry.boundingClientRect.top > 0) {
+            // Hide if we're above the About Us section
+            setShowSidebar(false);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 10% of the section is visible
+        rootMargin: "-100px 0px 0px 0px" // Offset from top
+      }
+    );
+
+    observer.observe(aboutUsSection);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
     };
   }, []);
 
@@ -92,7 +110,7 @@ export default function ActionSidebar() {
         </div>
 
         <h1 className="text-[#262626] text-[14px] leading-[22px] font-semibold text-center text-nowrap">
-          Start Campaign
+          Grow Network
         </h1>
       </div>
       <hr className="border-[#E8E8E8] w-full" />
@@ -127,7 +145,7 @@ export default function ActionSidebar() {
         </div>
 
         <h1 className="text-[#262626] text-[14px] leading-[22px] font-semibold text-center text-nowrap">
-          Start Campaign
+          Monetize Show
         </h1>
       </div>
     </div>

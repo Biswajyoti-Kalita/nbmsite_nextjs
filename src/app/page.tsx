@@ -9,6 +9,8 @@ import TestimonialGroup from "@/components/TestimonialGroup";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import ActionSidebar from "@/components/ActionSidebar";
+import AboutUsImageCard from "@/components/AboutUsImageCard";
+import GradientButton from "@/components/GradientButton";
 
 export default function Home() {
   return (
@@ -24,8 +26,8 @@ export default function Home() {
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
           <div>
-            <h1 className="font-semibold text-[48px] md:text-5xl lg:text-[60px] leading-[54px] md:leading-[72px] -tracking-[2%] text-[#262626]">
-              The Audio Advertising company
+            <h1 className="font-semibold text-[48px] md:text-5xl lg:text-[60px] leading-[54px] md:leading-[72px] tracking-[-0.02em] text-[#262626]">
+              The Audio Advertising Company
             </h1>
           </div>
           <div className="flex flex-col items-start md:items-center justify-end">
@@ -36,7 +38,7 @@ export default function Home() {
         </div>
       {/* Wave Background Section */}
       <div 
-        className="w-full bg-no-repeat absolute left-0 right-0 opacity-50"
+        className="w-full bg-no-repeat absolute left-0 right-0 opacity-90"
       >
         <img src="/assets/images/waves.png" alt="hero-image" className="w-full bg-bottom bg-no-repeat h-[230px]" />
       </div>
@@ -49,28 +51,29 @@ export default function Home() {
       <BrandsScroller />
 
       <section
+        id="about-us"
         className="w-full bg-[#FFF9FE] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
         data-aos="fade-up"
       >
         <div
-          className="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center lg:gap-0"
+          className="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center lg:gap-[64px]"
         >
           <div
             className="flex flex-col items-start justify-start gap-[16px] md:gap-[32px] pb-4 md:pb-[30px]"
           >
             <span
-              className="border-color-3 border border-1 p-2 px-4 rounded-3xl color-3 font-medium text-sm md:text-base text-[#F11F68]"
+              className="border-color-3 border border-1 py-[3px] px-[16px] rounded-3xl color-3 font-medium text-sm md:text-base leading-[150%] tracking-[-0.01em] text-[#F11F68]"
             >
               About Us
             </span>
             <h1
-              className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px]"
+              className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px] tracking-[-0.02em]"
             >
               Inside Next: The Team Behind Global Audio Campaigns
             </h1>
           </div>
           <div
-            className="flex flex-col items-start justify-end gap-4 md:gap-[32px]"
+            className="flex flex-col items-start justify-end gap-4 md:gap-[32px] max-w-[520px]"
           >
             <p
               className="text-[#344054] text-base md:text-lg lg:text-[20px] leading-tight md:leading-[28px] font-normal"
@@ -78,14 +81,10 @@ export default function Home() {
               Discover how we support advertisers, podcasters, and publishers
               with global reach and trusted audio advertising solutions.
             </p>
-            <button
-              className="gradient-bg-button px-3 md:px-4 py-2 md:py-2.5 bg-white rounded-[4px] flex items-center justify-center gap-[6px]"
-            >
-              <span
-                className="text-[#FFF] text-sm md:text-base lg:text-[16px] leading-tight md:leading-[24px] -tracking-[0%] font-semibold"
-                >Learn About Next</span
-              >
-              <svg
+            <GradientButton            
+              text="Learn About Next"
+              rightIcon={
+                <svg
                 width="14"
                 height="15"
                 viewBox="0 0 14 15"
@@ -100,92 +99,24 @@ export default function Home() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </button>
+              }
+            
+              />  
           </div>
         </div>
         <div
           className="max-w-[1440px] w-full grid grid-cols-2 lg:grid-cols-4 justify-between items-center gap-4 md:gap-[24px]"
           data-aos="fade-up"
         >
-          <div
-            className="relative flex flex-col items-start justify-between gap-4 md:gap-0 p-4 md:p-6 md:bg-none md:bg-[#FFEDFB] rounded-2xl h-[150px] md:h-[200px] w-full max-w-[300px] bg-[url('/assets/images/about-us-image-1.jpg')] bg-center bg-cover"
-          >
-            <div className="md:hidden absolute inset-0 bg-black/50"></div>
-            <div
-              className="relative z-10 flex flex-col items-start justify-between gap-4 md:gap-0 h-full"
-            >
-              <h1
-                className="text-[32px] leading-[40px] text-[#FFFEFF] md-gradient-text font-medium md:text-3xl lg:text-[60px] md:leading-[68px]"
-              >
-                300+
-              </h1>
-              <h6
-                className="font-medium text-base md:text-lg lg:text-[20px] leading-tight md:leading-[28px] text-[#FFFEFF] md:text-[#262626]"
-              >
-                Active brands & agencies
-              </h6>
-            </div>
-          </div>
 
-          <div
-            className="relative flex flex-col items-start justify-between gap-4 md:gap-0 p-4 md:p-6 bg-[#FFEDFB] rounded-2xl h-[150px] md:h-[200px] w-full max-w-[300px] bg-[url('/assets/images/about-us-image-1.jpg')] bg-center bg-cover md:bg-none"
-          >
-            <div className="md:hidden absolute inset-0 bg-black/50"></div>
-            <div
-              className="relative z-10 flex flex-col items-start justify-between gap-4 md:gap-0 h-full"
-            >
-              <h1
-                className="text-[32px] leading-[40px] text-[#FFFEFF] md-gradient-text font-medium md:text-3xl lg:text-[60px] md:leading-[68px]"
-              >
-                90+
-              </h1>
-              <h6
-                className="font-medium text-base md:text-lg lg:text-[20px] leading-tight md:leading-[28px] text-[#FFFEFF] md:text-[#262626]"
-              >
-                Global markets
-              </h6>
-            </div>
-          </div>
+          <AboutUsImageCard title="300+" description="Active brands & agencies" image="/assets/images/about_us_card_1.jpg" />
 
-          <div
-            className="relative flex flex-col items-start justify-between gap-4 md:gap-0 p-4 md:p-6 bg-[#FFEDFB] rounded-2xl h-[150px] md:h-[200px] w-full max-w-[300px] bg-[url('/assets/images/about-us-image-1.jpg')] bg-center bg-cover md:bg-none"
-          >
-            <div className="md:hidden absolute inset-0 bg-black/50"></div>
-            <div
-              className="relative z-10 flex flex-col items-start justify-between gap-4 md:gap-0 h-full"
-            >
-              <h1
-                className="text-[32px] leading-[40px] text-[#FFFEFF] md-gradient-text font-medium md:text-3xl lg:text-[60px] md:leading-[68px]"
-              >
-                850+
-              </h1>
-              <h6
-                className="font-medium text-base md:text-lg lg:text-[20px] leading-tight md:leading-[28px] text-[#FFFEFF] md:text-[#262626]"
-              >
-                Campaigns delivered
-              </h6>
-            </div>
-          </div>
+          <AboutUsImageCard title="90+" description="Global markets" image="/assets/images/about_us_card_2.jpg" />
 
-          <div
-            className="relative flex flex-col items-start justify-between gap-4 md:gap-0 p-4 md:p-6 bg-[#FFEDFB] rounded-2xl h-[150px] md:h-[200px] w-full max-w-[300px] bg-[url('/assets/images/about-us-image-1.jpg')] bg-center bg-cover md:bg-none"
-          >
-            <div className="md:hidden absolute inset-0 bg-black/50"></div>
-            <div
-              className="relative z-10 flex flex-col items-start justify-between gap-4 md:gap-0 h-full"
-            >
-              <h1
-                className="text-[32px] leading-[40px] text-[#FFFEFF] md-gradient-text font-medium md:text-3xl lg:text-[60px] md:leading-[68px]"
-              >
-                35,000+
-              </h1>
-              <h6
-                className="font-medium text-base md:text-lg lg:text-[20px] leading-tight md:leading-[28px] text-[#FFFEFF] md:text-[#262626]"
-              >
-                Podcasts in the network
-              </h6>
-            </div>
-          </div>
+          <AboutUsImageCard title="850+" description="Campaigns delivered" image="/assets/images/about_us_card_3.jpg" />
+
+          <AboutUsImageCard title="35,000+" description="Podcasts in the network" image="/assets/images/about_us_card_4.jpg" />
+
         </div>
       </section>
 
@@ -210,7 +141,7 @@ export default function Home() {
               className="gradient-bg-button px-3 md:px-4 py-2 md:py-2.5 bg-white rounded-[4px] flex items-center justify-center gap-[6px]"
             >
               <span
-                className="text-[#FFF] text-sm md:text-base lg:text-[16px] leading-tight md:leading-[24px] -tracking-[0%] font-semibold"
+                className="text-[#FFF] text-sm md:text-base lg:text-[16px] leading-tight md:leading-[24px] -tracking-[0.0em] font-semibold"
                 >Explore All</span
               >
               <svg
@@ -301,7 +232,7 @@ export default function Home() {
         data-aos="fade-up"
       >
         <div
-          className="max-w-[1280px] flex flex-row w-full justify-between items-end gap-[24px]"
+          className="max-w-[1440px] flex flex-row w-full justify-between items-end gap-[24px]"
         >
           <div
             className="flex flex-col items-start justify-start gap-4 md:gap-[20px]"
@@ -310,7 +241,7 @@ export default function Home() {
               className="flex flex-col items-start justify-start gap-3 md:gap-[16px]"
             >
               <span
-                className="text-[#F11F68] border border-[#F11F68] rounded-full px-3 md:px-4 py-1.5 md:py-2 text-sm md:text-[16px] leading-tight md:leading-[24px] font-medium"
+                className="text-[#F11F68] border border-[#F11F68] rounded-full px-3 md:px-[16px] py-1.5 md:py-[3px] text-sm md:text-[16px] leading-tight md:leading-[24px] font-medium"
                 >Testimonials</span
               >
               <h1

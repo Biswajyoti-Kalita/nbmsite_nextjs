@@ -24,7 +24,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-switzer), Arial, Helvetica, sans-serif;
 }
 
 
@@ -43,28 +43,45 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    transition: all 0.4s ease-in-out;
 }
+
+.marketing-card button {
+    transition: all 0.4s ease-in-out;
+}
+
+.marketing-card button span {
+    transition: opacity 0.3s ease-in-out;
+}
+
 .marketing-card.collapsed {
-    background-color: white;
+  /* background-color: linear-gradient(90deg, #f11f68 0%, #162abf 100%); */
+  border-radius: 20px;
 }
-.marketing-card.collapsed button span{
+/* .marketing-card.collapsed button span{
     display: none;
-}
-.marketing-card.collapsed .master-card-bg-container, .marketing-card.collapsed h6 {
-    display: none;
-    height: 0;
+} */
+.marketing-card.collapsed h6 {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
 }
 .marketing-card.expanded h6 {
-    height: auto;
-}
-.marketing-card.expanded .master-card-bg-container, .marketing-card.expanded h6 {
-    display: block;
+    opacity: 1;
+    max-height: 200px;
+    transition: opacity 0.4s ease-in-out 0.2s, max-height 0.4s ease-in-out;
 }
 .marketing-card.expanded .master-card-content h5 {
     color: white;
 }
 .gradient-bg-button {
   background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
+}
+
+.gradient-bg-button:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+              linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
 }
 
 .gradient-text, .marketing-card.collapsed h5 {
@@ -77,8 +94,20 @@ body {
 
 /* Marketing Cards Animation */
 .marketing-card {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+}
+
+.marketing-card .master-card-bg-container {
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.marketing-card .master-card-bg-container > * {
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.marketing-card h5 {
+    transition: color 0.4s ease-in-out;
 }
 
 .marketing-card.expanded {
@@ -114,11 +143,6 @@ body {
 
 .marketing-card.collapsed .expanded-content {
     display: none;
-}
-
-/* Hide utility class */
-.hidden {
-    display: none !important;
 }
 
 /* Hide scrollbar */

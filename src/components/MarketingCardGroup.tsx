@@ -17,14 +17,14 @@ export default function MarketingCardGroup() {
             title: "Publishers & Networks",
             description: "Tap into global advertiser demand and monetise your full podcast catalogue with scalable, multi-format campaigns.",
             buttonText: "Explore Our Solutions",
-            buttonText2: "Register your show",
+            buttonText2: "",
             image: "/assets/images/card-bg-2.jpg",
             expanded: false
         },
         {
             title: "Podcasters & Creators",
             description: "Maximize revenues of your shows with our Host-Read Studio and Brand-matching in our Global Advertiser Network.",
-            buttonText: "Explore Our Solutions",
+            buttonText: "Learn More",
             buttonText2: "Register your show",
             image: "/assets/images/card-bg-3.jpg",
             expanded: false
