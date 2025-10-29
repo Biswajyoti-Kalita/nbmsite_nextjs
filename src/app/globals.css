@@ -30,7 +30,6 @@ body {
 
 .gradient-border-1, .marketing-card.collapsed {
   background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
-  border: 2px solid;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -38,7 +37,6 @@ body {
 }
 .marketing-card.collapsed button {
     background: linear-gradient(90deg, #F11F68 0%, #162ABF 100%);
-    border: 2px solid;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -112,7 +110,7 @@ body {
 
 .marketing-card.expanded {
     max-width: 630px;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .marketing-card.collapsed {

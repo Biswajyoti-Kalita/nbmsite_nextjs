@@ -65,7 +65,7 @@ export default function GradientButton({
         disabled={disabled}
         {...rest}
       >
-        <div className={`bg-white hover:bg-[#FFF9FE] active:bg-[#FFEDFB] rounded-[4px] h-full w-full ${iconWrapperClasses} px-2 md:px-4 py-1.5 md:py-2.5`}>
+        <div className={`bg-white hover:bg-[#FFF9FE] active:bg-[#FFEDFB] rounded-[4px] min-h-[44px] min-w-[44px] ${iconWrapperClasses} px-2 md:px-4 py-1.5 md:py-2.5`}>
           {renderContent("bg-gradient-to-r from-[#F11F68] to-[#162ABF] bg-clip-text text-transparent", "bg-gradient-to-r from-[#F11F68] to-[#162ABF] bg-clip-text text-transparent")}
         </div>
       </button>

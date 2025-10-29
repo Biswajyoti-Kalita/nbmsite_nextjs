@@ -19,14 +19,14 @@ export default function Home() {
       <Navbar bgColor="bg-white" bgColorOnOpen="bg-[#F11F68]" isPrimary={true} />
 
       <section
-        className="w-full bg-white rounded-xl p-4 mt-[64px] md:mt-[120px] md:mt-0 md:p-[80px] relative"
+        className="w-full bg-white rounded-xl p-4 mt-[64px] md:mt-[80px] md:mt-0 md:p-[80px] relative"
         id="home"
         data-aos="fade-up"
       >
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 bg-white">
           <div>
-            <h1 className="font-semibold text-[48px] md:text-5xl lg:text-[60px] leading-[54px] md:leading-[72px] tracking-[-0.02em] text-[#262626]">
+            <h1 className="font-semibold tracking-[2%] text-[48px] md:text-5xl lg:text-[60px] leading-[54px] md:leading-[72px] tracking-[-0.02em] text-[#262626]">
               The Audio Advertising Company
             </h1>
           </div>
