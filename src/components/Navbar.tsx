@@ -110,8 +110,8 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                 ):
                 (
                   <div className="flex flex-row gap-[12px] h-[64px] items-center">
-                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" className="h-[44px]" />
-                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[44px]" />
+                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" className="h-[48px]" />
+                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[48px]" />
                 </div>
                 )
                 }

@@ -52,7 +52,7 @@ export default function Home() {
 
       <section
         id="about-us"
-        className="w-full bg-[#FFF9FE] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
+        className="w-full bg-[#FFF9FE] flex flex-col items-center justify-center rounded-xl py-8 md:py-[84px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
         data-aos="fade-up"
       >
         <div
@@ -67,7 +67,7 @@ export default function Home() {
               About Us
             </span>
             <h1
-              className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px] tracking-[-0.02em]"
+              className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px] tracking-2%"
             >
               Inside Next: The Team Behind Global Audio Campaigns
             </h1>
