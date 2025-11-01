@@ -66,7 +66,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                   <a href="/advertisers" className="hover:underline transition-all" style={{ color: linkColor }}
                     >For Advertisers</a
                   >
-                  <a href="#how-it-works" className="hover:underline transition-all" style={{ color: linkColor }}
+                  <a href="/publishers" className="hover:underline transition-all" style={{ color: linkColor }}
                     >For Publishers</a
                   >
                   <a href="/podcasters" className="hover:underline transition-all" style={{ color: linkColor }}
