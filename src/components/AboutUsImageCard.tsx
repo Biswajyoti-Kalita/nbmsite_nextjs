@@ -1,4 +1,5 @@
 "use client";
+import isMobile from "@/util/util";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -9,14 +10,16 @@ interface AboutUsImageCardProps {
 }
 
 export default function AboutUsImageCard({ title, description, image }: AboutUsImageCardProps) {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(isMobile());
+  const [isMobileScreen] = useState(isMobile());
+
   return (
     <div
-    onMouseEnter={() => setHover(true)}
-    onMouseLeave={() => setHover(false)}
+    onMouseEnter={() => !isMobileScreen && setHover(true)}
+    onMouseLeave={() => !isMobileScreen && setHover(false)}
     className="relative flex flex-col items-start justify-between gap-4 md:gap-0 p-4 md:p-6 md:bg-none md:bg-[#FFEDFB] rounded-2xl h-[150px] md:h-[200px] w-full max-w-[300px] bg-center bg-cover"
   >
-    <div className="md:hidden absolute inset-0 bg-black/50 z-20"></div>
+    <div className="md:hidden absolute inset-0 bg-black/50 z-20 rounded-2xl"></div>
     {
         hover && <div className="bg-black/10 absolute top-0 left-0 w-full h-full z-20"></div>
     }
@@ -24,7 +27,7 @@ export default function AboutUsImageCard({ title, description, image }: AboutUsI
         hover && <Image src={image} alt={title} width={300} height={200} className="w-full h-full object-cover rounded-2xl absolute top-0 left-0 z-10" />
     }
     <div
-      className="relative z-10 flex flex-col items-start justify-between gap-4 md:gap-0 h-full"
+      className="relative z-[999] flex flex-col items-start justify-between gap-4 md:gap-0 h-full"
     >
       <h1
         className="text-[32px] leading-[40px]  font-medium md:text-3xl lg:text-[60px] md:leading-[68px]  transition-all duration-300"

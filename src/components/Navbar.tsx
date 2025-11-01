@@ -26,7 +26,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
   }, [isMobileScreen]);
 
   return (
-    <div className={`${isMobileScreenMenuOpen ? bgColorOnOpen+ '' : bgColor} flex justify-start items-start fixed top-0 left-0 right-0 z-20 mb-2 w-full  h-16 md:h-20`}>
+    <div className={`${isMobileScreenMenuOpen ? bgColorOnOpen+ '' : bgColor} flex justify-start items-start fixed top-0 left-0 right-0 z-[9999] mb-2 w-full  h-16 md:h-20`}>
       <div className="w-full p-4 py-8 md:p-8 xl:max-w-[1440px]">
         <div className="w-full mt-4 md:mt-0">
           <nav className="fixed w-full z-20 top-0 start-0">

@@ -15,7 +15,7 @@ import GradientButton from "@/components/GradientButton";
 export default function Home() {
   return (
     <div className="min-h-screen h-full  w-full flex flex-col items-center justify-center bg-white">
-    <div className="bg-white lg:max-w-[1440px]">
+    <div className="bg-white w-full lg:max-w-[1440px]">
       <Navbar bgColor="bg-white" bgColorOnOpen="bg-[#F11F68]" isPrimary={true} />
 
       <section
@@ -83,6 +83,7 @@ export default function Home() {
             </p>
             <GradientButton            
               text="Learn About Next"
+              className="h-[44px] px-4"
               rightIcon={
                 <svg
                 width="14"

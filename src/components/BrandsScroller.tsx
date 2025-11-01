@@ -78,7 +78,7 @@ export default function BrandsScroller() {
   return (
     <section
       id="brands"
-      className=" overflow-hidden w-full ml-[16px] rounded-xl p-4 md:p-8 mt-8 md:mt-12 md:flex flex-col items-center justify-center"
+      className=" overflow-hidden w-full ml-[0px] lg:ml-[16px] rounded-xl p-4 md:p-8 mt-8 md:mt-12 md:flex flex-col items-center justify-center"
     >
       <div
         className="flex flex-row gap-4 md:gap-8 items-start md:items-center mb-6 md:mb-8 max-w-[1280px]"
