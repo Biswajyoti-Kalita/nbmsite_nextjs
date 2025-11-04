@@ -5,6 +5,7 @@ interface GradientButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButton
   text: string;
   fullWidth?: boolean;
   className?: string;
+  textClassName?: string;
   buttonType?: "button" | "submit" | "reset";
 }
 
@@ -18,6 +19,7 @@ export default function GradientButton({
   onClick,
   disabled = false,
   buttonType = "button",
+  textClassName = "",
   ...rest
 }: GradientButtonProps) {
   
@@ -47,7 +49,7 @@ export default function GradientButton({
         disabled={disabled}
         {...rest}
       >
-        {renderContent("text-[#FFFEFF]")}
+        {renderContent(`text-[#FFFEFF] ${textClassName}`)}
       </button>
     );
   }
@@ -66,7 +68,7 @@ export default function GradientButton({
         {...rest}
       >
         <div className={`bg-white hover:bg-[#FFF9FE] active:bg-[#FFEDFB] rounded-[4px] min-h-[40px] min-w-[44px] ${iconWrapperClasses} px-2 md:px-4 py-1.5 md:py-2.5`}>
-          {renderContent("bg-gradient-to-r from-[#F11F68] to-[#162ABF] bg-clip-text text-transparent", "bg-gradient-to-r from-[#F11F68] to-[#162ABF] bg-clip-text text-transparent")}
+          {renderContent(`bg-gradient-to-r from-[#F11F68] to-[#162ABF] bg-clip-text text-transparent ${textClassName}`, "bg-gradient-to-r from-[#F11F68] to-[#162ABF] bg-clip-text text-transparent")}
         </div>
       </button>
     );
@@ -81,7 +83,7 @@ export default function GradientButton({
       disabled={disabled}
       {...rest}
     >
-      {renderContent("")}
+      {renderContent(textClassName)}
     </button>
   );
 }
