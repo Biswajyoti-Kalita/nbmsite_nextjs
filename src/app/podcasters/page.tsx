@@ -1,15 +1,9 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
-import Button from "@/components/Button";
-import CaseStudies from "@/components/CaseStudies";
 import FAQCard from "@/components/FAQCard";
-import FAQGroup from "@/components/FAQGroup";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
-import KnowledgeHubCard2 from "@/components/KnowledgeHubCard2";
 import Navbar from "@/components/Navbar";
-import QACollapasable from "@/components/QACollapasable";
-import TestimonialGroup from "@/components/TestimonialGroup";
 import Image from "next/image";
 
 export default function Podcaster() {
@@ -27,7 +21,7 @@ export default function Podcaster() {
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <div className="flex flex-row items-start justify-center gap-[12px]">
+            <div className="flex flex-row items-center justify-center gap-[12px]">
               <svg
                 width="20"
                 height="20"

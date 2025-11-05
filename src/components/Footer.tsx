@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const baseLinkClasses = "py-[8px] text-[#344054] hover:underline cursor-pointer";
 export default function Footer() {
@@ -23,36 +24,36 @@ export default function Footer() {
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Who We Help
             </h1>
-            <a href="/advertisers" className={baseLinkClasses}>Advertisers</a>
-            <a href="/publishers" className={baseLinkClasses}>Publishers</a>
-            <a className={baseLinkClasses}>Podcasters</a>
+            <Link href="/advertisers" className={baseLinkClasses}>Advertisers</Link>
+            <Link href="/publishers" className={baseLinkClasses}>Publishers</Link>
+            <Link href="/podcasters" className={baseLinkClasses}>Podcasters</Link>
           </div>
 
           <div data-aos="fade-up" className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Solutions
             </h1>
-            <a href="/ai-ad-studio" className={baseLinkClasses}>AI Ad Studio</a>
-            <a href="/admanager" className={baseLinkClasses}>Admanager</a>
+            <Link href="/ai-ad-studio" className={baseLinkClasses}>AI Ad Studio</Link>
+            <Link href="/admanager" className={baseLinkClasses}>Admanager</Link>
           </div>
 
           <div data-aos="fade-up" className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Resources
             </h1>
-            <a href="/knowledge-hub" className={baseLinkClasses}>Knowledge Hub</a>
-            <a href="/case-studies" className={baseLinkClasses}>Case Studies</a>
-            <h5 href="/advertiser-media-kit" className={baseLinkClasses}>Advertiser Media Kit</h5>
-            <a href="/publisher-deck" className={baseLinkClasses}>Publisher Deck</a>
+          <Link href="/knowledge-hub" className={baseLinkClasses}>Knowledge Hub</Link>
+            <Link href="/case-studies" className={baseLinkClasses}>Case Studies</Link>
+            <Link href="/advertiser-media-kit" className={baseLinkClasses}>Advertiser Media Kit</Link>
+            <Link href="/publisher-deck" className={baseLinkClasses}>Publisher Deck</Link>
           </div>
 
           <div data-aos="fade-up" className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Company
             </h1>
-            <a href="/about-us" className={baseLinkClasses}>About Us</a>
-            <a href="/contact-us" className={baseLinkClasses}>Contact Us</a>
-            <a href="/why-audio" className={baseLinkClasses}>Why Audio</a>
+            <Link href="/about-us" className={baseLinkClasses}>About Us</Link>
+            <Link href="/contact-us" className={baseLinkClasses}>Contact Us</Link>
+            <Link href="/why-audio" className={baseLinkClasses}>Why Audio</Link>
           </div>
         </div>
       </div>
@@ -60,21 +61,21 @@ export default function Footer() {
       <div className="bg-[#F8F9FA] flex flex-row justify-between items-center gap-[64px] px-[24px] lg:px-[80px] py-4 lg:py-[24px]">
         <div className="max-w-[1440px] mx-auto grid grid-cols-3 lg:grid-cols-6 gap-[10px] md:gap-[54px] justify-start lg:justify-between items-start lg:items-center w-full">
           <div className="col-span-2 order-first lg:col-span-2">
-            <a href="/" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
+            <Link href="/" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
               © Next Broadcast Media 2025
-            </a>
+            </Link>
           </div>
 
           <div className="col-span-3 lg:col-span-1">
-            <a href="/privacy-policy" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
+            <Link href="/privacy-policy" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
               Privacy Policy
-            </a>
+            </Link>
           </div>
 
           <div className="col-span-3 lg:col-span-1">
-            <a href="/terms-of-use" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
+            <Link href="/terms-of-use" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
               Terms of Use
-            </a>
+            </Link>
           </div>
 
           <div className="order-first lg:order-last">

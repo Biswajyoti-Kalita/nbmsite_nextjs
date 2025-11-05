@@ -216,6 +216,7 @@ export default function Metric() {
             </div>
             {metricPlatform.metrics.map((metric, index) => (
               <div
+                key={index}
                 className={`bg-[${
                   index % 2 === 0 ? "#F8F9FA" : "#FFFEFF"
                 }] px-[24px] gap-[12px] h-[64px] w-full flex items-center justify-start`}

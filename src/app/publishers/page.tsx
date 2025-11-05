@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
 import TestimonialGroup from "@/components/TestimonialGroup";
-import { Span } from "next/dist/trace";
 import Image from "next/image";
 
 export default function Publishers() {

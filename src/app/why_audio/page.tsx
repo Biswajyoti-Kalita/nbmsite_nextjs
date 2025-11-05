@@ -1,17 +1,10 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import AudioFunnel from "@/components/AudioFunnel";
-import BrandsScroller from "@/components/BrandsScroller";
-import Button from "@/components/Button";
 import CaseStudies from "@/components/CaseStudies";
-import FAQCard from "@/components/FAQCard";
-import FAQGroup from "@/components/FAQGroup";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
-import KnowledgeHubCard2 from "@/components/KnowledgeHubCard2";
 import Metric from "@/components/Metric";
 import Navbar from "@/components/Navbar";
-import QACollapasable from "@/components/QACollapasable";
-import TestimonialGroup from "@/components/TestimonialGroup";
 import Image from "next/image";
 
 export default function WhyAudio() {

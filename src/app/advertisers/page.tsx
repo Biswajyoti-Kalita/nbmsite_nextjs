@@ -25,7 +25,7 @@ export default function Advertisers() {
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
 
-            <div className="flex flex-row items-start justify-center gap-[12px]">
+            <div className="flex flex-row items-center justify-center gap-[12px]">
               <svg
                 width="20"
                 height="20"

@@ -4,7 +4,6 @@ import BrandsScroller from "@/components/BrandsScroller";
 import CaseStudies from "@/components/CaseStudies";
 import KnowledgeHubCard from "@/components/KnowledgeHubCard";
 import KnowledgeHubCard2 from "@/components/KnowledgeHubCard2";
-import Testimonial from "@/components/Testimonial";
 import TestimonialGroup from "@/components/TestimonialGroup";
 import Footer from "@/components/Footer";
 import Image from "next/image";

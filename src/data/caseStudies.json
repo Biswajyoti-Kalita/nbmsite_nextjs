@@ -1,0 +1,13 @@
+{
+    "johnson": {
+      "title": "Johnson Corp Case Study",
+      "description": "How Johnson Corp increased revenue by 50% using our platform.",
+      "image": "/images/johnson.jpg"
+    },
+    "acme": {
+      "title": "Acme Inc Case Study",
+      "description": "Acme optimized operations with our automation solution.",
+      "image": "/images/acme.jpg"
+    }
+  }
+  

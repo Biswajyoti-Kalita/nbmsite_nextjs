@@ -21,7 +21,7 @@ export default function AboutUs() {
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <div className="flex flex-row items-start justify-center gap-[12px]">
+            <div className="flex flex-row items-center justify-center gap-[12px]">
               <svg
                 width="20"
                 height="20"
@@ -168,8 +168,8 @@ export default function AboutUs() {
         </h2>
         <div className="w-full md:w-[60%] flex flex-col gap-[40px]">
           <p className="text-[#344054] text-[32px] leading-[40px] font-[500] font-[Switzer]">
-            Because podcast and digital audio advertising shouldn't be
-            complicated, opaque, or out of reach. Next connects the dots,
+            Because podcast and digital audio advertising shouldn&apos;t be
+            complicated, opaque, or out of reach.Next connects the dots,
             helping brands scale campaigns and publishers unlock new revenue,
             with tools, tech, and teams that power performance.
           </p>
