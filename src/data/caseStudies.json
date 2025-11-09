@@ -1,13 +1,810 @@
 {
-    "johnson": {
-      "title": "Johnson Corp Case Study",
-      "description": "How Johnson Corp increased revenue by 50% using our platform.",
-      "image": "/images/johnson.jpg"
+  "johnson-and-johnson": {
+    "name": "Johnson and Johnson",
+    "category": "SKINCARE",
+    "banner_image": "/assets/images/johnson_bg.png",
+    "banner_title": "How Johnson & Johnson Boosted Skincare Awareness with Audio",
+    "banner_subtitle": "A podcast and streaming campaign promoting Skin Balance moisturiser to female listeners using language targeting and genre alignment.",
+    "summary": {
+      "client": "Johnson and Johnson",
+      "industry": "CPG, Skincare",
+      "campaign_types": "Awareness campaign, Consideration campaign, Sponsorship, programmatic",
+      "audio_format": "Podcasts, web radio, audio streaming",
+      "audience_profile": "Health-conscious adults"
     },
-    "acme": {
-      "title": "Acme Inc Case Study",
-      "description": "Acme optimized operations with our automation solution.",
-      "image": "/images/acme.jpg"
+    "objective": "Raise awareness of Skin Balance moisturiser among female audiences aged 18-44.",
+    "execution": {
+      "title": "The campaign aimed to connect with women through trusted audio formats and relevant content placements.",
+      "points": [
+        "A 24-second ad ran in both Arabic and English to maximise reach among bilingual audiences.",
+        "Podcasts with strong female listenership, particularly in parenting, lifestyle, and wellness, were prioritised.",
+        "Distribution spanned podcasts, web radio, and streaming to ensure multi-channel exposure."
+      ]
+    },
+    "results": [
+      {
+        "title": "Uplift in brand recall",
+        "subtitle": "+13pt"
+      },
+      {
+        "title": "increase in interest",
+        "subtitle": "+28pt"
+      },
+      {
+        "title": "improvement in brand likability",
+        "subtitle": "+20pt"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/johnson.png",
+      "title": "Johnson and Johnson",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
     }
+  },
+  "bel": {
+    "name": "Bel",
+    "category": "FMCG",
+    "banner_image": "/assets/images/bel_bg.jpg",
+    "banner_title": "How Bel Groupe Reached Saudi Mothers with Podcast Ads",
+    "banner_subtitle": "A brand awareness campaign combining podcast sponsorship and dynamic ad insertion to increase perception and purchase intent for Kiri cheese among Saudi families.",
+    "summary": {
+      "client": "Bel Groupe",
+      "industry": "FMCG",
+      "campaign_types": "Awareness campaign, Consideration campaign, Sponsorship, programmatic",
+      "audio_format": "Podcasts",
+      "audience_profile": "Mothers"
+    },
+    "objective": "Help Kiri cheese stand out with Saudi families by reaching local women, improving brand perception, and increasing purchase intent.",
+    "execution": {
+      "title": "We used a dual-format strategy to maximise reach and resonance:",
+      "points": [
+        "Sponsored the 10-part Arabic podcast Maida to align Kiri with trusted, high-quality local content.",
+        "Delivered dynamic, contextually targeted ads across our Arabic-language podcast network, focusing on genres popular with women and mothers to drive incremental reach."
+      ]
+    },
+    "results": [
+      {
+        "title": "Maida podcast featured in Apple Podcasts app 'New and Noteworthy&apos section",
+        "subtitle": ""
+      },
+      {
+        "title": "Interest metric performance achieved top",
+        "subtitle": "5%"
+      },
+      {
+        "title": "Listen through rate",
+        "subtitle": "95%"
+      },
+      {
+        "title": "Vertical specific intent",
+        "subtitle": "+28 pts"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/bel.png",
+      "title": "BEL Group",
+      "points": ["Awareness Campaign", "Programmatic"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    },
+    "testimonials": [
+      {
+        "quote": "Kiri's Maida podcast was created with the Kiri team to extend the brand's equity, and to be the pillar of kindness and inspiration for progressive moms. In parallel, the programmatic audio ads maximized the podcast's awareness. The campaign drove efficient reach and for a first-time campaign, it truly set a remarkable benchmark.",
+        "stars": 5,
+        "name": "Sarah Kanaan",
+        "designation": "Lead of Zenith",
+        "image": "./assets/images/person.png"
+      },
+      {
+        "quote": "The Maida podcast was an exciting and needed next step for Kiri, to earn our audience's audio attention and to stay ahead of our competitors in a modern way. This is a rising trend with the KSA population showing a growing interest in podcasts.  Maida has allowed us to connect with our audience at a different level, as it brought to life the inspiring yet complex nature of everyday life of the Kiri Progressive Mom, simply told by a role model.",
+        "stars": 5,
+        "name": "Noha Gaber",
+        "designation": "Senior Brand Manager - Kiri",
+        "image": "./assets/images/person.png"
+      }
+    ]
+  },
+  "careem": {
+    "name": "Careem",
+    "category": "E-commerce",
+    "banner_image": "/assets/images/careem.jpg",
+    "banner_title": "How Careem Used Podcasts to Drive App Downloads",
+    "banner_subtitle": "A performance-focused campaign using Dynamic Creative Optimisation to boost installs for Careem's grocery delivery app among health conscious consumers.",
+    "summary": {
+      "client": "Careem",
+      "industry": "E-commerce",
+      "campaign_types": "Performance campaign, DCO",
+      "audio_format": "Podcasts",
+      "audience_profile": "Busy, health-conscious individuals and families"
+    },
+    "objective": "Help Careem boost grocery app installs in the UAE with targeted podcast ads reaching mobile users on iOS and Android.",
+    "execution": {
+      "title": "The campaign strategically targeted podcast genres that aligned with Careem' ideal customer profile.",
+      "points": [
+        "Dynamic ads ran across genres including Parenting, Wellness, Business & Leadership, and Lifestyle & Culture, reaching listeners when and where they were most engaged.",
+        "Creative was tailored to iOS and Android users to personalise messaging and improve conversion.",
+        "The campaign leveraged contextual targeting and time-of-day placement to maximise relevance and app engagement."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "96%"
+      },
+      {
+        "title": "Cost per install under",
+        "subtitle": "$3"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/careem.png",
+      "title": "Careem",
+      "points": ["Performance Campaign", "DCO"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "saxo-bank": {
+    "name": "Saxo Bank",
+    "category": "Finance",
+    "banner_image": "/assets/images/saxo-bank.jpg",
+    "banner_title": "How Saxo Bank Reached Affluent Investors Through Podcast Ads",
+    "banner_subtitle": "A brand-building campaign designed to drive high-value traffic by targeting globally minded, finance-savvy expats through premium podcast content.",
+    "summary": {
+      "client": "Saxo Bank",
+      "industry": "Finance",
+      "campaign_types": "Awareness campaign, Consideration campaign",
+      "audio_format": "Podcasts",
+      "audience_profile": "Affluent expats, HNWIs, finance professionals"
+    },
+    "objective": "Raise awareness and drive quality traffic to Saxo's platform by targeting financially savvy, globally minded expats and professionals seeking smarter ways to grow and manage their wealth.",
+    "execution": {
+      "title": "This multi-language campaign focused on reach and relevance through:",
+      "points": [
+        "Podcast placements targeting affluent, high-net-worth adults aged 25+.",
+        "Dynamic language targeting in both English and Arabic to reach diverse expat audiences.",
+        "Premium inventory across top finance and global affairs podcasts, including The Economist and BBC Global News.",
+        "Contextual targeting by listener origin, language, and expat status to engage British, Indian, European, and Australian audiences."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "97%"
+      },
+      {
+        "title": "Above average interest rate",
+        "subtitle": "29%"
+      },
+      {
+        "title": "Improvement in brand image",
+        "subtitle": "19%"
+      },
+      {
+        "title": "Uplift in consideration",
+        "subtitle": "27%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/saxo-bank.png",
+      "title": "Saxo Bank",
+      "points": ["Awareness", "Consideration"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "hubpay": {
+    "name": "Hubpay",
+    "category": "FINTECH",
+    "banner_image": "/assets/images/hubpay_bg.png",
+    "banner_title": "How Hubpay Used Audio to Engage Expat Audiences",
+    "banner_subtitle": "A targeted podcast campaign using language and cultural relevance to build brand recognition among expats living in the UAE.",
+    "summary": {
+      "client": "Hubpay",
+      "industry": "Fintech",
+      "campaign_types": "Awareness campaign",
+      "audio_format": "Podcasts, music, web radio",
+      "audience_profile": "Expats: Indian, Nigerian, Filipino, British, and Canadian"
+    },
+    "objective": "Raise brand awareness for Hubpay's digital wallet among expat adults in the UAE from India, Nigeria, the Philippines, the UK, and Canada.",
+    "execution": {
+      "title": "This campaign focused on regional and language relevance:",
+      "points": [
+        "Targeted audio placements across podcasts, music, and web radio listened to in the UAE.",
+        "Ads produced in multiple languages and tailored to the expat audiences' home regions.",
+        "Premium inventory across top finance and global affairs podcasts, including The Economist and BBC Global News.",
+        "Multiple creatives adapted by language and delivery platform for relevance and clarity."
+      ]
+    },
+    "results": [
+      {
+        "title": "Interest rate (vs control)",
+        "subtitle": "+23 pts"
+      },
+      {
+        "title": "Likability (vs control)",
+        "subtitle": "+24 pts"
+      },
+      {
+        "title": "Attribution lift in brand image",
+        "subtitle": "+13%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/hubpay.png",
+      "title": "Hubpay",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "emirates-airlines": {
+    "name": "Emirates Airlines",
+    "category": "TRAVEL AIRLINE",
+    "banner_image": "/assets/images/emirates-airlines.jpg",
+    "banner_title": "How Emirates Airline Engaged South Asian Listeners in London",
+    "banner_subtitle": "A language-led campaign tailored to expats in the UK, delivering standout engagement and brand impact for Emirates Airline.",
+    "summary": {
+      "client": "Emirates Airlines",
+      "industry": "Travel/Airlines",
+      "campaign_types": "Awareness campaign",
+      "audio_format": "Podcasts, music, web radio",
+      "audience_profile": "South Asian adults aged 18+ in the UK"
+    },
+    "objective": "Raise brand awareness among South Asian communities in London by connecting through culturally relevant, language-specific audio.",
+    "execution": {
+      "title": "The strategy focused on native-language content and listening platforms:",
+      "points": [
+        "Ads placed across podcasts, music, and web radio in Hindi, Urdu, Sinhalese, and Bengali.",
+        "Content aligned to expat audiences originating from India, Pakistan, Sri Lanka, and Bangladesh.",
+        "Distribution on South Asia-focused apps like Hungama and Gaana, tailored for UK-based listeners."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "97%"
+      },
+      {
+        "title": "Above average interest rate",
+        "subtitle": "23%"
+      },
+      {
+        "title": "Above average likability",
+        "subtitle": "21%"
+      },
+      {
+        "title": "Above average consideration",
+        "subtitle": "11%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/Emirates_logo.png",
+      "title": "Emirates Airlines",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "valentino": {
+    "name": "Valentino",
+    "category": "Beauty & Fragrance",
+    "banner_image": "/assets/images/valentino_bg.png",
+    "banner_title": "How Valentino Captured the Attention of Young Women in the Gulf",
+    "banner_subtitle": "A podcast campaign to build brand affection and purchase intent for Voce Viva by Valentino, reaching women aged 18-34 with high-female-listenership podcasts across the Gulf region.",
+    "summary": {
+      "client": "Valentino",
+      "industry": "Luxury, Beauty & Fragrance",
+      "campaign_types": "Awareness campaign",
+      "audio_format": "Podcasts, music, web radio",
+      "audience_profile": "Females 18-34"
+    },
+    "objective": "Raise awareness of Voce Viva Eau de Parfum among Nationals and expat women aged 18-34 living in Qatar, Saudi Arabia, and the UAE.",
+    "execution": {
+      "title": "The campaign focused on reaching fashion-conscious women through a wide genre mix and sustained presence.",
+      "points": [
+        "Programmatic audio ads ran across both Arabic and English podcasts.",
+        "Genres included Social & Culture, Health, Comedy, and True Crime — all popular with female listeners.",
+        "A 30-second creative aired consistently over four weeks to reinforce awareness and maximise recall."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "96%"
+      },
+      {
+        "title": "improvement in brand affection",
+        "subtitle": "+16pt"
+      },
+      {
+        "title": "uplift in purchase intent",
+        "subtitle": "+34pt"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/valentino.png",
+      "title": "Valentino",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    },
+    "testimonials": [
+      {
+        "quote": "The campaign for Valentino Voce Viva was a huge success, delivering a strong impact on awareness and consideration among the target market.",
+        "stars": 5,
+        "name": "Morgane Dessesard",
+        "designation": "Associate Media Director",
+        "image": "./assets/images/person.png"
+      }
+    ]
+  },
+  "centrum": {
+    "name": "Centrum",
+    "category": "Health & Wellness",
+    "banner_image": "/assets/images/centrum_bg.jpg",
+    "banner_title": "Centrum Builds Brand Visibility Through Podcast Targeting",
+    "banner_subtitle": "A podcast strategy that positioned Centrum as a daily health essential for South Africans through relevant genre targeting and streaming platforms.",
+    "summary": {
+      "client": "Centrum",
+      "industry": "Health & Wellness",
+      "campaign_types": "Awareness campaign",
+      "audio_format": "Podcasts, music, web radio",
+      "audience_profile": "Females 18–34"
+    },
+    "objective": "Elevate Centrum's brand visibility and product consideration among health-conscious adults in South Africa.",
+    "execution": {
+      "title": "To promote daily health and vitality, the campaign tapped into wellness-aligned content across multiple audio environments.",
+      "points": [
+        "Ads targeted listeners of podcasts, web radio, and streaming platforms with interests in health, lifestyle, and self-improvement.",
+        "Creative focused on energy, well-being, and the benefits of daily nutritional support.",
+        "The strategy ensured wide coverage while keeping relevance high for the Centrum brand."
+      ]
+    },
+    "results": [
+      {
+        "title": "Uplift in interest",
+        "subtitle": "+24pt"
+      },
+      {
+        "title": "improvement in brand image",
+        "subtitle": "+28pt"
+      },
+      {
+        "title": "increase in consideration",
+        "subtitle": "+21pt"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/centrum.png",
+      "title": "Centrum",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "annol-real-estate": {
+    "name": "Anonymous",
+    "category": "REAL ESTATE",
+    "banner_image": "/assets/images/annol-real-estate-bg.jpg",
+    "banner_title": "Driving Property Interest with Long-Term Podcast Campaigns",
+    "banner_subtitle": "A multi-month campaign reaching affluent expats through premium podcast platforms and high-performing genre targeting.",
+    "summary": {
+      "client": "Leading UAE Real Estate Developer",
+      "industry": "Health & Wellness",
+      "campaign_types": "Awareness campaign, Consideration campaign",
+      "audio_format": "Podcasts",
+      "audience_profile": "Affluent expats aged 35+"
+    },
+    "objective": "Reach high-value expat property buyers aged 35+ through targeted podcast campaigns.",
+    "execution": {
+      "title": "To support high-value property developments, the campaign was designed for long-term visibility across premium listening platforms.",
+      "points": [
+        "Targeted podcasts in Health & Wellness, Business, and Finance to align with high-net-worth audiences.",
+        "Ran on Spotify, Apple Podcasts, YouTube, and Amazon for maximum reach across devices and demographics.",
+        "Custom ad creatives were produced for each property, running for 6-9 months to ensure consistent exposure throughout the sales cycle."
+      ]
+    },
+    "results": [
+      {
+        "title": "Ad recall",
+        "subtitle": "45%"
+      },
+      {
+        "title": "Interest",
+        "subtitle": "59%"
+      },
+      {
+        "title": "Uplift in brand image",
+        "subtitle": "+15pt"
+      },
+      {
+        "title": "Increase in consideration",
+        "subtitle": "+24pt"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/Avatar.png",
+      "title": "Anonymous",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "panadol": {
+    "name": "Panadol",
+    "category": "HEALTHCARE",
+    "banner_image": "/assets/images/haleon_bg.jpg",
+    "banner_title": "How Panadol Used Audio to Build Brand Awareness",
+    "banner_subtitle": "A geo-targeted campaign across podcasts, streaming, and web radio to increase awareness of Panadol Migraine among adults.",
+    "summary": {
+      "client": "Haleon, Panadol",
+      "industry": "Healthcare, CPG",
+      "campaign_types": "Awareness campaign",
+      "audio_format": "Podcasts",
+      "audience_profile": "Adults"
+    },
+    "objective": "Reach high-value expat property buyers aged 35+ through targeted podcast campaigns.",
+    "execution": {
+      "title": "This campaign focused on driving high awareness through precise local targeting.",
+      "points": [
+        "Ads ran across Arabic and English-language podcasts, web radio, and music streaming content.",
+        "Geo-targeting was applied to reach listeners within the UAE only.",
+        "Demographic targeting ensured ads reached adults aged 18+, spanning various lifestyle and interest categories."
+      ]
+    },
+    "results": [
+      {
+        "title": "Uplift in interest",
+        "subtitle": "+25%"
+      },
+      {
+        "title": "Uplift in brand image",
+        "subtitle": "+23%"
+      },
+      {
+        "title": "Uplift in purchase intent",
+        "subtitle": "+22%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/haleon.png",
+      "title": "Anonymous",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    },
+    "testimonials": [
+      {
+        "quote": "It's because of the widespread effect on the population, we knew podcasts would be an important channel for our campaign. It has wide reach, and incredible awareness and recall capabilities",
+        "stars": 5,
+        "name": "Areej Yacoub",
+        "designation": "Haleon, Marketing Manager",
+        "image": "./assets/images/person.png"
+      },
+      {
+        "quote": "We're aware that our customers, like us all, consume enormous amounts of information across multiple screens. There is a lot of noise to cut through. With digital audio, we can engage with our audience one-on-one, throughout their daily routine: whenever they are listening to their favourite song while exercising or getting entertained through podcasts on their commute",
+        "stars": 5,
+        "name": "Alina Sukhar",
+        "designation": "Publicis senior media manager for Panadol",
+        "image": "./assets/images/person.png"
+      }
+    ]
+  },
+  "bmw": {
+    "name": "BMW",
+    "category": "Automotive",
+    "banner_image": "/assets/images/bmw_bg.jpg",
+    "banner_title": "How BMW Used Podcast Ads to Drive Awareness for Its New iX",
+    "banner_subtitle": "A dynamic podcast campaign designed to increase awareness and interest in BMW's electrified iX model, targeting premium audiences and early adopters.",
+    "summary": {
+      "client": "BMW",
+      "industry": "Automotive",
+      "campaign_types": "Performance, DCO, Awareness",
+      "audio_format": "Podcasts",
+      "audience_profile": "Affluent early adopters, tech-forward, premium car buyers"
+    },
+    "objective": "Raise brand awareness and increase interest in the BMW iX among high-income, values-led consumers, encouraging showroom visits and driving consideration for test drives.",
+    "execution": {
+      "title": "This campaign used a Dynamic Creative Optimisation (DCO) strategy to adapt messages based on real-world triggers like time of day, day of week, and listener location.",
+      "points": [
+        "Creative highlighted key selling points like performance, sustainability, and luxury.",
+        "Ads ran across podcast genres aligned with BMW's target audience, including Technology, Business, Lifestyle, and Sustainability.",
+        "The flexible format ensured relevance while maximising brand recall and intent to visit showrooms."
+      ]
+    },
+    "results": [
+      {
+        "title": "Increase in brand awareness (vs control)",
+        "subtitle": "20%"
+      },
+      {
+        "title": "Uplift in interest (vs control)",
+        "subtitle": "25%"
+      },
+      {
+        "title": "Increase in likeability (vs control)",
+        "subtitle": "22%"
+      },
+      {
+        "title": "Campaign exceeded conversion KPIs and prompted additional “test drive” actions",
+        "subtitle": ""
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/bmw.png",
+      "title": "BMW",
+      "points": ["DCO", "Performance"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "visa": {
+    "name": "Visa",
+    "category": "Financial Services",
+    "banner_image": "/assets/images/bmw_bg.jpg",
+    "banner_title": "How Visa Reached Female Entrepreneurs Through Branded Content",
+    "banner_subtitle": "A brand-led podcast sponsorship backed by dynamic ads to inspire and engage women entrepreneurs as part of Visa's \"She's Next\" campaign.",
+    "summary": {
+      "client": "Visa",
+      "industry": "Banking and Finance",
+      "campaign_types": "Awareness campaign, Branded podcast, host read",
+      "audio_format": "Podcasts",
+      "audience_profile": "Females, entrepreneurs, business owners, and professionals"
+    },
+    "objective": "Drive engagement and awareness for Visa's \"She's Next\" initiative by connecting with women in business through authentic, relevant podcast content.",
+    "execution": {
+      "title": "The campaign centered around content alignment and audience relevance, combining host-led storytelling with smart amplification.",
+      "points": [
+        "Visa sponsored a dedicated episode of Think With Hessa, featuring a conversation on the challenges and journeys of female entrepreneurs.",
+        "The content naturally integrated the \"She's Next\" message, positioning Visa as a champion of women in business.",
+        "To boost reach and recall, dynamic podcast ads ran across shows with strong listenership among business-minded women and professionals."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "95%"
+      },
+      {
+        "title": "Strong alignment between podcast listeners and Visa's campaign goals",
+        "subtitle": ""
+      },
+      {
+        "title": "Brand message reinforced through both native content and dynamic ad placements",
+        "subtitle": ""
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/visa.png",
+      "title": "Visa",
+      "points": ["Branded Content", "Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "travel-switzerland": {
+    "name": "Travel Switzerland",
+    "category": "Travel & Tourism",
+    "banner_image": "/assets/images/switzerland_bg.jpg",
+    "banner_title": "How Switzerland Used Podcasts to Inspire High-Intent Travelers",
+    "banner_subtitle": "A culturally resonant campaign promoting Zurich and Lucerne to high-income adults in the Gulf, using Arabic-language podcast ads to drive awareness and inspire travel searches.",
+    "summary": {
+      "client": "Travel Switzerland",
+      "industry": "Travel and Tourism",
+      "campaign_types": "Awareness campaign, Performance campaign",
+      "audio_format": "Podcasts",
+      "audience_profile": "Adults with high disposable income"
+    },
+    "objective": "Promote Zurich and Lucerne as premium travel destinations by targeting affluent adults in the UAE and KSA, encouraging consideration and search intent.",
+    "execution": {
+      "title": "The campaign focused on high-reach, high-resonance Arabic-language podcasts to connect with affluent Gulf-based audiences in a personal, trusted format.",
+      "points": [
+        "30-second creatives were produced by NBM in Arabic for cultural relevance and clarity.",
+        "Ads were placed across the region's top-performing Arabic podcasts to ensure high listener engagement and contextual relevance.",
+        "Targeting focused on lifestyle and leisure genres to appeal to travel-interested audiences."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "98%"
+      },
+      {
+        "title": "Increase in search queries",
+        "subtitle": "+12%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/switzerland.png",
+      "title": "Travel Switzerland",
+      "points": ["Awareness", "Performance"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "p-and-o": {
+    "name": "P & O",
+    "category": "Travel & Tourism",
+    "banner_image": "/assets/images/p-and-o_bg.jpg",
+    "banner_title": "How P&O Ferries Used Podcasts to Engage Diverse Travel Audiences",
+    "banner_subtitle": "A multi-market podcast campaign targeting travel-hungry listeners with tailored ads highlighting P&O's ferry routes, experiences, and services.",
+    "summary": {
+      "client": "P&O Ferries",
+      "industry": "Travel and Tourism",
+      "campaign_types": "DCO, Performance campaign",
+      "audio_format": "Podcasts",
+      "audience_profile": "Outdoor lovers, tourers 65+, Gen Z travelers, families with kid"
+    },
+    "objective": "Promote the variety of P&O Ferries' routes and services across a broad travel audience by running geo-targeted, interest-led podcast ads across multiple listener profiles.",
+    "execution": {
+      "title": "The campaign used targeted messaging to reflect the breadth of P&O Ferries' offering, with dynamic audio tailored to different geographies and listener segments.",
+      "points": [
+        "Ads focused on travel freedom, scenic journeys, and destination highlights.",
+        "Targeting included Outdoor Enthusiasts, Tourers over 65, Families with children, and Gen Z travelers under 25.",
+        "Creative was adapted to match regional interests and listening behaviors."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "96%"
+      },
+      {
+        "title": "Brand recall performance",
+        "subtitle": "top 15%"
+      },
+      {
+        "title": "High engagement rate and strong brand recall",
+        "subtitle": ""
+      },
+      {
+        "title": "Boost in awareness of P&O Ferries' routes and services",
+        "subtitle": ""
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/p-and-o.png",
+      "title": "P&O Ferries",
+      "points": ["DCO", "Performance"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "capital": {
+    "name": "Capital.com",
+    "category": "FINANCE",
+    "banner_image": "/assets/images/capital_bg.jpg",
+    "banner_title": "How Capital.com Reached New Retail Investors Through Podcast Sponsorship and Ads",
+    "banner_subtitle": "A campaign using sponsorships and ads across personal finance podcasts to boost awareness and drive interest.",
+    "summary": {
+      "client": "Capital.com",
+      "industry": "Fintech",
+      "campaign_types": "Awareness campaign, Sponsorship",
+      "audio_format": "Podcasts",
+      "audience_profile": "Retail investors and traders"
+    },
+    "objective": "Expand brand visibility and consideration across the GCC by engaging finance-savvy podcast listeners with dynamic, relevant audio messages.",
+    "execution": {
+      "title": "Capital.com partnered with NBM to deliver a multi-strategy podcast campaign designed to simplify complex financial topics and connect with audiences through trusted local voices.",
+      "points": [
+        "A branded episode on the popular Arabic show Think with Hessa positioned Capital.com at the heart of a conversation on smart investing, hosted by a respected regional voice.",
+        "Host-read sponsorships ran on local favourites such as Studio Al Jumhour and Papersamwich, bringing financial education into authentic, everyday moments.",
+        "To amplify reach, programmatic ads were dynamically inserted across a wide network of Arabic and English podcasts in KSA and the UAE, tailored to listener demographics and behaviours."
+      ],
+      "bottom_text": "This layered approach allowed Capital.com to reach a wide yet relevant audience, combining trusted voices with efficient targeting."
+    },
+    "results": [
+      {
+        "title": "Listen through rate",
+        "subtitle": "94%"
+      },
+      {
+        "title": "Significant uplift in brand awareness across all core markets",
+        "subtitle": ""
+      },
+      {
+        "title": "Positive brand perception confirmed through third-party evaluation",
+        "subtitle": ""
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/capital.png",
+      "title": "Capital.com",
+      "points": ["Awareness", "Sponsorship"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    },
+    "testimonials": [
+      {
+        "quote": "Our mission is to make finance more accessible and engaging. By working with local podcasters, we were able to educate listeners in a way that felt both relevant and authentic. The trust these hosts have with their audiences is invaluable.",
+        "stars": 5,
+        "name": "Tarik Chebib",
+        "designation": "Capital.com, Group Chief Revenue Officer",
+        "image": "./assets/images/person.png"
+      }
+    ]
+  },
+  "cadbury": {
+    "name": "Cadbury",
+    "category": "FMCG",
+    "banner_image": "/assets/images/cadbury_bg.png",
+    "banner_title": "How Cadbury Flake Drove Engagement and Brand Affinity with Audio Ads",
+    "banner_subtitle": "A creative-led campaign designed to raise awareness and boost positive sentiment for Cadbury Flake in Saudi Arabia, using digital audio and survey-based measurement to track impact.",
+    "summary": {
+      "client": "Cadbury",
+      "industry": "FMCG",
+      "campaign_types": "Awareness campaign",
+      "audio_format": "Podcasts",
+      "audience_profile": "Adults"
+    },
+    "objective": "Raise awareness and build emotional connection with Cadbury Flake by running high-impact Arabic audio ads designed to spark interest and improve brand perception in Saudi Arabia.",
+    "execution": {
+      "title": "The campaign focused on delivering memorable creative to connect emotionally with listeners:",
+      "points": [
+        "A 25-second Arabic ad was distributed across major audio platforms in Saudi Arabia.",
+        "Messaging was designed to evoke indulgence, delight, and treat appeal — aligning with Flake's sensory brand image.",
+        "Performance was measured using survey-based brand lift methodology to evaluate key indicators such as interest, likability, and brand attribution."
+      ]
+    },
+    "results": [
+      {
+        "title": "Above benchmark",
+        "subtitle": "+5pts"
+      },
+      {
+        "title": "For engagement",
+        "subtitle": "top 30%"
+      },
+      {
+        "title": "In attribution ",
+        "subtitle": "+17pts"
+      },
+      {
+        "title": "On par with benchmark, showing strong emotional resonance",
+        "subtitle": "over 50%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/cadbury.png",
+      "title": "Cadbury",
+      "points": ["Awareness"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    }
+  },
+  "dell": {
+    "name": "Dell",
+    "category": "B2B & Technology",
+    "banner_image": "/assets/images/dell_bg.jpg",
+    "banner_title": "How VMware Reached Global Tech Decision Makers Through Podcast Sponsorships",
+    "banner_subtitle": "A host-read campaign designed to engage C-level executives and IT decision-makers across North America and Asia Pacific",
+    "summary": {
+      "client": "Dell",
+      "industry": "Technology",
+      "campaign_types": "Awareness campaign, Host reads",
+      "audio_format": "Podcasts",
+      "audience_profile": "C-suite, tech and business decision makers"
+    },
+    "objective": "Drive brand visibility and strengthen VMware's positioning as a trusted tech partner by reaching high-value business and technology leaders through engaging, contextually aligned podcast content.",
+    "execution": {
+      "title": "The campaign was executed through premium podcast sponsorships that connected directly with VMware's target audience:",
+      "points": [
+        "Shows were selected in Business and IT genres with high engagement among C-level decision makers.",
+        "Host-read and pre-roll ads were integrated natively into podcast episodes, creating a trusted listening experience.",
+        "Execution spanned key APAC and North American markets including Australia, India, Singapore, Malaysia, and the U.S."
+      ]
+    },
+    "results": [
+      {
+        "title": "of respondents in the target audience recognised VMware as a trusted provider post-campaign",
+        "subtitle": "70%"
+      },
+      {
+        "title": "Strong lift in brand awareness and credibility across key enterprise markets",
+        "subtitle": ""
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/dell.png",
+      "title": "Dell",
+      "points": ["Awareness", "Host read"],
+      "audio_file": "/assets/audio/sample-audio.mp3"
+    },
+    "testimonials": [
+      {
+        "quote": "Working with Next Broadcast Media for our podcast advertising campaign in North America and the Asia-Pacific region has been a game-changer for VMware. Their expertise and strategic approach have delivered outstanding results, amplifying our brand presence and engagement across these key markets. This partnership has truly driven success beyond our expectations, amplifying our brand presence and delivering outstanding results across key markets",
+        "stars": 5,
+        "name": "Aurore Nguyen",
+        "designation": "Adtech & Programmatic Director, Transmission",
+        "image": "./assets/images/person.png"
+      }
+    ]
   }
-  
+}

@@ -214,11 +214,12 @@ export default function CaseStudies() {
     gap: 20,
     width: 3000,
     autoWidth: true,
-    autoScroll: false,    
+    autoScroll: false,
+    pagination: true
   };
 
   return (
-    <div className="w-full overflow-visible">
+    <div className="w-full overflow-visible" id="caseStudies">
       <Splide
         options={splideOptions3}
         extensions={{ AutoScroll }}

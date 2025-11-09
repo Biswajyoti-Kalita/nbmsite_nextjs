@@ -4,12 +4,11 @@ import Link from "next/link";
 const baseLinkClasses = "py-[8px] text-[#344054] hover:underline cursor-pointer";
 export default function Footer() {
   return (
-    <footer className="bg-white w-full" data-aos="fade-up">
+    <footer className="bg-white w-full">
       <div className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 md:py-[64px] bg-[#FFFEFF]">
         <div className="grid grid-cols-2 lg:grid-cols-6 justify-between gap-8 md:gap-[54px] w-full">
           <div
             className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]"
-            data-aos="fade-up"
           >
             <Image
               src="/assets/images/nbm_logo.png"
@@ -20,7 +19,7 @@ export default function Footer() {
             />
           </div>
 
-          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+          <div  className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Who We Help
             </h1>
@@ -29,7 +28,7 @@ export default function Footer() {
             <Link href="/podcasters" className={baseLinkClasses}>Podcasters</Link>
           </div>
 
-          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+          <div  className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Solutions
             </h1>
@@ -37,7 +36,7 @@ export default function Footer() {
             <Link href="/admanager" className={baseLinkClasses}>Admanager</Link>
           </div>
 
-          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+          <div  className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Resources
             </h1>
@@ -47,7 +46,7 @@ export default function Footer() {
             <Link href="/publisher-deck" className={baseLinkClasses}>Publisher Deck</Link>
           </div>
 
-          <div data-aos="fade-up" className="flex flex-col gap-[16px]">
+          <div  className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Company
             </h1>

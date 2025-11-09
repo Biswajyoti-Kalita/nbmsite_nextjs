@@ -1,16 +1,51 @@
 import BrandsScroller from "@/components/BrandsScroller";
+import CaseStudies from "@/components/CaseStudies";
+import CaseStudyTestimonialGroup from "@/components/CaseStudyTestimonialGoup";
 import FAQCard from "@/components/FAQCard";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
+import Player from "@/components/Player";
 import caseStudies from "@/data/caseStudies.json";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
 interface CaseStudy {
-  title: string;
-  description: string;
-  image: string;
+  name: string;
+  category: string;
+  banner_image: string;
+  banner_title: string;
+  banner_subtitle: string;
+  summary: {
+    client: string;
+    industry: string;
+    campaign_types: string;
+    audio_format: string;
+    audience_profile: string;
+  };
+  objective: string;
+  execution: {
+    title: string;
+    points: string[];
+    bottom_text?: string;
+  };
+  results: {
+    title: string;
+    subtitle: string;
+  }[];
+  audio: {
+    image: string;
+    title: string;
+    points: string[];
+    audio_file: string;
+  };
+  testimonials?: {
+    quote: string;
+    stars: number;
+    name: string;
+    designation: string;
+    image: string;
+  }[];
 }
 type CaseStudies = Record<string, CaseStudy>;
 const dataMap = caseStudies as CaseStudies;
@@ -43,18 +78,18 @@ export default function CaseStudyPage({
       <div
         className="bg-transparent flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0 relative"
         style={{
-          backgroundImage: `url('/assets/images/bel_bg.jpg')`,
+          backgroundImage: `url('${data.banner_image}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <div className="absolute z-10 inset-0 bg-[#511DB5] opacity-[0.75]"></div>
         <section
-          className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] flex flex-col lg:flex-row gap-[80px] items-start justify-start relative lg:max-w-[1440px] z-10"
+          className="w-full p-4 pb-[60px] mt-[64px] md:mt-[64px] md:mt-0 lg:p-[80px] flex flex-col lg:flex-row gap-[24px] lg:gap-[80px] items-start justify-start relative lg:max-w-[1440px] z-10"
           id="home"
         >
-          <div className="w-full flex flex-col items-start justify-start gap-4 max-h-[530px] px-4 lg:px-0">
-            <div className="flex flex-row items-center justify-center gap-[12px]">
+          <div className="w-full flex flex-col items-start justify-start gap-4 max-h-[530px] px-0">
+            <div className="flex flex-row flex-wrap items-center justify-start gap-[12px]">
               <svg
                 width="20"
                 height="20"
@@ -121,23 +156,21 @@ export default function CaseStudyPage({
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="text-[#FFFEFF] font-medium text-[14px] leading-[22px]">
-                {data.title}
+              <span className="text-[#FFFEFF] font-medium text-[14px] leading-[22px]  uppercase">
+                {data.name}
               </span>
             </div>
 
-            <div className="w-full max-w-[768px] flex flex-col items-start justify-start gap-[16px]">
+            <div className="w-full max-w-[768px] flex flex-col items-start justify-start gap-[8px] lg:gap-[16px]">
               <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF] py-[4px]">
-                Podcast Advertising case study: FMCG Brand
+                Podcast Advertising case study: {data.category}
               </h1>
               <div className="flex flex-col items-start justify-start gap-[24px]">
                 <h1 className="font-bold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
-                  How Bel Groupe Reached Saudi Mothers with Podcast Ads
+                  {data.banner_title}
                 </h1>
-                <h2 className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] text-[#FFFEFF] tracking-[0em]">
-                  A brand awareness campaign combining podcast sponsorship and
-                  dynamic ad insertion to increase perception and purchase
-                  intent for Kiri cheese among Saudi families.
+                <h2 className="font-medium text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-[#FFFEFF] tracking-[0em]">
+                  {data.banner_subtitle}
                 </h2>
               </div>
             </div>
@@ -147,7 +180,7 @@ export default function CaseStudyPage({
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[1440px]">
           <section
-            className="w-full items-center justify-between pt-[96px] pb-[48px] px-[16px] lg:px-[80px] bg-[#FFFEFF] flex flex-col lg:flex-row gap-[64px]"
+            className="w-full items-center justify-between pt-[96px] pb-[48px] px-[16px] lg:px-[80px] bg-[#FFFEFF] flex flex-col lg:flex-row gap-[46px] lg:gap-[64px]"
             id="home"
           >
             <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[64px] max-w-[1280px]">
@@ -157,55 +190,54 @@ export default function CaseStudyPage({
                 </h2>
               </div>
               <div className="w-full flex flex-col items-start justify-start">
-                <div className="w-full flex flex-col lg:flex-row items-center justify-start gap-[16px] border-b border-t border-[#D2D2D2] h-[92px]">
-                  <div className="w-[215px]">
-                    <span className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#667085] w-[215px]">
+                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                  <div className="w-full lg:w-[215px]">
+                    <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Client
                     </span>
                   </div>
-                  <span className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                    Bel Group
+                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                    {data.summary.client}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-start gap-[16px] border-b border-[#D2D2D2] h-[92px]">
-                  <div className="w-[215px]">
-                    <span className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#667085] w-[215px]">
+                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                  <div className="w-full lg:w-[215px]">
+                    <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Industry
                     </span>
                   </div>
-                  <span className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                    FMCG
+                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                    {data.summary.industry}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-start gap-[16px] border-b border-[#D2D2D2] h-[92px]">
-                  <div className="w-[215px]">
-                    <h1 className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#667085] w-[215px]">
+                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                  <div className="w-full lg:w-[215px]">
+                    <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Campaign Types
-                    </h1>
+                    </span>
                   </div>
-                  <span className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                    Awareness campaign, Consideration campaign, Sponsorship,
-                    programmatic
+                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                    {data.summary.campaign_types}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-start gap-[16px] border-b border-[#D2D2D2] h-[92px]">
-                  <div className="w-[215px]">
-                    <h1 className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#667085] w-[215px]">
+                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                  <div className="w-full lg:w-[215px]">
+                    <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Audio Format
-                    </h1>
+                    </span>
                   </div>
-                  <span className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                    Podcasts
+                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                    {data.summary.audio_format}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-start gap-[16px] border-b border-[#D2D2D2] h-[92px]">
-                  <div className="w-[215px]">
-                    <h1 className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#667085] w-[215px]">
+                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                  <div className="w-full lg:w-[215px]">
+                    <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Audience Profile
-                    </h1>
+                    </span>
                   </div>
-                  <span className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                    Mothers
+                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                    {data.summary.audience_profile}
                   </span>
                 </div>
               </div>
@@ -213,78 +245,67 @@ export default function CaseStudyPage({
           </section>
 
           <section className="flex flex-col items-center justify-center pt-[96px] pb-[48px] px-[16px] lg:px-[80px] gap-[64px] bg-[#FFFEFF]">
-            <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[64px] max-w-[1280px]">
+            <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[46px] lg:gap-[64px] max-w-[1280px]">
               <div className="w-full flex flex-col items-start justify-start max-w-[478px]">
-                <h1 className="font-bold  text-[42px] leading-[50px] tracking-[-0.02em] gradient-text">
+                <h1 className="font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] gradient-text">
                   Objective
                 </h1>
               </div>
               <div>
-                <p className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                  Help Kiri cheese stand out with Saudi families by reaching
-                  local women, improving brand perception, and increasing
-                  purchase intent.
+                <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                  {data.objective}
                 </p>
               </div>
             </div>
           </section>
 
           <section className="flex flex-col items-center justify-center pt-[96px] pb-[48px] px-[16px] lg:px-[80px] gap-[64px] bg-[#FFFEFF]">
-            <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[64px] max-w-[1280px]">
+            <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[46px] lg:gap-[64px] max-w-[1280px]">
               <div className="w-full flex flex-col items-start justify-start max-w-[478px]">
-                <h1 className="font-bold  text-[42px] leading-[50px] tracking-[-0.02em] gradient-text">
+                <h1 className="font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] gradient-text">
                   Campaign Execution
                 </h1>
               </div>
               <div className="w-full flex flex-col items-start justify-start gap-[16px]">
-                <p className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                  We used a dual-format strategy to maximise reach and
-                  resonance:
+                <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                  {data.execution.title}
                 </p>
                 <div className="w-full flex flex-col items-start justify-start gap-[12px]">
-                  <div className="w-full flex flex-row items-start justify-start gap-[8px]">
-                    <div className="w-[22px] h-[28px] flex items-center justify-center">
-                      <svg
-                        width="6"
-                        height="6"
-                        viewBox="0 0 6 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="3" cy="3" r="3" fill="#F11F68" />
-                      </svg>
+                  {data.execution.points.map((point: string, index: number) => (
+                    <div className="w-full" key={index}>
+                      <div className="w-full flex flex-row items-start justify-start gap-[8px]">
+                        <div className="w-[22px] h-[28px] flex items-center justify-center">
+                          <svg
+                            width="6"
+                            height="6"
+                            viewBox="0 0 6 6"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="3" cy="3" r="3" fill="#F11F68" />
+                          </svg>
+                        </div>
+                        <h1 className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                          {point}
+                        </h1>
+                      </div>
                     </div>
-                    <h1 className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                      Sponsored the 10-part Arabic podcast Maida to align Kiri
-                      with trusted, high-quality local content.
-                    </h1>
-                  </div>
-                  <div className="w-full flex flex-row items-start justify-start gap-[8px]">
-                    <div className="w-[22px] h-[28px] flex items-center justify-center">
-                      <svg
-                        width="6"
-                        height="6"
-                        viewBox="0 0 6 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="3" cy="3" r="3" fill="#F11F68" />
-                      </svg>
-                    </div>
-                    <h1 className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#262626]">
-                      Delivered dynamic, contextually targeted ads across our
-                      Arabic-language podcast network, focusing on genres
-                      popular with women and mothers to drive incremental reach.
-                    </h1>
-                  </div>
+                  ))}
                 </div>
+                {
+                  data.execution.bottom_text && (
+                    <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                      {data.execution.bottom_text}
+                    </p>    
+                  )
+                }
               </div>
             </div>
           </section>
 
           <section className="flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF] py-[48px] px-[16px] lg:px-[80px]">
-            <div className="w-full flex flex-col items-center justify-center max-w-[1280px] p-[64px] gap-[64px] bg-[#6C1DA7] rounded-[16px] relative">
-              <div className="absolute top-0 right-0">
+            <div className="w-full flex flex-col items-center justify-center max-w-[1280px] p-[24px] lg:p-[64px] gap-[46px] lg:gap-[64px] bg-[#6C1DA7] rounded-[16px] relative">
+              <div className="absolute top-0  left-[0px] lg:right-0 max-w-full overflow-hidden">
                 <svg
                   width="834"
                   height="442"
@@ -299,7 +320,7 @@ export default function CaseStudyPage({
                   />
                 </svg>
               </div>
-              <div className="absolute bottom-0 left-0">
+              <div className="absolute bottom-0 left-0  max-w-full overflow-hidden">
                 <svg
                   width="450"
                   height="90"
@@ -315,171 +336,202 @@ export default function CaseStudyPage({
                 </svg>
               </div>
               <div className="w-full flex flex-col items-start justify-start gap-[148px]">
-                <h1 className="font-bold text-[42px] leading-[50px] tracking-[-0.02em] text-[#FFFEFF]">
+                <h1 className="font-bold text-[34px] lg:text-[42px] leading-[40px] lg:leading-[50px] tracking-[-0.02em] text-[#FFFEFF]">
                   Results
                 </h1>
               </div>
-              <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[24px]">
-                <div className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[32px] h-[200px]">
-                  <p className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#FFFEFF]">
-                    Maida podcast featured in Apple Podcasts app ‘New and
-                    Noteworthy’ section
-                  </p>
-                </div>
-
-                <div className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[32px] gap-[40px] h-[200px]">
-                  <p className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#FFFEFF]">
-                    Interest metric performance achieved top
-                  </p>
-                  <h1 className="font-semibold text-[64px] leading-[72px] tracking-[0em] text-[#FFFEFF]">
-                    5%
-                  </h1>
-                </div>
-
-                <div className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[32px] gap-[40px] h-[200px]">
-                  <p className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#FFFEFF]">
-                    Listen through rate
-                  </p>
-                  <h1 className="font-semibold text-[64px] leading-[72px] tracking-[0em] text-[#FFFEFF]">
-                    95%
-                  </h1>
-                </div>
-
-                <div className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[32px] gap-[40px] h-[200px]">
-                  <p className="font-semibold text-[20px] leading-[28px] tracking-[0em] text-[#FFFEFF]">
-                    Vertical specific intent
-                  </p>
-                  <h1 className="font-semibold text-[64px] leading-[72px] tracking-[0em] text-[#FFFEFF]">
-                    +28 pts
-                  </h1>
-                </div>
+              <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[16px] lg:gap-[24px]">
+                {data.results.map(
+                  (
+                    result: { title: string; subtitle: string },
+                    index: number
+                  ) => (
+                    <div className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[24px] lg:pt-[32px] h-[188px]">
+                      <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#FFFEFF]">
+                        {result.title}
+                      </p>
+                      {result.subtitle && (
+                        <h1 className="font-semibold text-[50px] lg:text-[64px] leading-[58px] lg:leading-[72px] tracking-[0em] text-[#FFFEFF] whitespace-nowrap">
+                          {result.subtitle}
+                        </h1>
+                      )}
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </section>
 
-          <section className="w-full flex flex-col items-center justify-center bg-[#FFFEFF] gap-[64px] pt-[48px] pb-[96px] px-[16px] lg:px-[80px]">
-            <div className="w-full flex flex-col lg:flex-row items-center justify-center max-w-[1280px] gap-[64px] p-[64px] rounded-[16px] bg-gradient-to-r from-[#FFEDFB] to-[#E8ECFF]" style={{backgroundImage: `url('/assets/images/listen-ad.jpg')`, backgroundRepeat: 'round', backgroundPosition: 'center'}}>
-                <div>
-                    <h1 className="gradient-text font-bold text-[42px] leading-[50px] tracking-[-0.02em]">Listen To The Ad</h1>
-                </div>
-                <div className="w-full max-w-[700px] flex flex-row items-start justify-start gap-[20px] p-[24px] bg-[#FFFEFF] rounded-[16px] border border-[#F11F68]">
-                    <div className="flex flex-row items-center justify-center gap-[24px]">
-                        <div className="w-[164px] h-[164px] flex items-center justify-center gap-[4px] rounded-[6px] border border-[#E8E8E8] bg-[#FFFFFF]">
-                            <Image src="/assets/images/bel.png" alt="bel" width={76} height={64} />
-                        </div>
-                    </div>
-                    <div className="w-full flex flex-col items-start justify-between">
-                        
-                    </div>
-                </div>
-
-            </div>
-          </section>
-
-          <section className="w-full flex flex-col items-center justify-center py-[84px] lg:py-[96px]  px-[16px] lg:px-[80px] gap-[64px] bg-[#F8F9FA]">
-            <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-[16px] lg:gap-[24px] max-w-[1280px] max-h-[94px]">
-              <div className="flex flex-col items-start justify-center gap-[16px]">
-                <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text">
-                  Insights That Matter to You
+          <section className="w-full flex flex-col items-center justify-center bg-[#FFFEFF] gap-[46px] lg:gap-[64px] pt-[48px] pb-[0px] lg:pb-[96px] px-[0px] lg:px-[16px] lg:px-[80px]">
+            <div className="w-full relative flex flex-col lg:flex-row items-start justify-center max-w-[1280px] gap-[24px] lg:gap-[64px] py-[84px] px-[16px] lg:p-[64px] rounded-[16px] bg-gradient-to-r from-[#FFEDFB] to-[#E8ECFF]">
+              <div
+                className="w-full h-full bg-cover bg-center absolute inset-0 z-0 opacity-20 bg-top left-0 top-0"
+                style={{
+                  backgroundImage: `url('/assets/images/listen-ad-2.jpg')`,
+                }}
+              ></div>
+              <div className="z-10 flex flex-col items-start justify-start h-full">
+                <h1 className="gradient-text font-bold text-[34px] lg:text-[42px] leading-[40px] lg:leading-[50px] tracking-[-0.02em]">
+                  Listen To The Ad
                 </h1>
-                <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                  Guides, events, updates, and more - filtered just for you.
-                </h6>
               </div>
-              <div>
+              <div className="z-10 w-full max-w-[700px] flex flex-col lg:flex-row items-start justify-start gap-[16px] lg:gap-[20px] p-[24px] bg-[#FFFEFF] rounded-[16px] border border-[#F11F68]">
+                <div className="flex flex-row items-center justify-center gap-[24px]">
+                  <div className="w-[295px] lg:w-[164px] h-[295px] lg:h-[164px] flex items-center justify-center gap-[4px] rounded-[6px] border border-[#E8E8E8] bg-[#FFFFFF]">
+                    <Image
+                      src={data.audio.image}
+                      alt="bel"
+                      width={76}
+                      height={64}
+                      className=" w-auto max-w-[115px] h-auto max-h-[95px] lg:max-w-[76px] lg:max-h-[64px]"
+                    />
+                  </div>
+                </div>
+                <div className="w-full flex flex-col items-start justify-between h-full min-h-[164px]">
+                  <div className="w-full flex flex-col items-start justify-start gap-[8px] h-[56px]">
+                    <div className="w-full flex flex-row items-center justify-between">
+                      <h1 className="font-bold text-[26px] lg:text-[24px] leading-[34px] tracking-[0em] text-[#262626]">
+                        {data.audio.title}
+                      </h1>
+                      <div className="w-[16px] h-[16px] flex items-start justify-center">
+                        <span>
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.72667 9.00683L10.28 11.6602M10.2733 4.34016L5.72667 6.9935M14 3.3335C14 4.43807 13.1046 5.3335 12 5.3335C10.8954 5.3335 10 4.43807 10 3.3335C10 2.22893 10.8954 1.3335 12 1.3335C13.1046 1.3335 14 2.22893 14 3.3335ZM6 8.00016C6 9.10473 5.10457 10.0002 4 10.0002C2.89543 10.0002 2 9.10473 2 8.00016C2 6.89559 2.89543 6.00016 4 6.00016C5.10457 6.00016 6 6.89559 6 8.00016ZM14 12.6668C14 13.7714 13.1046 14.6668 12 14.6668C10.8954 14.6668 10 13.7714 10 12.6668C10 11.5623 10.8954 10.6668 12 10.6668C13.1046 10.6668 14 11.5623 14 12.6668Z"
+                              stroke="black"
+                              stroke-width="1.33333"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="w-full flex flex-row items-center justify-start gap-[11px]">
+                      {data.audio.points.map((point, index) => (
+                        <div className="flex flex-row gap-[11px] items-center">
+                          <span className="font-normal text-[14px] leading-[22px] lg:leading-[16px] tracking-[0em] text-[#344054]">
+                            {point}
+                          </span>
+                          {index < data.audio.points.length - 1 && (
+                            <span>
+                              <svg
+                                width="4"
+                                height="4"
+                                viewBox="0 0 4 4"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle cx="2" cy="2" r="2" fill="#344054" />
+                              </svg>
+                            </span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <Player audioUrl={data.audio.audio_file} />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {
+            data.testimonials && data.testimonials.length > 0 && (
+              <section className="w-full flex flex-col items-center justify-center py-[84px] lg:py-[96px] gap-[64px] bg-[#091A3A]" id="case-study-testimonial">
+              <CaseStudyTestimonialGroup testimonials={data.testimonials} />
+            </section>
+  
+            )
+          }
+
+          <section className="w-full flex flex-col items-center justify-center py-[84px] lg:py-[96px] gap-[64px] bg-[#FFFFFF]">
+            <div className="w-full max-w-[1280px] flex flex-col items-start justify-start gap-[32px] px-[16px] lg:px-[32px]">
+              <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[20px]">
+                <div className="w-full relative flex flex-col items-start justify-between gap-[10px] p-[32px] lg:p-[64px] rounded-[16px] max-w-[756px] min-h-[362px] rounded-[16px]">
+                  <Image
+                    src="/assets/images/discover_how_audio.jpg"
+                    alt="case-study-1"
+                    width={500}
+                    height={500}
+                    className="absolute top-0 left-0 w-full h-full z-0 rounded-[16px]"
+                  />
+                  <h1 className="font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] text-[#FFFFFF] z-[10]">
+                    Discover how audio advertising can elevate your marketing
+                    strategy.
+                  </h1>
+                  <div className="w-full flex flex-row flex-wrap items-start justify-start gap-[12px]">
+                    <GradientButton text="Call me back" type="secondary" className="w-[131px] h-[44px]" />
+                    <GradientButton
+                      text="Share a brief"
+                      type="tertiary"
+                      className="z-10 w-[131px] h-[44px]"
+                      textClassName="text-[#FFFFFF]"
+                    />
+                    <GradientButton
+                      text="Learn More"
+                      type="tertiary"
+                      className="z-10 w-[131px] h-[44px]"
+                      textClassName="text-[#FFFFFF]"
+                    />
+                  </div>
+                </div>
+                <div className="max-h-[440x] lg:max-h-[362px] w-full lg:w-auto rounded-[16px]">
+                  <Image
+                    src="/assets/images/women_listening_music.jpg"
+                    alt="women listening music"
+                    width={440}
+                    height={362}
+                    className="w-full max-w-[440px] max-h-[238px] lg:max-h-[362px] object-cover rounded-[16px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
+          >
+            <div className="max-w-[1440px] w-full grid grid-cols-1 lg:grid-cols-8 justify-between items-center gap-4 md:gap-[24px]">
+              <div className="lg:col-span-6">
+                <h1 className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px]">
+                  Read More Case Studies
+                </h1>
+              </div>
+              <div className="lg:col-span-2 flex itesm-start md:items-end justify-start md:justify-end h-full">
                 <GradientButton
-                  text="Explore Advertiser Knowledge Hub"
-                  className="h-[44px] w-[293px]"
+                  text="Explore All"
+                  type="primary"
+                  rightIcon={
+                    <svg
+                      width="14"
+                      height="15"
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
+                        stroke="#FFFEFF"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  }
                 />
               </div>
             </div>
-            <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[16px] lg:gap-[24px] max-w-[1280px]">
-              <div className="w-full relative">
-                <div
-                  className="bg-cover bg-center w-full md:w-[300px] h-[226px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${"/assets/images/card-bg-22.jpg"})`,
-                  }}
-                >
-                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-                  <div className="relative z-10 flex flex-col justify-between h-full">
-                    <div className="w-full">
-                      <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                        Webinar
-                      </span>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-[10px]">
-                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                        16 June 2025
-                      </h6>
-                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                        Podcast Advertising vs Social Media Marketing: Which
-                        Drives Better Engagement
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full relative">
-                <div
-                  className="bg-cover bg-center w-full md:w-[300px] h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${"/assets/images/insight-2.png"})`,
-                  }}
-                >
-                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(241,31,104,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-                  <div className="relative z-10 flex flex-col justify-between h-full">
-                    <div className="w-full">
-                      <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                        Webinar
-                      </span>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-[10px]">
-                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                        16 June 2025
-                      </h6>
-                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                        Podcast Advertising vs Social Media Marketing: Which
-                        Drives Better Engagement
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full relative">
-                <div
-                  className="bg-cover bg-center w-full md:w-[630px] h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${"/assets/images/insight-3.jpg"})`,
-                  }}
-                >
-                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(136,48,252,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-                  <div className="relative z-10 flex flex-col justify-between h-full">
-                    <div className="w-full">
-                      <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                        Webinar
-                      </span>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-[10px]">
-                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                        16 June 2025
-                      </h6>
-                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                        Podcast Advertising vs Social Media Marketing: Which
-                        Drives Better Engagement
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div
+              className="max-w-[14400px] flex flex-col lg:flex-row justify-start w-full items-center gap-4 md:gap-[20px]"
+            >
+              <CaseStudies />
             </div>
           </section>
         </div>
