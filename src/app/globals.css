@@ -204,18 +204,18 @@ body {
   /* .splide__pagination{
     display: none;
   }   */
-  /* #brands .splide__arrows,
+  #brands .splide__arrows,
       .splide__pagination {
         display: none;
       }
-       */
+      
 
-#case-study-testimonial .splide__pagination,  #caseStudies .splide__pagination{
+#highlights .splide__pagination, #case-study-testimonial .splide__pagination,  #caseStudies .splide__pagination{
     bottom: -3rem;
   }
   @media (max-width: 768px) {
    
-    #case-study-testimonial .splide__pagination, #caseStudies .splide__pagination{
+    #highlights .splide__pagination, #case-study-testimonial .splide__pagination, #caseStudies .splide__pagination{
       bottom: -1.5rem;
     }
     .marketing-card.expanded {

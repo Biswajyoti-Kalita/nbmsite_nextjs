@@ -87,7 +87,7 @@ export default function AudioFunnel() {
                         d="M187.823 1H11.0111C3.85801 1 -0.981873 8.29169 1.79596 14.8834L18.9763 55.6519C20.5384 59.3585 24.1692 61.7685 28.1915 61.7685H170.691C174.717 61.7685 178.35 59.3542 179.91 55.6427L197.042 14.8741C199.812 8.28362 194.972 1 187.823 1Z"
                         fill="url(#paint0_linear_1237_3076)"
                         stroke="#7E083E"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                       <defs>
                         <linearGradient
@@ -145,7 +145,7 @@ export default function AudioFunnel() {
                         d="M110.424 1H11.0121C3.85923 1 -0.98066 8.29118 1.79666 14.8828L19.9713 58.0182C21.5332 61.7251 25.1641 64.1353 29.1867 64.1353H92.6523C96.7038 64.1353 100.355 61.6908 101.898 57.9448L119.67 14.8094C122.382 8.22745 117.543 1 110.424 1Z"
                         fill="url(#paint0_linear_1254_9623)"
                         stroke="#8C0A45"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                       <defs>
                         <linearGradient
@@ -203,7 +203,7 @@ export default function AudioFunnel() {
                         d="M31.114 1H11.0112C3.88639 1 -0.952848 8.23877 1.77061 14.8225L11.933 39.3894C15.3545 47.6606 27.0862 47.6152 30.4436 39.3177L40.3839 14.7508C43.0438 8.17692 38.2056 1 31.114 1Z"
                         fill="url(#paint0_linear_1254_9640)"
                         stroke="#FF43C8"
-                        stroke-width="2"
+                        strokeWidth="2"
                       />
                       <defs>
                         <linearGradient
@@ -259,9 +259,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -282,9 +282,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -306,9 +306,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -332,9 +332,9 @@ export default function AudioFunnel() {
                     <path
                       d="M1 13L13 1M13 1H5M13 1V9"
                       stroke="url(#paint0_linear_4298_1540)"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <defs>
                       <linearGradient
@@ -375,9 +375,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -399,9 +399,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -424,9 +424,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -450,9 +450,9 @@ export default function AudioFunnel() {
                     <path
                       d="M1 13L13 1M13 1H5M13 1V9"
                       stroke="url(#paint0_linear_4298_1540)"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <defs>
                       <linearGradient
@@ -493,9 +493,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -518,9 +518,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -541,9 +541,9 @@ export default function AudioFunnel() {
                         <path
                           d="M7.58366 12.8334L11.0837 16.3334L18.0837 9.33342M24.5003 12.8334C24.5003 19.2767 19.277 24.5001 12.8337 24.5001C6.39034 24.5001 1.16699 19.2767 1.16699 12.8334C1.16699 6.39009 6.39034 1.16675 12.8337 1.16675C19.277 1.16675 24.5003 6.39009 24.5003 12.8334Z"
                           stroke="#F11F68"
-                          stroke-width="2.33333"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -568,9 +568,9 @@ export default function AudioFunnel() {
                     <path
                       d="M1 13L13 1M13 1H5M13 1V9"
                       stroke="url(#paint0_linear_4298_1540)"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <defs>
                       <linearGradient

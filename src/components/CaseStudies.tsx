@@ -24,7 +24,7 @@ interface CaseStudyCardProps {
 const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
     return (
         <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:h-[300px] border-1 border-[#E8E8E8] flex  flex-col md:flex-row items-start justify-start">
-          <div className="flex flex-col items-start p-[10px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl w-[305px]">
+          <div className="flex flex-col items-start p-[10px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl w-full lg:w-[305px]">
             <h1 className="border-[#344054] border-1 px-[16px] py-[4px] rounded-3xl text-[14px] leading-[22px] text-[#344054]">
               {caseStudy.left_title}
             </h1>
@@ -32,7 +32,7 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
               <Image src={caseStudy.left_image} alt="bel" className="w-[180px] h-[150px] object-contain" width={180} height={150} />
             </div>
           </div>
-          <div className="flex flex-col p-[24px] items-start justify-start gap-[9px]">
+          <div className="flex flex-col p-[24px] items-start justify-between lg:justify-start gap-[9px] min-h-[376px]">
             <div className="flex flex-col items-start justify-start gap-[19px]">
               <div className="flex flex-col items-start justify-start gap-[16px] w-full">
                 <div className="bg-[#ABEFC6] py-[4px] px-[10px] rounded-3xl p-8">
@@ -73,7 +73,8 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
                   <GradientButton
                   text="View Case Study"
                   type="secondary"
-                  
+                  className="w-[191px]"
+                  textClassName='text-[16px] leading-[24px] font-bold'
                   rightIcon={
                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898" stroke="url(#paint0_linear_1858_6122)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -92,7 +93,21 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
 }
 
 export default function CaseStudies() {
-  const [splideWidth, setSplideWidth] = useState(0);
+  const [splideWidth, setSplideWidth] = useState(100);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      const testimonials = document.getElementById('caseStudies');
+      if (testimonials) {
+        setSplideWidth(testimonials.clientWidth);
+      }
+    };
+
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
 
   useEffect(() => {
     const updateWidth = () => {
@@ -212,7 +227,7 @@ export default function CaseStudies() {
     type: 'slide' as const,
     drag: 'free' as const,
     gap: 20,
-    width: 3000,
+    width: splideWidth,
     autoWidth: true,
     autoScroll: false,
     pagination: true

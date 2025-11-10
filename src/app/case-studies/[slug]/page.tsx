@@ -1,7 +1,5 @@
-import BrandsScroller from "@/components/BrandsScroller";
 import CaseStudies from "@/components/CaseStudies";
 import CaseStudyTestimonialGroup from "@/components/CaseStudyTestimonialGoup";
-import FAQCard from "@/components/FAQCard";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
@@ -55,12 +53,12 @@ export async function generateStaticParams() {
   return Object.keys(caseStudies).map((slug) => ({ slug }));
 }
 
-export default function CaseStudyPage({
+export default async function CaseStudyPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const { slug } = params;
+  const { slug } = await params;
   const data = dataMap[slug];
 
   if (!data) {
@@ -346,7 +344,7 @@ export default function CaseStudyPage({
                     result: { title: string; subtitle: string },
                     index: number
                   ) => (
-                    <div className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[24px] lg:pt-[32px] h-[188px]">
+                    <div key={index} className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[24px] lg:pt-[32px] h-[188px]">
                       <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#FFFEFF]">
                         {result.title}
                       </p>
@@ -405,9 +403,9 @@ export default function CaseStudyPage({
                             <path
                               d="M5.72667 9.00683L10.28 11.6602M10.2733 4.34016L5.72667 6.9935M14 3.3335C14 4.43807 13.1046 5.3335 12 5.3335C10.8954 5.3335 10 4.43807 10 3.3335C10 2.22893 10.8954 1.3335 12 1.3335C13.1046 1.3335 14 2.22893 14 3.3335ZM6 8.00016C6 9.10473 5.10457 10.0002 4 10.0002C2.89543 10.0002 2 9.10473 2 8.00016C2 6.89559 2.89543 6.00016 4 6.00016C5.10457 6.00016 6 6.89559 6 8.00016ZM14 12.6668C14 13.7714 13.1046 14.6668 12 14.6668C10.8954 14.6668 10 13.7714 10 12.6668C10 11.5623 10.8954 10.6668 12 10.6668C13.1046 10.6668 14 11.5623 14 12.6668Z"
                               stroke="black"
-                              stroke-width="1.33333"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="1.33333"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </span>
@@ -415,7 +413,7 @@ export default function CaseStudyPage({
                     </div>
                     <div className="w-full flex flex-row items-center justify-start gap-[11px]">
                       {data.audio.points.map((point, index) => (
-                        <div className="flex flex-row gap-[11px] items-center">
+                        <div key={index} className="flex flex-row gap-[11px] items-center">
                           <span className="font-normal text-[14px] leading-[22px] lg:leading-[16px] tracking-[0em] text-[#344054]">
                             {point}
                           </span>

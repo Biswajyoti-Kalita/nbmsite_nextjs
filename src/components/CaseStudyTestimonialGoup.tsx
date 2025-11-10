@@ -2,7 +2,7 @@
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useEffect, useState } from "react";
-import Testimonial from "./Testimonial";
+
 
 interface CaseStudyTestimonialInterface {
   quote: string;
@@ -12,6 +12,7 @@ interface CaseStudyTestimonialInterface {
 }
 
 const CaseStudyTestimonial = (props: CaseStudyTestimonialInterface) => {
+  console.log(props);
   return (
     <div className="w-full  flex flex-col items-center justify-center px-[32px] gap-[32px]">
       <div className="w-full max-w-[1024px] min-h-[400px] flex flex-col items-center justify-between gap-[32px]">

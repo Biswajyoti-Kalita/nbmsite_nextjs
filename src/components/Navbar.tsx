@@ -20,12 +20,11 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
   const [isScrolled, setIsScrolled] = useState(false);
 
 
-  
   useEffect(() => {
     if (isMobileScreen) {
       setisMobileScreenMenuOpen(false);
     }
-  }, [isMobileScreen]);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
