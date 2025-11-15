@@ -28,11 +28,9 @@ export default function Publishers() {
               For Publishers, networks and production houses
             </h1>
             <div className="flex flex-col gap-[32px] items-start justify-start">
-              <div className="flex flex-col items-start justify-start gap-[24px]">
                 <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
                   Monetize Your Catalogue with Global Brand Demand
                 </h1>
-              </div>
               <h2 className="font-[Switzer] font-medium lg:font-[500] text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] tracking-[0] text-[#FFFEFF]">
                 Connect your shows to premium advertisers across 90+ markets and
                 hundreds of active campaigns.
@@ -53,9 +51,9 @@ export default function Publishers() {
             </div>
           </div>
 
-          <div className=" relative  lg:absolute right-0 top-0 bottom-0">
+          <div className=" relative  lg:absolute right-[-60px] top-9  bottom-0 max-w-[900px]">
             <Image
-              src="/assets/images/publisher-right-bg.png"
+              src="/assets/images/publisher_hero_desktop.png"
               alt="podcasters-image"
               className="w-full h-full object-cover"
               width={500}
@@ -77,10 +75,10 @@ export default function Publishers() {
           </div>
           <div className="w-full flex flex-col gap-[40px] md:p-[40px] border-1 border-[#D2D2D2] rounded-[16px]">
             <div className="w-full flex flex-col gap-[10px] md:flex-row">
-              <button className="flex items-center justify-center min-h-[44px] gap-[6px] px-[16px] py-[10px] rounded-[44px] border-2 border-[#F11F68] bg-[#FFEDFB] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] hover:bg-[#F11F68] hover:text-white transition-colors">
+              <button className="flex items-center justify-center max-h-[44px] gap-[6px] px-[16px] py-[10px] rounded-[44px] border-2 border-[#F11F68] bg-[#FFEDFB] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] hover:bg-[#F11F68] hover:text-white transition-colors">
                 Appear in self-serve tools
               </button>
-              <button className="flex items-center justify-center min-h-[44px] gap-[6px] px-[16px] py-[10px] rounded-[44px] border-2 border-[#344054] text-[#344054] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] hover:bg-[#344054] hover:text-white transition-colors">
+              <button className="flex items-center justify-center max-h-[44px] gap-[6px] px-[16px] py-[10px] rounded-[44px] border-2 border-[#344054] text-[#344054] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] hover:bg-[#344054] hover:text-white transition-colors">
                 Included in Premium Campaigns
               </button>
             </div>
@@ -97,28 +95,19 @@ export default function Publishers() {
                   Plug into Programmatic Demand
                 </h1>
 
-                <div className="flex flex-col items-start justify-center gap-[12px]">
+                <div className="flex flex-col items-start justify-center gap-[16px]">
                   <h5 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                     Connect your ad inventory to advertisers using AdManager to
                     book programmatic podcast campaigns.
                   </h5>
                   <div className="flex flex-row items-center justify-start gap-[12px]">
-                    <svg
-                      className="w-[26px] h-[26px]"
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.75065 12.9999L11.2507 16.4999L18.2507 9.49992M24.6673 12.9999C24.6673 19.4432 19.444 24.6666 13.0007 24.6666C6.55733 24.6666 1.33398 19.4432 1.33398 12.9999C1.33398 6.5566 6.55733 1.33325 13.0007 1.33325C19.444 1.33325 24.6673 6.5566 24.6673 12.9999Z"
-                        stroke="#F11F68"
-                        strokeWidth="2.33333"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img 
+                    src="/assets/images/check_Icon.png"
+                    alt="podcasters-image"
+                    className="w-[26px]"
+                    width={26}
+                    height={26}
+                    ></img>
                     <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                       Live exposure to buyers across DV360 and our AdManager
                       platform
@@ -126,65 +115,38 @@ export default function Publishers() {
                   </div>
 
                   <div className="flex flex-row items-center justify-start gap-[12px]">
-                    <svg
-                      className="w-[26px] h-[26px]"
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.75065 12.9999L11.2507 16.4999L18.2507 9.49992M24.6673 12.9999C24.6673 19.4432 19.444 24.6666 13.0007 24.6666C6.55733 24.6666 1.33398 19.4432 1.33398 12.9999C1.33398 6.5566 6.55733 1.33325 13.0007 1.33325C19.444 1.33325 24.6673 6.5566 24.6673 12.9999Z"
-                        stroke="#F11F68"
-                        strokeWidth="2.33333"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img 
+                    src="/assets/images/check_Icon.png"
+                    alt="podcasters-image"
+                    className="w-[26px]"
+                    width={26}
+                    height={26}
+                    ></img>
                     <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                       Easy integration and hands-off monetization
                     </h6>
                   </div>
 
                   <div className="flex flex-row items-center justify-start gap-[12px]">
-                    <svg
-                      className="w-[26px] h-[26px]"
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.75065 12.9999L11.2507 16.4999L18.2507 9.49992M24.6673 12.9999C24.6673 19.4432 19.444 24.6666 13.0007 24.6666C6.55733 24.6666 1.33398 19.4432 1.33398 12.9999C1.33398 6.5566 6.55733 1.33325 13.0007 1.33325C19.444 1.33325 24.6673 6.5566 24.6673 12.9999Z"
-                        stroke="#F11F68"
-                        strokeWidth="2.33333"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img 
+                    src="/assets/images/check_Icon.png"
+                    alt="podcasters-image"
+                    className="w-[26px]"
+                    width={26}
+                    height={26}
+                    ></img>
                     <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                       Automated ad delivery and reporting
                     </h6>
                   </div>
                   <div className="flex flex-row items-center justify-start gap-[12px]">
-                    <svg
-                      className="w-[26px] h-[26px]"
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.75065 12.9999L11.2507 16.4999L18.2507 9.49992M24.6673 12.9999C24.6673 19.4432 19.444 24.6666 13.0007 24.6666C6.55733 24.6666 1.33398 19.4432 1.33398 12.9999C1.33398 6.5566 6.55733 1.33325 13.0007 1.33325C19.444 1.33325 24.6673 6.5566 24.6673 12.9999Z"
-                        stroke="#F11F68"
-                        strokeWidth="2.33333"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <img 
+                    src="/assets/images/check_Icon.png"
+                    alt="podcasters-image"
+                    className="w-[26px]"
+                    width={26}
+                    height={26}
+                    ></img>
                     <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                       Built for scalable, consistent revenue
                     </h6>
@@ -225,7 +187,7 @@ export default function Publishers() {
                 />
               </div>
               <Image
-                src="/assets/images/reach.png"
+                src="/assets/images/popular-channels.png"
                 alt="podcasters-image"
                 className="w-full md:w-[50%] h-auto object-cover rounded-[16px]"
                 width={500}
@@ -237,9 +199,9 @@ export default function Publishers() {
       </div>
       <div className="w-full bg-[#FFF9FE] flex flex-col flex-wrap md:flex-row gap-16 pt-[96px] pr-[80px] pb-[96px] pl-[80px]">
         <section className="w-full flex flex-col gap-[64px]">
-          <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[20px]">
+          <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[43px]">
             <div className="flex flex-col gap-[24px] w-full md:w-[90%]">
-              <button className="max-w-[200px] h-[32px] gap-[6px] text-center py-[4px] rounded-[31px] border-[1px] border-[#F11F68] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0.01rem]">
+              <button className="max-w-[300px] inline-flex items-center justify-center min-h-[32px] gap-[6px] px-[16px] rounded-[44px] border-2 border-[#F11F68] bg-[#FFEDFB] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] hover:bg-[#F11F68] hover:text-white transition-colors">
                 Global reach and results
               </button>
 
