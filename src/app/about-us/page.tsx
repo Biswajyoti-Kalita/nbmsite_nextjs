@@ -1,5 +1,6 @@
 import AboutUsImageCard from "@/components/AboutUsImageCard";
 import BrandsScroller from "@/components/BrandsScroller";
+import Breadcrumb from "@/components/Breadcrumb";
 import CaseStudies from "@/components/CaseStudies";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
@@ -21,41 +22,8 @@ export default function AboutUs() {
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <div className="flex flex-row items-center justify-center gap-[12px]">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.66667 14.1664H13.3333M9.18141 2.30312L3.52949 6.69906C3.15168 6.99291 2.96278 7.13983 2.82669 7.32383C2.70614 7.48682 2.61633 7.67044 2.56169 7.86566C2.5 8.08605 2.5 8.32537 2.5 8.804V14.8331C2.5 15.7665 2.5 16.2332 2.68166 16.5898C2.84144 16.9034 3.09641 17.1583 3.41002 17.3181C3.76654 17.4998 4.23325 17.4998 5.16667 17.4998H14.8333C15.7668 17.4998 16.2335 17.4998 16.59 17.3181C16.9036 17.1583 17.1586 16.9034 17.3183 16.5898C17.5 16.2332 17.5 15.7665 17.5 14.8331V8.804C17.5 8.32537 17.5 8.08605 17.4383 7.86566C17.3837 7.67044 17.2939 7.48682 17.1733 7.32383C17.0372 7.13983 16.8483 6.99291 16.4705 6.69906L10.8186 2.30312C10.5258 2.07541 10.3794 1.96155 10.2178 1.91779C10.0752 1.87917 9.92484 1.87917 9.78221 1.91779C9.62057 1.96155 9.47418 2.07541 9.18141 2.30312Z"
-                  stroke="#D2D2D2"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 12L10 8L6 4"
-                  stroke="#E8E8E8"
-                  strokeWidth="1.33333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className="text-[#FFFEFF] font-medium text-[14px] leading-[22px]">
-                About Us
-              </span>
-            </div>
+            <Breadcrumb pages={[{ name: "About Us", link: "/about-us" }]} />
+
 
             <div className="flex flex-col gap-[32px] items-start justify-start">
               <div className="flex flex-col items-start justify-start gap-[24px]">
@@ -64,7 +32,7 @@ export default function AboutUs() {
                 </h1>
               </div>
               <h2 className="font-[Switzer] font-medium lg:font-[500] text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] tracking-[0] text-[#FFFEFF]">
-                Next connects advertisers with premium podcasts and digital
+                Next Audio connects advertisers with premium podcasts and digital
                 audio audiences — while helping creators and publishers grow
                 revenue.
               </h2>
@@ -115,7 +83,7 @@ export default function AboutUs() {
         <section className="w-full flex flex-col gap-[64px]">
           <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[20px]">
             <h1 className="w-[100%] gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
-              We Power Every Part of the Audio Economy
+            Global Scale. Local Precision.
             </h1>
             <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] invisible">
               Two ways your shows can earn: be visible to buyers in our tools,
@@ -164,12 +132,12 @@ export default function AboutUs() {
       </div>
       <div className="w-full flex flex-col md:flex-row gap-[20px] px-[80px] py-[96px] bg-[#F8F9FA]">
         <h2 className="w-full md:w-[40%] gradient-text font-semibold text-[42px] leading-[50px]">
-          Accountability & Standards
+          Why We Exist
         </h2>
         <div className="w-full md:w-[60%] flex flex-col gap-[40px]">
           <p className="text-[#344054] text-[32px] leading-[40px] font-[500] font-[Switzer]">
             Because podcast and digital audio advertising shouldn&apos;t be
-            complicated, opaque, or out of reach.Next connects the dots,
+            complicated, opaque, or out of reach. Next Audio connects the dots,
             helping brands scale campaigns and publishers unlock new revenue,
             with tools, tech, and teams that power performance.
           </p>
@@ -187,14 +155,14 @@ export default function AboutUs() {
         <section className="w-full flex flex-col items-center justify-center bg-[#FFFFFF] gap-[64px]">
           <div className="w-full flex flex-col px-[24px] pt-[36px]  pb-[0px] lg:py-[96px] lg:px-[64px] bg-[#FFEDFB] items-center justify-between gap-[24px]">
             <div className="flex flex-col lg:flex-row items-start justify-between gap-[20px] lg:gap-[40px]">
-              <div className="flex flex-col items-start justify-start gap-[20px] max-w-[520px]">
+              <div className="flex flex-col items-start justify-start gap-[20px] max-w-[605px]">
                 <div className="flex flex-col items-start justify-center gap-[24px]">
                   <div className="flex flex-col items-start justify-center gap-[20px]">
                     {/* <h1 className="text-[#F11F68] font-medium text-[16px] leading-[24px]">
-                      NBM is your Trusted Audio Ad Partner
+                      Next Audio Audio is your Trusted Audio Ad Partner
                     </h1> */}
                     <h2 className="gradient-text font-semibold text-[42px] leading-[50px]">
-                      Accountability & Standards
+                      Accountability & <br />Standards
                     </h2>
                   </div>
                   <div>

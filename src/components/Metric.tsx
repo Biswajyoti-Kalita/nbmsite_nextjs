@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import GradientButton from "./GradientButton";
 
 export default function Metric() {
+  const [hovereredMetricIndex, sethovereredMetricIndex] = useState(0);
   const metricsPlatforms = [
     {
       title: "Podcast/Audio",
@@ -169,7 +171,7 @@ export default function Metric() {
           </div>
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-6 items-start justify-center max-w-[1280px] mb-[0px] lg:mb-[96px]">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-6 items-start justify-center max-w-[1280px] mb-[0px] lg:mb-[24px]">
         <div className="w-full hidden lg:block flex flex-col items-start justify-center">
           <div className="border-b border-[#E8E8E8] flex gap-[8px] px-[24px] pb-[16px] w-full h-[48px]">
             <h1 className="text-[#262626] text-[20px] leading-[30px] font-bold">
@@ -208,7 +210,12 @@ export default function Metric() {
           </div>
         </div>
         {metricsPlatforms.map((metricPlatform, ind) => (
-          <div key={ind} className="w-full flex flex-col items-start justify-center pb-[64px] lg:pb-0">
+          <div key={ind} className={`w-full relative flex flex-col items-start justify-center pb-[64px] lg:pb-0`}>
+            {
+              hovereredMetricIndex === ind && (
+                <div className="absolute top-[-24px] bottom-[-48px] left-0 w-full border-[2px] border-[#F11F68] rounded-[16px] z-20"></div>
+              )
+            }
             <div className="border-b border-[#E8E8E8] bg-[#F8F9FA] flex gap-[8px] px-[24px] pb-[16px] w-full">
               <h1 className="text-[#262626] text-[20px] leading-[30px] font-bold w-full text-start lg:text-center">
                 {metricPlatform.title}

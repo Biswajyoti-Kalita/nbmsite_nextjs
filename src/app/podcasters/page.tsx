@@ -1,5 +1,6 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
+import Breadcrumb from "@/components/Breadcrumb";
 import FAQCard from "@/components/FAQCard";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
@@ -21,41 +22,8 @@ export default function Podcaster() {
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <div className="flex flex-row items-center justify-center gap-[12px]">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.66667 14.1664H13.3333M9.18141 2.30312L3.52949 6.69906C3.15168 6.99291 2.96278 7.13983 2.82669 7.32383C2.70614 7.48682 2.61633 7.67044 2.56169 7.86566C2.5 8.08605 2.5 8.32537 2.5 8.804V14.8331C2.5 15.7665 2.5 16.2332 2.68166 16.5898C2.84144 16.9034 3.09641 17.1583 3.41002 17.3181C3.76654 17.4998 4.23325 17.4998 5.16667 17.4998H14.8333C15.7668 17.4998 16.2335 17.4998 16.59 17.3181C16.9036 17.1583 17.1586 16.9034 17.3183 16.5898C17.5 16.2332 17.5 15.7665 17.5 14.8331V8.804C17.5 8.32537 17.5 8.08605 17.4383 7.86566C17.3837 7.67044 17.2939 7.48682 17.1733 7.32383C17.0372 7.13983 16.8483 6.99291 16.4705 6.69906L10.8186 2.30312C10.5258 2.07541 10.3794 1.96155 10.2178 1.91779C10.0752 1.87917 9.92484 1.87917 9.78221 1.91779C9.62057 1.96155 9.47418 2.07541 9.18141 2.30312Z"
-                  stroke="#D2D2D2"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 12L10 8L6 4"
-                  stroke="#E8E8E8"
-                  strokeWidth="1.33333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className="text-[#FFFEFF] font-medium text-[14px] leading-[22px]">
-                For Podcasters
-              </span>
-            </div>
+            <Breadcrumb pages={[{ name: "For Podcasters", link: "/podcasters" }]} />
+
 
             <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]">
               For Podcasters & Creators
@@ -107,7 +75,7 @@ export default function Podcaster() {
               <Image
                 src="/assets/images/podcast-recording-session.jpg"
                 alt="podcast-recording-session"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-[16px]"
                 width={500}
                 height={500}
                 priority
@@ -116,7 +84,7 @@ export default function Podcaster() {
 
             <div className="w-full flex flex-col items-start justify-center gap-[24px]">
               <h1 className="font-semibold text-[34px] lg:text-[48px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
-                How Podcasters Earn with Next
+                How Podcasters Earn with Next Audio Audio
               </h1>
               <div className="flex flex-col items-start justify-center gap-[12px]">
                 <div className="flex flex-row items-start justify-start gap-[12px]">
@@ -190,31 +158,18 @@ export default function Podcaster() {
               <div className="w-full flex flex-col items-start justify-center gap-[40px] max-w-[590px]">
                 <div className="flex flex-col items-start justify-center gap-[24px]">
                   <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
-                    Is Your Podcast a Good Fit for Next?
+                    Is Your Podcast a Good Fit?
                   </h1>
                   <div className="flex flex-col items-start justify-center gap-[32px]">
                     <div className="flex flex-col items-start justify-center gap-[16px]">
                       <p className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                         To ensure quality for advertisers, we currently accept
-                        shows that meet at least one of the following criteria:
+                        shows that meet at least one of the following:
                       </p>
                       <div className="flex flex-col items-start justify-center gap-[12px]">
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
-                          <svg
-                            width="26"
-                            height="26"
-                            viewBox="0 0 26 26"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
-                              stroke="#F11F68"
-                              strokeWidth="2.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
+                          <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} />
+
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                             Have been consistently publishing for 6 months or
                             more
@@ -222,42 +177,14 @@ export default function Podcaster() {
                         </h1>
 
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
-                          <svg
-                            width="26"
-                            height="26"
-                            viewBox="0 0 26 26"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
-                              stroke="#F11F68"
-                              strokeWidth="2.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                          <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                        <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} />
+                        <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                             Reach 1,000+ monthly listeners
                           </span>
                         </h1>
 
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
-                          <svg
-                            width="26"
-                            height="26"
-                            viewBox="0 0 26 26"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
-                              stroke="#F11F68"
-                              strokeWidth="2.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
+                          <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} className="w-[28px] h-[28px]" />
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                             Cover a highly niche topic or audience (e.g.
                             medical, aerospace, regional, etc.)
@@ -267,7 +194,7 @@ export default function Podcaster() {
                     </div>
                     <div>
                       <h2 className="font-normal text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#344054]">
-                        We welcome podcasts in any language. Next is a global
+                        We welcome podcasts in any language. Next Audio is a global
                         network with demand from advertisers around the world.
                       </h2>
                     </div>
@@ -277,7 +204,7 @@ export default function Podcaster() {
                   <GradientButton
                     text="Download Podcaster Info Sheet"
                     type="secondary"
-                    className="h-[44px]"
+                    className=""
                   />
                 </div>
               </div>
@@ -361,7 +288,7 @@ export default function Podcaster() {
                 <div className="w-full flex flex-col items-start justify-center gap-[32px]">
                   <p className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                     Here are quick answers to some of the most common questions
-                    about Next
+                    about Next Audio
                   </p>
                   <div className="flex flex-row gap-[10px]">
                     <span className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-semibold">
@@ -382,27 +309,26 @@ export default function Podcaster() {
                   },
                   {
                     title:
-                      "Can I target specific countries, languages, or audience segments?",
+                      "Is this exclusive?",
                     description:
-                      "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
+                      "Not at all. You keep full ownership of your podcast and can continue working with other partners or monetisation tools.",
                   },
                   {
-                    title: "What types of audio ads can I run?",
-                    description:
-                      "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
+                    title: "What kind of advertisers will I work with?",
+                    description:"We only work with vetted, brand-safe advertisers, including global names and trusted local companies. You always have the final say.",
                   },
                   {
-                    title:
-                      "How do I measure the performance of my audio campaigns?",
-                    description:
-                      "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
+                    title: "How do I get started?",
+                    description: "Simple, just contact us and share your show. Our team will review your podcast and guide you through next steps.",
                   },
                   {
-                    title:
-                      "What is the minimum budget required to start a campaign?",
-                    description:
-                      "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
+                    title: "What makes a podcast eligible?",
+                    description: "We generally look for shows that have been active for 6+ months with a regular audience of 1,000+ listeners per episode — but we also consider niche formats and strong engagement.",
                   },
+                  {
+                    title: "How do I get paid?",
+                    description: "Payment depends on the type of campaign, but you’ll receive earnings directly based on bookings and ad delivery.",
+                  }
                 ].map((item, index) => (
                   <FAQCard
                     key={index}
@@ -422,12 +348,12 @@ export default function Podcaster() {
                   Insights That Matter to You
                 </h1>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                  Guides, events, updates, and more - filtered just for you.
+                Advice to help you grow and earn from your podcast.
                 </h6>
               </div>
               <div>
                 <GradientButton
-                  text="Explore Advertiser Knowledge Hub"
+                  text="Explore Podcaster knowledge Hub"
                   className="h-[44px] w-[293px]"
                 />
               </div>

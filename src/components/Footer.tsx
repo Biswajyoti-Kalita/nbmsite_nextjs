@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const baseLinkClasses = "py-[8px] text-[#344054] hover:underline cursor-pointer";
+const baseLinkClasses =
+  "py-[8px] text-[#344054] hover:underline cursor-pointer";
 export default function Footer() {
   return (
     <footer className="bg-white w-full">
       <div className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 md:py-[64px] bg-[#FFFEFF]">
         <div className="grid grid-cols-2 lg:grid-cols-6 justify-between gap-8 md:gap-[54px] w-full">
-          <div
-            className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]"
-          >
+          <div className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]">
             <Image
               src="/assets/images/nbm_logo.png"
               alt="Logo"
@@ -19,40 +18,64 @@ export default function Footer() {
             />
           </div>
 
-          <div  className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Who We Help
             </h1>
-            <Link href="/advertisers" className={baseLinkClasses}>Advertisers</Link>
-            <Link href="/publishers" className={baseLinkClasses}>Publishers</Link>
-            <Link href="/podcasters" className={baseLinkClasses}>Podcasters</Link>
+            <Link href="/advertisers" className={baseLinkClasses}>
+              Advertisers
+            </Link>
+            <Link href="/publishers" className={baseLinkClasses}>
+              Publishers
+            </Link>
+            <Link href="/podcasters" className={baseLinkClasses}>
+              Podcasters
+            </Link>
           </div>
 
-          <div  className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Solutions
             </h1>
-            <Link href="/ai-ad-studio" className={baseLinkClasses}>AI Ad Studio</Link>
-            <Link href="/admanager" className={baseLinkClasses}>Admanager</Link>
+            <Link href="/ai-ad-studio" className={baseLinkClasses}>
+              AI Ad Studio
+            </Link>
+            <Link href="/admanager" className={baseLinkClasses}>
+              Admanager
+            </Link>
           </div>
 
-          <div  className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Resources
             </h1>
-          <Link href="/knowledge-hub" className={baseLinkClasses}>Knowledge Hub</Link>
-            <Link href="/case-studies" className={baseLinkClasses}>Case Studies</Link>
-            <Link href="/advertiser-media-kit" className={baseLinkClasses}>Advertiser Media Kit</Link>
-            <Link href="/publisher-deck" className={baseLinkClasses}>Publisher Deck</Link>
+            <Link href="/knowledge-hub" className={baseLinkClasses}>
+              Knowledge Hub
+            </Link>
+            <Link href="/case-studies" className={baseLinkClasses}>
+              Case Studies
+            </Link>
+            <Link href="/advertiser-media-kit" className={baseLinkClasses}>
+              Advertiser Media Kit
+            </Link>
+            <Link href="/publisher-deck" className={baseLinkClasses}>
+              Publisher Deck
+            </Link>
           </div>
 
-          <div  className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Company
             </h1>
-            <Link href="/about-us" className={baseLinkClasses}>About Us</Link>
-            <Link href="/contact-us" className={baseLinkClasses}>Contact Us</Link>
-            <Link href="/why-audio" className={baseLinkClasses}>Why Audio</Link>
+            <Link href="/about-us" className={baseLinkClasses}>
+              About Us
+            </Link>
+            <Link href="/contact-us" className={baseLinkClasses}>
+              Contact Us
+            </Link>
+            <Link href="/why-audio" className={baseLinkClasses}>
+              Why Audio
+            </Link>
           </div>
         </div>
       </div>
@@ -60,19 +83,28 @@ export default function Footer() {
       <div className="bg-[#F8F9FA] flex flex-row justify-between items-center gap-[64px] px-[24px] lg:px-[80px] py-4 lg:py-[24px]">
         <div className="max-w-[1440px] mx-auto grid grid-cols-3 lg:grid-cols-6 gap-[10px] md:gap-[54px] justify-start lg:justify-between items-start lg:items-center w-full">
           <div className="col-span-2 order-first lg:col-span-2">
-            <Link href="/" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
+            <Link
+              href="/"
+              className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer"
+            >
               © Next Broadcast Media 2025
             </Link>
           </div>
 
           <div className="col-span-3 lg:col-span-1">
-            <Link href="/privacy-policy" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
+            <Link
+              href="/privacy-policy"
+              className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer"
+            >
               Privacy Policy
             </Link>
           </div>
 
           <div className="col-span-3 lg:col-span-1">
-            <Link href="/terms-of-use" className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer">
+            <Link
+              href="/terms-of-use"
+              className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer"
+            >
               Terms of Use
             </Link>
           </div>
@@ -119,6 +151,49 @@ export default function Footer() {
                         fill="white"
                         transform="translate(0 0.958984)"
                       />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <g clipPath="url(#clip)">
+                    <g transform="translate(-0.25,0)">
+                      <path
+                        d="M11.6 3.2v6.15a3.05 3.05 0 1 1-1.1 2.35V5.05l1.1-1.85z"
+                        fill="#00F2EA"
+                      />
+                    </g>
+
+                    <g transform="translate(0.25,0.15)">
+                      <path
+                        d="M11.6 3.2v6.15a3.05 3.05 0 1 1-1.1 2.35V5.05l1.1-1.85z"
+                        fill="#FF2EA6"
+                      />
+                    </g>
+
+                    <g>
+                      <path
+                        d="M10.5 7.1v6.5a2.4 2.4 0 1 1-0.85-1.85V4.65l0.85-1.45V7.1z"
+                        fill="#010101"
+                      />
+                      <path
+                        d="M11.55 4.6c.48-.1 1.05-.04 1.6.16v1.05c-.5-.17-1.02-.24-1.55-.17v-.99z"
+                        fill="#010101"
+                        opacity="0.95"
+                      />
+                    </g>
+                  </g>
+
+                  <defs>
+                    <clipPath id="clip">
+                      <rect width="20" height="20" rx="2" ry="2" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>

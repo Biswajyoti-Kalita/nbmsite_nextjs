@@ -204,8 +204,7 @@ body {
   /* .splide__pagination{
     display: none;
   }   */
-  #brands .splide__arrows,
-      .splide__pagination {
+  #brands .splide__arrows, #brands .splide__pagination {
         display: none;
       }
       

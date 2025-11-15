@@ -1,5 +1,6 @@
 import AboutUsImageCard from "@/components/AboutUsImageCard";
 import BrandsScroller from "@/components/BrandsScroller";
+import Breadcrumb from "@/components/Breadcrumb";
 import FAQCard from "@/components/FAQCard";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
@@ -21,41 +22,7 @@ export default function Publishers() {
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <div className="flex flex-row items-start justify-center gap-[12px]">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.66667 14.1664H13.3333M9.18141 2.30312L3.52949 6.69906C3.15168 6.99291 2.96278 7.13983 2.82669 7.32383C2.70614 7.48682 2.61633 7.67044 2.56169 7.86566C2.5 8.08605 2.5 8.32537 2.5 8.804V14.8331C2.5 15.7665 2.5 16.2332 2.68166 16.5898C2.84144 16.9034 3.09641 17.1583 3.41002 17.3181C3.76654 17.4998 4.23325 17.4998 5.16667 17.4998H14.8333C15.7668 17.4998 16.2335 17.4998 16.59 17.3181C16.9036 17.1583 17.1586 16.9034 17.3183 16.5898C17.5 16.2332 17.5 15.7665 17.5 14.8331V8.804C17.5 8.32537 17.5 8.08605 17.4383 7.86566C17.3837 7.67044 17.2939 7.48682 17.1733 7.32383C17.0372 7.13983 16.8483 6.99291 16.4705 6.69906L10.8186 2.30312C10.5258 2.07541 10.3794 1.96155 10.2178 1.91779C10.0752 1.87917 9.92484 1.87917 9.78221 1.91779C9.62057 1.96155 9.47418 2.07541 9.18141 2.30312Z"
-                  stroke="#D2D2D2"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 12L10 8L6 4"
-                  stroke="#E8E8E8"
-                  strokeWidth="1.33333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className="text-[#FFFEFF] font-medium text-[14px] leading-[22px]">
-                For Publishers
-              </span>
-            </div>
+            <Breadcrumb pages={[{ name: "For Publishers", link: "/publishers" }]} />
 
             <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]">
               For Publishers, networks and production houses
@@ -79,7 +46,7 @@ export default function Publishers() {
                 />
                 <GradientButton
                   type="tertiary"
-                  text="Download Podcaster Pack"
+                  text="Download Publisher Pack"
                   className="h-[44px] w-[231px]"
                 />
               </div>
@@ -88,7 +55,7 @@ export default function Publishers() {
 
           <div className=" relative  lg:absolute right-0 top-0 bottom-0">
             <Image
-              src="/assets/images/podcasters-right-banner-bg.png"
+              src="/assets/images/publisher-right-bg.png"
               alt="podcasters-image"
               className="w-full h-full object-cover"
               width={500}
@@ -243,12 +210,12 @@ export default function Publishers() {
           <div className="w-full flex flex-col gap-[40px]">
             <div className="w-full flex items-center justify-center flex-wrap gap-[40px] md:flex-nowrap">
               <div className="w-full flex flex-col md:w-[50%] gap-[40px]">
-                <h1 className="w-[100%] gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
+                <h1 className="w-[100%] capitalize gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
                   You’re in good company
                 </h1>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                   From indie creators to global studios, these publishers
-                  already trust Next to deliver results. If you run high-quality
+                  already trust Next Audio to deliver results. If you run high-quality
                   shows with engaged audiences, we’d love to work with you.
                 </h6>
                 <GradientButton
@@ -258,7 +225,7 @@ export default function Publishers() {
                 />
               </div>
               <Image
-                src="/assets/images/publishers_self-serve tools.png"
+                src="/assets/images/reach.png"
                 alt="podcasters-image"
                 className="w-full md:w-[50%] h-auto object-cover rounded-[16px]"
                 width={500}
@@ -272,7 +239,7 @@ export default function Publishers() {
         <section className="w-full flex flex-col gap-[64px]">
           <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[20px]">
             <div className="flex flex-col gap-[24px] w-full md:w-[90%]">
-              <button className="max-w-[300px] inline-flex items-center justify-center min-h-[44px] gap-[6px] px-[16px] py-[10px] rounded-[44px] border-2 border-[#F11F68] bg-[#FFEDFB] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] hover:bg-[#F11F68] hover:text-white transition-colors">
+              <button className="max-w-[200px] h-[32px] gap-[6px] text-center py-[4px] rounded-[31px] border-[1px] border-[#F11F68] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0.01rem]">
                 Global reach and results
               </button>
 
@@ -328,7 +295,7 @@ export default function Publishers() {
         <section className="w-full flex flex-col gap-[64px]">
           <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[20px]">
             <div className="flex flex-col gap-[24px] w-full md:w-[90%]">
-              <span className="inline-flex items-center min-h-[44px] gap-[6px] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] transition-colors">
+              <span className="inline-flex uppercase items-center min-h-[44px] gap-[6px] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0] font-[Switzer] transition-colors">
                 All the Ways You Can Earn
               </span>
 
@@ -410,19 +377,19 @@ export default function Publishers() {
           <div className="absolute z-10 inset-0 bg-[#091A3A] opacity-60 rounded-[16px]"></div>
           <div className="w-full z-20 flex flex-col items-start justify-center gap-[40px] p-[32px] lg:p-[64px] rounded-[16px]">
             <div>
-              <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
+              <h1 className="text-[#D6E4FF] capitalize text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                 Supporting the Shows That
               </h1>
-              <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
+              <h1 className="text-[#D6E4FF] capitalize text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                 Deserve to Grow
               </h1>
             </div>
             <div className="w-full flex flex-col lg:flex-row items-start lg:items-end justify-start lg:justify-end gap-[64px]">
               <div>
-                <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
+                <h1 className="text-[#D6E4FF]  capitalize text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                   …with expertise, tools, and
                 </h1>
-                <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
+                <h1 className="text-[#D6E4FF] capitalize text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                   access to global advertisers.
                 </h1>
               </div>
@@ -438,44 +405,8 @@ export default function Publishers() {
         </div>
       </section>
 
-      <section
-        className="w-full bg-[#FFFFFF] flex flex-col items-end justify-end md:py-[80px] px-4 md:px-[96px] gap-[64px]"
-        data-aos="fade-up"
-      >
-        <div className="max-w-[1440px] flex flex-row w-full justify-between items-end gap-[24px]">
-          <div className="flex flex-col items-start justify-start gap-4 md:gap-[20px]">
-            <div className="flex flex-col items-start justify-start gap-3 md:gap-[16px]">
-              <span className="text-[#F11F68] border border-[#F11F68] rounded-full px-3 md:px-[16px] py-1.5 md:py-[3px] text-sm md:text-[16px] leading-tight md:leading-[24px] font-medium">
-                Testimonials
-              </span>
-              <h1 className="font-semibold text-2xl md:text-3xl lg:text-[42px] leading-tight md:leading-[50px] gradient-text">
-                What Our Clients Say
-              </h1>
-            </div>
-          </div>
-          <div className="flex flex-col items-end justify-end gap-4 md:gap-[20px]">
-            <div className="flex flex-row items-center justify-center gap-4 md:gap-[24px]">
-              <Image
-                src="/assets/images/left.png"
-                alt="left-arrow"
-                className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
-                id="prevTestimonial"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/assets/images/right.png"
-                alt="right-arrow"
-                className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
-                id="nextTestimonial"
-                width={20}
-                height={20}
-              />
-            </div>
-          </div>
-        </div>
-        <TestimonialGroup />
-      </section>
+
+      <TestimonialGroup />
       <section className="w-full flex flex-col items-center justify-center">
         <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">
           <div className="w-full flex flex-col items-start justify-center gap-[24px]">
@@ -490,7 +421,7 @@ export default function Publishers() {
             <div className="w-full flex flex-col items-start justify-center gap-[32px]">
               <p className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                 Here are quick answers to some of the most common questions
-                about Next
+                about Next Audio
               </p>
               <div className="flex flex-row gap-[10px]">
                 <span className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-semibold">
@@ -505,32 +436,32 @@ export default function Publishers() {
           <div className="w-full flex flex-col items-start justify-center gap-[16px]">
             {[
               {
-                title: "What regions do you operate in?",
+                title: "Who can join the Next network?",
                 description:
-                  "We offer global reach across North America, Europe, the Middle East, Asia-Pacific, and beyond. Our inventory spans major podcast platforms and streaming services, ensuring your campaigns can target audiences wherever they listen.",
+                  "Any podcast publisher, network, or production house with high-quality shows and active listenership. We support both regional and global content strategies.",
               },
               {
                 title:
-                  "Can I target specific countries, languages, or audience segments?",
+                  "How is my inventory monetised?",
                 description:
-                  "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
               },
               {
-                title: "What types of audio ads can I run?",
+                title: "What types of brands do you work with?",
                 description:
-                  "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
-              },
-              {
-                title:
-                  "How do I measure the performance of my audio campaigns?",
-                description:
-                  "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "We work with global brands, major media agencies, and regional advertisers across industries, including finance, FMCG, travel, tech, health, and more.",
               },
               {
                 title:
-                  "What is the minimum budget required to start a campaign?",
+                  "Is this a non-exclusive partnership?",
                 description:
-                  "Next is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "Yes. We operate under a non-exclusive model. You retain full control and can continue monetizing through other platforms or partners.",
+              },
+              {
+                title:
+                  "How do I get started?",
+                description:
+                  "Just get in touch with our team. We’ll review your shows and guide you through onboarding, no platform migration or setup fees required.",
               },
             ].map((item, index) => (
               <FAQCard

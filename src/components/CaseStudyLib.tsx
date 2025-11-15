@@ -83,7 +83,7 @@ export default function CaseStudyLib({
 
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 px-6 py-12 bg-[#FFFEFF] text-[#262626]">
+    <div className="flex flex-col lg:flex-row gap-8 px-6 py-12 bg-[#FFFEFF] text-[#262626] max-w-[1280px]">
       {/* Left Sidebar */}
       <aside className="lg:w-1/4 space-y-4">
         <h3 className="font-[Switzer] font-semibold text-[14px] tracking-[-0.02em] text-[#F11F68]">

@@ -68,7 +68,7 @@ export default function Home() {
             <h1
               className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px] tracking-2%"
             >
-              Inside Next: The Team Behind Global Audio Campaigns
+              Inside Next Audio: The Team Behind Global Audio Campaigns
             </h1>
           </div>
           <div
@@ -81,7 +81,7 @@ export default function Home() {
               with global reach and trusted audio advertising solutions.
             </p>
             <GradientButton            
-              text="Learn About Next"
+              text="Learn About Next Audio"
               className="h-[44px] px-4"
               rightIcon={
                 <svg
@@ -181,7 +181,7 @@ export default function Home() {
             <h1
               className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px] tracking-[-0.02em]"
             >
-              Next Knowledge Hub
+              Next Audio Knowledge Hub
             </h1>
           </div>
           <div className="max-w-[520px]">
@@ -227,55 +227,7 @@ export default function Home() {
         </div>
       </section>
         
-      <section
-        className="w-full bg-[#FFFFFF] flex flex-col items-end justify-end md:py-[80px] px-4 md:px-[96px] gap-[64px]"
-        data-aos="fade-up"
-      >
-        <div
-          className="max-w-[1440px] flex flex-row w-full justify-between items-end gap-[24px]"
-        >
-          <div
-            className="flex flex-col items-start justify-start gap-4 md:gap-[20px]"
-          >
-            <div
-              className="flex flex-col items-start justify-start gap-3 md:gap-[16px]"
-            >
-              <span
-                className="text-[#F11F68] border border-[#F11F68] rounded-full px-3 md:px-[16px] py-1.5 md:py-[3px] text-sm md:text-[16px] leading-tight md:leading-[24px] font-medium"
-                >Testimonials</span
-              >
-              <h1
-                className="font-semibold text-2xl md:text-3xl lg:text-[42px] leading-tight md:leading-[50px] gradient-text"
-              >
-                What Our Clients Say
-              </h1>
-            </div>
-          </div>
-          <div className="flex flex-col items-end justify-end gap-4 md:gap-[20px]">
-            <div
-              className="flex flex-row items-center justify-center gap-4 md:gap-[24px]"
-            >
-              <Image
-                src="/assets/images/left.png"
-                alt="left-arrow"
-                className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
-                id="prevTestimonial"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/assets/images/right.png"
-                alt="right-arrow"
-                className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
-                id="nextTestimonial"
-                width={20}
-                height={20}
-              />
-            </div>
-          </div>
-        </div>
-        <TestimonialGroup />
-      </section> 
+      <TestimonialGroup />
 
       <section
         className="w-full bg-[#FFFFFF] flex flex-col items-end justify-end py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"

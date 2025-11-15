@@ -205,7 +205,7 @@ export default function CaseStudies() {
     },
     {
       left_title: "Travel & Tourism",
-      left_image: "/assets/images/accor.png",
+      left_image: "/assets/images/p-and-o.png",
       right_title: "Frequent traveller interest targeting",
       right_subtitle: "P&O Ferries",
       right_point_1: "Consideration",
@@ -223,7 +223,7 @@ export default function CaseStudies() {
     },
   ];
 
-  const splideOptions3 = {
+  const splideOptions3 = { 
     type: 'slide' as const,
     drag: 'free' as const,
     gap: 20,

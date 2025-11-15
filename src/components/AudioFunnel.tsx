@@ -525,7 +525,7 @@ export default function AudioFunnel() {
                       </svg>
                     </div>
                     <h6 className="font-normal text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[-0.0em] text-[#344054]">
-                      Listen-through rates consistently exceed 90%
+                      Listen-through rates consistently exceed 80%
                     </h6>
                   </div>
                   <div className="w-full flex flex-row gap-[12px]">

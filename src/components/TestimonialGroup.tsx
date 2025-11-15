@@ -1,11 +1,22 @@
 'use client';
 
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import { useEffect, useState } from 'react';
+import { Splide as SplideComponent, SplideSlide } from '@splidejs/react-splide';
+import type { Splide as SplideCore } from '@splidejs/splide';
+import { useEffect, useRef, useState } from 'react';
 import Testimonial from "./Testimonial";
+import Image from 'next/image';
 
 export default function TestimonialGroup() {
   const [splideWidth, setSplideWidth] = useState(100);
+  const splideInstanceRef = useRef<SplideCore | null>(null);
+
+  const handleMounted = (splide: SplideCore) => {
+    splideInstanceRef.current = splide;
+  };
+
+  const handleDestroy = () => {
+    splideInstanceRef.current = null;
+  };
 
   useEffect(() => {
     const updateWidth = () => {
@@ -20,7 +31,13 @@ export default function TestimonialGroup() {
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
-  
+  const moveLeft = () => {
+    splideInstanceRef.current?.go('<');
+  };
+
+  const moveRight = () => {
+    splideInstanceRef.current?.go('>');
+  };
 
 
   const testimonials = [
@@ -35,7 +52,7 @@ export default function TestimonialGroup() {
     {
 
       title: "Staying Ahead with Audio",
-      quote: "The podcast was an exciting and needed next step for Kiri to earn our audience’s audio attention and to stay ahead of our competitors in a modern way.",
+      quote: "The podcast was an exciting and needed Next Audio step for Kiri to earn our audience’s audio attention and to stay ahead of our competitors in a modern way.",
       stars: 5,
       name: "Noha Gaber",
       designation: "Senior Brand Manager - Kiri",
@@ -75,7 +92,7 @@ export default function TestimonialGroup() {
     },
     {
       title:"Game Changer",
-      quote: "Working with Next for our podcast advertising campaign in North America and the Asia-Pacific region has been a game-changer.",
+      quote: "Working with Next Audio for our podcast advertising campaign in North America and the Asia-Pacific region has been a game-changer.",
       stars: 5,
       name: "Aurore Nguyen",
       designation: "Director, Transmission",
@@ -133,12 +150,65 @@ export default function TestimonialGroup() {
   };
 
   return (
+    <section
+    className="w-full bg-[#FFFFFF] flex flex-col items-end justify-end md:py-[80px] px-4 md:px-[96px] gap-[64px]"
+    data-aos="fade-up"
+  >
+    <div
+      className="max-w-[1440px] flex flex-row w-full justify-between items-end gap-[24px]"
+    >
+      <div
+        className="flex flex-col items-start justify-start gap-4 md:gap-[20px]"
+      >
+        <div
+          className="flex flex-col items-start justify-start gap-3 md:gap-[16px]"
+        >
+          <span
+            className="text-[#F11F68] border border-[#F11F68] rounded-full px-3 md:px-[16px] py-1.5 md:py-[3px] text-sm md:text-[16px] leading-tight md:leading-[24px] font-medium"
+            >Testimonials</span
+          >
+          <h1
+            className="font-semibold text-2xl md:text-3xl lg:text-[42px] leading-tight md:leading-[50px] gradient-text"
+          >
+            What Our Clients Say
+          </h1>
+        </div>
+      </div>
+      <div className="flex flex-col items-end justify-end gap-4 md:gap-[20px]">
+        <div
+          className="flex flex-row items-center justify-center gap-4 md:gap-[24px]"
+        >
+          <Image
+            src="/assets/images/left.png"
+            alt="left-arrow"
+            className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
+            id="prevTestimonial"
+            width={20}
+            height={20}
+            onClick={moveLeft}
+          />
+          <Image
+            src="/assets/images/right.png"
+            alt="right-arrow"
+            className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
+            id="nextTestimonial"
+            width={20}
+            height={20}
+            onClick={moveRight}
+          />
+        </div>
+      </div>
+    </div>
     <div
       className="max-w-[1440px] w-full rounded-l-[16px]"
       id="testimonials"
       data-aos="fade-up"
     >
-      <Splide options={splideOptions}>
+      <SplideComponent
+        options={splideOptions}
+        onMounted={handleMounted}
+        onDestroy={handleDestroy}
+      >
         {testimonials.map((testimonial, index) => (
           <SplideSlide key={index}>
             <Testimonial
@@ -150,7 +220,8 @@ export default function TestimonialGroup() {
             />
           </SplideSlide>
         ))}
-      </Splide>
+      </SplideComponent>
     </div>
+    </section> 
   );
 }
