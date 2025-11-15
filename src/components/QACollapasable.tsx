@@ -4,9 +4,10 @@ import { useState } from "react";
 interface QACollapasableProps {
     title: string;
     description: string;
+    descriptionHTML?: React.ReactNode;
 }
 
-export default function QACollapasable({ title, description }: QACollapasableProps) {
+export default function QACollapasable({ title, description, descriptionHTML }: QACollapasableProps) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className="w-full flex flex-col items-start justify-center py-[20px] border-[#E8E8E8] border-b-[1px] border-t-[1px] gap-[12px]">
@@ -30,7 +31,7 @@ export default function QACollapasable({ title, description }: QACollapasablePro
             </h1>
             <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                 <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-normal">
-                    {description}
+                    {descriptionHTML ? descriptionHTML : description}
                 </p>
             </div>
         </div>

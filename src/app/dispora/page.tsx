@@ -1,0 +1,548 @@
+import ActionSidebar from "@/components/ActionSidebar";
+import BrandsScroller from "@/components/BrandsScroller";
+import FAQCard from "@/components/FAQCard";
+import Footer from "@/components/Footer";
+import GradientButton from "@/components/GradientButton";
+import Navbar from "@/components/Navbar";
+import QACollapasable from "@/components/QACollapasable";
+import Image from "next/image";
+
+export default function Dispora() {
+  return (
+    <div className="min-h-screen h-full flex flex-col items-center justify-center bg-white">
+      <Navbar
+        bgColor="bg-[#511DB5]"
+        bgColorOnOpen="bg-[#511DB5]"
+        linkColor="#FFFEFF"
+      />
+
+      <div className="bg-[#511DB5] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
+        <section
+          className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 gap-[80px] items-start justify-start relative lg:max-w-[1440px]"
+          id="home"
+        >
+          <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
+            <div className="flex flex-row items-center justify-center gap-[12px]">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.66667 14.1664H13.3333M9.18141 2.30312L3.52949 6.69906C3.15168 6.99291 2.96278 7.13983 2.82669 7.32383C2.70614 7.48682 2.61633 7.67044 2.56169 7.86566C2.5 8.08605 2.5 8.32537 2.5 8.804V14.8331C2.5 15.7665 2.5 16.2332 2.68166 16.5898C2.84144 16.9034 3.09641 17.1583 3.41002 17.3181C3.76654 17.4998 4.23325 17.4998 5.16667 17.4998H14.8333C15.7668 17.4998 16.2335 17.4998 16.59 17.3181C16.9036 17.1583 17.1586 16.9034 17.3183 16.5898C17.5 16.2332 17.5 15.7665 17.5 14.8331V8.804C17.5 8.32537 17.5 8.08605 17.4383 7.86566C17.3837 7.67044 17.2939 7.48682 17.1733 7.32383C17.0372 7.13983 16.8483 6.99291 16.4705 6.69906L10.8186 2.30312C10.5258 2.07541 10.3794 1.96155 10.2178 1.91779C10.0752 1.87917 9.92484 1.87917 9.78221 1.91779C9.62057 1.96155 9.47418 2.07541 9.18141 2.30312Z"
+                  stroke="#D2D2D2"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12L10 8L6 4"
+                  stroke="#E8E8E8"
+                  strokeWidth="1.33333"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span className="text-[#FFFEFF] font-medium text-[14px] leading-[22px]">
+                For Advertisers
+              </span>
+
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12L10 8L6 4"
+                  stroke="#E8E8E8"
+                  strokeWidth="1.33333"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span className="text-[#FFFEFF] font-medium text-[14px] leading-[22px]">
+              NextGen Voices
+              </span>
+            </div>
+
+            <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]">
+            FOR BRANDS & MEDIA AGENCIES
+            </h1>
+            <div className="flex flex-col gap-[32px] items-start justify-start">
+              <div className="flex flex-col items-start justify-start gap-[24px]">
+                <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
+                Advertise to Multicultural Podcast Listeners
+                </h1>
+              </div>
+              <h2 className="font-medium lg:font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-[#FFFEFF]">
+              Expand your reach to diaspora communities across North America, who over-index in education, income, and global mobility.
+
+              </h2>
+              <div className="flex flex-col lg:flex-row gap-[12px] items-start lg:items-center justify-start">
+                <GradientButton
+                  type="secondary"
+                  text="Book a Call"
+                  className="h-[44px] w-[184px]"
+                />
+                <GradientButton
+                  type="tertiary"
+                  text="Download More Information"
+                  className="h-[44px] w-[231px]"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className=" relative  lg:absolute right-0 top-0 bottom-0 max-w-[700px]">
+            <Image
+              src="/assets/images/dispora_bg.png"
+              alt="podcasters-image"
+              className="w-full h-full object-cover"
+              width={500}
+              height={500}
+            />
+          </div>
+        </section>
+      </div>
+      <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full max-w-[1440px]">
+          <section className="pt-[84px] lg:py-[48px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFEFF]">
+            <div className="w-full flex flex-col lg:flex-row  items-center justify-between gap-[64px] rounded-[16px]">
+              <div className="w-full flex flex-col items-start justify-center gap-[40px] max-w-[590px]">
+                <div className="flex flex-col items-start justify-center gap-[24px]">
+                  <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
+                  Advertising Formats To Reach Diaspora Communities
+                  </h1>
+                  <div className="flex flex-col items-start justify-center gap-[32px]">
+                    <div className="flex flex-col items-start justify-center gap-[16px]">
+                      <p className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
+                      Connect with global-minded communities living in North America, who over-index in <b>education, income, and global mobility,</b> through:
+                      </p>
+                      <div className="flex flex-col items-start justify-center gap-[12px]">
+                        <h1 className="flex flex-row items-center justify-start gap-[12px]">
+                          <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
+                              stroke="#F11F68"
+                              strokeWidth="2.33333"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                          <b>Programmatic scale </b>for precise, efficient targeting
+                          </span>
+                        </h1>
+
+                        <h1 className="flex flex-row items-center justify-start gap-[12px]">
+                          <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
+                              stroke="#F11F68"
+                              strokeWidth="2.33333"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                          <b>Host-read sponsorships </b>that drive trust and recall
+                          </span>
+                        </h1>
+
+                        <h1 className="flex flex-row items-center justify-start gap-[12px]">
+                          <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
+                              stroke="#F11F68"
+                              strokeWidth="2.33333"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                          <b>Cultural and language adaptation</b> that resonates
+                          </span>
+                        </h1>
+
+
+                        <h1 className="flex flex-row items-center justify-start gap-[12px]">
+                          <svg
+                            width="26"
+                            height="26"
+                            viewBox="0 0 26 26"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
+                              stroke="#F11F68"
+                              strokeWidth="2.33333"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                          <b>Full-funnel tracking </b> via advanced third-party partners
+                          </span>
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full mb-2">
+                  <GradientButton
+                    text="Download Media Kit"
+                    type="secondary"
+                    className=""
+                  />
+                </div>
+              </div>
+              <div className="w-full">
+                <div className="w-full rounded-[16px] overflow-hidden">
+                  <Image
+                    src="/assets/images/podcaster3.png"
+                    alt="podcaster-package"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="w-full flex flex-col items-center justify-center px-[16px]  py-[84px] lg:py-[80px] lg:px-[80px] bg-[#FFFEFF] gap-[64px]">
+            <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-[16px] lg:gap-[24px]">
+              <div>
+                <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
+                Target Audience Community Profiles
+                </h1>
+              </div>
+              <div>
+                <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
+                Explore snapshots of our audience profiles, reach, and marketing potential in the U.S. and Canada
+                </p>
+              </div>
+            </div>
+            <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[16px] lg:gap-[24px]">
+              <div className="w-full flex flex-col items-start justify-start">
+                <Image
+                  src="/assets/images/target-community.jpg"
+                  alt="Ad Formats"
+                  width={588}
+                  height={420}
+                  className="w-full max-w-[588px] object-cover"
+                />
+              </div>
+              <div className="w-full flex flex-col items-start justify-center gap-[40px]">
+                <div className="w-full flex flex-col items-start justify-center">
+                  <QACollapasable
+                    title=" Middle Eastern & Persian Audiences"
+                    description=""
+                    descriptionHTML={
+                      <ul className="list-disc list-inside">
+                        <li>
+                        <b>Includes:</b> Lebanon, Egypt, Jordan, UAE, Saudi Arabia, Morocco, Turkey
+                        </li>
+                        <li>
+                        <b>Network Unique Users:</b> ≥ 2.2 million 
+                        </li>
+                        <li>
+                        <b>US Profile:</b> 52% hold bachelor’s+ degrees; strong in management, business, science roles
+                        </li>
+                      </ul>
+                    }
+                  />
+                  <QACollapasable
+                    title="South Asian Audiences"
+                    description=""
+                    descriptionHTML={
+                      <ul className="list-disc list-inside">
+                        <li>
+                        <b>Includes:</b> India, Pakistan, Bangladesh, Sri Lanka, Nepal, Bhutan, Maldives.
+                        </li>
+                        <li>
+                        <b>Network Unique Users:</b> ≥ 4.5 million 
+                        </li>
+                        <li>
+                        <b>US Profile:</b> ~5.2M living in the US; highest earning immigrant group (median HH income $151k) 
+                        </li>
+                      </ul>
+                    }
+                  />
+                  <QACollapasable
+                    title="East & Southeast Asian Audiences"
+                    description=""
+                    descriptionHTML={
+                      <ul className="list-disc list-inside">
+                        <li>
+                        <b>Includes:</b> China, Taiwan, Japan, South Korea, Philippines, Indonesia, Malaysia, Thailand.
+                        </li>
+                        <li>
+                        <b>Network Unique Users:</b> ≥ 1.5 million 
+                        </li>
+                        <li>
+                        <b>US Profile:</b> 63% speak non-English at home; Frequent international travel
+                        </li>
+                      </ul>
+                    }
+                  />
+                  <QACollapasable
+                    title="African Diaspora Audiences"
+                    description=""
+                    descriptionHTML={
+                      <ul className="list-disc list-inside">
+                        <li>
+                        <b>Includes:</b> Nigeria, Ghana, Kenya, South Africa
+                        </li>
+                        <li>
+                        <b>Network Unique Users:</b> ≥ 6.5 million 
+                        </li>
+                        <li>
+                        <b>US Profile:</b> 69% college or more vs ~63% U.S. born populations; ~33% STEM degree
+                        </li>
+                      </ul>
+                    }                    
+                  />
+
+                  <QACollapasable
+                    title="European Audiences"
+                    description=""
+                    descriptionHTML={
+                      <ul className="list-disc list-inside">
+                        <li>
+                        <b>Includes:</b> Italy, France, Germany, Spain, Netherlands, Ukraine, Russia, Romania.
+                        </li>
+                        <li>
+                        <b>Network Unique Users:</b> ≥ 3.7 million 
+                        </li>
+                        <li>
+                        <b>US Profile:</b> Median HH income ~$102k; High share in management, business, science, & arts
+                        </li>
+Network Unique Users: ≥ 3.7 million 
+                        <li>
+                        <b>US Profile:</b> Median HH income ~$102k; High share in management, business, science, & arts
+                        </li>
+                      </ul>
+                    }                    
+                  />
+                </div>
+                <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[12px]">
+                  <GradientButton text="Share a Brief" className="h-[48px] w-[200px]" />
+                  <GradientButton text="Download Media Kit" type="secondary" className="w-[180px] h-[48px]" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className=" pt-[84px] lg:pt-[96px] pb-[48px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF] lg:max-w-[1440px]">
+            <div className="w-full flex flex-col lg:flex-row px-[16px] lg:px-[80px] items-center justify-center gap-[16px] lg:gap-[24px]">
+              <div className="w-full text-start">
+                <h1 className="gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
+                  Brands That Trust Us
+                </h1>
+              </div>
+              <div className="py-[8px]">
+                <p className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
+                  Over 300 advertisers have launched more than 850 successful
+                  campaigns, across every budget, goal, and industry.
+                </p>
+              </div>
+            </div>
+            <BrandsScroller />
+          </section>
+
+
+          <section
+            className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 gap-[80px] items-center justify-between relative lg:max-w-[1440px]"
+            id="home"
+          >
+            <div className="w-full">
+              <Image
+                src="/assets/images/creative-adaption-service.jpg"
+                alt="podcast-recording-session"
+                className="w-full h-full object-cover"
+                width={500}
+                height={500}
+                priority
+              />
+            </div>
+
+            <div className="w-full flex flex-col items-start justify-center gap-[24px]">
+              <h1 className="font-semibold text-[34px] lg:text-[48px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
+              Creative Adaptation Services
+              </h1>
+              <div className="flex flex-col items-start justify-center gap-[12px]">
+                <div className="flex flex-row items-start justify-start gap-[12px]">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
+                      stroke="#F11F68"
+                      strokeWidth="2.33333"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <h1>
+                    <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                    Translate & Localise
+                    </span>
+                    <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                    Adapt existing campaigns using native voices, accurate dialects, and local context.
+                    </span>
+                  </h1>
+                </div>
+
+                <div className="flex flex-row items-start justify-start gap-[12px]">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
+                      stroke="#F11F68"
+                      strokeWidth="2.33333"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <h1>
+                    <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                    Bilingual Mix
+                    </span>
+                    <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                    Blend English with authentic phrases or greetings to connect naturally.
+                    </span>
+                  </h1>
+                </div>
+
+
+                <div className="flex flex-row items-start justify-start gap-[12px]">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
+                      stroke="#F11F68"
+                      strokeWidth="2.33333"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <h1>
+                    <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                    Culture-First
+                    </span>
+                    <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
+                    Anchor your message in real experiences and shared moments — from Ramadan to Lunar New Year to family travel.
+                    </span>
+                  </h1>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+
+          <section className="pt-[48px] lg:pt-[96px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF]">
+            <div className="w-full flex flex-col lg:flex-row items-center justify-center rounded-[16px] gap-[20px] p-[0px] bg-[#FFFFFF] max-w-[1280px]">
+              <div className="w-full flex flex-col items-start justify-center gap-[40px] bg-[#F11F68] rounded-[16px] p-[32px] lg:p-[64px] w-full">
+                <div>
+                  <h1 className="font-semibold text-[26px] lg:text-[32px] leading-[34px] lg:leading-[40px] tracking-[-0.02em] text-[#FFFEFF]">
+                    Join the company trusted by thousands of creators to connect
+                    with top global advertisers.
+                  </h1>
+                </div>
+                <div className="flex flex-col items-start justify-center gap-[16px] w-full">
+                  <div className="flex flex-col lg:flex-row items-start justify-between gap-[16px] w-full">
+                    <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] min-w-[238px] w-full">
+                      <h1 className="font-semibold text-[32px] leading-[40px] tracking-[0.0em] gradient-text">
+                        350+
+                      </h1>
+                      <h2 className="font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] tracking-[0.0em] text-[#262626]">
+                        Brands <br />& agencies
+                      </h2>
+                    </div>
+                    <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] min-w-[238px] w-full">
+                      <h1 className="font-semibold text-[32px] leading-[40px] tracking-[0.0em] gradient-text">
+                        850+
+                      </h1>
+                      <h2 className="font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] tracking-[0.0em] text-[#262626]">
+                        Campaigns
+                        <br /> delivered
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] w-full">
+                    <h1 className="font-semibold text-[32px] leading-[40px] tracking-[0.0em] gradient-text">
+                      90+
+                    </h1>
+                    <h2 className="font-semibold text-[20px] leading-[28px] tracking-[0.0em] text-[#262626]">
+                      Global markets
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full bg-[#F8F9FA] rounded-[16px]">
+                <Image
+                  src="/assets/images/popular-channels.png"
+                  alt="podcaster-right-banner-bg"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </section>
+
+
+        </div>
+      </div>
+      <Footer />
+      <ActionSidebar />
+    </div>
+  );
+}
