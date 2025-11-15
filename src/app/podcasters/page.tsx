@@ -305,8 +305,8 @@ export default function Podcaster() {
                   </h1>
                 </div>
                 <div className="flex flex-col items-start justify-center gap-[16px] w-full">
-                  <div className="flex flex-col lg:flex-row items-start justify-center gap-[16px] w-full">
-                    <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] min-w-[238px] w-full lg:w-auto">
+                  <div className="flex flex-col lg:flex-row items-start justify-between gap-[16px] w-full">
+                    <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] min-w-[238px] w-full">
                       <h1 className="font-semibold text-[32px] leading-[40px] tracking-[0.0em] gradient-text">
                         350+
                       </h1>
@@ -314,7 +314,7 @@ export default function Podcaster() {
                         Brands <br />& agencies
                       </h2>
                     </div>
-                    <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] min-w-[238px] w-full lg:w-auto">
+                    <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] min-w-[238px] w-full">
                       <h1 className="font-semibold text-[32px] leading-[40px] tracking-[0.0em] gradient-text">
                         850+
                       </h1>
@@ -345,6 +345,7 @@ export default function Podcaster() {
               </div>
             </div>
           </section>
+
 
           <section className="w-full flex flex-col items-center justify-center">
             <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">

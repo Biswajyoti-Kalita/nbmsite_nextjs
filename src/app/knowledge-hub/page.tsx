@@ -1,65 +1,15 @@
-import CaseStudies from "@/components/CaseStudies";
 import Footer from "@/components/Footer";
 import HighlightsGroup from "@/components/HighlightsGroup";
 import KnowledgeHubLib from "@/components/KnowledgeHubLib";
 import Navbar from "@/components/Navbar";
-import caseStudies from "@/data/caseStudies.json";
 import Image from "next/image";
-
-interface CaseStudy {
-  name: string;
-  category: string;
-  banner_image: string;
-  banner_title: string;
-  banner_subtitle: string;
-  summary: {
-    client: string;
-    industry: string;
-    campaign_types: string;
-    audio_format: string;
-    audience_profile: string;
-  };
-  objective: string;
-  execution: {
-    title: string;
-    points: string[];
-    bottom_text?: string;
-  };
-  results: {
-    title: string;
-    subtitle: string;
-  }[];
-  audio: {
-    image: string;
-    title: string;
-    points: string[];
-    audio_file: string;
-  };
-  testimonials?: {
-    quote: string;
-    stars: number;
-    name: string;
-    designation: string;
-    image: string;
-  }[];
-}
-type CaseStudies = Record<string, CaseStudy>;
-const caseStudiesData = caseStudies as CaseStudies;
-const caseStudiesArrary = Object.keys(caseStudiesData).map((key) => {
-  return {
-    ...caseStudiesData[key],
-    id: key,
-  };
-});
-
-console.log({ caseStudiesArrary });
 
 export default function KnowledgeHub() {
   return (
     <div className="h-full flex flex-col items-center justify-center bg-white">
       <Navbar
         bgColor="bg-[#091A3A]"
-        bgColorOnOpen="bg-[##091A3A]"
+        bgColorOnOpen="bg-[#091A3A]"
         linkColor="#FFFEFF"
       />
       <div className="bg-[#091A3A] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">

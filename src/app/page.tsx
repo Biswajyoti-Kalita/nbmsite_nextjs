@@ -326,9 +326,9 @@ export default function Home() {
               <Image
                 src="/assets/images/image-4.png"
                 alt="ready-to-launch"
-                className="w-full h-auto"
                 width={475}
                 height={320}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

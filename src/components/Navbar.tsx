@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import isMobile from "@/util/util";
 import Image from "next/image";
 import Link from "next/link";
+import CallMeBack from "./CallMeBack";
+import ShareBrief from "./ShareBrief";
 
 
 const isMobileScreen = isMobile();
@@ -18,6 +20,26 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
 
   const [isMobileScreenMenuOpen, setisMobileScreenMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isCallMeBackModalOpen, setIsCallMeBackModalOpen] = useState(false);
+  const [isShareBriefModalOpen, setIsShareBriefModalOpen] = useState(false);
+
+  const showShareBriefModal = () => {
+    setisMobileScreenMenuOpen(false); // Close mobile menu if open
+    setIsShareBriefModalOpen(true);
+  }
+
+  const closeShareBriefModal = () => {
+    setIsShareBriefModalOpen(false);
+  }
+
+  const showCallMeBackModal = () => {
+    setisMobileScreenMenuOpen(false); // Close mobile menu if open
+    setIsCallMeBackModalOpen(true);
+  }
+
+  const closeCallMeBackModal = () => {
+    setIsCallMeBackModalOpen(false);
+  }
 
 
   useEffect(() => {
@@ -40,7 +62,28 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
     };
   }, []);
 
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isCallMeBackModalOpen) {
+        closeCallMeBackModal();
+      }
+    };
+
+    if (isCallMeBackModalOpen) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleEscape);
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [isCallMeBackModalOpen]);
+
   return (
+    <>
     <div className={`${isMobileScreenMenuOpen || isScrolled ? bgColorOnOpen+ '' : bgColor} flex justify-start items-start fixed top-0 left-0 right-0 z-[9999] mb-2 w-full  h-16 md:h-20 transition-all duration-300`}>
       <div className="w-full p-4 py-8 md:p-8 xl:max-w-[1440px]">
         <div className="w-full mt-4 md:mt-0">
@@ -125,8 +168,8 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                 ):
                 (
                   <div className="flex flex-row gap-[12px] h-[64px] items-center">
-                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" className="h-[48px]" />
-                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[48px]" />
+                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" className="h-[48px]" onClick={showShareBriefModal} />
+                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[48px]" onClick={showCallMeBackModal} />
                 </div>
                 )
                 }
@@ -163,10 +206,10 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                   </ul>
                   <div className="flex flex-row gap-[20px] justify-center items-center w-full">
                     <div className="w-full flex flex-row justify-center items-center">
-                      <GradientButton type="tertiary" text="Share a Brief" className="w-[160px] h-[40px]" />
+                      <GradientButton type="tertiary" text="Share a Brief" className="w-[160px] h-[40px]"  onClick={showShareBriefModal}/>
                     </div>
                     <div className="w-full flex flex-row justify-center items-center">
-                      <GradientButton type="secondary" text="Сall Me Back" className="w-[160px] h-[40px]" />
+                      <GradientButton type="secondary" text="Сall Me Back" className="w-[160px] h-[40px]" onClick={() => showCallMeBackModal()} />
                     </div>
                   </div>
                 </div>
@@ -176,5 +219,49 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
         </div>
       </div>
     </div>
+
+    {/* Share Brief Modal */}
+    {isShareBriefModalOpen && (
+      <div 
+        className="fixed inset-0 z-[10000] flex items-end lg:items-center justify-center  p-0 lg:p-4 bg-black/40 bg-opacity-20"
+        onClick={closeShareBriefModal}
+      >
+      <div 
+      className="relative w-full max-w-[900px] max-h-auto flex flex-row items-end lg:items-center justify-center overflow-y-auto shadow-xl"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <ShareBrief closeModal={closeShareBriefModal} />
+    </div>
+      </div>
+    )}
+
+    {/* Call Me Back Modal */}
+    {isCallMeBackModalOpen && (
+      <div 
+        className="fixed inset-0 z-[10000] flex items-center justify-center  p-0 lg:p-4 bg-black/40 bg-opacity-20"
+        onClick={closeCallMeBackModal}
+      >
+        <div 
+          className="relative w-full max-w-[900px] max-h-[700px] overflow-y-auto shadow-xl"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            onClick={closeCallMeBackModal}
+            className="absolute top-[64px] lg:top-4 right-4 z-10 p-0 w-10 h-10 lg:p-2 text-[#262626] transition-colors rounded-full hover:bg-gray-100"
+            aria-label="Close modal"
+          >
+            <Image
+              src="/assets/images/close.png"
+              alt="Close"
+              width={12}
+              height={12}
+              className="w-[12px] h-[12px]"
+            />
+          </button>
+          <CallMeBack closeModal={closeCallMeBackModal} />
+        </div>
+      </div>
+    )}
+    </>
   );
 }
