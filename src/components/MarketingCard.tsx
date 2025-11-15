@@ -26,7 +26,7 @@ export default function MarketingCard({
     <div
       className={`bg-white ${
         expanded ? "expanded" : "collapsed"
-      } marketing-card p-6 md:p-[40px] rounded-[16px] flex flex-row md:flex-col w-full md:w-auto lg:max-w-[630px] h-[116px] md:h-[300px] items-start justify-between relative`}
+      } marketing-card p-6 md:p-[40px] rounded-[16px] flex flex-row md:flex-col w-full md:w-auto lg:max-w-[630px] h-[116px] md:h-[300px] items-start justify-between relative overflow-hidden`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       style={{
@@ -35,24 +35,27 @@ export default function MarketingCard({
           : "white",
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full rounded-[16px] master-card-bg-container">
-        {expanded ? (
-          <>
-            <Image
-              src={image}
-              alt="illustration"
-              className="w-full h-full object-cover rounded-[16px]"
-              width={525}
-              height={300}
-            />
-            <div
-              className="absolute top-0 left-0 w-full h-full bg-[#00000066] rounded-[16px]"
-              style={{ backdropFilter: "blur(0px)" }}
-            ></div>
-          </>
-        ) : (
-          <div className="top-[2px] bottom-[2px] left-[2px] right-[2px] bg-white rounded-[16px] absolute "></div>
-        )}
+      <div className="pointer-events-none absolute top-0 left-0 w-full h-full rounded-[16px] master-card-bg-container overflow-hidden">
+        <Image
+          src={image}
+          alt="illustration"
+          className={`w-full h-full object-cover rounded-[16px] transition-opacity duration-500 ${
+            expanded ? "opacity-100" : "opacity-0"
+          }`}
+          width={525}
+          height={300}
+          priority={expanded}
+        />
+        <div
+          className={`absolute top-0 left-0 w-full h-full bg-[#00000066] rounded-[16px] transition-opacity duration-500 ${
+            expanded ? "opacity-100" : "opacity-0"
+          }`}
+        ></div>
+        <div
+          className={`top-[2px] bottom-[2px] left-[2px] right-[2px] bg-white rounded-[16px] absolute transition-opacity duration-500 ${
+            expanded ? "opacity-0" : "opacity-100"
+          }`}
+        ></div>
       </div>
 
       <div className="z-10 flex flex-col items-start justify-start gap-2 md:gap-[16px] master-card-content">

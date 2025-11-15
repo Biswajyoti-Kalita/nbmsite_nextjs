@@ -1,5 +1,6 @@
 declare module '@splidejs/react-splide' {
   import { ComponentType, ReactNode } from 'react';
+  import type { Splide as SplideInstance } from '@splidejs/splide';
   
   export interface SplideOptions {
     type?: 'slide' | 'loop' | 'fade';
@@ -28,6 +29,9 @@ declare module '@splidejs/react-splide' {
     extensions?: SplideExtensions;
     'aria-labelledby'?: string;
     children?: ReactNode;
+    onMounted?: (splide: SplideInstance) => void;
+    onDestroy?: (splide: SplideInstance) => void;
+    [key: string]: unknown;
   }
   
   export interface SplideSlideProps {

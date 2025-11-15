@@ -56,6 +56,8 @@ body {
 .marketing-card.collapsed {
   /* background-color: linear-gradient(90deg, #f11f68 0%, #162abf 100%); */
   border-radius: 20px;
+  max-width: 330px;
+  flex: 0 0 330px;
 }
 /* .marketing-card.collapsed button span{
     display: none;
@@ -111,20 +113,7 @@ body {
 
 .marketing-card.expanded {
     max-width: 630px;
-    /* flex: 1; */
-}
-
-.marketing-card.collapsed {
-    /* max-width: 330px; */
-}
-
-.marketing-cards-container:hover .marketing-card:not(:hover) {
-    max-width: 330px;
-}
-
-.marketing-cards-container:hover .marketing-card:hover {
-    max-width: 630px;
-    flex: 1;
+    flex: 1 1 630px;
 }
 
 /* Content visibility based on card state */
@@ -213,11 +202,11 @@ body {
     bottom: -3rem;
   }
   @media (max-width: 768px) {
-   
     #highlights .splide__pagination, #case-study-testimonial .splide__pagination, #caseStudies .splide__pagination{
       bottom: -1.5rem;
     }
-    .marketing-card.expanded {
+    .marketing-card.expanded,
+    .marketing-card.collapsed {
         flex: none;
         max-width: 100%;
     }
