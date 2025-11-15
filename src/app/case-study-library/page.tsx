@@ -82,7 +82,7 @@ export default function CaseStudyLibrary() {
       </div>
 
       <section
-            className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
+            className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px] max-w-[1280px]"
           >
             <div className="max-w-[1440px] w-full grid grid-cols-1 lg:grid-cols-8 justify-between items-center gap-4 md:gap-[24px]">
               <div className="lg:col-span-6">
