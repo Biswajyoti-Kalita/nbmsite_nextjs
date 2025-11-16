@@ -51,13 +51,13 @@ export default function PublisherRevenuSection() {
                 programmatic podcast campaigns.
               </h5>
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                   Live exposure to buyers across DV360 and our AdManager
                   platform
@@ -65,38 +65,38 @@ export default function PublisherRevenuSection() {
               </div>
 
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                   Easy integration and hands-off monetization
                 </h6>
               </div>
 
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                   Automated ad delivery and reporting
                 </h6>
               </div>
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                   Built for scalable, consistent revenue
                 </h6>
@@ -137,54 +137,54 @@ export default function PublisherRevenuSection() {
 
             <div className="flex flex-col items-start justify-center gap-[16px]">
               <h5 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-              Get pitched to top-tier brands looking for  sponsorships, custom ads, branded content and host reads, matched and managed b Next Audio's expert team.
+              Get pitched to top-tier brands looking for  sponsorships, custom ads, branded content and host reads, matched and managed b Next Audio&apos;s expert team.
               </h5>
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                 Get your content in front of premium advertisers
                 </h6>
               </div>
 
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                 Earn from brand-safe, high-value campaigns
                 </h6>
               </div>
 
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                 Opportunities across sponsorship, branded content, and dynamic ads
                 </h6>
               </div>
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img
+                <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
                   className="w-[26px]"
                   width={26}
                   height={26}
-                ></img>
+                ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                 Hands-on support to align with advertiser needs and secure bookings
                 </h6>

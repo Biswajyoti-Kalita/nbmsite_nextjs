@@ -1,7 +1,7 @@
 import AboutUsImageCard from "@/components/AboutUsImageCard";
 import BrandsScroller from "@/components/BrandsScroller";
 import Breadcrumb from "@/components/Breadcrumb";
-import CaseStudies from "@/components/CaseStudies";
+
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import MarketingCardGroup from "@/components/MarketingCardGroup";

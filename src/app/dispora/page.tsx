@@ -1,11 +1,11 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
 import Breadcrumb from "@/components/Breadcrumb";
-import FAQCard from "@/components/FAQCard";
+
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
-import QACollapasable from "@/components/QACollapasable";
+
 import QACollapseableContainer from "@/components/QACollapseableContainer";
 import Image from "next/image";
 

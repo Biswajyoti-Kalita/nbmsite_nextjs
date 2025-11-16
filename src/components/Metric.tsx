@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import GradientButton from "./GradientButton";
 
 export default function Metric() {
-  const [hovereredMetricIndex, sethovereredMetricIndex] = useState(0);
+  //const [hovereredMetricIndex, sethovereredMetricIndex] = useState(0);
+  const hovereredMetricIndex = 0;
   const metricsPlatforms = [
     {
       title: "Podcast/Audio",

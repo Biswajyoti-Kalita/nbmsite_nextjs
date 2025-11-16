@@ -2,12 +2,12 @@ import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
 import Button from "@/components/Button";
 import Breadcrumb from "@/components/Breadcrumb";
-import CaseStudies from "@/components/CaseStudies";
+
 import FAQCard from "@/components/FAQCard";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
-import QACollapasable from "@/components/QACollapasable";
+
 import TestimonialGroup from "@/components/TestimonialGroup";
 import Image from "next/image";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";

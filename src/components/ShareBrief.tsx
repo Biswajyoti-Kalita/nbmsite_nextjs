@@ -8,19 +8,19 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
   const [selected, setSelected] = useState("US");
   const [requestSent, setrequestSent] = useState(false);
   const [formType, setformType] = useState("complete-a-form");
-  const [campaignData, setcampaignData] = useState({
-    campaignAim: "awareness",
-    fullName: "",
-    geoTargeting: "",
-    targetAudience: "",
-    languageTargeting: "",
-    campaignDates: "",
-    budget: "",
-  });
+  // const [campaignData, setcampaignData] = useState({
+  //   campaignAim: "awareness",
+  //   fullName: "",
+  //   geoTargeting: "",
+  //   targetAudience: "",
+  //   languageTargeting: "",
+  //   campaignDates: "",
+  //   budget: "",
+  // });
   const [step, setStep] = useState(1);
 
   const formRefStep1 = useRef<HTMLFormElement>(null);
-  const formRefStep2 = useRef<HTMLFormElement>(null);
+  // const formRefStep2 = useRef<HTMLFormElement>(null);
 
   const moveNextStep = () => {
     if (step === 1 && formRefStep1.current?.checkValidity()) {

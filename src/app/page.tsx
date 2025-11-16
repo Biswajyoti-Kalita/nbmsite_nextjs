@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import MarketingCardGroup from "@/components/MarketingCardGroup";
 import BrandsScroller from "@/components/BrandsScroller";
-import CaseStudies from "@/components/CaseStudies";
+
 import KnowledgeHubCard from "@/components/KnowledgeHubCard";
 import KnowledgeHubCard2 from "@/components/KnowledgeHubCard2";
 import TestimonialGroup from "@/components/TestimonialGroup";
