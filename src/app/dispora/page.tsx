@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
 import QACollapasable from "@/components/QACollapasable";
+import QACollapseableContainer from "@/components/QACollapseableContainer";
 import Image from "next/image";
 
 export default function Dispora() {
@@ -23,21 +24,22 @@ export default function Dispora() {
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-
-            <Breadcrumb pages={[{ name: "For Advertisers", link: "/advertisers" }]} />
+            <Breadcrumb
+              pages={[{ name: "For Advertisers", link: "/advertisers" }]}
+            />
 
             <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]">
-            FOR BRANDS & MEDIA AGENCIES
+              FOR BRANDS & MEDIA AGENCIES
             </h1>
             <div className="flex flex-col gap-[32px] items-start justify-start">
               <div className="flex flex-col items-start justify-start gap-[24px]">
                 <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
-                Advertise to Multicultural Podcast Listeners
+                  Advertise to Multicultural Podcast Listeners
                 </h1>
               </div>
               <h2 className="font-medium lg:font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-[#FFFEFF]">
-              Expand your reach to diaspora communities across North America, who over-index in education, income, and global mobility.
-
+                Expand your reach to diaspora communities across North America,
+                who over-index in education, income, and global mobility.
               </h2>
               <div className="flex flex-col lg:flex-row gap-[12px] items-start lg:items-center justify-start">
                 <GradientButton
@@ -72,12 +74,14 @@ export default function Dispora() {
               <div className="w-full flex flex-col items-start justify-center gap-[40px] max-w-[590px]">
                 <div className="flex flex-col items-start justify-center gap-[24px]">
                   <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
-                  Advertising Formats To Reach Diaspora Communities
+                    Advertising Formats To Reach Diaspora Communities
                   </h1>
                   <div className="flex flex-col items-start justify-center gap-[32px]">
                     <div className="flex flex-col items-start justify-center gap-[16px]">
                       <p className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                      Connect with global-minded communities living in North America, who over-index in <b>education, income, and global mobility,</b> through:
+                        Connect with global-minded communities living in North
+                        America, who over-index in{" "}
+                        <b>education, income, and global mobility,</b> through:
                       </p>
                       <div className="flex flex-col items-start justify-center gap-[12px]">
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
@@ -97,7 +101,8 @@ export default function Dispora() {
                             />
                           </svg>
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                          <b>Programmatic scale </b>for precise, efficient targeting
+                            <b>Programmatic scale </b>for precise, efficient
+                            targeting
                           </span>
                         </h1>
 
@@ -118,7 +123,8 @@ export default function Dispora() {
                             />
                           </svg>
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                          <b>Host-read sponsorships </b>that drive trust and recall
+                            <b>Host-read sponsorships </b>that drive trust and
+                            recall
                           </span>
                         </h1>
 
@@ -139,10 +145,10 @@ export default function Dispora() {
                             />
                           </svg>
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                          <b>Cultural and language adaptation</b> that resonates
+                            <b>Cultural and language adaptation</b> that
+                            resonates
                           </span>
                         </h1>
-
 
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
                           <svg
@@ -161,7 +167,8 @@ export default function Dispora() {
                             />
                           </svg>
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                          <b>Full-funnel tracking </b> via advanced third-party partners
+                            <b>Full-funnel tracking </b> via advanced
+                            third-party partners
                           </span>
                         </h1>
                       </div>
@@ -194,124 +201,124 @@ export default function Dispora() {
             <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-[16px] lg:gap-[24px]">
               <div>
                 <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
-                Target Audience Community Profiles
+                  Target Audience Community Profiles
                 </h1>
               </div>
               <div>
                 <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                Explore snapshots of our audience profiles, reach, and marketing potential in the U.S. and Canada
+                  Explore snapshots of our audience profiles, reach, and
+                  marketing potential in the U.S. and Canada
                 </p>
               </div>
             </div>
-            <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[16px] lg:gap-[24px]">
-              <div className="w-full flex flex-col items-start justify-start">
-                <Image
-                  src="/assets/images/target-community.jpg"
-                  alt="Ad Formats"
-                  width={588}
-                  height={420}
-                  className="w-full max-w-[588px] object-cover"
-                />
-              </div>
-              <div className="w-full flex flex-col items-start justify-center gap-[40px]">
-                <div className="w-full flex flex-col items-start justify-center">
-                  <QACollapasable
-                    title=" Middle Eastern & Persian Audiences"
-                    description=""
-                    descriptionHTML={
-                      <ul className="list-disc list-inside">
-                        <li>
-                        <b>Includes:</b> Lebanon, Egypt, Jordan, UAE, Saudi Arabia, Morocco, Turkey
-                        </li>
-                        <li>
-                        <b>Network Unique Users:</b> ≥ 2.2 million 
-                        </li>
-                        <li>
-                        <b>US Profile:</b> 52% hold bachelor’s+ degrees; strong in management, business, science roles
-                        </li>
-                      </ul>
-                    }
-                  />
-                  <QACollapasable
-                    title="South Asian Audiences"
-                    description=""
-                    descriptionHTML={
-                      <ul className="list-disc list-inside">
-                        <li>
-                        <b>Includes:</b> India, Pakistan, Bangladesh, Sri Lanka, Nepal, Bhutan, Maldives.
-                        </li>
-                        <li>
-                        <b>Network Unique Users:</b> ≥ 4.5 million 
-                        </li>
-                        <li>
-                        <b>US Profile:</b> ~5.2M living in the US; highest earning immigrant group (median HH income $151k) 
-                        </li>
-                      </ul>
-                    }
-                  />
-                  <QACollapasable
-                    title="East & Southeast Asian Audiences"
-                    description=""
-                    descriptionHTML={
-                      <ul className="list-disc list-inside">
-                        <li>
-                        <b>Includes:</b> China, Taiwan, Japan, South Korea, Philippines, Indonesia, Malaysia, Thailand.
-                        </li>
-                        <li>
-                        <b>Network Unique Users:</b> ≥ 1.5 million 
-                        </li>
-                        <li>
-                        <b>US Profile:</b> 63% speak non-English at home; Frequent international travel
-                        </li>
-                      </ul>
-                    }
-                  />
-                  <QACollapasable
-                    title="African Diaspora Audiences"
-                    description=""
-                    descriptionHTML={
-                      <ul className="list-disc list-inside">
-                        <li>
+            <QACollapseableContainer
+              data={[
+                {
+                  image: "/assets/images/target-community.jpg",
+                  title: "Middle Eastern & Persian Audiences",
+                  description: "",
+                  descriptionHTML: (
+                    <ul className="list-disc list-inside">
+                      <li>
+                        <b>Includes:</b> Lebanon, Egypt, Jordan, UAE, Saudi
+                        Arabia, Morocco, Turkey
+                      </li>
+                      <li>
+                        <b>Network Unique Users:</b> ≥ 2.2 million
+                      </li>
+                      <li>
+                        <b>US Profile:</b> 52% hold bachelor’s+ degrees; strong
+                        in management, business, science roles
+                      </li>
+                    </ul>
+                  ),
+                },
+                {
+                  image: "/assets/images/south-asian.jpg",
+                  title: "South Asian Audiences",
+                  description: "",
+                  descriptionHTML: (
+                    <ul className="list-disc list-inside">
+                      <li>
+                        <b>Includes:</b> India, Pakistan, Bangladesh, Sri Lanka,
+                        Nepal, Bhutan, Maldives.
+                      </li>
+                      <li>
+                        <b>Network Unique Users:</b> ≥ 4.5 million
+                      </li>
+                      <li>
+                        <b>US Profile:</b> ~5.2M living in the US; highest
+                        earning immigrant group (median HH income $151k)
+                      </li>
+                    </ul>
+                  ),
+                },
+                {
+                  image: "/assets/images/southeast-asian.jpg",
+                  title: "East & Southeast Asian Audiences",
+                  description: "",
+                  descriptionHTML: (
+                    <ul className="list-disc list-inside">
+                      <li>
+                        <b>Includes:</b> China, Taiwan, Japan, South Korea,
+                        Philippines, Indonesia, Malaysia, Thailand.
+                      </li>
+                      <li>
+                        <b>Network Unique Users:</b> ≥ 1.5 million
+                      </li>
+                      <li>
+                        <b>US Profile:</b> 63% speak non-English at home;
+                        Frequent international travel
+                      </li>
+                    </ul>
+                  ),
+                },
+                {
+                  image: "/assets/images/African.jpg",
+                  title: "African Diaspora Audiences",
+                  description: "",
+                  descriptionHTML: (
+                    <ul className="list-disc list-inside">
+                      <li>
                         <b>Includes:</b> Nigeria, Ghana, Kenya, South Africa
-                        </li>
-                        <li>
-                        <b>Network Unique Users:</b> ≥ 6.5 million 
-                        </li>
-                        <li>
-                        <b>US Profile:</b> 69% college or more vs ~63% U.S. born populations; ~33% STEM degree
-                        </li>
-                      </ul>
-                    }                    
-                  />
-
-                  <QACollapasable
-                    title="European Audiences"
-                    description=""
-                    descriptionHTML={
-                      <ul className="list-disc list-inside">
-                        <li>
-                        <b>Includes:</b> Italy, France, Germany, Spain, Netherlands, Ukraine, Russia, Romania.
-                        </li>
-                        <li>
-                        <b>Network Unique Users:</b> ≥ 3.7 million 
-                        </li>
-                        <li>
-                        <b>US Profile:</b> Median HH income ~$102k; High share in management, business, science, & arts
-                        </li>
-Network Unique Users: ≥ 3.7 million 
-                        <li>
-                        <b>US Profile:</b> Median HH income ~$102k; High share in management, business, science, & arts
-                        </li>
-                      </ul>
-                    }                    
-                  />
-                </div>
-                <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[12px]">
-                  <GradientButton text="Share a Brief" className="h-[48px] w-[200px]" />
-                  <GradientButton text="Download Media Kit" type="secondary" className="w-[180px] h-[48px]" />
-                </div>
-              </div>
-            </div>
+                      </li>
+                      <li>
+                        <b>Network Unique Users:</b> ≥ 6.5 million
+                      </li>
+                      <li>
+                        <b>US Profile:</b> 69% college or more vs ~63% U.S. born
+                        populations; ~33% STEM degree
+                      </li>
+                    </ul>
+                  ),
+                },
+                {
+                  image: "/assets/images/european.jpg",
+                  title: "European Audiences",
+                  description: "",
+                  descriptionHTML: (
+                    <ul className="list-disc list-inside">
+                      <li>
+                        <b>Includes:</b> Italy, France, Germany, Spain,
+                        Netherlands, Ukraine, Russia, Romania.
+                      </li>
+                      <li>
+                        <b>Network Unique Users:</b> ≥ 3.7 million
+                      </li>
+                      <li>
+                        <b>US Profile:</b> Median HH income ~$102k; High share
+                        in management, business, science, & arts
+                      </li>
+                      Network Unique Users: ≥ 3.7 million
+                      <li>
+                        <b>US Profile:</b> Median HH income ~$102k; High share
+                        in management, business, science, & arts
+                      </li>
+                    </ul>
+                  ),
+                },
+              ]}
+            />
           </section>
 
           <section className=" pt-[84px] lg:pt-[96px] pb-[48px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF] lg:max-w-[1440px]">
@@ -331,7 +338,6 @@ Network Unique Users: ≥ 3.7 million
             <BrandsScroller />
           </section>
 
-
           <section
             className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 gap-[80px] items-center justify-between relative lg:max-w-[1440px]"
             id="home"
@@ -349,7 +355,7 @@ Network Unique Users: ≥ 3.7 million
 
             <div className="w-full flex flex-col items-start justify-center gap-[24px]">
               <h1 className="font-semibold text-[34px] lg:text-[48px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
-              Creative Adaptation Services
+                Creative Adaptation Services
               </h1>
               <div className="flex flex-col items-start justify-center gap-[12px]">
                 <div className="flex flex-row items-start justify-start gap-[12px]">
@@ -370,10 +376,11 @@ Network Unique Users: ≥ 3.7 million
                   </svg>
                   <h1>
                     <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                    Translate & Localise
+                      Translate & Localise
                     </span>
                     <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                    Adapt existing campaigns using native voices, accurate dialects, and local context.
+                      Adapt existing campaigns using native voices, accurate
+                      dialects, and local context.
                     </span>
                   </h1>
                 </div>
@@ -396,14 +403,14 @@ Network Unique Users: ≥ 3.7 million
                   </svg>
                   <h1>
                     <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                    Bilingual Mix
+                      Bilingual Mix
                     </span>
                     <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                    Blend English with authentic phrases or greetings to connect naturally.
+                      Blend English with authentic phrases or greetings to
+                      connect naturally.
                     </span>
                   </h1>
                 </div>
-
 
                 <div className="flex flex-row items-start justify-start gap-[12px]">
                   <svg
@@ -423,15 +430,14 @@ Network Unique Users: ≥ 3.7 million
                   </svg>
                   <h1>
                     <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                    Culture-First
+                      Culture-First
                     </span>
                     <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
-                    Anchor your message in real experiences and shared moments — from Ramadan to Lunar New Year to family travel.
+                      Anchor your message in real experiences and shared moments
+                      — from Ramadan to Lunar New Year to family travel.
                     </span>
                   </h1>
                 </div>
-
-
               </div>
             </div>
           </section>
@@ -486,8 +492,6 @@ Network Unique Users: ≥ 3.7 million
               </div>
             </div>
           </section>
-
-
         </div>
       </div>
       <Footer />

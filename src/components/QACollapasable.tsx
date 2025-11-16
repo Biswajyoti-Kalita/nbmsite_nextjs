@@ -5,10 +5,12 @@ interface QACollapasableProps {
     title: string;
     description: string;
     descriptionHTML?: React.ReactNode;
+    index: number;
+    isOpen: boolean;
+    onToggle: (index: number) => void;
 }
 
-export default function QACollapasable({ title, description, descriptionHTML }: QACollapasableProps) {
-    const [isOpen, setIsOpen] = useState(false);
+export default function QACollapasable({ title, description, descriptionHTML, index, isOpen, onToggle }: QACollapasableProps) {
     return (
         <div className="w-full flex flex-col items-start justify-center py-[20px] border-[#E8E8E8] border-b-[1px] border-t-[1px] gap-[12px]">
             <h1 className="text-[#262626] w-full text-[20px] leading-[28px] lg:text-[20px] lg:leading-[32px] font-medium flex flex-row gap-[24px]">
@@ -16,13 +18,13 @@ export default function QACollapasable({ title, description, descriptionHTML }: 
                 {title}
                 </span>
                 {isOpen ? (
-                    <span onClick={() => setIsOpen(false)}>
+                    <span onClick={() => onToggle(index)}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 12H19" stroke="#262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </span>
                 ) : (
-                    <span onClick={() => setIsOpen(true)}>                   
+                    <span onClick={() => onToggle(index)}>                   
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 5V19M5 12H19" stroke="#262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>

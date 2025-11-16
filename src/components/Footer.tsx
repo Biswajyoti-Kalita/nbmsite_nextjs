@@ -10,11 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-6 justify-between gap-8 md:gap-[54px] w-full">
           <div className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]">
             <Image
-              src="/assets/images/nbm_logo.png"
+              src="/assets/images/logo-white.svg"
               alt="Logo"
-              className="max-h-[100px] w-auto"
+              className="max-h-[30px] w-auto"
               width={100}
-              height={100}
+              height={50}
             />
           </div>
 
@@ -40,10 +40,10 @@ export default function Footer() {
               Solutions
             </h1>
             <div className="flex flex-col">
-            <Link href="/ai-ad-studio" className={baseLinkClasses}>
+            <Link href="https://admanager.fm/aiadstudio" target="_blank" className={baseLinkClasses}>
               AI Ad Studio
             </Link>
-            <Link href="/admanager" className={baseLinkClasses}>
+            <Link href="/admanager" target="_blank" className={baseLinkClasses}>
               Admanager
             </Link>
             </div>
@@ -57,13 +57,13 @@ export default function Footer() {
             <Link href="/knowledge-hub" className={baseLinkClasses}>
               Knowledge Hub
             </Link>
-            <Link href="/case-studies" className={baseLinkClasses}>
+            <Link href="/case-study-library" className={baseLinkClasses}>
               Case Studies
             </Link>
-            <Link href="/advertiser-media-kit" className={baseLinkClasses}>
+            <Link href="/advertisers" className={baseLinkClasses}>
               Advertiser Media Kit
             </Link>
-            <Link href="/publisher-deck" className={baseLinkClasses}>
+            <Link href="/publishers" className={baseLinkClasses}>
               Publisher Deck
             </Link>              
             </div>

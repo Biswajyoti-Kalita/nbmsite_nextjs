@@ -89,16 +89,16 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
         <div className="w-full mt-4 md:mt-0">
           <nav className="fixed w-full z-20 top-0 start-0">
             <div
-              className={`${isMobileScreenMenuOpen ? bgColorOnOpen + ' h-screen' : bgColor}  max-w-[1440px] h-[80px] mx-auto flex items-start justify-between gap-2 md:gap-4 px-4 lg:px-20 py-2 transition-shadow duration-300`}
+              className={`${isMobileScreenMenuOpen ? bgColorOnOpen + ' h-screen' : bgColor}  max-w-[1440px] h-[80px] mx-auto flex items-center justify-between gap-2 md:gap-4 px-4 lg:px-20 py-2 transition-shadow duration-300`}
               id="navbar"
               style={{height: '80px'}}
             >
-              <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+              <Link href="/" className="flex items-center justify-center space-x-3 rtl:space-x-reverse">
               {
                 (isMobileScreen && isMobileScreenMenuOpen) || !isPrimary ? (
                   <Image
                     src="/assets/images/logo-white.svg"
-                    className="w-auto h-[50px] md:h-[64px]"
+                    className="w-auto h-[30px]"
                     alt="NextBroadcastMedia Logo"
                     width={50}
                     height={50}

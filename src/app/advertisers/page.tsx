@@ -11,6 +11,7 @@ import QACollapasable from "@/components/QACollapasable";
 import TestimonialGroup from "@/components/TestimonialGroup";
 import Image from "next/image";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
+import QACollapseableContainer from "@/components/QACollapseableContainer";
 
 export default function Advertisers() {
   return (
@@ -239,7 +240,7 @@ export default function Advertisers() {
               <div className="w-full flex flex-col lg:flex-row items-start justify-center gap-[59px]">
                 <div className="w-full flex flex-col items-start justify-between max-w-[540px]">
                   <Image
-                    src="/assets/images/full-logo-white.png"
+                    src="/assets/images/logo-white.png"
                     alt="advertiser-left-banner-bg"
                     className="w-auto h-[40px] object-cover"
                     width={500}
@@ -706,41 +707,28 @@ export default function Advertisers() {
                 </p>
               </div>
             </div>
-            <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[16px] lg:gap-[24px]">
-              <div className="w-full flex flex-col items-start justify-start">
-                <Image
-                  src="/assets/images/targeting.png"
-                  alt="Ad Formats"
-                  width={588}
-                  height={420}
-                  className="w-full max-w-[588px] object-cover"
-                />
-              </div>
-              <div className="w-full flex flex-col items-start justify-center gap-[40px]">
-                <div className="w-full flex flex-col items-start justify-center">
-                  <QACollapasable
-                    title="Targeting"
-                    description="Minimise media wastage with precision targeting - by location, age, gender, genre, device, context, and more."
-                  />
-                  <QACollapasable
-                    title="Targeting"
-                    description="Minimise media wastage with precision targeting - by location, age, gender, genre, device, context, and more."
-                  />
-                  <QACollapasable
-                    title="Targeting"
-                    description="Minimise media wastage with precision targeting - by location, age, gender, genre, device, context, and more."
-                  />
-                  <QACollapasable
-                    title="Targeting"
-                    description="Minimise media wastage with precision targeting - by location, age, gender, genre, device, context, and more."
-                  />
-                </div>
-                <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[12px]">
-                  <GradientButton text="Share a Brief" className="h-[44px] w-[200px]" />
-                  <GradientButton text="Download Media Kit" type="secondary" className="w-[180px] h-[44px]" />
-                </div>
-              </div>
-            </div>
+            <QACollapseableContainer data={[
+              {
+                image: "/assets/images/targeting.png",
+                title: "Targeting",
+                description: "Minimise media wastage with precision targeting - by location, age, gender, genre, device, context, and more."
+              },
+              {
+                image: "/assets/images/execution.jpg",
+                title: "Execution",
+                description: "Match formats to your goals and budget - from host-reads and sponsorships to programmatic at scale."
+              },
+              {
+                image: "/assets/images/format.jpg",
+                title: "Format",
+                description: "Access the full digital audio landscape - reach listeners across podcasts, music, gaming, web radio, and smart speakers."
+              },
+              {
+                image: "/assets/images/personalization.jpg",
+                title: "Personalization",
+                description: "Optimize every impression with Dynamic Creative - tailor your message by time, weather, location, and audience behaviour."
+              }
+            ]} />
           </section>
           <section className="w-full flex flex-col items-center justify-center pt-[32px] pb-[88px] lg:py-[48px] px-[16px] lg:px-[80px] bg-[#FFFEFF] gap-[64px]">
             <div className="w-full flex flex-col items-start justify-center gap-[46px] lg:gap-[64px]">
