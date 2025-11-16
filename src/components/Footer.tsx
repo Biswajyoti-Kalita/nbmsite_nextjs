@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const baseLinkClasses =
-  "py-[8px] text-[#344054] hover:underline cursor-pointer";
+  "py-[6px] lg:py-[8px] text-[#344054] hover:underline cursor-pointer";
 export default function Footer() {
   return (
     <footer className="bg-white w-full">
@@ -18,37 +18,42 @@ export default function Footer() {
             />
           </div>
 
-          <div className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[10px] lg:gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Who We Help
             </h1>
-            <Link href="/advertisers" className={baseLinkClasses}>
-              Advertisers
-            </Link>
-            <Link href="/publishers" className={baseLinkClasses}>
-              Publishers
-            </Link>
-            <Link href="/podcasters" className={baseLinkClasses}>
-              Podcasters
-            </Link>
+            <div className="flex flex-col">
+              <Link href="/advertisers" className={baseLinkClasses}>
+                Advertisers
+              </Link>
+              <Link href="/publishers" className={baseLinkClasses}>
+                Publishers
+              </Link>
+              <Link href="/podcasters" className={baseLinkClasses}>
+                Podcasters
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[10px] lg:gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Solutions
             </h1>
+            <div className="flex flex-col">
             <Link href="/ai-ad-studio" className={baseLinkClasses}>
               AI Ad Studio
             </Link>
             <Link href="/admanager" className={baseLinkClasses}>
               Admanager
             </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[10px] lg:gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Resources
             </h1>
+            <div className="flex flex-col">
             <Link href="/knowledge-hub" className={baseLinkClasses}>
               Knowledge Hub
             </Link>
@@ -60,13 +65,15 @@ export default function Footer() {
             </Link>
             <Link href="/publisher-deck" className={baseLinkClasses}>
               Publisher Deck
-            </Link>
+            </Link>              
+            </div>
           </div>
 
-          <div className="flex flex-col gap-[16px]">
+          <div className="flex flex-col gap-[10px] lg:gap-[16px]">
             <h1 className="text-[#262626] font-semibold text-[20px] leading-[28px]">
               Company
             </h1>
+            <div className="flex flex-col">
             <Link href="/about-us" className={baseLinkClasses}>
               About Us
             </Link>
@@ -76,6 +83,8 @@ export default function Footer() {
             <Link href="/why-audio" className={baseLinkClasses}>
               Why Audio
             </Link>
+
+            </div>
           </div>
         </div>
       </div>

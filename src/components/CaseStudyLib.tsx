@@ -4,6 +4,7 @@
 import { useEffect, useState } from "react";
 import GradientButton from "./GradientButton";
 import Image from "next/image";
+import isMobile from "@/util/util";
 
 interface CaseStudy {
   id: string;
@@ -44,6 +45,8 @@ interface CaseStudy {
   }[];
 }
 
+const isMobileScreen = isMobile();
+
 export default function CaseStudyLib({
   caseStudies,
 }: {
@@ -83,33 +86,47 @@ export default function CaseStudyLib({
 
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 px-6 py-12 bg-[#FFFEFF] text-[#262626] max-w-[1280px]">
+    <div className="flex flex-col lg:flex-row gap-8 lg:px-6 py-12 bg-[#FFFEFF] text-[#262626] w-full max-w-[1280px]">
       {/* Left Sidebar */}
-      <aside className="lg:w-1/4 space-y-4">
+      <aside className="w-full lg:w-1/4 px-[16px] lg:px-0 space-y-[8px] lg:space-y-4">
         <h3 className="font-[Switzer] font-semibold text-[14px] tracking-[-0.02em] text-[#F11F68]">
           Industry
         </h3>
-        <ul className="space-y-2">
-          {industries.map((industry, index) => (
-            <li
-              key={index}
-              className={`${selectedIndustry === industry ? "bg-[#F8F9FA]" : ""} text-[16px] cursor-pointer hover:text-[#262626] hover:bg-[#F8F9FA] transition-colors px-[8px] py-[12px]`}
-              onClick={() => setSelectedIndustry(industry)}
-            >
-              {industry}
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-col items-start justify-start gap-[4px]">
+          {
+           !isMobileScreen ? 
+            industries.map((industry, index) => (
+              <span
+                key={index}
+                className={`${selectedIndustry === industry ? "bg-[#F8F9FA] " : " text-[#667085] "} w-full font-medium text-[16px] cursor-pointer hover:text-[#262626] hover:bg-[#F8F9FA] transition-colors px-[8px] py-[12px] rounded-[6px]`}
+                onClick={() => setSelectedIndustry(industry)}
+              >
+                {industry}
+              </span>
+            ))
+            :
+            <select className="w-full font-medium text-[16px] cursor-pointer transition-colors px-[14px] py-[10px] rounded-[6px] border-[#D0D5DD] border text-[#262626] font-semibold" onChange={(e) => setSelectedIndustry(e.target.value)}>
+              {
+                industries.map((industry, index) => (
+                  <option key={index} value={industry}>
+                    {industry}
+                  </option>
+                ))
+              }
+            </select>
+          }
+          
+        </div>
       </aside>
 
       {/* Main Content */}
-      <section className="flex-1 space-y-6">
+      <section className="flex-1 space-y-6 w-full">
         {/* Filter Buttons */}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex overflow-x-scroll max-w-[330px] lg:max-w-full px-[16px] lg:px-0 flex-row lg:flex-wrap gap-3">
           {filters.map((filter, idx) => (
             <button
               key={idx}
-              className={`px-4 py-2 text-[14px] rounded-full border ${selectedFilter === filter ? "bg-[#F5F3FF] text-[#7A5AF8] border-[#7A5AF8]" : "border-[#E0E0E0] text-[#262626]"}`}
+              className={`px-4 text-[14px] leading-[24px] whitespace-nowrap h-[44px] rounded-full border border-[2px] font-medium ${selectedFilter === filter ? "bg-[#FFEDFB] text-[#F11F68] border-[#F11F68]" : "border-[#344054] text-[#344054]"}`}
               onClick={() => setSelectedFilter(filter)}
             >
               {filter}
@@ -118,14 +135,14 @@ export default function CaseStudyLib({
         </div>
 
         {/* Grid of Case Studies */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[20px] bg-[#F8F9FA] px-[16px] lg:p-[32px] pb-[12px] p-[10px] rounded-[16px]">
           {filteredData?.map((study) => (
             <div
               key={study.id}
-              className="rounded-[16px] border border-[#E8E8E8] bg-[#FFFEFF] flex flex-col justify-between shadow-sm hover:shadow-md transition-all "
+              className="rounded-[16px] border-0 border-[#E8E8E8] bg-[#FFFEFF] flex flex-col justify-between shadow-sm hover:shadow-md transition-all "
             >
               <div className="relative flex flex-col items-center justify-center gap-[10px] border border-[#E8E8E8] rounded-[8px] h-[305px]">
-                <span className=" absolute top-[24px] left-[24px] text-[14px] leading-[22px] font-medium text-[#344054] border border-[#344054] rounded-[24px] px-[8px] py-[4px]">
+                <span className="absolute top-[24px] left-[24px] text-[14px] leading-[22px] font-medium text-[#344054] border border-[#344054] rounded-[24px] px-[8px] py-[4px]">
                   {study.category}
                 </span>
                 <Image
@@ -139,7 +156,7 @@ export default function CaseStudyLib({
 
               <div className="flex flex-col items-start justify-start gap-[24px] p-[24px]">
                 <div className="flex flex-col items-start justify-start gap-[8px]">
-                  <h3 className="font-bold text-[26px] leading-[34px] text-[#262626]">
+                  <h3 className="font-semibold text-[26px] leading-[34px] text-[#262626]">
                     {study.name}
                   </h3>
                   <div className="flex flex-row gap-[11px] items-center">

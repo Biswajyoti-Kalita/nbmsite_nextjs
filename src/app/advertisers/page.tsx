@@ -10,6 +10,7 @@ import Navbar from "@/components/Navbar";
 import QACollapasable from "@/components/QACollapasable";
 import TestimonialGroup from "@/components/TestimonialGroup";
 import Image from "next/image";
+import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 
 export default function Advertisers() {
   return (
@@ -808,41 +809,8 @@ export default function Advertisers() {
             </div>
           </section>
 
-          <section
-            className="w-full bg-[#FFF9FE] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-[46px] md:gap-[64px]"
-            data-aos="fade-up"
-          >
-            <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-8 justify-between items-center gap-4 px-[16px] lg:px-[0px] md:gap-[24px]">
-              <div className="lg:col-span-6">
-                <h1 className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px]">
-                  Podcast Advertising Case Studies & Audio Campaign Results
-                </h1>
-              </div>
-              <div className="lg:col-span-2 flex itesm-start md:items-end justify-start md:justify-end h-full">
-                <GradientButton text="Explore All" className="h-[44px] w-[144px]" rightIcon={                  <svg
-                    width="14"
-                    height="15"
-                    viewBox="0 0 14 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
-                      stroke="#FFFEFF"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>} />
-              </div>
-            </div>
-            <div
-              className="max-w-[14400px] flex flex-col lg:flex-row justify-start w-full items-center gap-4 md:gap-[20px]"
-              data-aos="fade-up"
-            >
-              <CaseStudies />
-            </div>
-          </section>
+
+          <PodcastCaseStudy title="Podcast Advertising Case Studies & Audio Campaign Results" />
 
           <section className="w-full flex flex-col items-center justify-center px-[16px] py-[84px] lg:py-[96px] bg-[#FFFFFF] gap-[64px]">
             <div className="w-full flex flex-col lg:flex-row max-w-[1280px] items-start justify-center gap-[46px] lg:gap-[51px]">
@@ -955,101 +923,101 @@ export default function Advertisers() {
             <GradientButton text="Explore Advertiser Knowledge Hub" className="h-[44px] w-[293px]" />
           </div>
         </div>
-        <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[16px] lg:gap-[24px] max-w-[1280px]">
-          <div className="w-full relative">
-            <div
-              className="bg-cover bg-center w-full md:w-[300px] h-[226px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-              style={{
-                backgroundImage: `url(${"/assets/images/card-bg-22.jpg"})`,
-              }}
-            >
-              <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_100.9%,#ffffff_99.44%)]"></div>
+        <div className="w-full flex flex-row overflow-x-auto items-start justify-between gap-[16px] lg:gap-[24px] max-w-[1280px]">
+              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
+                <div
+                  className="bg-cover bg-center w-full md:w-[300px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
+                  style={{
+                    backgroundImage: `url(${"/assets/images/card-bg-22.jpg"})`,
+                  }}
+                >
+                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_100.9%,#ffffff_99.44%)]"></div>
 
-              <div className="relative z-10 flex flex-col justify-between h-full">
-                <div className="w-full">
-                  <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                    Webinar
-                  </span>
+                  <div className="relative z-10 flex flex-col justify-between h-full">
+                    <div className="w-full">
+                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
+                        Webinar
+                      </span>
+                    </div>
+
+                    <div className="w-full flex flex-col gap-[10px]">
+                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
+                        16 June 2025
+                      </h6>
+                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
+                        Podcast Advertising vs Social Media Marketing: Which
+                        Drives Better Engagement
+                      </h6>
+                    </div>
+                  </div>
                 </div>
+              </div>
 
-                <div className="w-full flex flex-col gap-[10px]">
-                  <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                    16 June 2025
-                  </h6>
-                  <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                    Podcast Advertising vs Social Media Marketing: Which Drives
-                    Better Engagement
-                  </h6>
+              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
+                <div
+                  className="bg-cover bg-center w-full md:w-[300px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
+                  style={{
+                    backgroundImage: `url(${"/assets/images/insight-2.png"})`,
+                  }}
+                >
+                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(241,31,104,0.2)_100.9%,#ffffff_99.44%)]"></div>
+
+                  <div className="relative z-10 flex flex-col justify-between h-full">
+                    <div className="w-full">
+                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
+                        Webinar
+                      </span>
+                    </div>
+
+                    <div className="w-full flex flex-col gap-[10px]">
+                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
+                        16 June 2025
+                      </h6>
+                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
+                        Podcast Advertising vs Social Media Marketing: Which
+                        Drives Better Engagement
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
+                <div
+                  className="bg-cover bg-center w-full md:w-[630px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
+                  style={{
+                    backgroundImage: `url(${"/assets/images/insight-3.jpg"})`,
+                  }}
+                >
+                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(136,48,252,0.2)_100.9%,#ffffff_99.44%)]"></div>
+
+                  <div className="relative z-10 flex flex-col justify-between h-full">
+                    <div className="w-full">
+                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
+                        Webinar
+                      </span>
+                    </div>
+
+                    <div className="w-full flex flex-col gap-[10px]">
+                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
+                        16 June 2025
+                      </h6>
+                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
+                        Podcast Advertising vs Social Media Marketing: Which
+                        Drives Better Engagement
+                      </h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="w-full relative">
-            <div
-              className="bg-cover bg-center w-full md:w-[300px] h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-              style={{
-                backgroundImage: `url(${"/assets/images/insight-2.png"})`,
-              }}
-            >
-              <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(241,31,104,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-              <div className="relative z-10 flex flex-col justify-between h-full">
-                <div className="w-full">
-                  <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                    Webinar
-                  </span>
-                </div>
-
-                <div className="w-full flex flex-col gap-[10px]">
-                  <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                    16 June 2025
-                  </h6>
-                  <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                    Podcast Advertising vs Social Media Marketing: Which Drives
-                    Better Engagement
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-full relative">
-            <div
-              className="bg-cover bg-center w-full md:w-[630px] h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-              style={{
-                backgroundImage: `url(${"/assets/images/insight-3.jpg"})`,
-              }}
-            >
-              <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(136,48,252,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-              <div className="relative z-10 flex flex-col justify-between h-full">
-                <div className="w-full">
-                  <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                    Webinar
-                  </span>
-                </div>
-
-                <div className="w-full flex flex-col gap-[10px]">
-                  <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                    16 June 2025
-                  </h6>
-                  <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                    Podcast Advertising vs Social Media Marketing: Which Drives
-                    Better Engagement
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
       <section className="w-full flex flex-col items-center justify-center">
         <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">
           <div className="w-full flex flex-col items-start justify-center gap-[24px]">
             <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-              <span className="text-[#F11F68] border border-[#F11F68] rounded-[31px] px-3 md:px-4 py-1.5 md:py-2 text-sm md:text-[16px] leading-tight md:leading-[24px] font-medium">
-                FAQs
+            <span className="text-[#F11F68] border border-[#F11F68] rounded-[31px] px-3 md:px-4 py-1.5 md:py-1 text-sm md:text-[16px] leading-tight md:leading-[22px] font-medium">
+            FAQs
               </span>
               <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
                 Got Questions? We’ve Got Answers!

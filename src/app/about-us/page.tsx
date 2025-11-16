@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import MarketingCardGroup from "@/components/MarketingCardGroup";
 import Navbar from "@/components/Navbar";
+import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import Image from "next/image";
 
 export default function AboutUs() {
@@ -24,7 +25,6 @@ export default function AboutUs() {
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
             <Breadcrumb pages={[{ name: "About Us", link: "/about-us" }]} />
 
-
             <div className="flex flex-col gap-[32px] items-start justify-start">
               <div className="flex flex-col items-start justify-start gap-[24px]">
                 <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
@@ -32,60 +32,58 @@ export default function AboutUs() {
                 </h1>
               </div>
               <h2 className="font-[Switzer] font-medium lg:font-[500] text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] tracking-[0] text-[#FFFEFF]">
-                Next Audio connects advertisers with premium podcasts and digital
-                audio audiences — while helping creators and publishers grow
-                revenue.
+                Next Audio connects advertisers with premium podcasts and
+                digital audio audiences — while helping creators and publishers
+                grow revenue.
               </h2>
 
               <div className="flex flex-col lg:flex-row gap-[12px] items-start lg:items-center justify-start">
                 <GradientButton
                   type="secondary"
                   text="Share a Brief"
-                  className="h-[44px] w-[184px]"
+                  className="h-[44px] w-[184px] rounded-[4px]"
+                  textClassName="text-[16px] leading-[24px]"
                 />
                 <GradientButton
                   type="tertiary"
                   text="Request a Call Back"
-                  className="h-[44px] w-[231px]"
+                  className="h-[44px] w-[231px] rounded-[4px]"
+                  textClassName="text-[16px] leading-[24px]"
                 />
               </div>
             </div>
           </div>
 
-          <div className=" relative  lg:absolute right-0 top-0 bottom-0">
+          <div className="relative lg:absolute right-[-12px] lg:right-[-60px] top-4 lg:top-9  bottom-[-60px] max-w-[700px]">
             <Image
               src="/assets/images/about_headerBanner_right.png"
               alt="podcasters-image"
-              className="max-w-[750px] h-full object-contain md: w-full"
+              className="w-full h-full object-contain"
               width={500}
               height={500}
             />
           </div>
         </section>
       </div>
-      <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-16 pt-24 pr-20 pb-12 pl-20">
-        <section className="w-full flex flex-col gap-[64px]">
+      <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-16 pt-24 px-[16px] lg:px-[80px] pb-0 lg:pb-12">
+        <section className="w-full flex flex-col gap-[46px] lg:gap-[64px]">
           <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[20px]">
             <h1 className="w-[100%] gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
               We Power Every Part of the Audio Economy
             </h1>
-            <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] invisible">
-              Two ways your shows can earn: be visible to buyers in our tools,
-              and get pitched for high-value brand campaigns.
-            </span>
           </div>
           <div className="z-10" data-aos="fade-up">
             <MarketingCardGroup />
           </div>
         </section>
       </div>
-      <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-16 pt-[96px] pr-20 pb-12 pl-20">
+      <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-[46px] lg:gap-16 pt-[84px] lg:pt-[96px] px-[16px] lg:px-[80px] pb-12">
         <section className="w-full flex flex-col gap-[64px]">
           <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[20px]">
-            <h1 className="w-[100%] gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
-            Global Scale. Local Precision.
+            <h1 className="w-[100%] gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
+              Global Scale. Local Precision.
             </h1>
-            <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] invisible">
+            <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
               Two ways your shows can earn: be visible to buyers in our tools,
               and get pitched for high-value brand campaigns.
             </span>
@@ -123,19 +121,19 @@ export default function AboutUs() {
             alt="Map"
             width={1000}
             height={1000}
-            className="w-full object-cover"
+            className="w-full object-cover hidden lg:block"
           />
         </section>
       </div>
-      <div className="w-full flex px-[50px]">
+      <div className="w-full flex px-[16px] lg:px-[80px]">
         <BrandsScroller />
       </div>
-      <div className="w-full flex flex-col md:flex-row gap-[20px] px-[80px] py-[96px] bg-[#F8F9FA]">
-        <h2 className="w-full md:w-[40%] gradient-text font-semibold text-[42px] leading-[50px]">
+      <div className="w-full flex flex-col md:flex-row gap-[46px] lg:gap-[20px] px-[16px] lg:px-[80px] py-[84px] lg:py-[96px] bg-[#F8F9FA]">
+        <h2 className="w-full md:w-[40%] gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
           Why We Exist
         </h2>
         <div className="w-full md:w-[60%] flex flex-col gap-[40px]">
-          <p className="text-[#344054] text-[32px] leading-[40px] font-[500] font-[Switzer]">
+          <p className="text-[#262626] text-[24px] lg:text-[32px] leading-[32px] lg:leading-[40px] font-[500] font-[Switzer]">
             Because podcast and digital audio advertising shouldn&apos;t be
             complicated, opaque, or out of reach. Next Audio connects the dots,
             helping brands scale campaigns and publishers unlock new revenue,
@@ -151,34 +149,34 @@ export default function AboutUs() {
           />
         </div>
       </div>
-      <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-16 pt-[96px] pr-20 pb-12 pl-20">
+      <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-[46px] lg:gap-16 pt-[84px] lg:pt-[96px] px-[16px] lg:px-[80px] pb-12">
         <section className="w-full flex flex-col items-center justify-center bg-[#FFFFFF] gap-[64px]">
-          <div className="w-full flex flex-col px-[24px] pt-[36px]  pb-[0px] lg:py-[96px] lg:px-[64px] bg-[#FFEDFB] items-center justify-between gap-[24px]">
+          <div className="w-full flex flex-col px-[24px] pt-[36px]  pb-[0px] lg:py-[96px] lg:px-[64px] bg-[#FFEDFB] items-center justify-between gap-[24px] rounded-[16px]">
             <div className="flex flex-col lg:flex-row items-start justify-between gap-[20px] lg:gap-[40px]">
               <div className="flex flex-col items-start justify-start gap-[20px] max-w-[605px]">
-                <div className="flex flex-col items-start justify-center gap-[24px]">
-                  <div className="flex flex-col items-start justify-center gap-[20px]">
-                    {/* <h1 className="text-[#F11F68] font-medium text-[16px] leading-[24px]">
-                      Next Audio Audio is your Trusted Audio Ad Partner
-                    </h1> */}
-                    <h2 className="gradient-text font-semibold text-[42px] leading-[50px]">
-                      Accountability & <br />Standards
+                <div className="flex flex-col items-start justify-center gap-[16px] lg:gap-[24px]">
+                  <div className="flex flex-col items-start justify-center gap-[16px] lg:gap-[20px]">
+                    <h2 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
+                      Accountability & <br />
+                      Standards
                     </h2>
                   </div>
                   <div>
-                    <p className="text-[#344054] text-[20px] leading-[28px]">
+                    <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                       We hold every campaign to the highest standards, ensuring
                       transparency, brand safety, and measurable performance.
                     </p>
                   </div>
                 </div>
-                <Image
-                  className="mt-[150px] flex ml-auto"
-                  src="/assets/images/aboutUs_acount.png"
-                  alt="Proof"
-                  width={400}
-                  height={264}
-                />
+                <div className="w-full flex items-center justify-end">
+                  <Image
+                    className="mt-[40px] lg:mt-[150px] flex ml-auto"
+                    src="/assets/images/aboutUs_acount.png"
+                    alt="Proof"
+                    width={400}
+                    height={264}
+                  />
+                </div>
               </div>
               {/* Right div */}
               <div className="flex flex-col items-start justify-center gap-[24px]">
@@ -265,10 +263,10 @@ export default function AboutUs() {
         <div className="w-full flex flex-col gap-[40px]">
           <div className="w-full flex items-center justify-center flex-wrap gap-[40px] md:flex-nowrap">
             <div className="w-full flex flex-col md:w-[50%] gap-[40px]">
-              <h1 className="w-[100%] gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
+              <h1 className="w-[100%] gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
                 Trusted by Leading Brands, Networks, & Creators
               </h1>
-              <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
+              <h6 className="text-[#344054] text-[20px] lg:text-[20px] leading-[28px] lg:leading-[28px]">
                 From FMCG to fintech, our campaigns drive real results, for
                 advertisers, publishers, and podcasters.
               </h6>
@@ -282,76 +280,53 @@ export default function AboutUs() {
             />
           </div>
         </div>
+      </div>
+
+
+      <PodcastCaseStudy title="Podcast Advertising Case Studies & Audio Campaign Results" />
+
+      <div className="flex flex-col md:flex-row gap-[64px] pt-[84px] lg:pt-[96px] px-[16px] lg:px-[80px] pb-[48px] bg-[#FFFEFF]">
+        <div className="w-full flex flex-col md:w-[50%] gap-[16px] lg:gap-[40px]">
+          <h1 className="w-[100%] gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
+            Press & Media Enquiries
+          </h1>
+          <h6 className="text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-[400] text-[#344054] font-[Switzer]">
+            For media enquiries, speaker requests, or partnerships, please reach
+            out to our team. We’re always happy to share insights or provide
+            comments on the audio industry.
+          </h6>
         </div>
-        <section
-          className="w-full bg-[#F9F8FA] flex flex-col items-center justify-center rounded-xl gap-[46px] md:gap-[64px] px-[80px] py-[96px]"
-          data-aos="fade-up"
-        >
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-8 justify-between items-center gap-4 px-[16px] lg:px-[0px] md:gap-[24px]">
-            <div className="lg:col-span-6">
-              <h1 className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px]">
-                Podcast Advertising Case Studies & Audio Campaign Results
-              </h1>
-            </div>
-            <div className="lg:col-span-2 flex itesm-start md:items-end justify-start md:justify-end h-full">
-              <GradientButton
-                text="Explore All"
-                className="h-[44px] w-[144px]"
-                rightIcon={
-                  <svg
-                    width="14"
-                    height="15"
-                    viewBox="0 0 14 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
-                      stroke="#FFFEFF"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                }
+        <div className="w-full md:w-[50%] flex flex-col gap-[20px] p-[24px] bg-[#F8F9FA] rounded-[16px] opacity-100">
+          <div>
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="48" height="48" rx="10" fill="#F11F68" />
+              <path
+                d="M18.0944 23.2288C18.0322 22.8282 18 22.4179 18 22C18 17.5817 21.6052 14 26.0526 14C30.4999 14 34.1052 17.5817 34.1052 22C34.1052 22.9981 33.9213 23.9535 33.5852 24.8345C33.5154 25.0175 33.4804 25.109 33.4646 25.1804C33.4489 25.2512 33.4428 25.301 33.4411 25.3735C33.4394 25.4466 33.4493 25.5272 33.4692 25.6883L33.8717 28.9585C33.9153 29.3125 33.9371 29.4895 33.8782 29.6182C33.8266 29.731 33.735 29.8205 33.6211 29.8695C33.4911 29.9254 33.3146 29.8995 32.9617 29.8478L29.7765 29.3809C29.6101 29.3565 29.527 29.3443 29.4512 29.3448C29.3763 29.3452 29.3245 29.3507 29.2511 29.3661C29.177 29.3817 29.0823 29.4172 28.893 29.4881C28.0097 29.819 27.0524 30 26.0526 30C25.6344 30 25.2237 29.9683 24.8227 29.9073M19.6316 34C22.5965 34 25 31.5376 25 28.5C25 25.4624 22.5965 23 19.6316 23C16.6667 23 14.2632 25.4624 14.2632 28.5C14.2632 29.1106 14.3603 29.6979 14.5395 30.2467C14.6153 30.4787 14.6532 30.5947 14.6657 30.6739C14.6786 30.7567 14.6809 30.8031 14.6761 30.8867C14.6714 30.9668 14.6514 31.0573 14.6113 31.2383L14 34L16.9948 33.591C17.1583 33.5687 17.24 33.5575 17.3114 33.558C17.3865 33.5585 17.4264 33.5626 17.5001 33.5773C17.5701 33.5912 17.6742 33.6279 17.8823 33.7014C18.4306 33.8949 19.0191 34 19.6316 34Z"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
-            </div>
+            </svg>
           </div>
-          <div
-            className="max-w-[14400px] flex flex-col lg:flex-row justify-start w-full items-center gap-4 md:gap-[20px]"
-            data-aos="fade-up"
-          >
-            <CaseStudies />
+          <div className="flex flex-col gap-[8px] ">
+            <span className="font-[Switzer] font-[600] text-[20px] leading-[28px] text-[#262626]">
+              Email
+            </span>
+            <span className="font-[Switzer] font-[400] text-[16px] leading-[24px] text-[#344054]">
+              Contact the marketing team
+            </span>
           </div>
-        </section>
-       <div className="flex flex-col md:flex-row gap-[64px] pt-[96px] pr-[80px] pb-[48px] pl-[80px] bg-[#FFFEFF]">
-          <div className="w-full flex flex-col md:w-[50%] gap-[40px]">
-            <h1 className="w-[100%] gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
-              Press & Media Enquiries
-            </h1>
-            <h6 className="text-[20px] leading-[28px] font-[400] text-[#344054] font-[Switzer]">
-              For media enquiries, speaker requests, or partnerships, please reach out to our team. We’re always happy to share insights or provide comments on the audio industry.
-            </h6>
+          <div className="font-[Switzer] font-[600] text-[16px] leading-[24px] text-[#F11F68] hover:underline  cursor-pointer">
+            hello@nextbroadcast.com
           </div>
-          <div className="w-full md:w-[50%] flex flex-col gap-[20px] p-[24px] bg-[#F8F9FA] rounded-[16px] opacity-100">
-            <div>
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="48" height="48" rx="10" fill="#F11F68"/>
-                <path d="M18.0944 23.2288C18.0322 22.8282 18 22.4179 18 22C18 17.5817 21.6052 14 26.0526 14C30.4999 14 34.1052 17.5817 34.1052 22C34.1052 22.9981 33.9213 23.9535 33.5852 24.8345C33.5154 25.0175 33.4804 25.109 33.4646 25.1804C33.4489 25.2512 33.4428 25.301 33.4411 25.3735C33.4394 25.4466 33.4493 25.5272 33.4692 25.6883L33.8717 28.9585C33.9153 29.3125 33.9371 29.4895 33.8782 29.6182C33.8266 29.731 33.735 29.8205 33.6211 29.8695C33.4911 29.9254 33.3146 29.8995 32.9617 29.8478L29.7765 29.3809C29.6101 29.3565 29.527 29.3443 29.4512 29.3448C29.3763 29.3452 29.3245 29.3507 29.2511 29.3661C29.177 29.3817 29.0823 29.4172 28.893 29.4881C28.0097 29.819 27.0524 30 26.0526 30C25.6344 30 25.2237 29.9683 24.8227 29.9073M19.6316 34C22.5965 34 25 31.5376 25 28.5C25 25.4624 22.5965 23 19.6316 23C16.6667 23 14.2632 25.4624 14.2632 28.5C14.2632 29.1106 14.3603 29.6979 14.5395 30.2467C14.6153 30.4787 14.6532 30.5947 14.6657 30.6739C14.6786 30.7567 14.6809 30.8031 14.6761 30.8867C14.6714 30.9668 14.6514 31.0573 14.6113 31.2383L14 34L16.9948 33.591C17.1583 33.5687 17.24 33.5575 17.3114 33.558C17.3865 33.5585 17.4264 33.5626 17.5001 33.5773C17.5701 33.5912 17.6742 33.6279 17.8823 33.7014C18.4306 33.8949 19.0191 34 19.6316 34Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-            </div>
-            <div className="flex flex-col gap-[8px] ">
-              <span className="font-[Switzer] font-[600] text-[20px] leading-[28px] text-[#262626]">
-                Email
-              </span>
-              <span className="font-[Switzer] font-[400] text-[16px] leading-[24px] text-[#344054]">
-                Contact the marketing team
-              </span>
-            </div>
-            <div className="font-[Switzer] font-[600] text-[16px] leading-[24px] text-[#F11F68]">
-              hello@nextbroadcast.com
-            </div>
-          </div>
+        </div>
       </div>
       <Footer />
     </div>

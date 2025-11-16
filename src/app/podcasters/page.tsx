@@ -43,21 +43,23 @@ export default function Podcaster() {
                   type="secondary"
                   text="Request a Call Back"
                   className="h-[44px] w-[184px]"
+                  textClassName="text-[16px] leading-[24px]"
                 />
                 <GradientButton
                   type="tertiary"
                   text="Download Podcaster Pack"
                   className="h-[44px] w-[231px]"
+                  textClassName="text-[16px] leading-[24px]"
                 />
               </div>
             </div>
           </div>
 
-          <div className=" relative  lg:absolute right-0 top-0 bottom-0">
+          <div className="relative lg:absolute right-0 top-4 lg:top-9  bottom-[-30px] max-w-[700px]">
             <Image
               src="/assets/images/podcasters-right-banner-bg.png"
               alt="podcasters-image"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               width={500}
               height={500}
             />
@@ -75,7 +77,7 @@ export default function Podcaster() {
               <Image
                 src="/assets/images/podcast-recording-session.jpg"
                 alt="podcast-recording-session"
-                className="w-full h-full object-cover rounded-[16px]"
+                className="w-full h-full object-cover rounded-[9px] lg:rounded-[16px]"
                 width={500}
                 height={500}
                 priority
@@ -83,26 +85,12 @@ export default function Podcaster() {
             </div>
 
             <div className="w-full flex flex-col items-start justify-center gap-[24px]">
-              <h1 className="font-semibold text-[34px] lg:text-[48px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
+              <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
                 How Podcasters Earn with Next Audio Audio
               </h1>
               <div className="flex flex-col items-start justify-center gap-[12px]">
                 <div className="flex flex-row items-start justify-start gap-[12px]">
-                  <svg
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
-                      stroke="#F11F68"
-                      strokeWidth="2.33333"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} className="w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
                   <h1>
                     <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                       Dynamically inserted ads:
@@ -124,21 +112,8 @@ export default function Podcaster() {
                 </div>
 
                 <div className="flex flex-row items-start justify-start gap-[12px]">
-                  <svg
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.58317 12.8333L11.0832 16.3333L18.0832 9.33329M24.4998 12.8333C24.4998 19.2766 19.2765 24.5 12.8332 24.5C6.38985 24.5 1.1665 19.2766 1.1665 12.8333C1.1665 6.38997 6.38985 1.16663 12.8332 1.16663C19.2765 1.16663 24.4998 6.38997 24.4998 12.8333Z"
-                      stroke="#F11F68"
-                      strokeWidth="2.33333"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} className="w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
+
                   <h1>
                     <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                       Host-read ads & sponsorships:{" "}
@@ -154,7 +129,7 @@ export default function Podcaster() {
           </section>
 
           <section className="pt-[84px] lg:py-[48px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFEFF]">
-            <div className="w-full flex flex-col lg:flex-row  items-center justify-between gap-[64px] rounded-[16px]">
+            <div className="w-full flex flex-col lg:flex-row  items-center justify-between gap-[46px] lg:gap-[64px] rounded-[16px]">
               <div className="w-full flex flex-col items-start justify-center gap-[40px] max-w-[590px]">
                 <div className="flex flex-col items-start justify-center gap-[24px]">
                   <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
@@ -200,16 +175,17 @@ export default function Podcaster() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full mb-2">
+                <div className="hidden lg:block w-full mb-2">
                   <GradientButton
                     text="Download Podcaster Info Sheet"
                     type="secondary"
                     className=""
+                    textClassName="text-[16px] leading-[24px]"
                   />
                 </div>
               </div>
               <div className="w-full">
-                <div className="w-full rounded-[16px] overflow-hidden">
+                <div className="w-full rounded-[9px] lg:rounded-[16px] overflow-hidden">
                   <Image
                     src="/assets/images/podcaster3.png"
                     alt="podcaster-package"
@@ -278,8 +254,8 @@ export default function Podcaster() {
             <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">
               <div className="w-full flex flex-col items-start justify-center gap-[24px]">
                 <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-                  <span className="text-[#F11F68] border border-[#F11F68] rounded-[31px] px-3 md:px-4 py-1.5 md:py-2 text-sm md:text-[16px] leading-tight md:leading-[24px] font-medium">
-                    FAQs
+                <span className="text-[#F11F68] border border-[#F11F68] rounded-[31px] px-3 md:px-4 py-1.5 md:py-1 text-sm md:text-[16px] leading-tight md:leading-[22px] font-medium">
+                FAQs
                   </span>
                   <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
                     Got Questions? We’ve Got Answers!
@@ -294,7 +270,7 @@ export default function Podcaster() {
                     <span className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-semibold">
                       Have another question?
                     </span>
-                    <span className="gradient-text font-semibold text-[20px] leading-[28px]">
+                    <span className="gradient-text font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
                       Reach Out
                     </span>
                   </div>
@@ -342,7 +318,7 @@ export default function Podcaster() {
           </section>
 
           <section className="w-full flex flex-col items-center justify-center py-[84px] lg:py-[96px]  px-[16px] lg:px-[80px] gap-[64px] bg-[#F8F9FA]">
-            <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-[16px] lg:gap-[24px] max-w-[1280px] max-h-[94px]">
+            <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-[32px] lg:gap-[24px] max-w-[1280px] max-h-auto lg:max-h-[94px]">
               <div className="flex flex-col items-start justify-center gap-[16px]">
                 <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text">
                   Insights That Matter to You
@@ -351,17 +327,17 @@ export default function Podcaster() {
                 Advice to help you grow and earn from your podcast.
                 </h6>
               </div>
-              <div>
+              <div className="w-full">
                 <GradientButton
                   text="Explore Podcaster knowledge Hub"
                   className="h-[44px] w-[293px]"
                 />
               </div>
             </div>
-            <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[16px] lg:gap-[24px] max-w-[1280px]">
-              <div className="w-full relative">
+            <div className="w-full flex flex-row overflow-x-auto items-start justify-between gap-[16px] lg:gap-[24px] max-w-[1280px]">
+              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
                 <div
-                  className="bg-cover bg-center w-full md:w-[300px] h-[226px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
+                  className="bg-cover bg-center w-full md:w-[300px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
                   style={{
                     backgroundImage: `url(${"/assets/images/card-bg-22.jpg"})`,
                   }}
@@ -370,7 +346,7 @@ export default function Podcaster() {
 
                   <div className="relative z-10 flex flex-col justify-between h-full">
                     <div className="w-full">
-                      <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
+                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
                         Webinar
                       </span>
                     </div>
@@ -388,9 +364,9 @@ export default function Podcaster() {
                 </div>
               </div>
 
-              <div className="w-full relative">
+              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
                 <div
-                  className="bg-cover bg-center w-full md:w-[300px] h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
+                  className="bg-cover bg-center w-full md:w-[300px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
                   style={{
                     backgroundImage: `url(${"/assets/images/insight-2.png"})`,
                   }}
@@ -399,7 +375,7 @@ export default function Podcaster() {
 
                   <div className="relative z-10 flex flex-col justify-between h-full">
                     <div className="w-full">
-                      <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
+                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
                         Webinar
                       </span>
                     </div>
@@ -417,9 +393,9 @@ export default function Podcaster() {
                 </div>
               </div>
 
-              <div className="w-full relative">
+              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
                 <div
-                  className="bg-cover bg-center w-full md:w-[630px] h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
+                  className="bg-cover bg-center w-full md:w-[630px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
                   style={{
                     backgroundImage: `url(${"/assets/images/insight-3.jpg"})`,
                   }}
@@ -428,7 +404,7 @@ export default function Podcaster() {
 
                   <div className="relative z-10 flex flex-col justify-between h-full">
                     <div className="w-full">
-                      <span className="px-2.5 py-2 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
+                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
                         Webinar
                       </span>
                     </div>

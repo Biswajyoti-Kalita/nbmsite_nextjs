@@ -95,9 +95,9 @@ export default function HighlightsGroup() {
                   <path
                     d="M8 1V15M8 15L15 8M8 15L1 8"
                     stroke="url(#paint0_linear_4394_19804)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <defs>
                     <linearGradient
@@ -205,9 +205,9 @@ export default function HighlightsGroup() {
                   <path
                     d="M8 1V15M8 15L15 8M8 15L1 8"
                     stroke="url(#paint0_linear_4394_19804)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <defs>
                     <linearGradient
@@ -303,9 +303,9 @@ export default function HighlightsGroup() {
                   <path
                     d="M8 1V15M8 15L15 8M8 15L1 8"
                     stroke="url(#paint0_linear_4394_19804)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <defs>
                     <linearGradient

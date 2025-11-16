@@ -168,32 +168,32 @@ export default function TestimonialGroup() {
             >Testimonials</span
           >
           <h1
-            className="font-semibold text-2xl md:text-3xl lg:text-[42px] leading-tight md:leading-[50px] gradient-text"
+            className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] gradient-text"
           >
             What Our Clients Say
           </h1>
         </div>
       </div>
-      <div className="flex flex-col items-end justify-end gap-4 md:gap-[20px]">
+      <div className="hidden lg:flex flex-col items-end justify-end gap-4 md:gap-[20px]">
         <div
           className="flex flex-row items-center justify-center gap-4 md:gap-[24px]"
         >
           <Image
             src="/assets/images/left.png"
             alt="left-arrow"
-            className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-[20px] h-[20px] md:w-[44px] md:h-[44px] cursor-pointer hover:opacity-80 transition-opacity"
             id="prevTestimonial"
-            width={20}
-            height={20}
+            width={44}
+            height={44}
             onClick={moveLeft}
           />
           <Image
             src="/assets/images/right.png"
             alt="right-arrow"
-            className="w-[20px] h-[20px] md:w-[24px] md:h-[24px] cursor-pointer hover:opacity-80 transition-opacity"
+            className="w-[20px] h-[20px] md:w-[44px] md:h-[44px] cursor-pointer hover:opacity-80 transition-opacity"
             id="nextTestimonial"
-            width={20}
-            height={20}
+            width={44}
+            height={44}
             onClick={moveRight}
           />
         </div>

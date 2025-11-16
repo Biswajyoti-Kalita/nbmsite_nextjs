@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
 import Player from "@/components/Player";
+import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import caseStudies from "@/data/caseStudies.json";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -120,58 +121,58 @@ export default async function CaseStudyPage({
           >
             <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[64px] max-w-[1280px]">
               <div className="w-full max-w-[478px]">
-                <h2 className="font-bold text-[42px] leading-[50px] tracking-[-0.02em] gradient-text">
+                <h2 className="font-semibold text-[42px] leading-[50px] tracking-[-0.02em] gradient-text">
                   Audio Campaign Summary
                 </h2>
               </div>
               <div className="w-full flex flex-col items-start justify-start">
-                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-start gap-[8px] lg:gap-[16px] border-t border-[#D2D2D2] h-[92px] py-[24px] lg::py-[32px]">
                   <div className="w-full lg:w-[215px]">
                     <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Client
                     </span>
                   </div>
-                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                  <span className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
                     {data.summary.client}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-start gap-[8px] lg:gap-[16px] border-t border-[#D2D2D2] h-[92px] py-[24px] lg::py-[32px]">
                   <div className="w-full lg:w-[215px]">
                     <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Industry
                     </span>
                   </div>
-                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                  <span className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
                     {data.summary.industry}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-start gap-[8px] lg:gap-[16px] border-t border-[#D2D2D2] h-[108px] py-[24px] lg::py-[32px]">
                   <div className="w-full lg:w-[215px]">
                     <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Campaign Types
                     </span>
                   </div>
-                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                  <span className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
                     {data.summary.campaign_types}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-start gap-[8px] lg:gap-[16px] border-t border-[#D2D2D2] h-[92px] py-[24px] lg::py-[32px]">
                   <div className="w-full lg:w-[215px]">
                     <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Audio Format
                     </span>
                   </div>
-                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                  <span className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
                     {data.summary.audio_format}
                   </span>
                 </div>
-                <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-[8px] lg:gap-[16px] border-b border-t border-[#D2D2D2] h-[94px] py-[24px] lg:py-[0px]">
+                <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-start gap-[8px] lg:gap-[16px] border-t border-[#D2D2D2] h-[92px] py-[24px] lg::py-[32px]">
                   <div className="w-full lg:w-[215px]">
                     <span className="font-semibold text-[14px] lg:text-[20px] leading-[22px] lg:leading-[28px] tracking-[0em] text-[#667085] w-[215px] text-start">
                       Audience Profile
                     </span>
                   </div>
-                  <span className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
+                  <span className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626] w-full">
                     {data.summary.audience_profile}
                   </span>
                 </div>
@@ -182,12 +183,12 @@ export default async function CaseStudyPage({
           <section className="flex flex-col items-center justify-center pt-[96px] pb-[48px] px-[16px] lg:px-[80px] gap-[64px] bg-[#FFFEFF]">
             <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[46px] lg:gap-[64px] max-w-[1280px]">
               <div className="w-full flex flex-col items-start justify-start max-w-[478px]">
-                <h1 className="font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] gradient-text">
+                <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] gradient-text">
                   Objective
                 </h1>
               </div>
               <div>
-                <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                <p className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
                   {data.objective}
                 </p>
               </div>
@@ -197,12 +198,12 @@ export default async function CaseStudyPage({
           <section className="flex flex-col items-center justify-center pt-[96px] pb-[48px] px-[16px] lg:px-[80px] gap-[64px] bg-[#FFFEFF]">
             <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[46px] lg:gap-[64px] max-w-[1280px]">
               <div className="w-full flex flex-col items-start justify-start max-w-[478px]">
-                <h1 className="font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] gradient-text">
+                <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em] gradient-text">
                   Campaign Execution
                 </h1>
               </div>
               <div className="w-full flex flex-col items-start justify-start gap-[16px]">
-                <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                <p className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
                   {data.execution.title}
                 </p>
                 <div className="w-full flex flex-col items-start justify-start gap-[12px]">
@@ -220,7 +221,7 @@ export default async function CaseStudyPage({
                             <circle cx="3" cy="3" r="3" fill="#F11F68" />
                           </svg>
                         </div>
-                        <h1 className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                        <h1 className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
                           {point}
                         </h1>
                       </div>
@@ -229,7 +230,7 @@ export default async function CaseStudyPage({
                 </div>
                 {
                   data.execution.bottom_text && (
-                    <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
+                    <p className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
                       {data.execution.bottom_text}
                     </p>    
                   )
@@ -240,7 +241,7 @@ export default async function CaseStudyPage({
 
           <section className="flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF] py-[48px] px-[16px] lg:px-[80px]">
             <div className="w-full flex flex-col items-center justify-center max-w-[1280px] p-[24px] lg:p-[64px] gap-[46px] lg:gap-[64px] bg-[#6C1DA7] rounded-[16px] relative">
-              <div className="absolute top-0  left-[0px] lg:right-0 max-w-full overflow-hidden">
+              <div className="absolute top-0  left-[0px] lg:left-auto lg:right-0 max-w-full overflow-hidden">
                 <svg
                   width="834"
                   height="442"
@@ -271,7 +272,7 @@ export default async function CaseStudyPage({
                 </svg>
               </div>
               <div className="w-full flex flex-col items-start justify-start gap-[148px]">
-                <h1 className="font-bold text-[34px] lg:text-[42px] leading-[40px] lg:leading-[50px] tracking-[-0.02em] text-[#FFFEFF]">
+                <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[40px] lg:leading-[50px] tracking-[-0.02em] text-[#FFFEFF]">
                   Results
                 </h1>
               </div>
@@ -282,11 +283,11 @@ export default async function CaseStudyPage({
                     index: number
                   ) => (
                     <div key={index} className="w-full flex flex-col items-start justify-between border-t border-[#D2D2D2] pt-[24px] lg:pt-[32px] h-[188px]">
-                      <p className="font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#FFFEFF]">
+                      <p className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#FFFEFF]">
                         {result.title}
                       </p>
                       {result.subtitle && (
-                        <h1 className="font-semibold text-[50px] lg:text-[64px] leading-[58px] lg:leading-[72px] tracking-[0em] text-[#FFFEFF] whitespace-nowrap">
+                        <h1 className="font-medium text-[50px] lg:text-[64px] leading-[58px] lg:leading-[72px] tracking-[0em] text-[#FFFEFF] whitespace-nowrap">
                           {result.subtitle}
                         </h1>
                       )}
@@ -297,7 +298,7 @@ export default async function CaseStudyPage({
             </div>
           </section>
 
-          <section className="w-full flex flex-col items-center justify-center bg-[#FFFEFF] gap-[46px] lg:gap-[64px] pt-[48px] pb-[0px] lg:pb-[96px] px-[0px] lg:px-[16px] lg:px-[80px]">
+          <section className="w-full flex flex-col items-center justify-between bg-[#FFFEFF] gap-[46px] lg:gap-[64px] pt-[48px] pb-[0px] lg:pb-[96px] px-[0px] lg:px-[16px] lg:px-[80px]">
             <div className="w-full relative flex flex-col lg:flex-row items-start justify-center max-w-[1280px] gap-[24px] lg:gap-[64px] py-[84px] px-[16px] lg:p-[64px] rounded-[16px] bg-gradient-to-r from-[#FFEDFB] to-[#E8ECFF]">
               <div
                 className="w-full h-full bg-cover bg-center absolute inset-0 z-0 opacity-20 bg-top left-0 top-0"
@@ -305,12 +306,12 @@ export default async function CaseStudyPage({
                   backgroundImage: `url('/assets/images/listen-ad-2.jpg')`,
                 }}
               ></div>
-              <div className="z-10 flex flex-col items-start justify-start h-full">
-                <h1 className="gradient-text font-bold text-[34px] lg:text-[42px] leading-[40px] lg:leading-[50px] tracking-[-0.02em]">
+              <div className="z-10 flex flex-col items-start justify-start h-full w-full">
+                <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[40px] lg:leading-[50px] tracking-[-0.02em]">
                   Listen To The Ad
                 </h1>
               </div>
-              <div className="z-10 w-full max-w-[700px] flex flex-col lg:flex-row items-start justify-start gap-[16px] lg:gap-[20px] p-[24px] bg-[#FFFEFF] rounded-[16px] border border-[#F11F68]">
+              <div className="z-10 w-full lg:min-w-[700px] flex flex-col lg:flex-row items-start justify-start gap-[16px] lg:gap-[20px] p-[24px] bg-[#FFFEFF] rounded-[16px] border border-[#F11F68]">
                 <div className="flex flex-row items-center justify-center gap-[24px]">
                   <div className="w-[295px] lg:w-[164px] h-[295px] lg:h-[164px] flex items-center justify-center gap-[4px] rounded-[6px] border border-[#E8E8E8] bg-[#FFFFFF]">
                     <Image
@@ -325,7 +326,7 @@ export default async function CaseStudyPage({
                 <div className="w-full flex flex-col items-start justify-between h-full min-h-[164px]">
                   <div className="w-full flex flex-col items-start justify-start gap-[8px] h-[56px]">
                     <div className="w-full flex flex-row items-center justify-between">
-                      <h1 className="font-bold text-[26px] lg:text-[24px] leading-[34px] tracking-[0em] text-[#262626]">
+                      <h1 className="font-semibold text-[26px] lg:text-[24px] leading-[34px] tracking-[0em] text-[#262626]">
                         {data.audio.title}
                       </h1>
                       <div className="w-[16px] h-[16px] flex items-start justify-center">
@@ -430,45 +431,10 @@ export default async function CaseStudyPage({
             </div>
           </section>
 
-          <section
-            className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
-          >
-            <div className="max-w-[1440px] w-full grid grid-cols-1 lg:grid-cols-8 justify-between items-center gap-4 md:gap-[24px]">
-              <div className="lg:col-span-6">
-                <h1 className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px]">
-                  Read More Case Studies
-                </h1>
-              </div>
-              <div className="lg:col-span-2 flex itesm-start md:items-end justify-start md:justify-end h-full">
-                <GradientButton
-                  text="Explore All"
-                  type="primary"
-                  rightIcon={
-                    <svg
-                      width="14"
-                      height="15"
-                      viewBox="0 0 14 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
-                        stroke="#FFFEFF"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  }
-                />
-              </div>
-            </div>
-            <div
-              className="max-w-[14400px] flex flex-col lg:flex-row justify-start w-full items-center gap-4 md:gap-[20px]"
-            >
-              <CaseStudies />
-            </div>
-          </section>
+          
+          <PodcastCaseStudy title="Read More Case Studies" />
+
+
         </div>
       </div>
       <Footer />

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
 import ReactFlagsSelect from "react-flags-select";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
   const [selected, setSelected] = useState("US");
@@ -19,8 +19,11 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
   });
   const [step, setStep] = useState(1);
 
+  const formRefStep1 = useRef<HTMLFormElement>(null);
+  const formRefStep2 = useRef<HTMLFormElement>(null);
+
   const moveNextStep = () => {
-    if (step === 1) {
+    if (step === 1 && formRefStep1.current?.checkValidity()) {
       setStep(2);
     }
   };
@@ -49,9 +52,9 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
               <path
                 d="M8.125 13.75L11.875 17.5L19.375 10M26.25 13.75C26.25 20.6536 20.6536 26.25 13.75 26.25C6.84644 26.25 1.25 20.6536 1.25 13.75C1.25 6.84644 6.84644 1.25 13.75 1.25C20.6536 1.25 26.25 6.84644 26.25 13.75Z"
                 stroke="#F11F68"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
@@ -356,9 +359,9 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
                     <path
                       d="M1 8H15M15 8L8 1M15 8L8 15"
                       stroke="#FFFEFF"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 }
@@ -367,7 +370,7 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
           </div>
         )}
         {step === 1 && (
-          <form className="w-full flex flex-col items-start justify-start gap-[32px]">
+          <form ref={formRefStep1 as React.RefObject<HTMLFormElement>} className="w-full flex flex-col items-start justify-start gap-[32px]">
             <div className="w-full flex flex-col items-start justify-start gap-[32px]">
               <div className="w-full flex flex-col items-start justify-start gap-[16px]">
                 <div className="w-full flex flex-col items-start justify-start gap-[6px]">
@@ -435,7 +438,7 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
                   className="w-full"
                   textClassName="text-[16px] leading-[24px] font-bold"
                   fullWidth={true}
-                  onClick={moveNextStep}
+                  onClick={(moveNextStep)}
                   rightIcon={
                     <svg
                       width="16"
@@ -447,9 +450,9 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
                       <path
                         d="M1 8H15M15 8L8 1M15 8L8 15"
                         stroke="#FFFEFF"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   }

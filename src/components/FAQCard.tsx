@@ -11,7 +11,7 @@ export default function FAQCard({ title, description, open }: FAQCardProps) {
     const [isOpen, setIsOpen] = useState(open || false);
     return (
         <div className="w-full flex flex-col items-start justify-center border-[#E5E5E5] border-[1px] rounded-[16px] bg-[#FFFEFF]">
-            <h1 className="text-[#262626] w-full text-[16px] lg:text-[20px] leading-[24px] lg:leading-[32px] font-medium flex flex-row gap-[24px] py-[20px] px-[24px]">
+            <h1 className="text-[#262626] w-full text-[20px] leading-[24px] lg:leading-[32px] font-medium flex flex-row gap-[24px] py-[20px] px-[24px]">
                 <span className="w-full">
                 {title}
                 </span>

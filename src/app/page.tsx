@@ -10,6 +10,7 @@ import Image from "next/image";
 import ActionSidebar from "@/components/ActionSidebar";
 import AboutUsImageCard from "@/components/AboutUsImageCard";
 import GradientButton from "@/components/GradientButton";
+import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 
 export default function Home() {
   return (
@@ -120,55 +121,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"
-        data-aos="fade-up"
-      >
-        <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-8 justify-between items-center gap-4 md:gap-[24px]"
-        >
-          <div className="lg:col-span-6">
-            <h1
-              className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px]"
-            >
-              Podcast Advertising Case Studies & Audio Campaign Results
-            </h1>
-          </div>
-          <div
-            className="lg:col-span-2 flex itesm-start md:items-end justify-start md:justify-end h-full"
-          >
-            <button
-              className="gradient-bg-button px-3 md:px-4 py-2 md:py-2.5 bg-white rounded-[4px] flex items-center justify-center gap-[6px]"
-            >
-              <span
-                className="text-[#FFF] text-sm md:text-base lg:text-[16px] leading-tight md:leading-[24px] -tracking-[0.0em] font-semibold"
-                >Explore All</span
-              >
-              <svg
-                width="14"
-                height="15"
-                viewBox="0 0 14 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
-                  stroke="#FFFEFF"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div
-          className="max-w-[14400px] flex flex-col lg:flex-row justify-start w-full items-center gap-4 md:gap-[20px]"
-          data-aos="fade-up"
-        >
-          <CaseStudies />
-        </div>
-      </section>
+      <PodcastCaseStudy title="Podcast Advertising Case Studies & Audio Campaign Results" />
+
 
       <section
         className=" max-w-[360px] lg:max-w-[1440px] w-full bg-[#FFFEFF] flex flex-col items-start justify-start py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]"

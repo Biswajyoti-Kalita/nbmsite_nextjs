@@ -66,8 +66,8 @@ export default function Testimonial({
             height={20}
           />
         </div>
-        <h4 className="color-5 font-semibold text-2xl">{title}</h4>
-        <h5 className="color-5 font-normal text-lg tracking-tight my-2">
+        <h4 className="color-5 font-semibold text-[20px] lg:text-[24px] leading-[28px] lg:leading-[32px] tracking-[-0.01em]">{title}</h4>
+        <h5 className="color-5 font-normal text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] my-2">
           {quote}
           data
         </h5>
@@ -86,8 +86,8 @@ export default function Testimonial({
           </div>
         </div>
         <div className="flex flex-col justify-center">
-          <h5 className="color-5 text-md font-semibold">{name}</h5>
-          <h5 className="color-1 text-md font-normal">{designation}</h5>
+          <h5 className="color-5 text-[16px] leading-[24px] font-semibold">{name}</h5>
+          <h5 className="color-1 text-[16px] leading-[24px] font-normal">{designation}</h5>
         </div>
       </div>
     </div>
