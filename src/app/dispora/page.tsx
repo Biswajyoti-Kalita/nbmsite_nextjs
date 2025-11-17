@@ -1,6 +1,7 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
 import Breadcrumb from "@/components/Breadcrumb";
+import DisporaBanner from "@/components/DisporaBanner";
 
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
@@ -20,53 +21,8 @@ export default function Dispora() {
       />
 
       <div className="bg-[#511DB5] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
-        <section
-          className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 gap-[80px] items-start justify-start relative lg:max-w-[1440px]"
-          id="home"
-        >
-          <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <Breadcrumb
-              pages={[{ name: "For Advertisers", link: "/advertisers" }]}
-            />
+        <DisporaBanner />
 
-            <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]">
-              FOR BRANDS & MEDIA AGENCIES
-            </h1>
-            <div className="flex flex-col gap-[32px] items-start justify-start">
-              <div className="flex flex-col items-start justify-start gap-[24px]">
-                <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
-                  Advertise to Multicultural Podcast Listeners
-                </h1>
-              </div>
-              <h2 className="font-medium lg:font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-[#FFFEFF]">
-                Expand your reach to diaspora communities across North America,
-                who over-index in education, income, and global mobility.
-              </h2>
-              <div className="flex flex-col lg:flex-row gap-[12px] items-start lg:items-center justify-start">
-                <GradientButton
-                  type="secondary"
-                  text="Book a Call"
-                  className="h-[44px] w-[184px]"
-                />
-                <GradientButton
-                  type="tertiary"
-                  text="Download More Information"
-                  className="h-[44px] w-[231px]"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className=" relative  lg:absolute right-0 top-0 bottom-0 max-w-[700px]">
-            <Image
-              src="/assets/images/dispora_bg.png"
-              alt="podcasters-image"
-              className="w-full h-full object-cover"
-              width={500}
-              height={500}
-            />
-          </div>
-        </section>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[1440px]">

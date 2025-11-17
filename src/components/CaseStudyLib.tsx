@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import GradientButton from "./GradientButton";
 import Image from "next/image";
 import isMobile from "@/util/util";
+import { useRouter } from "next/navigation";
 
 interface CaseStudy {
   id: string;
@@ -52,6 +53,7 @@ export default function CaseStudyLib({
 }: {
   caseStudies: CaseStudy[];
 }) {
+  const router = useRouter();
   // const [originalData, setoriginalData] = useState(caseStudies);
   const originalData = caseStudies;
   const [filteredData, setFilteredData] = useState(caseStudies);
@@ -219,7 +221,7 @@ export default function CaseStudyLib({
                       </defs>
                     </svg>
                   }
-                  // href={`/case-studies/${study.id}`}
+                  onClick={() => router.push(`/case-studies/${study.id}`)}
                 />
               </div>
             </div>

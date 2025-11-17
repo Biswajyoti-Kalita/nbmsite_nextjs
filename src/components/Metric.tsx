@@ -1,6 +1,7 @@
 "use client";
 
 import GradientButton from "./GradientButton";
+import { openCallMeBackModal } from "@/util/modalEvents";
 
 export default function Metric() {
   //const [hovereredMetricIndex, sethovereredMetricIndex] = useState(0);
@@ -243,6 +244,7 @@ export default function Metric() {
         text="Book a Call Back"
         className="w-[161px] h-[44px] rounded-[4px]"
         textClassName="text-[16px] leading-[24px]"
+        onClick={openCallMeBackModal}
       />
     </section>
   );

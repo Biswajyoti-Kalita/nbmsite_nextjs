@@ -9,12 +9,27 @@ export default function CallMeBack() {
   const [selected, setSelected] = useState("US");
   const [requestSent, setrequestSent] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    businessName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
   useEffect(() => {
     const handleOpen = () => setIsOpen(true);
     const handleClose = () => {
       setIsOpen(false);
       setrequestSent(false);
+      setFormData({
+        fullName: "",
+        businessName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
     };
 
     window.addEventListener(MODAL_EVENTS.OPEN_CALL_ME_BACK, handleOpen);
@@ -46,8 +61,45 @@ export default function CallMeBack() {
     };
   }, [isOpen]);
 
-  const handleRequest = () => {
-    setrequestSent(true);
+  const handleRequest = async () => {
+    // Basic validation
+    if (!formData.fullName || !formData.email) {
+      alert('Please fill in all required fields (Full Name and Email)');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/call-me-back', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          businessName: formData.businessName,
+          email: formData.email,
+          phone: formData.phone,
+          countryCode: selected,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setrequestSent(true);
+      } else {
+        alert('Failed to submit request. Please try again.');
+        console.error('Submission error:', result.error);
+      }
+    } catch (error) {
+      console.error('Error submitting callback request:', error);
+      alert('An error occurred while submitting your request. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleCancel = () => {
@@ -68,7 +120,7 @@ export default function CallMeBack() {
       >
         <button
           onClick={closeCallMeBackModal}
-          className="absolute top-[64px] lg:top-4 right-4 z-10 p-0 w-10 h-10 lg:p-2 text-[#262626] transition-colors rounded-full hover:bg-gray-100"
+          className="absolute top-[64px] cursor-pointer lg:top-4 right-4 z-10 p-0 w-10 h-10 lg:p-2 text-[#262626] rounded-full "
           aria-label="Close modal"
         >
           <Image
@@ -135,6 +187,9 @@ export default function CallMeBack() {
                 <input
                   type="text"
                   placeholder="Enter your full name"
+                  required
+                  value={formData.fullName}
+                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                   className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
                 />
               </div>
@@ -145,6 +200,8 @@ export default function CallMeBack() {
                 <input
                   type="text"
                   placeholder="Enter business or show name"
+                  value={formData.businessName}
+                  onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
                   className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
                 />
               </div>
@@ -153,8 +210,11 @@ export default function CallMeBack() {
                   Email
                 </h4>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Enter your full email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
                 />
               </div>
@@ -175,8 +235,10 @@ export default function CallMeBack() {
                     />
                   </div>
                   <input
-                    type="text"
-                    placeholder="Enter your full name"
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[8px] px-[10px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal border-none text-[#344054]"
                   />
                 </div>
@@ -186,7 +248,9 @@ export default function CallMeBack() {
                   Message
                 </h4>
                 <textarea
-                  placeholder="Tell us your needs and we’ll get the right team member to call you back"
+                  placeholder="Tell us your needs and we'll get the right team member to call you back"
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
                   rows={3}
                 ></textarea>
@@ -194,11 +258,12 @@ export default function CallMeBack() {
             </div>
             <div className="w-full flex flex-row items-start justify-start gap-[10px]">
               <GradientButton
-                text="Request a Callback"
+                text={isSubmitting ? "Submitting..." : "Request a Callback"}
                 type="primary"
                 className="w-full h-[44px]"
                 fullWidth={true}
                 onClick={handleRequest}
+                disabled={isSubmitting}
               />
             </div>
           </div>

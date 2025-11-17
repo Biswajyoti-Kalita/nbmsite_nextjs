@@ -2,10 +2,12 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
 import { useState } from "react";
+import { openCallMeBackModal } from "@/util/modalEvents";
+import { useRouter } from "next/navigation";
 
 export default function PublisherRevenuSection() {
   const [selectedTab, setSelectedTab] = useState("self-serve-tools");
-
+  const router = useRouter();
   return (
     <div className="w-full flex flex-col gap-[40px] md:p-[40px] border-0 lg:border-1 border-[#D2D2D2] rounded-[16px]">
       <div className="w-full flex gap-[10px] flex-row overflow-x-scroll">
@@ -109,12 +111,14 @@ export default function PublisherRevenuSection() {
                 text="Book a Call Back"
                 className="h-[48px] w-[158px]"
                 textClassName="text-[16px] leading-[24px] "
+                onClick={openCallMeBackModal}
               />
               <GradientButton
                 type="secondary"
                 text="Check Out AI Studio"
                 className="h-[48px] w-[182px]"
                 textClassName="text-[16px] leading-[24px] "
+                onClick={() => router.push("https://admanager.fm/nbmaistudio")}
               />
             </div>
           </div>

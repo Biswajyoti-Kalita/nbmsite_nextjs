@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-6 justify-between gap-8 md:gap-[54px] w-full">
           <div className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]">
             <Image
-              src="/assets/images/logo-white.svg"
+              src="/assets/images/logo.svg"
               alt="Logo"
               className="max-h-[30px] w-auto"
               width={100}
@@ -40,10 +40,10 @@ export default function Footer() {
               Solutions
             </h1>
             <div className="flex flex-col">
-            <Link href="https://admanager.fm/aiadstudio" target="_blank" className={baseLinkClasses}>
+            <Link href="https://admanager.fm/nbmaistudio" target="_blank" className={baseLinkClasses}>
               AI Ad Studio
             </Link>
-            <Link href="/admanager" target="_blank" className={baseLinkClasses}>
+            <Link href="https://admanager.fm" target="_blank" className={baseLinkClasses}>
               Admanager
             </Link>
             </div>

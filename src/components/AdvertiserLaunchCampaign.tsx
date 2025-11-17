@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import GradientButton from "./GradientButton";
 import { useState } from "react";
+import { openShareBriefModal } from "@/util/modalEvents";
 
 export default function AdvertiserLaunchCampaign() {
   const [selectedOption, setSelectedOption] = useState("launch-your-campaign");
@@ -254,6 +255,7 @@ export default function AdvertiserLaunchCampaign() {
               <GradientButton
                 text="Share a Brief"                
                 type="primary"
+                onClick={openShareBriefModal}
               />
             </div>
           </div>

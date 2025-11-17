@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Brief {
+  id                    String   @id @default(cuid())
+  formType              String   @db.VarChar(50)
+  fullName              String   @db.VarChar(255)
+  businessName          String?  @db.VarChar(255)
+  email                 String   @db.VarChar(255)
+  phone                 String?  @db.VarChar(50)
+  // Campaign Details
+  campaignAim           String?  @db.Text // JSON array stored as string
+  campaignFullName      String?  @db.VarChar(255)
+  geoTargeting          String?  @db.Text
+  targetAudience        String?  @db.Text
+  languageTargeting     String?  @db.VarChar(100)
+  campaignDates         String?  @db.VarChar(100) // Date range stored as string
+  budget                String?  @db.VarChar(50)
+  preferredFormat       String?  @db.VarChar(50)
+  brief                 String?  @db.Text // Text brief
+  uploadedFileName      String?  @db.VarChar(255)
+  uploadedFileSize      Int?     // File size in bytes
+  uploadedFileType      String?  @db.VarChar(100)
+  uploadedFileUrl       String?  @db.VarChar(500) // If file is stored in cloud storage
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@index([email])
+  @@index([createdAt])
+}
+
+model CallMeBack {
+  id          String   @id @default(cuid())
+  fullName    String   @db.VarChar(255)
+  businessName String? @db.VarChar(255)
+  email       String   @db.VarChar(255)
+  phone       String?  @db.VarChar(50)
+  countryCode String?  @db.VarChar(10)
+  message     String?  @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([email])
+  @@index([createdAt])
+}

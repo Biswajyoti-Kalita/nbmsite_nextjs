@@ -69,15 +69,15 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                 (isMobileScreen && isMobileScreenMenuOpen) || !isPrimary ? (
                   <Image
                     src="/assets/images/logo-white.png"
-                    className="w-auto h-[30px]"
+                    className="w-[150px] h-auto"
                     alt="NextBroadcastMedia Logo"
                     width={50}
                     height={50}
                   />
                 ) : (
                   <Image
-                    src="/assets/images/logo.png"
-                    className="w-auto h-[30px]"
+                    src="/assets/images/logo.svg"
+                    className="w-[150px] h-auto"
                     alt="NextBroadcastMedia Logo"
                     width={50}
                     height={50}

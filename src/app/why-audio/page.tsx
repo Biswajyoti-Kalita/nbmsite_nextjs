@@ -8,6 +8,7 @@ import Metric from "@/components/Metric";
 import Navbar from "@/components/Navbar";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WhyAudio() {
   return (
@@ -223,7 +224,7 @@ export default function WhyAudio() {
                       Discover how audio advertising can elevate your marketing
                       strategy.
                     </h1>
-                    <button className="bg-[#FFFEFF] py-[10px] px-[16px] rounded-[4px] gap-[6px] flex items-center justify-center">
+                    <Link href="/advertisers" className="bg-[#FFFEFF] py-[10px] px-[16px] rounded-[4px] gap-[6px] flex items-center justify-center">
                       <span className="gradient-text font-bold text-[16px] leading-[24px] tracking-[0em]">
                         Explore Advertiser Page
                       </span>
@@ -255,7 +256,7 @@ export default function WhyAudio() {
                           </linearGradient>
                         </defs>
                       </svg>
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="max-h-[238px] lg:max-h-[362px] w-full lg:w-auto rounded-[16px]">

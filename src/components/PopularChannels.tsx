@@ -75,7 +75,7 @@ export default function PopularChannels() {
           "/assets/images/brands/times.png",
           "/assets/images/brands/acast.png",
           "/assets/images/brands/times.png",
-          "/assets/images/brands/fox-news.png",
+          "/assets/images/brands/fox-news.jpg",
           "/assets/images/brands/times.png",
           "/assets/images/brands/stitcher.png",
         ],

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 const FunnelChip = ({
@@ -320,6 +321,7 @@ export default function AudioFunnel() {
                 </div>
               </div>
               <div className="w-full flex flex-col items-start justify-start  py-[10px] px-[16px] gap-[6px]">
+                <Link href="/case-study-library">
                 <h4 className="font-bold text-[16px] leading-[24px] tracking-[-0.0em] gradient-text flex flex-row items-center justify-center gap-[6px]">
                   Read Conversion Case Study
                   <svg
@@ -351,6 +353,7 @@ export default function AudioFunnel() {
                     </defs>
                   </svg>
                 </h4>
+                </Link>
               </div>
             </div>
           )}
@@ -438,37 +441,40 @@ export default function AudioFunnel() {
                 </div>
               </div>
               <div className="w-full flex flex-col items-start justify-start  py-[10px] px-[16px] gap-[6px]">
-                <h4 className="font-bold text-[16px] leading-[24px] tracking-[-0.0em] gradient-text flex flex-row items-center justify-center gap-[6px]">
-                  Read Conversion Case Study
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 13L13 1M13 1H5M13 1V9"
-                      stroke="url(#paint0_linear_4298_1540)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_4298_1540"
-                        x1="1"
-                        y1="7"
-                        x2="13"
-                        y2="7"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#F11F68" />
-                        <stop offset="1" stop-color="#162ABF" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </h4>
+                <Link href="/case-study-library">
+                  <h4 className="font-bold text-[16px] leading-[24px] tracking-[-0.0em] gradient-text flex flex-row items-center justify-center gap-[6px]">
+                    Read Conversion Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 13L13 1M13 1H5M13 1V9"
+                        stroke="url(#paint0_linear_4298_1540)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_4298_1540"
+                          x1="1"
+                          y1="7"
+                          x2="13"
+                          y2="7"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#F11F68" />
+                          <stop offset="1" stop-color="#162ABF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </h4>
+                </Link>
+                
               </div>
             </div>
           )}
@@ -556,37 +562,40 @@ export default function AudioFunnel() {
                 </div>
               </div>
               <div className="w-full flex flex-col items-start justify-start  py-[10px] px-[16px] gap-[6px]">
-                <h4 className="font-bold text-[16px] leading-[24px] tracking-[-0.0em] gradient-text flex flex-row items-center justify-center gap-[6px]">
-                  Read Conversion Case Study
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 13L13 1M13 1H5M13 1V9"
-                      stroke="url(#paint0_linear_4298_1540)"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_4298_1540"
-                        x1="1"
-                        y1="7"
-                        x2="13"
-                        y2="7"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#F11F68" />
-                        <stop offset="1" stop-color="#162ABF" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </h4>
+                <Link href="/case-study-library">                
+                  <h4 className="font-bold text-[16px] leading-[24px] tracking-[-0.0em] gradient-text flex flex-row items-center justify-center gap-[6px]">
+                    Read Conversion Case Study
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 13L13 1M13 1H5M13 1V9"
+                        stroke="url(#paint0_linear_4298_1540)"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_4298_1540"
+                          x1="1"
+                          y1="7"
+                          x2="13"
+                          y2="7"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#F11F68" />
+                          <stop offset="1" stop-color="#162ABF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </h4>
+                </Link>
+                
               </div>
             </div>
           )}

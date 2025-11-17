@@ -93,6 +93,13 @@ export default function ShareBrief() {
   useEffect(() => {
     console.log(formData);
   }, [formData]);
+  useEffect(() => {
+    console.log(formType);
+    setformData({
+      ...formData,
+      formType: formType
+    });
+  }, [formType]);
 
 
   const moveNextStep = (e?: React.FormEvent) => {
@@ -107,9 +114,56 @@ export default function ShareBrief() {
     }
   };
 
-  const handleRequest = () => {
-    console.log(formData);
-    setrequestSent(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleRequest = async () => {
+    setIsSubmitting(true);
+    
+    try {
+      const submitFormData = new FormData();
+      
+      // Step 1 data
+      submitFormData.append('formType', formData.formType);
+      submitFormData.append('fullName', formData.fullName);
+      submitFormData.append('businessName', formData.businessName);
+      submitFormData.append('email', formData.email);
+      submitFormData.append('phone', formData.phone);
+      
+      // Step 2 campaign details
+      if (formData.formType === 'complete-a-form') {
+        submitFormData.append('campaignAim', JSON.stringify(formData.campaignDetails.campaignAim));
+        submitFormData.append('campaignFullName', formData.campaignDetails.fullName);
+        submitFormData.append('geoTargeting', formData.campaignDetails.geoTargeting);
+        submitFormData.append('targetAudience', formData.campaignDetails.targetAudience);
+        submitFormData.append('languageTargeting', formData.campaignDetails.languageTargeting);
+        submitFormData.append('campaignDates', formData.campaignDetails.campaignDates);
+        submitFormData.append('budget', formData.campaignDetails.budget);
+        submitFormData.append('preferredFormat', formData.campaignDetails.preferredFormat);
+      } else if (formData.formType === 'write-a-brief') {
+        submitFormData.append('brief', formData.campaignDetails.brief);
+      } else if (formData.formType === 'upload-file' && formData.campaignDetails.uploadedFile) {
+        submitFormData.append('file', formData.campaignDetails.uploadedFile);
+      }
+      
+      const response = await fetch('/api/submit-brief', {
+        method: 'POST',
+        body: submitFormData,
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        setrequestSent(true);
+      } else {
+        alert('Failed to submit brief. Please try again.');
+        console.error('Submission error:', result.error);
+      }
+    } catch (error) {
+      console.error('Error submitting brief:', error);
+      alert('An error occurred while submitting your brief. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleCancel = () => {
@@ -118,13 +172,6 @@ export default function ShareBrief() {
   };
 
   const validateFile = (file: File): boolean => {
-    const allowedTypes = [
-      'application/vnd.ms-excel',
-      'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-      'application/pdf',
-      'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-      'application/msword'
-    ];
     const allowedExtensions = ['.xls', '.xlsx', '.pdf', '.docx', '.doc'];
     const maxSize = 2 * 1024 * 1024; // 2MB in bytes
 
@@ -583,28 +630,64 @@ export default function ShareBrief() {
 
             <div className="w-full flex flex-row items-start justify-start">
               <GradientButton
-                text="Submit a Brief"
+                text={isSubmitting ? "Submitting..." : "Submit a Brief"}
                 type="primary"
                 className="w-full"
                 textClassName="text-[16px] leading-[24px] font-bold"
                 fullWidth={true}
                 onClick={handleRequest}
+                disabled={isSubmitting}
                 rightIcon={
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 8H15M15 8L8 1M15 8L8 15"
-                      stroke="#FFFEFF"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  isSubmitting ? (
+                    <svg
+                      className="animate-spin"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="8"
+                        cy="8"
+                        r="7"
+                        stroke="#FFFEFF"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeDasharray="31.416"
+                        strokeDashoffset="31.416"
+                      >
+                        <animate
+                          attributeName="stroke-dasharray"
+                          dur="2s"
+                          values="0 31.416;15.708 15.708;0 31.416;0 31.416"
+                          repeatCount="indefinite"
+                        />
+                        <animate
+                          attributeName="stroke-dashoffset"
+                          dur="2s"
+                          values="0;-15.708;-31.416;-31.416"
+                          repeatCount="indefinite"
+                        />
+                      </circle>
+                    </svg>
+                  ) : (
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 8H15M15 8L8 1M15 8L8 15"
+                        stroke="#FFFEFF"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  )
                 }
               />
             </div>
