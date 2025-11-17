@@ -15,8 +15,9 @@ interface NavbarProps {
   linkColor?: string;
   isPrimary?: boolean;
   bgColorOnOpen?: string;
+  isHome?: boolean;
 }
-export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11F68]", linkColor = "#262626", isPrimary = false }: NavbarProps) {
+export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11F68]", linkColor = "#262626", isPrimary = false, isHome = false }: NavbarProps) {
 
   const [isMobileScreenMenuOpen, setisMobileScreenMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,7 +52,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
   useEffect(() => {
     const handleScroll = () => {
       const hasScrolled = window.scrollY > 50;
-      setIsScrolled(hasScrolled);
+      setIsScrolled(hasScrolled && !isHome);
     };
 
     handleScroll();
@@ -97,7 +98,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
               {
                 (isMobileScreen && isMobileScreenMenuOpen) || !isPrimary ? (
                   <Image
-                    src="/assets/images/logo-white.svg"
+                    src="/assets/images/logo-white.png"
                     className="w-auto h-[30px]"
                     alt="NextBroadcastMedia Logo"
                     width={50}
@@ -105,8 +106,8 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                   />
                 ) : (
                   <Image
-                    src="/assets/images/logo.svg"
-                    className="w-auto h-[50px] md:h-[64px]"
+                    src="/assets/images/logo.png"
+                    className="w-auto h-[30px]"
                     alt="NextBroadcastMedia Logo"
                     width={50}
                     height={50}
@@ -156,7 +157,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                         />
                       ) : (
                         <Image
-                          src="/assets/images/menu.png"
+                          src={ isHome ? "/assets/images/menu-red.png" : "/assets/images/menu.png"}
                           alt="Menu"
                           className="w-6 h-6"
                           width={40}

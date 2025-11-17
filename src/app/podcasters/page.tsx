@@ -5,6 +5,7 @@ import FAQCard from "@/components/FAQCard";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
+import PopularChannels from "@/components/PopularChannels";
 import Image from "next/image";
 
 export default function Podcaster() {
@@ -237,15 +238,7 @@ export default function Podcaster() {
                   </div>
                 </div>
               </div>
-              <div className="w-full bg-[#F8F9FA] rounded-[16px]">
-                <Image
-                  src="/assets/images/popular-channels.png"
-                  alt="podcaster-right-banner-bg"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <PopularChannels />
             </div>
           </section>
 

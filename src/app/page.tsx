@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen h-full  w-full flex flex-col items-center justify-center bg-white">
     <div className="bg-white w-full lg:max-w-[1440px]">
-      <Navbar bgColor="bg-white" bgColorOnOpen="bg-[#F11F68]" isPrimary={true} />
+      <Navbar bgColor="bg-white" bgColorOnOpen="bg-[#F11F68]" isPrimary={true} isHome={true} />
 
       <section
         className="w-full bg-white rounded-xl p-4 mt-[64px] md:mt-[80px] md:mt-0 md:p-[80px] relative"

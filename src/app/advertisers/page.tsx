@@ -1,6 +1,5 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
-import Button from "@/components/Button";
 import Breadcrumb from "@/components/Breadcrumb";
 
 import FAQCard from "@/components/FAQCard";
@@ -12,6 +11,7 @@ import TestimonialGroup from "@/components/TestimonialGroup";
 import Image from "next/image";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import QACollapseableContainer from "@/components/QACollapseableContainer";
+import AdvertiserLaunchCampaign from "@/components/AdvertiserLaunchCampaign";
 
 export default function Advertisers() {
   return (
@@ -100,140 +100,8 @@ export default function Advertisers() {
                 </p>
               </div>
             </div>
-            <div className="w-full border-[0px] lg:border-[2px] border-[#D2D2D2] rounded-[16px] px-[16px] lg:px-[40px] py-[24px] lg:py-[40px] gap-[40px] flex flex-col items-center justify-center ">
-              <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-start gap-[10px]">
-                <Button
-                  text="Launch Your Campaign"
-                  borderColor="#F11F68"
-                  textColor="#F11F68"
-                  bgColor="#FFEDFB"
-                />
-                <Button
-                  text="Managed by Next Audio"
-                  borderColor="#344054"
-                  textColor="#344054"
-                  bgColor="#FFFFFF"
-                />
-              </div>
-              <div className="w-full :border-b-[2px] border-t-[2px] lg:border-b-[0px] lg:border-t-[0px] py-[24px] lg:py-[0px] border-[#D2D2D2] flex flex-col lg:flex-row items-center justify-between">
-                <div className="w-full bg-[#E1D2FF] rounded-[16px]">
-                  <Image
-                    src="/assets/images/audioadsolbanner.svg"
-                    alt="managed-by-Next Audio"
-                    className="w-full h-full object-cover"
-                    width={500}
-                    height={500}
-                  />
-                </div>
-                <div className="w-full flex flex-col items-start justify-center gap-[40px] px-[0px] lg:px-[40px] py-[24px] lg:py-[40px]">
-                  <div className="flex flex-col items-start justify-center gap-[24px]">
-                    <div>
-                      <h1 className="font-bold font-semibold lg:font-bold text-[28px] lg:text-[42px] leading-[36px] lg:leading-[50px] text-[#262626]">
-                        Launch fast.
-                      </h1>
-                      <h1 className="font-bold font-semibold lg:font-bold text-[28px] lg:text-[42px] leading-[36px] lg:leading-[50px] text-[#262626]">
-                        From $50 /week
-                      </h1>
-                    </div>
-                    <div className="flex flex-col items-start justify-center gap-[16px]">
-                      <h5 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                        For marketers & agencies who want to do it themselves
-                      </h5>
-                      <div className="flex flex-col items-start justify-center gap-[12px]">
-                        <div className="flex flex-row items-center justify-start gap-[12px]">
-                          <svg
-                            className="w-[20px] h-[20px] lg:w-[26px] lg:h-[26px]"
-                            width="26"
-                            height="26"
-                            viewBox="0 0 26 26"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.75065 12.9999L11.2507 16.4999L18.2507 9.49992M24.6673 12.9999C24.6673 19.4432 19.444 24.6666 13.0007 24.6666C6.55733 24.6666 1.33398 19.4432 1.33398 12.9999C1.33398 6.5566 6.55733 1.33325 13.0007 1.33325C19.444 1.33325 24.6673 6.5566 24.6673 12.9999Z"
-                              stroke="#F11F68"
-                              strokeWidth="2.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                          <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                            Create you ad
-                          </h6>
-                        </div>
+            <AdvertiserLaunchCampaign />
 
-                        <div className="flex flex-row items-center justify-start gap-[12px]">
-                          <svg
-                            className="w-[20px] h-[20px] lg:w-[26px] lg:h-[26px]"
-                            width="26"
-                            height="26"
-                            viewBox="0 0 26 26"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.75065 12.9999L11.2507 16.4999L18.2507 9.49992M24.6673 12.9999C24.6673 19.4432 19.444 24.6666 13.0007 24.6666C6.55733 24.6666 1.33398 19.4432 1.33398 12.9999C1.33398 6.5566 6.55733 1.33325 13.0007 1.33325C19.444 1.33325 24.6673 6.5566 24.6673 12.9999Z"
-                              stroke="#F11F68"
-                              strokeWidth="2.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                          <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                            Target your audience
-                          </h6>
-                        </div>
-
-                        <div className="flex flex-row items-center justify-start gap-[12px]">
-                          <svg
-                            className="w-[20px] h-[20px] lg:w-[26px] lg:h-[26px]"
-                            width="26"
-                            height="26"
-                            viewBox="0 0 26 26"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.75065 12.9999L11.2507 16.4999L18.2507 9.49992M24.6673 12.9999C24.6673 19.4432 19.444 24.6666 13.0007 24.6666C6.55733 24.6666 1.33398 19.4432 1.33398 12.9999C1.33398 6.5566 6.55733 1.33325 13.0007 1.33325C19.444 1.33325 24.6673 6.5566 24.6673 12.9999Z"
-                              stroke="#F11F68"
-                              strokeWidth="2.33333"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                          <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                            Go live in minutes
-                          </h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <GradientButton
-                      text="Start with Self-Serve"
-                      rightIcon={
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M21 9L21 3M21 3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14"
-                            stroke="#FFFEFF"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      }
-                      type="primary"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </section>
           <section className="pt-[48px] lg:pt-[96px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF]">
             <div className="w-full flex flex-row items-center justify-center rounded-[16px] p-[24px] lg:p-[60px] gap-[59px] bg-[#F11F68]">
@@ -898,20 +766,53 @@ export default function Advertisers() {
       </div>
 
       <section className="w-full flex flex-col items-center justify-center py-[84px] lg:py-[96px]  px-[16px] lg:px-[80px] gap-[64px] bg-[#F8F9FA]">
-        <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-[16px] lg:gap-[24px] max-w-[1280px] max-h-[94px]">
-          <div className="flex flex-col items-start justify-center gap-[16px]">
-            <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text">
-              Insights That Matter to You
-            </h1>
-            <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-              Guides, events, updates, and more - filtered just for you.
-            </h6>
-          </div>
-          <div>
-            <GradientButton text="Explore Advertiser Knowledge Hub" className="h-[44px] w-[293px]" />
-          </div>
-        </div>
-        <div className="w-full flex flex-row overflow-x-auto items-start justify-between gap-[16px] lg:gap-[24px] max-w-[1280px]">
+            <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-[32px] lg:gap-[24px] max-w-[1280px] max-h-auto lg:max-h-[94px]">
+              <div className="flex flex-col items-start justify-center gap-[16px] w-full">
+                <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text">
+                  Insights That Matter to You
+                </h1>
+                <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
+                Advice to help you grow and earn from your podcast.
+                </h6>
+              </div>
+              <div className="w-full flex justify-start lg:justify-end">
+                <GradientButton
+                  text="Explore Podcaster knowledge Hub"
+                  className="h-[44px] w-[293px]"
+                />
+              </div>
+            </div>
+            <div className="w-full flex flex-row overflow-x-auto items-start justify-between gap-[16px] lg:gap-[20px] max-w-[1280px]">
+
+              <div className="w-full relative min-w-[630px] min-h-[314px] lg:min-h-[323px]">
+                <div
+                  className="bg-cover bg-center w-full md:w-[630px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
+                  style={{
+                    backgroundImage: `url(${"/assets/images/insight-3.jpg"})`,
+                  }}
+                >
+                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(136,48,252,0.2)_100.9%,#ffffff_99.44%)]"></div>
+
+                  <div className="relative z-10 flex flex-col justify-between h-full">
+                    <div className="w-full">
+                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
+                        Webinar
+                      </span>
+                    </div>
+
+                    <div className="w-full flex flex-col gap-[10px]">
+                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
+                        16 June 2025
+                      </h6>
+                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
+                        Podcast Advertising vs Social Media Marketing: Which
+                        Drives Better Engagement
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
                 <div
                   className="bg-cover bg-center w-full md:w-[300px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
@@ -969,37 +870,8 @@ export default function Advertisers() {
                   </div>
                 </div>
               </div>
-
-              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
-                <div
-                  className="bg-cover bg-center w-full md:w-[630px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${"/assets/images/insight-3.jpg"})`,
-                  }}
-                >
-                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(136,48,252,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-                  <div className="relative z-10 flex flex-col justify-between h-full">
-                    <div className="w-full">
-                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                        Webinar
-                      </span>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-[10px]">
-                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                        16 June 2025
-                      </h6>
-                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                        Podcast Advertising vs Social Media Marketing: Which
-                        Drives Better Engagement
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-      </section>
+          </section>
       <section className="w-full flex flex-col items-center justify-center">
         <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">
           <div className="w-full flex flex-col items-start justify-center gap-[24px]">
