@@ -35,13 +35,13 @@ export default function ReadyToLaunch() {
                   className="bg-[#FFFEFF] py-[10px] px-[16px] rounded-[4px] w-[200px] cursor-pointer"
                   onClick={openCallMeBackModal}
                 >
-                  <span className="gradient-text">Call me back</span>
+                  <span className="gradient-text text-[16px] leading-[24px] font-semibold">Call me back</span>
                 </button>
 
                 <button
                   className="border-[#FFFEFF] border-2 py-[10px] px-[16px] rounded-[4px] w-[200px]"
                 >
-                  <span className="text-[#FFFEFF]">Download Media Kit</span>
+                  <span className="text-[#FFFEFF] text-[16px] leading-[24px] font-semibold">Download Media Kit</span>
                 </button>
 
                 <Link
@@ -49,7 +49,7 @@ export default function ReadyToLaunch() {
                   target="_blank"
                   className="border-[#FFFEFF] text-center border-2 py-[10px] px-[16px] rounded-[4px] w-[200px]"
                 >
-                  <span className="text-[#FFFEFF]">Create AI Ads</span>
+                  <span className="text-[#FFFEFF] text-[16px] leading-[24px] font-semibold">Create AI Ads</span>
                 </Link>
               </div>
             </div>
