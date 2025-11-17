@@ -8,7 +8,7 @@ export default function AboutUsSection() {
         <section className="w-full flex flex-col gap-[46px] lg:gap-[64px]">
           <div className="w-[100%] flex items-center justify-center flex-wrap md:flex-nowrap gap-[43px]">
             <div className="flex flex-col gap-[16px] lg:gap-[24px] w-full md:w-[90%]">
-              <button className="max-w-[205px] lg:max-w-[300px] inline-flex items-center justify-center min-h-[32px] gap-[6px] px-[16px] rounded-[44px] border-1 border-[#F11F68] bg-[#FFEDFB] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0.01rem] whitespace-nowrap">
+              <button className="max-w-[205px] inline-flex items-center justify-center min-h-[32px] gap-[6px] px-[16px] rounded-[44px] border-1 border-[#F11F68] bg-[#FFEDFB] text-[#F11F68] font-medium text-[16px] leading-[24px] tracking-[0.01rem] whitespace-nowrap">
                 Global reach and results
               </button>
 

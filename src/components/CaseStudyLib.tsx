@@ -222,6 +222,7 @@ export default function CaseStudyLib({
                     </svg>
                   }
                   onClick={() => router.push(`/case-studies/${study.id}`)}
+                  textClassName="text-[16px] leading-[24px] font-semibold"
                 />
               </div>
             </div>

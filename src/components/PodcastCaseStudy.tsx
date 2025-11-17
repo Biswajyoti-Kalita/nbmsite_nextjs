@@ -25,7 +25,7 @@ export default function PodcastCaseStudy({
             <GradientButton
                 text="Explore All"
                 type="primary"
-                className="h-[44px]"
+                className="w-[144px] h-[44px]"
                 textClassName="text-[16px] leading-[24px] font-bold"
                 rightIcon={
                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">

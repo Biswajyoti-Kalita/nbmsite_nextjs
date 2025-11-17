@@ -24,7 +24,7 @@ export default function GradientButton({
 }: GradientButtonProps) {
   
   // Common base classes
-  const baseClasses = "px-2 md:px-4 py-1.5 md:py-2.5 rounded-md text-xs md:text-sm lg:text-base font-semibold cursor-pointer transition-all";
+  const baseClasses = "px-2 md:px-4 py-1.5 md:py-2.5 rounded-md text-[16px] font-semibold leading-[24px] cursor-pointer transition-all";
   const iconWrapperClasses = "flex flex-row gap-2 items-center justify-center";
   
   // Disabled state classes

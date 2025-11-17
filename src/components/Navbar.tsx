@@ -139,8 +139,8 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                 ):
                 (
                   <div className="flex flex-row gap-[12px] h-[64px] items-center">
-                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" className="h-[48px]" onClick={showShareBriefModal} />
-                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[48px]" onClick={showCallMeBackModal} />
+                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Share a Brief" className="h-[48px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showShareBriefModal} />
+                  <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[48px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showCallMeBackModal} />
                 </div>
                 )
                 }
@@ -177,10 +177,10 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                   </ul>
                   <div className="flex flex-row gap-[20px] justify-center items-center w-full">
                     <div className="w-full flex flex-row justify-center items-center">
-                      <GradientButton type="tertiary" text="Share a Brief" className="w-[160px] h-[40px]"  onClick={showShareBriefModal}/>
+                      <GradientButton type="tertiary" text="Share a Brief" className="w-[160px] h-[40px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showShareBriefModal}/>
                     </div>
                     <div className="w-full flex flex-row justify-center items-center">
-                      <GradientButton type="secondary" text="Сall Me Back" className="w-[160px] h-[40px]" onClick={() => showCallMeBackModal()} />
+                      <GradientButton type="secondary" text="Сall Me Back" className="w-[160px] h-[40px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={() => showCallMeBackModal()} />
                     </div>
                   </div>
                 </div>

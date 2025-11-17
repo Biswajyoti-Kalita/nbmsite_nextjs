@@ -13,6 +13,7 @@ import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import QACollapseableContainer from "@/components/QACollapseableContainer";
 import AdvertiserLaunchCampaign from "@/components/AdvertiserLaunchCampaign";
 import LaunchYourPodcast from "@/components/LaunchYourPodcast";
+import PopularChannels from "@/components/PopularChannels";
 
 export default function Advertisers() {
   return (
@@ -22,7 +23,7 @@ export default function Advertisers() {
 
       <div className="bg-[#B11E86] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
         <section
-          className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 items-center justify-between relative lg:max-w-[1440px]"
+          className="w-full mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 items-center justify-between relative lg:max-w-[1440px]"
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
@@ -48,10 +49,12 @@ export default function Advertisers() {
                   type="secondary"
                   text="Launch Your Own Campaign"
                   className="h-[44px]"
+                  textClassName="text-[16px] leading-[24px] font-semibold"
                 />
                 <GradientButton
                   type="tertiary"
                   text="Next Audio Managed Campaign Service"
+                  textClassName="text-[16px] leading-[24px] font-semibold"
                   className="h-[44px]"
                 />
               </div>
@@ -87,7 +90,7 @@ export default function Advertisers() {
             </div>
             <BrandsScroller />
           </section>
-          <section className="pt-[84px] lg:pt-[96px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF]">
+          <section className="pt-[84px] lg:pt-[96px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[46px] lg:gap-[64px] bg-[#FFFFFF]">
             <div className="w-full flex flex-col lg:flex-row  items-center justify-center gap-[24px]">
               <div className="w-full text-start">
                 <h1 className="gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
@@ -259,11 +262,11 @@ export default function Advertisers() {
                   </div>
                 </div>
                 <div>
-                  <GradientButton text="Download Media Kit" className="h-[44px]" />
+                  <GradientButton text="Download Media Kit" className="h-[44px]" textClassName="text-[16px] leading-[24px] font-semibold" />
                 </div>
               </div>
               <div>
-                <Image src="/assets/images/reach.png" alt="Media Kit" width={500} height={500} />
+                <PopularChannels />
               </div>
             </div>
           </section>
@@ -289,7 +292,7 @@ export default function Advertisers() {
                       </p>
                     </div>
                   </div>
-                  <GradientButton text="Download Media Kit" className="h-[44px]" />
+                  <GradientButton text="Download Media Kit" className="h-[44px]"  textClassName="text-[16px] leading-[24px] font-semibold"/>
                 </div>
                 {/* Right div */}
                 <div className="flex flex-col items-start justify-center gap-[24px]">
@@ -424,6 +427,7 @@ export default function Advertisers() {
                   <GradientButton
                     text="Request a Proposal"
                     className="w-[200px] h-[44px]"
+                    textClassName="text-[16px] leading-[24px] font-semibold"
                     rightIcon={
                       <svg
                         width="24"
@@ -536,7 +540,7 @@ export default function Advertisers() {
               </div>
             </div>
           </section>
-          <section className="flex flex-row items-center justify-center">
+          <section className="flex flex-row items-center justify-center px-[16px] lg:px-0 pb-[80px] lg:pb-0">
             <div
               className="w-full flex flex-col items-center justify-center px-[16px] py-[32px] lg:py-[48px] gap-[64px] max-h-[506px] lg:max-h-[368px] rounded-[16px] relative bg-cover bg-center max-w-[1280px]"
               style={{
@@ -546,24 +550,24 @@ export default function Advertisers() {
               <div className="absolute z-10 inset-0 bg-[#091A3A] opacity-60 rounded-[16px]"></div>
               <div className="w-full z-20 flex flex-col items-start justify-center gap-[40px] p-[32px] lg:p-[64px] rounded-[16px]">
                 <div>
-                  <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
+                  <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                     Behind every great audio
                   </h1>
-                  <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
+                  <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                     campaign…
                   </h1>
                 </div>
                 <div className="w-full flex flex-col lg:flex-row items-start lg:items-end justify-start lg:justify-end gap-[64px]">
                   <div>
-                    <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
+                    <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                       …is a team who knows{" "}
                     </h1>
-                    <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
+                    <h1 className="text-[#D6E4FF] text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] font-semibold">
                       how to make it work.
                     </h1>
                   </div>
                   <div className="flex flex-row h-full items-start lg:items-end justify-start lg:justify-end">
-                    <GradientButton text="Meet Next" type="secondary" className="h-[44px] w-[144px]" />
+                    <GradientButton text="Meet Next Audio" type="secondary" className="h-[44px] w-[184px]" textClassName="text-[16px] leading-[24px] font-semibold" />
                   </div>
                 </div>
               </div>
@@ -588,6 +592,7 @@ export default function Advertisers() {
                 <GradientButton
                   text="Explore Podcaster knowledge Hub"
                   className="h-[44px] w-[293px]"
+                  textClassName="text-[16px] leading-[24px] font-semibold"
                 />
               </div>
             </div>

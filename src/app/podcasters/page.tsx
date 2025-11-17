@@ -324,6 +324,7 @@ export default function Podcaster() {
                 <GradientButton
                   text="Explore Podcaster knowledge Hub"
                   className="h-[44px] w-[293px]"
+                  textClassName="text-[16px] leading-[24px] font-semibold"
                 />
               </div>
             </div>

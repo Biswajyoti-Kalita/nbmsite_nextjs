@@ -298,6 +298,7 @@ export default function CallMeBack() {
                         fullWidth={true}
                         disabled={isSubmitting}
                         buttonType="submit"
+                        textClassName="text-[16px] leading-[24px] font-semibold"
                       />
                     </div>
                   </form>

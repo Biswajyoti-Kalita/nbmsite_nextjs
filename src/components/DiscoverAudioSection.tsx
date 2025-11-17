@@ -26,7 +26,7 @@ export default function DiscoverAudioSection() {
                   text="Share a brief"
                   type="tertiary"
                   className="z-10 w-[131px] h-[44px]"
-                  textClassName="text-[#FFFFFF]"
+                  textClassName="text-[#FFFFFF] text-[16px] leading-[24px] font-semibold"
                   onClick={openShareBriefModal}
                 />
                 <GradientButton

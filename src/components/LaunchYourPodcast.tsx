@@ -5,7 +5,7 @@ import GradientButton from "./GradientButton";
 export default function LaunchYourPodcast() {
     return (
         <section className="pt-[48px] lg:pt-[96px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-center justify-center gap-[64px] bg-[#FFFFFF]">
-        <div className="w-full flex flex-row items-center justify-center rounded-[16px] p-[24px] lg:p-[60px] gap-[59px] bg-[#F11F68]">
+        <div className="w-full flex flex-row items-center justify-center rounded-[16px] px-[16px] lg:px-[40px] p-[24px] lg:p-[60px] gap-[24px] lg:gap-[59px] bg-[#F11F68]">
           <div className="w-full flex flex-col lg:flex-row items-start justify-center gap-[59px]">
             <div className="w-full flex flex-col items-start justify-between max-w-[540px]">
               <Image
@@ -83,7 +83,7 @@ export default function LaunchYourPodcast() {
               className="flex flex-row justify-center justify-end items-center w-full md:w-[620px]"
               style={{ zIndex: "11" }}
             >
-              <div className="bg-white rounded-2xl w-full md:max-w-[540px] p-8">
+              <div className="bg-white rounded-2xl w-full md:max-w-[540px] p-[16px] lg:p-8">
                 <form
                   className="bg-white w-full flex flex-col text-center justify-center items-center"
                   action="https://admanager.fm/nbmaistudio"
@@ -189,6 +189,8 @@ export default function LaunchYourPodcast() {
                     <div className="w-full flex flex-row items-center justify-center my-2">
                       <GradientButton
                         text="Create Free Podcast Ad"
+                        textClassName="text-[16px] leading-[24px] font-semibold"
+                        className="h-[44px]"
                         fullWidth
                         buttonType="submit"
                       />

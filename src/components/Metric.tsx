@@ -214,7 +214,7 @@ export default function Metric() {
           <div key={ind} className={`w-full relative flex flex-col items-start justify-center pb-[64px] lg:pb-0`}>
             {
               hovereredMetricIndex === ind && (
-                <div className="absolute top-[-24px] bottom-[-48px] left-0 w-full border-[2px] border-[#F11F68] rounded-[16px] z-20"></div>
+                <div className="hidden lg:block absolute top-[-24px] bottom-[-48px] left-0 w-full border-[2px] border-[#F11F68] rounded-[16px] z-20"></div>
               )
             }
             <div className="border-b border-[#E8E8E8] bg-[#F8F9FA] flex gap-[8px] px-[24px] pb-[16px] w-full">

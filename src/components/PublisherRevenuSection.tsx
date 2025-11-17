@@ -56,7 +56,7 @@ export default function PublisherRevenuSection() {
                 <Image
                   src="/assets/images/check_Icon.png"
                   alt="podcasters-image"
-                  className="w-[26px]"
+                  className="w-[26px] h-[26px]"
                   width={26}
                   height={26}
                 ></Image>
@@ -116,8 +116,8 @@ export default function PublisherRevenuSection() {
               <GradientButton
                 type="secondary"
                 text="Check Out AI Studio"
-                className="h-[48px] w-[182px]"
-                textClassName="text-[16px] leading-[24px] "
+                className=" w-[182px]"
+                textClassName="text-[16px] leading-[24px] font-semibold"
                 onClick={() => router.push("https://admanager.fm/nbmaistudio")}
               />
             </div>

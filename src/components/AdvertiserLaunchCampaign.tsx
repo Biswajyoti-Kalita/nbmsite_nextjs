@@ -9,8 +9,8 @@ export default function AdvertiserLaunchCampaign() {
   const [selectedOption, setSelectedOption] = useState("launch-your-campaign");
 
   return (
-    <div className="w-full border-[0px] lg:border-[2px] border-[#D2D2D2] rounded-[16px] px-[16px] lg:px-[40px] py-[24px] lg:py-[40px] gap-[40px] flex flex-col items-center justify-center ">
-      <div className="w-full flex flex-col lg:flex-row items-start lg:items-center justify-start gap-[10px]">
+    <div className="w-full border-[0px] lg:border-[2px] border-[#D2D2D2] rounded-[16px] px-0 lg:px-[40px] py-[24px] lg:py-[40px] gap-[40px] flex flex-col items-center justify-center ">
+      <div className="w-full flex flex-row items-start lg:items-center justify-start overflow-x-auto gap-[10px]">
         <Button
           text="Launch Your Campaign"
           borderColor={
@@ -135,6 +135,7 @@ export default function AdvertiserLaunchCampaign() {
             <div>
               <GradientButton
                 text="Start with Self-Serve"
+                textClassName="text-[16px] leading-[24px] font-semibold"
                 rightIcon={
                   <svg
                     width="24"
@@ -167,7 +168,7 @@ export default function AdvertiserLaunchCampaign() {
               alt="managed-by-Next Audio"
               width={500}
               height={500}
-              className="w-full h-full object-cover max-w-[477px] max-h-[301px]"
+              className="w-full h-auto lg:h-full object-cover max-w-[477px] max-h-[301px]"
             />
           </div>
           <div className="w-full flex flex-col items-start justify-center gap-[40px] px-[0px] lg:px-[40px] py-[24px] lg:py-[40px]">
@@ -255,6 +256,8 @@ export default function AdvertiserLaunchCampaign() {
               <GradientButton
                 text="Share a Brief"                
                 type="primary"
+                textClassName="text-[16px] leading-[24px] font-semibold"
+                className="w-[131px] h-[44px]"
                 onClick={openShareBriefModal}
               />
             </div>

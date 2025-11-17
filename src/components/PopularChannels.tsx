@@ -6,7 +6,7 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import isMobile from "@/util/util";
 
 const isMobileScreen = isMobile();
-
+console.log("advertisers page isMobileScreen popular channels", isMobileScreen);
 export default function PopularChannels() {
   const rows = isMobileScreen
     ? [
@@ -138,6 +138,7 @@ export default function PopularChannels() {
     arrows: false,
     pagination: false,
   };
+  console.log("advertisers page rows", rows);
 
   return (
     <div className="w-full bg-[#F8F9FA] rounded-[16px] flex flex-row gap-4 p-4 h-full">

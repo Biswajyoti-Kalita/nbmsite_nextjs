@@ -51,8 +51,8 @@ export default function QACollapseableContainer({ data }: QACollapseableContaine
         }
       </div>
       <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[12px]">
-        <GradientButton text="Share a Brief" className="h-[44px] w-[200px]" onClick={openShareBriefModal} />
-        <GradientButton text="Download Media Kit" type="secondary" className="w-[180px]" />
+        <GradientButton text="Share a Brief" className="h-[44px] w-[200px]" onClick={openShareBriefModal} textClassName="text-[16px] leading-[24px] font-semibold" />
+        <GradientButton text="Download Media Kit" type="secondary" className="w-[180px]" textClassName="text-[16px] leading-[24px] font-semibold" />
       </div>
     </div>
   </div>

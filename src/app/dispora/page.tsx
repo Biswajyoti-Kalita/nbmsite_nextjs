@@ -136,6 +136,7 @@ export default function Dispora() {
                   <GradientButton
                     text="Download Media Kit"
                     type="secondary"
+                    textClassName="text-[16px] leading-[24px] font-semibold"
                     className=""
                   />
                 </div>

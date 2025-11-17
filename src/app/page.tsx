@@ -85,6 +85,7 @@ export default function Home() {
             <GradientButton            
               text="Learn About Next Audio"
               className="h-[44px] px-4"
+              textClassName="text-[16px] leading-[24px] font-normal"
               rightIcon={
                 <svg
                 width="14"
