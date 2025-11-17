@@ -30,9 +30,12 @@ export default function ShareBrief() {
       budget: "<$2K",
       preferredFormat: "Dynamic",
       brief: "",
+      uploadedFile: null as File | null,
     }
   });
 
+  const [isDragging, setIsDragging] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const formRefStep1 = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
@@ -41,6 +44,29 @@ export default function ShareBrief() {
       setIsOpen(false);
       setrequestSent(false);
       setStep(1);
+      setformData({
+        formType: "complete-a-form",
+        fullName: "",
+        businessName: "",
+        email: "",
+        phone: "",
+        campaignDetails: {
+          campaignAim: [] as string[],
+          fullName: "",
+          geoTargeting: "",
+          targetAudience: "",
+          languageTargeting: "",
+          campaignDates: "",
+          budget: "<$2K",
+          preferredFormat: "Dynamic",
+          brief: "",
+          uploadedFile: null,
+        }
+      });
+      setIsDragging(false);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
     };
 
     window.addEventListener(MODAL_EVENTS.OPEN_SHARE_BRIEF, handleOpen);
@@ -89,6 +115,91 @@ export default function ShareBrief() {
   const handleCancel = () => {
     setrequestSent(false);
     closeShareBriefModal();
+  };
+
+  const validateFile = (file: File): boolean => {
+    const allowedTypes = [
+      'application/vnd.ms-excel',
+      'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      'application/pdf',
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      'application/msword'
+    ];
+    const allowedExtensions = ['.xls', '.xlsx', '.pdf', '.docx', '.doc'];
+    const maxSize = 2 * 1024 * 1024; // 2MB in bytes
+
+    const fileExtension = '.' + file.name.split('.').pop()?.toLowerCase();
+    
+    if (!allowedExtensions.includes(fileExtension)) {
+      alert('Invalid file type. Please upload xls, pdf, or docx files only.');
+      return false;
+    }
+
+    if (file.size > maxSize) {
+      alert('File size exceeds 2MB limit. Please upload a smaller file.');
+      return false;
+    }
+
+    return true;
+  };
+
+  const handleFileSelect = (file: File) => {
+    if (validateFile(file)) {
+      setformData({ 
+        ...formData, 
+        campaignDetails: { 
+          ...formData.campaignDetails, 
+          uploadedFile: file 
+        } 
+      });
+    }
+  };
+
+  const handleFileInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      handleFileSelect(file);
+    }
+  };
+
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(true);
+  };
+
+  const handleDragLeave = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(false);
+  };
+
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(false);
+
+    const file = e.dataTransfer.files?.[0];
+    if (file) {
+      handleFileSelect(file);
+    }
+  };
+
+  const handleUploadClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleRemoveFile = () => {
+    setformData({ 
+      ...formData, 
+      campaignDetails: { 
+        ...formData.campaignDetails, 
+        uploadedFile: null 
+      } 
+    });
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
   };
 
   if (!isOpen) return null;
@@ -378,34 +489,94 @@ export default function ShareBrief() {
                   <h4 className="text-[#344054] text-[16px] leading-[21px] font-bold tracking-[-0.02em]">
                     Upload a File
                   </h4>
-                  <div className="w-full flex flex-col items-center justify-center gap-[4px] py-[16px] px-[24px] border border-[#D0D5DD] rounded-[8px] h-[124px]">
-                    <div className="w-full flex flex-col items-center justify-center gap-[8px]">
-                      <svg
-                        width="19"
-                        height="17"
-                        viewBox="0 0 19 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept=".xls,.xlsx,.pdf,.doc,.docx"
+                    onChange={handleFileInputChange}
+                    className="hidden"
+                  />
+                  {formData.campaignDetails.uploadedFile ? (
+                    <div className="w-full flex flex-col items-start justify-start gap-[8px]">
+                      <div className="w-full flex flex-row items-center justify-between gap-[12px] py-[12px] px-[16px] border border-[#D0D5DD] rounded-[8px] bg-[#F9FAFB]">
+                        <div className="flex flex-row items-center justify-start gap-[12px] flex-1 min-w-0">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="flex-shrink-0"
+                          >
+                            <path
+                              d="M10 2.5V10M10 10L7.5 7.5M10 10L12.5 7.5M5.83333 17.5H14.1667C15.5474 17.5 16.6667 16.3807 16.6667 15V8.33333C16.6667 7.41286 16.2976 6.52946 15.6475 5.87935L12.4542 2.68602C11.8041 2.03591 10.9207 1.66667 10.0002 1.66667H5.83333C4.45262 1.66667 3.33333 2.78596 3.33333 4.16667V15C3.33333 16.3807 4.45262 17.5 5.83333 17.5Z"
+                              stroke="#344054"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <span className="text-[#344054] text-[14px] leading-[20px] font-normal truncate">
+                            {formData.campaignDetails.uploadedFile.name}
+                          </span>
+                          <span className="text-[#98A2B3] text-[12px] leading-[18px] font-normal flex-shrink-0">
+                            ({(formData.campaignDetails.uploadedFile.size / 1024 / 1024).toFixed(2)} MB)
+                          </span>
+                        </div>
+                        <button
+                          onClick={handleRemoveFile}
+                          className="flex-shrink-0 text-[#F11F68] text-[14px] leading-[20px] font-medium hover:opacity-80"
+                        >
+                          Remove
+                        </button>
+                      </div>
+                      <button
+                        onClick={handleUploadClick}
+                        className="text-[#F11F68] text-[14px] leading-[20px] font-bold hover:opacity-80"
                       >
-                        <path
-                          d="M5.83301 11.6666L9.16634 8.33325M9.16634 8.33325L12.4997 11.6666M9.16634 8.33325V15.8333M15.833 12.2856C16.8509 11.445 17.4997 10.1732 17.4997 8.74992C17.4997 6.21861 15.4476 4.16659 12.9163 4.16659C12.7342 4.16659 12.5639 4.07158 12.4714 3.9147C11.3847 2.07062 9.37837 0.833252 7.08301 0.833252C3.63123 0.833252 0.833008 3.63147 0.833008 7.08325C0.833008 8.80501 1.52921 10.3642 2.65547 11.4945"
-                          stroke="#344054"
-                          strokeWidth="1.66667"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <div className="flex flex-col items-center justify-center gap-[4px]">
-                        <h5>
-                          <span className="text-[#F11F68] text-[14px] leading-[20px] font-bold">Click to upload</span>
-                          <span className="text-[#344054] text-[14px] leading-[20px] font-normal"> or drag and drop</span>
-                        </h5>
-                        <h5 className="text-[#344054] text-[14px] leading-[20px] font-normal">
-                        xls, pdf,  or docx (max. 2mb) 
-                        </h5>
+                        Upload different file
+                      </button>
+                    </div>
+                  ) : (
+                    <div
+                      onClick={handleUploadClick}
+                      onDragOver={handleDragOver}
+                      onDragLeave={handleDragLeave}
+                      onDrop={handleDrop}
+                      className={`w-full flex flex-col items-center justify-center gap-[4px] py-[16px] px-[24px] border-2 border-dashed rounded-[8px] h-[124px] cursor-pointer transition-colors ${
+                        isDragging
+                          ? 'border-[#F11F68] bg-[#FFF9FE]'
+                          : 'border-[#D0D5DD] hover:border-[#F11F68] hover:bg-[#FFF9FE]'
+                      }`}
+                    >
+                      <div className="w-full flex flex-col items-center justify-center gap-[8px]">
+                        <svg
+                          width="19"
+                          height="17"
+                          viewBox="0 0 19 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.83301 11.6666L9.16634 8.33325M9.16634 8.33325L12.4997 11.6666M9.16634 8.33325V15.8333M15.833 12.2856C16.8509 11.445 17.4997 10.1732 17.4997 8.74992C17.4997 6.21861 15.4476 4.16659 12.9163 4.16659C12.7342 4.16659 12.5639 4.07158 12.4714 3.9147C11.3847 2.07062 9.37837 0.833252 7.08301 0.833252C3.63123 0.833252 0.833008 3.63147 0.833008 7.08325C0.833008 8.80501 1.52921 10.3642 2.65547 11.4945"
+                            stroke={isDragging ? "#F11F68" : "#344054"}
+                            strokeWidth="1.66667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                        <div className="flex flex-col items-center justify-center gap-[4px]">
+                          <h5>
+                            <span className="text-[#F11F68] text-[14px] leading-[20px] font-bold">Click to upload</span>
+                            <span className="text-[#344054] text-[14px] leading-[20px] font-normal"> or drag and drop</span>
+                          </h5>
+                          <h5 className="text-[#344054] text-[14px] leading-[20px] font-normal">
+                            xls, pdf, or docx (max. 2mb)
+                          </h5>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             )}
