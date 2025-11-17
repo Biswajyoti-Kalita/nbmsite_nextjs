@@ -2,25 +2,46 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
 import ReactFlagsSelect from "react-flags-select";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { MODAL_EVENTS, closeShareBriefModal } from "@/util/modalEvents";
 
-export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
+export default function ShareBrief() {
   const [selected, setSelected] = useState("US");
   const [requestSent, setrequestSent] = useState(false);
   const [formType, setformType] = useState("complete-a-form");
-  // const [campaignData, setcampaignData] = useState({
-  //   campaignAim: "awareness",
-  //   fullName: "",
-  //   geoTargeting: "",
-  //   targetAudience: "",
-  //   languageTargeting: "",
-  //   campaignDates: "",
-  //   budget: "",
-  // });
   const [step, setStep] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
 
   const formRefStep1 = useRef<HTMLFormElement>(null);
-  // const formRefStep2 = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    const handleOpen = () => setIsOpen(true);
+    const handleClose = () => {
+      setIsOpen(false);
+      setrequestSent(false);
+      setStep(1);
+    };
+
+    window.addEventListener(MODAL_EVENTS.OPEN_SHARE_BRIEF, handleOpen);
+    window.addEventListener(MODAL_EVENTS.CLOSE_SHARE_BRIEF, handleClose);
+
+    return () => {
+      window.removeEventListener(MODAL_EVENTS.OPEN_SHARE_BRIEF, handleOpen);
+      window.removeEventListener(MODAL_EVENTS.CLOSE_SHARE_BRIEF, handleClose);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   const moveNextStep = () => {
     if (step === 1 && formRefStep1.current?.checkValidity()) {
@@ -34,69 +55,75 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
 
   const handleCancel = () => {
     setrequestSent(false);
-    closeModal();
+    closeShareBriefModal();
   };
 
-  if (requestSent) {
-    return (
-      <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] px-4  lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
-        <div className="w-full flex flex-col items-start justify-start gap-[20px]">
-          <div className="bg-[#FFEDFB] rounded-[5px] w-[48px] h-[48px] flex items-center justify-center">
-            <svg
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.125 13.75L11.875 17.5L19.375 10M26.25 13.75C26.25 20.6536 20.6536 26.25 13.75 26.25C6.84644 26.25 1.25 20.6536 1.25 13.75C1.25 6.84644 6.84644 1.25 13.75 1.25C20.6536 1.25 26.25 6.84644 26.25 13.75Z"
-                stroke="#F11F68"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-          <div className="w-full flex flex-col items-start justify-start gap-[12px]">
-            <h2 className="text-[#262626] text-[24px] leading-[32px] font-extrabold">
-            Your brief has been submitted
-            </h2>
-            <p className="text-[#344054] text-[20px] leading-[28px] font-normal">
-            Someone from the team will get back to you shortly
-            </p>
-          </div>
-        </div>
-        <div className="w-full flex flex-row items-start justify-start gap-[12px]">
-          <button
-            className="gradient-text w-full py-[10px] px-[16px] rounded-[4px]"
-            onClick={handleCancel}
-          >
-            Cancel
-          </button>
-          <GradientButton
-            text="Confirm"
-            type="primary"
-            className="w-full"
-            fullWidth={true}
-            onClick={handleCancel}
-          />
-        </div>
-      </div>
-    );
-  }
+  if (!isOpen) return null;
 
   return (
-    <div className="w-full relative  max-w-[650px] overflow-y-auto max-h-[90vh] flex flex-col items-start justify-start gap-[20px] px-[16px] py-[20px] lg:p-[40px] bg-[#FFFEFF] rounded-[16px]">
-      <Image
-        src="/assets/images/close.png"
-        alt="Close"
-        width={12}
-        height={12}
-        className="w-[12px] h-[12px] absolute top-[40px] right-[40px]"
-
-        onClick={closeModal}
-      />
+    <div 
+      className="fixed inset-0 z-[10000] flex items-end lg:items-center justify-center p-0 lg:p-4 bg-black/40 bg-opacity-20"
+      onClick={closeShareBriefModal}
+    >
+      <div 
+        className="relative w-full max-w-[900px] max-h-auto flex flex-row items-end lg:items-center justify-center overflow-y-auto shadow-xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {requestSent ? (
+          <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] px-4 lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
+            <div className="w-full flex flex-col items-start justify-start gap-[20px]">
+              <div className="bg-[#FFEDFB] rounded-[5px] w-[48px] h-[48px] flex items-center justify-center">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.125 13.75L11.875 17.5L19.375 10M26.25 13.75C26.25 20.6536 20.6536 26.25 13.75 26.25C6.84644 26.25 1.25 20.6536 1.25 13.75C1.25 6.84644 6.84644 1.25 13.75 1.25C20.6536 1.25 26.25 6.84644 26.25 13.75Z"
+                    stroke="#F11F68"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="w-full flex flex-col items-start justify-start gap-[12px]">
+                <h2 className="text-[#262626] text-[24px] leading-[32px] font-extrabold">
+                  Your brief has been submitted
+                </h2>
+                <p className="text-[#344054] text-[20px] leading-[28px] font-normal">
+                  Someone from the team will get back to you shortly
+                </p>
+              </div>
+            </div>
+            <div className="w-full flex flex-row items-start justify-start gap-[12px]">
+              <button
+                className="gradient-text w-full py-[10px] px-[16px] rounded-[4px]"
+                onClick={handleCancel}
+              >
+                Cancel
+              </button>
+              <GradientButton
+                text="Confirm"
+                type="primary"
+                className="w-full"
+                fullWidth={true}
+                onClick={handleCancel}
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="w-full relative max-w-[650px] overflow-y-auto max-h-[90vh] flex flex-col items-start justify-start gap-[20px] px-[16px] py-[20px] lg:p-[40px] bg-[#FFFEFF] rounded-[16px]">
+            <Image
+              src="/assets/images/close.png"
+              alt="Close"
+              width={12}
+              height={12}
+              className="w-[12px] h-[12px] absolute top-[40px] right-[40px] cursor-pointer"
+              onClick={closeShareBriefModal}
+            />
       <div className="w-full flex flex-col items-start justify-start gap-[24px]">
         <div className="w-full flex flex-col items-start justify-start gap-[16px]">
           <span className="border border-[#344054] px-[8px] py-[4px] rounded-[24px] h-[32px] text-[#344054] text-[14px] leading-[22px] font-normal">
@@ -460,6 +487,9 @@ export default function ShareBrief({ closeModal }: { closeModal: () => void }) {
               </div>
             </div>
           </form>
+        )}
+      </div>
+          </div>
         )}
       </div>
     </div>

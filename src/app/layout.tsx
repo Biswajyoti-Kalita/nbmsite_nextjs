@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import AOSProvider from "../components/AOSProvider";
+import CallMeBack from "../components/CallMeBack";
+import ShareBrief from "../components/ShareBrief";
 
 const switzer = localFont({
   src: [
@@ -39,6 +41,8 @@ export default function RootLayout({
       >
         <AOSProvider>
           {children}
+          <CallMeBack />
+          <ShareBrief />
         </AOSProvider>
       </body>
     </html>

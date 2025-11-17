@@ -2,11 +2,49 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
 import ReactFlagsSelect from "react-flags-select";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { MODAL_EVENTS, closeCallMeBackModal } from "@/util/modalEvents";
 
-export default function CallMeBack({ closeModal }: { closeModal: () => void }) {
+export default function CallMeBack() {
   const [selected, setSelected] = useState("US");
   const [requestSent, setrequestSent] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleOpen = () => setIsOpen(true);
+    const handleClose = () => {
+      setIsOpen(false);
+      setrequestSent(false);
+    };
+
+    window.addEventListener(MODAL_EVENTS.OPEN_CALL_ME_BACK, handleOpen);
+    window.addEventListener(MODAL_EVENTS.CLOSE_CALL_ME_BACK, handleClose);
+
+    return () => {
+      window.removeEventListener(MODAL_EVENTS.OPEN_CALL_ME_BACK, handleOpen);
+      window.removeEventListener(MODAL_EVENTS.CLOSE_CALL_ME_BACK, handleClose);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isOpen) {
+        closeCallMeBackModal();
+      }
+    };
+
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleEscape);
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   const handleRequest = () => {
     setrequestSent(true);
@@ -14,57 +52,75 @@ export default function CallMeBack({ closeModal }: { closeModal: () => void }) {
 
   const handleCancel = () => {
     setrequestSent(false);
-    closeModal();
+    closeCallMeBackModal();
   };
 
-  if (requestSent) {
-    return (
-      <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] px-4  lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
-        <div className="w-full flex flex-col items-start justify-start gap-[20px]">
-          <div className="bg-[#FFEDFB] rounded-[5px] w-[48px] h-[48px] flex items-center justify-center">
-            <svg
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.125 13.75L11.875 17.5L19.375 10M26.25 13.75C26.25 20.6536 20.6536 26.25 13.75 26.25C6.84644 26.25 1.25 20.6536 1.25 13.75C1.25 6.84644 6.84644 1.25 13.75 1.25C20.6536 1.25 26.25 6.84644 26.25 13.75Z"
-                stroke="#F11F68"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-          <div className="w-full flex flex-col items-start justify-start gap-[12px]">
-            <h2 className="text-[#262626] text-[24px] leading-[32px] font-extrabold">
-                Thanks! Message received
-            </h2>
-            <p className="text-[#344054] text-[20px] leading-[28px] font-normal">Someone from the team will get back to you shortly</p>
-          </div>
-        </div>
-        <div className="w-full flex flex-row items-start justify-start gap-[12px]">
-            
-            <button className="gradient-text w-full py-[10px] px-[16px] rounded-[4px]" onClick={handleCancel}>
+  if (!isOpen) return null;
+
+  return (
+    <div 
+      className="fixed inset-0 z-[10000] flex items-center justify-center p-0 lg:p-4 bg-black/40 bg-opacity-20"
+      onClick={closeCallMeBackModal}
+    >
+      <div 
+        className="relative w-full max-w-[900px] max-h-[700px] overflow-y-auto shadow-xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={closeCallMeBackModal}
+          className="absolute top-[64px] lg:top-4 right-4 z-10 p-0 w-10 h-10 lg:p-2 text-[#262626] transition-colors rounded-full hover:bg-gray-100"
+          aria-label="Close modal"
+        >
+          <Image
+            src="/assets/images/close.png"
+            alt="Close"
+            width={12}
+            height={12}
+            className="w-[12px] h-[12px]"
+          />
+        </button>
+        {requestSent ? (
+          <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] px-4 lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
+            <div className="w-full flex flex-col items-start justify-start gap-[20px]">
+              <div className="bg-[#FFEDFB] rounded-[5px] w-[48px] h-[48px] flex items-center justify-center">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.125 13.75L11.875 17.5L19.375 10M26.25 13.75C26.25 20.6536 20.6536 26.25 13.75 26.25C6.84644 26.25 1.25 20.6536 1.25 13.75C1.25 6.84644 6.84644 1.25 13.75 1.25C20.6536 1.25 26.25 6.84644 26.25 13.75Z"
+                    stroke="#F11F68"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div className="w-full flex flex-col items-start justify-start gap-[12px]">
+                <h2 className="text-[#262626] text-[24px] leading-[32px] font-extrabold">
+                  Thanks! Message received
+                </h2>
+                <p className="text-[#344054] text-[20px] leading-[28px] font-normal">Someone from the team will get back to you shortly</p>
+              </div>
+            </div>
+            <div className="w-full flex flex-row items-start justify-start gap-[12px]">
+              <button className="gradient-text w-full py-[10px] px-[16px] rounded-[4px]" onClick={handleCancel}>
                 Cancel
-            </button>
-            <GradientButton        
+              </button>
+              <GradientButton        
                 text="Confirm"
                 type="primary"
                 className="w-full"
                 fullWidth={true}
                 onClick={handleCancel}
-            />
-
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="w-full max-w-[900px] flex flex-col items-start justify-start gap-[20px] px-4  lg:pr-0 lg:pl-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="w-full max-w-[900px] flex flex-col items-start justify-start gap-[20px] px-4 lg:pr-0 lg:pl-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
       <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[40px] h-full">
         <div className="flex flex-col items-start justify-start gap-[24px] min-w-[340px] lg:min-w-[400px]">
           <h2 className="pt-[24px] lg:pt-[40px] text-[#262626] text-[20px] lg:text-[24px] leading-[28px] lg:leading-[32px] font-extrabold">
@@ -156,6 +212,9 @@ export default function CallMeBack({ closeModal }: { closeModal: () => void }) {
             className="h-[675px] w-auto object-cover rounded-r-[16px]"
           />
         </div>
+      </div>
+          </div>
+        )}
       </div>
     </div>
   );

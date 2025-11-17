@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import isMobile from "@/util/util";
 import Image from "next/image";
 import Link from "next/link";
-import CallMeBack from "./CallMeBack";
-import ShareBrief from "./ShareBrief";
+import { openCallMeBackModal, openShareBriefModal } from "@/util/modalEvents";
 
 
 const isMobileScreen = isMobile();
@@ -21,25 +20,15 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
 
   const [isMobileScreenMenuOpen, setisMobileScreenMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isCallMeBackModalOpen, setIsCallMeBackModalOpen] = useState(false);
-  const [isShareBriefModalOpen, setIsShareBriefModalOpen] = useState(false);
 
   const showShareBriefModal = () => {
     setisMobileScreenMenuOpen(false); // Close mobile menu if open
-    setIsShareBriefModalOpen(true);
-  }
-
-  const closeShareBriefModal = () => {
-    setIsShareBriefModalOpen(false);
+    openShareBriefModal();
   }
 
   const showCallMeBackModal = () => {
     setisMobileScreenMenuOpen(false); // Close mobile menu if open
-    setIsCallMeBackModalOpen(true);
-  }
-
-  const closeCallMeBackModal = () => {
-    setIsCallMeBackModalOpen(false);
+    openCallMeBackModal();
   }
 
 
@@ -63,25 +52,6 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
     };
   }, []);
 
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isCallMeBackModalOpen) {
-        closeCallMeBackModal();
-      }
-    };
-
-    if (isCallMeBackModalOpen) {
-      document.body.style.overflow = "hidden";
-      window.addEventListener("keydown", handleEscape);
-    } else {
-      document.body.style.overflow = "unset";
-    }
-
-    return () => {
-      window.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "unset";
-    };
-  }, [isCallMeBackModalOpen]);
 
   return (
     <>
@@ -220,49 +190,6 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
         </div>
       </div>
     </div>
-
-    {/* Share Brief Modal */}
-    {isShareBriefModalOpen && (
-      <div 
-        className="fixed inset-0 z-[10000] flex items-end lg:items-center justify-center  p-0 lg:p-4 bg-black/40 bg-opacity-20"
-        onClick={closeShareBriefModal}
-      >
-      <div 
-      className="relative w-full max-w-[900px] max-h-auto flex flex-row items-end lg:items-center justify-center overflow-y-auto shadow-xl"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <ShareBrief closeModal={closeShareBriefModal} />
-    </div>
-      </div>
-    )}
-
-    {/* Call Me Back Modal */}
-    {isCallMeBackModalOpen && (
-      <div 
-        className="fixed inset-0 z-[10000] flex items-center justify-center  p-0 lg:p-4 bg-black/40 bg-opacity-20"
-        onClick={closeCallMeBackModal}
-      >
-        <div 
-          className="relative w-full max-w-[900px] max-h-[700px] overflow-y-auto shadow-xl"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <button
-            onClick={closeCallMeBackModal}
-            className="absolute top-[64px] lg:top-4 right-4 z-10 p-0 w-10 h-10 lg:p-2 text-[#262626] transition-colors rounded-full hover:bg-gray-100"
-            aria-label="Close modal"
-          >
-            <Image
-              src="/assets/images/close.png"
-              alt="Close"
-              width={12}
-              height={12}
-              className="w-[12px] h-[12px]"
-            />
-          </button>
-          <CallMeBack closeModal={closeCallMeBackModal} />
-        </div>
-      </div>
-    )}
     </>
   );
 }
