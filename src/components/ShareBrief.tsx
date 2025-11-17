@@ -257,11 +257,11 @@ export default function ShareBrief() {
       onClick={closeShareBriefModal}
     >
       <div 
-        className="relative w-full max-w-[900px] max-h-auto flex flex-row items-end lg:items-center justify-center overflow-y-auto shadow-xl"
+        className="relative w-full lg:w-auto max-w-[900px] max-h-auto flex flex-row items-end lg:items-center justify-center overflow-y-auto shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
         {requestSent ? (
-          <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] px-4 lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
+          <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] p-4 lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
             <div className="w-full flex flex-col items-start justify-start gap-[20px]">
               <div className="bg-[#FFEDFB] rounded-[5px] w-[48px] h-[48px] flex items-center justify-center">
                 <svg
@@ -281,10 +281,10 @@ export default function ShareBrief() {
                 </svg>
               </div>
               <div className="w-full flex flex-col items-start justify-start gap-[12px]">
-                <h2 className="text-[#262626] text-[24px] leading-[32px] font-extrabold">
+                <h2 className="text-[#262626] text-[20px] lg:text-[24px] leading-[28px] lg:leading-[32px] font-extrabold">
                   Your brief has been submitted
                 </h2>
-                <p className="text-[#344054] text-[20px] leading-[28px] font-normal">
+                <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-normal">
                   Someone from the team will get back to you shortly
                 </p>
               </div>
@@ -299,14 +299,15 @@ export default function ShareBrief() {
               <GradientButton
                 text="Confirm"
                 type="primary"
-                className="w-full"
+                className="w-full h-[42px]"
+                textClassName="text-[16px] leading-[24px] font-normal"
                 fullWidth={true}
                 onClick={handleCancel}
               />
             </div>
           </div>
         ) : (
-          <div className="w-full relative max-w-[650px] overflow-y-auto max-h-[90vh] flex flex-col items-start justify-start gap-[20px] px-[16px] py-[20px] lg:p-[40px] bg-[#FFFEFF] rounded-[16px]">
+          <div className="w-full relative min-w-full lg:min-w-[650px] overflow-y-auto max-h-[90vh] flex flex-col items-start justify-start gap-[20px] px-[16px] py-[20px] lg:p-[40px] bg-[#FFFEFF] rounded-[16px]">
             <Image
               src="/assets/images/close.png"
               alt="Close"

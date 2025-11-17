@@ -7,7 +7,7 @@ import { MODAL_EVENTS, closeCallMeBackModal } from "@/util/modalEvents";
 
 export default function CallMeBack() {
   const [selected, setSelected] = useState("US");
-  const [requestSent, setrequestSent] = useState(false);
+  const [requestSent, setrequestSent] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -115,7 +115,7 @@ export default function CallMeBack() {
       onClick={closeCallMeBackModal}
     >
       <div 
-        className="relative w-full max-w-[900px] max-h-[700px] overflow-y-auto shadow-xl"
+        className="relative w-auto max-w-[900px] max-h-[700px] overflow-y-auto shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -132,7 +132,7 @@ export default function CallMeBack() {
           />
         </button>
         {requestSent ? (
-          <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] px-4 lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
+          <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] p-4 lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
             <div className="w-full flex flex-col items-start justify-start gap-[20px]">
               <div className="bg-[#FFEDFB] rounded-[5px] w-[48px] h-[48px] flex items-center justify-center">
                 <svg
@@ -152,10 +152,10 @@ export default function CallMeBack() {
                 </svg>
               </div>
               <div className="w-full flex flex-col items-start justify-start gap-[12px]">
-                <h2 className="text-[#262626] text-[24px] leading-[32px] font-extrabold">
+                <h2 className="text-[#262626] text-[20px] lg:text-[24px] leading-[28px] lg:leading-[32px] font-extrabold">
                   Thanks! Message received
                 </h2>
-                <p className="text-[#344054] text-[20px] leading-[28px] font-normal">Someone from the team will get back to you shortly</p>
+                <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-normal">Someone from the team will get back to you shortly</p>
               </div>
             </div>
             <div className="w-full flex flex-row items-start justify-start gap-[12px]">
@@ -165,7 +165,8 @@ export default function CallMeBack() {
               <GradientButton        
                 text="Confirm"
                 type="primary"
-                className="w-full"
+                className="w-full h-[42px]"
+                textClassName="text-[16px] leading-[24px] font-normal"
                 fullWidth={true}
                 onClick={handleCancel}
               />
