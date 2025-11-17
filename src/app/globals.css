@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import '@splidejs/react-splide/css';
 @import 'aos/dist/aos.css';
+@import 'react-multi-date-picker/styles/colors/red.css';
 
 :root {
   --background: #ffffff;

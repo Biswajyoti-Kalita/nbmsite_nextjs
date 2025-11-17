@@ -4,6 +4,8 @@ import GradientButton from "./GradientButton";
 import ReactFlagsSelect from "react-flags-select";
 import { useRef, useState, useEffect } from "react";
 import { MODAL_EVENTS, closeShareBriefModal } from "@/util/modalEvents";
+import DatePicker from "react-multi-date-picker";
+import type { DateObject } from "react-multi-date-picker";
 
 export default function ShareBrief() {
   const [selected, setSelected] = useState("US");
@@ -11,6 +13,25 @@ export default function ShareBrief() {
   const [formType, setformType] = useState("complete-a-form");
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
+
+  const [formData, setformData] = useState({
+    formType: "complete-a-form",
+    fullName: "",
+    businessName: "",
+    email: "",
+    phone: "",
+    campaignDetails: {
+      campaignAim: [] as string[],
+      fullName: "",
+      geoTargeting: "",
+      targetAudience: "",
+      languageTargeting: "",
+      campaignDates: "",
+      budget: "<$2K",
+      preferredFormat: "Dynamic",
+      brief: "",
+    }
+  });
 
   const formRefStep1 = useRef<HTMLFormElement>(null);
 
@@ -43,13 +64,25 @@ export default function ShareBrief() {
     };
   }, [isOpen]);
 
-  const moveNextStep = () => {
+  useEffect(() => {
+    console.log(formData);
+  }, [formData]);
+
+
+  const moveNextStep = (e?: React.FormEvent) => {
+    if (e) {
+      e.preventDefault();
+    }
     if (step === 1 && formRefStep1.current?.checkValidity()) {
       setStep(2);
+    } else if (step === 1 && formRefStep1.current) {
+      // Trigger browser validation UI
+      formRefStep1.current.reportValidity();
     }
   };
 
   const handleRequest = () => {
+    console.log(formData);
     setrequestSent(true);
   };
 
@@ -205,21 +238,13 @@ export default function ShareBrief() {
                     Campaign aim
                   </h4>
                   <div className="w-full flex  max-w-full overflow-x-auto flex-row items-start justify-start gap-[6px]">
-                    <span className="border border-[#D0D5DD] py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[120px] text-center ">
-                      Awareness
-                    </span>
-                    <span className="border border-[#D0D5DD] py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[120px] text-center ">
-                      Consideration
-                    </span>
-                    <span className="border border-[#D0D5DD] py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[120px] text-center ">
-                      Performance
-                    </span>
-                    <span className="border border-[#D0D5DD] py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[100px] text-center ">
-                      Engagement
-                    </span>
-                    <span className="border border-[#D0D5DD] py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[120px] text-center ">
-                      Launch
-                    </span>
+                    {
+                      ["Awareness", "Consideration", "Performance", "Engagement", "Launch"].map((aim:string) => (
+                        <span key={aim} className={` border ${ formData.campaignDetails.campaignAim.indexOf(aim) !== -1 ?  "border-[#F11F68]":  "border-[#D0D5DD]" }  py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[120px] text-center`} onClick={() => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, campaignAim: formData.campaignDetails.campaignAim.indexOf(aim) !== -1 ? formData.campaignDetails.campaignAim.filter((a: string) => a !== aim) : [...formData.campaignDetails.campaignAim, aim] } })}>
+                          {aim}
+                        </span>
+                      ))
+                    }
                   </div>
                 </div>
 
@@ -231,6 +256,8 @@ export default function ShareBrief() {
                     type="text"
                     placeholder="Enter your full name"
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    value={formData.campaignDetails.fullName}
+                    onChange={(e) => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, fullName: e.target.value } })}
                   />
                 </div>
 
@@ -242,6 +269,8 @@ export default function ShareBrief() {
                     type="text"
                     placeholder="Where do you want the campaign to run?"
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    value={formData.campaignDetails.geoTargeting}
+                    onChange={(e) => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, geoTargeting: e.target.value } })}
                   />
                 </div>
 
@@ -253,6 +282,8 @@ export default function ShareBrief() {
                     type="text"
                     placeholder="Tell us the age, gender, interests of your target audience"
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    value={formData.campaignDetails.targetAudience}
+                    onChange={(e) => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, targetAudience: e.target.value } })}
                   />
                 </div>
 
@@ -264,6 +295,8 @@ export default function ShareBrief() {
                     type="text"
                     placeholder="Select language"
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    value={formData.campaignDetails.languageTargeting}
+                    onChange={(e) => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, languageTargeting: e.target.value } })}
                   />
                 </div>
 
@@ -271,10 +304,14 @@ export default function ShareBrief() {
                   <h4 className="text-[#344054] text-[16px] leading-[21px] font-bold tracking-[-0.02em]">
                     Campaign Dates
                   </h4>
-                  <input
-                    type="text"
+                  <DatePicker
+                    range
+                    value={formData.campaignDetails.campaignDates.split(",")}
+                    onChange={(dates) => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, campaignDates: dates.toString() } })}
+                    inputClass="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
                     placeholder="Select date range"
-                    className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    className="w-full"
+                    format="MM/DD/YYYY"
                   />
                 </div>
 
@@ -286,7 +323,8 @@ export default function ShareBrief() {
                     {["<$2K", "$2K-$5K", "$5K-$10K", ">$10K"].map((budget) => (
                       <span
                         key={budget}
-                        className="border border-[#D0D5DD] py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[100px] text-center font-medium"
+                        className={`border ${formData.campaignDetails.budget == budget ?  "border-[#F11F68]" : "border-[#D0D5DD]" }   py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[100px] text-center font-medium`}
+                        onClick={() => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, budget: budget } })}
                       >
                         {budget}
                       </span>
@@ -300,12 +338,13 @@ export default function ShareBrief() {
                   </h4>
                   <div className="w-full flex flex-row items-start justify-start gap-[6px] max-w-full overflow-x-auto">
                     {["Dynamic", "Host read", "Sponsorship", "DCO"].map(
-                      (budget) => (
+                      (format) => (
                         <span
-                          key={budget}
-                          className="border border-[#D0D5DD] py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[100px] text-center font-medium"
+                          key={format}
+                          className={`border ${formData.campaignDetails.preferredFormat == format ?  "border-[#F11F68]" : "border-[#D0D5DD]" }   py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[100px] text-center font-medium`}
+                          onClick={() => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, preferredFormat: format } })}
                         >
-                          {budget}
+                          {format}
                         </span>
                       )
                     )}
@@ -324,7 +363,11 @@ export default function ShareBrief() {
                     placeholder="Tell us your needs and we’ll get the right team member to call you back"
                     className="w-full rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
                     rows={5}
-                  ></textarea>
+                    value={formData.campaignDetails.brief}
+                    onChange={(e) => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, brief: e.target.value } })}
+                  >
+                    {formData.campaignDetails.brief}
+                  </textarea>
                 </div>
               </div>
             )}
@@ -397,7 +440,11 @@ export default function ShareBrief() {
           </div>
         )}
         {step === 1 && (
-          <form ref={formRefStep1 as React.RefObject<HTMLFormElement>} className="w-full flex flex-col items-start justify-start gap-[32px]">
+          <form 
+            ref={formRefStep1 as React.RefObject<HTMLFormElement>} 
+            className="w-full flex flex-col items-start justify-start gap-[32px]"
+            onSubmit={moveNextStep}
+          >
             <div className="w-full flex flex-col items-start justify-start gap-[32px]">
               <div className="w-full flex flex-col items-start justify-start gap-[16px]">
                 <div className="w-full flex flex-col items-start justify-start gap-[6px]">
@@ -409,6 +456,8 @@ export default function ShareBrief() {
                     placeholder="Enter your full name"
                     required
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    value={formData.fullName}
+                    onChange={(e) => setformData({ ...formData, fullName: e.target.value })}
                   />
                 </div>
 
@@ -419,7 +468,10 @@ export default function ShareBrief() {
                   <input
                     type="text"
                     placeholder="Enter business or show name"
+                    required
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    value={formData.businessName}
+                    onChange={(e) => setformData({ ...formData, businessName: e.target.value })}
                   />
                 </div>
 
@@ -430,7 +482,10 @@ export default function ShareBrief() {
                   <input
                     type="email"
                     placeholder="Enter your email"
+                    required
                     className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[6px] px-[12px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal text-[#344054]"
+                    value={formData.email}
+                    onChange={(e) => setformData({ ...formData, email: e.target.value })}
                   />
                 </div>
 
@@ -454,6 +509,8 @@ export default function ShareBrief() {
                       type="text"
                       placeholder="Enter your phone number"
                       className="w-full h-[36px] rounded-[4px] border-[#D0D5DD] border-[1px] py-[8px] px-[10px] font-normal placeholder-[#98A2B3] text-[16px] leading-[24px] font-normal border-none text-[#344054]"
+                      value={formData.phone}
+                      onChange={(e) => setformData({ ...formData, phone: e.target.value })}
                     />
                   </div>
                 </div>
@@ -465,7 +522,7 @@ export default function ShareBrief() {
                   className="w-full"
                   textClassName="text-[16px] leading-[24px] font-bold"
                   fullWidth={true}
-                  onClick={(moveNextStep)}
+                  buttonType="submit"
                   rightIcon={
                     <svg
                       width="16"
