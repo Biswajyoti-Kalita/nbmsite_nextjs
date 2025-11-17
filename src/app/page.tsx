@@ -40,7 +40,7 @@ export default function Home() {
       <div 
         className="w-full bg-no-repeat absolute left-0 right-0 opacity-90"
       >
-          <Image src="/assets/images/waves.png" alt="hero-image" className="w-full bg-bottom bg-no-repeat h-[230px]" width={1440} height={230} />
+          <Image src="/assets/images/waves.png" alt="hero-image" className="w-full bg-bottom bg-no-repeat h-[230px] opacity-10" width={1440} height={230} />
       </div>
 
         <div className="mt-8 md:mt-[64px] z-10" data-aos="fade-up">
