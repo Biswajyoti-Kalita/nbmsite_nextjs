@@ -8,8 +8,6 @@ interface MarketingCardProps {
     text: string;
     onClick: () => void;
   }[];
-  buttonText: string;
-  buttonText2: string;
   image: string;
   expanded: boolean;
   onMouseEnter: () => void;
@@ -20,8 +18,6 @@ export default function MarketingCard({
   title,
   description,
   buttons,
-  buttonText,
-  buttonText2,
   image,
   expanded,
   onMouseEnter,
