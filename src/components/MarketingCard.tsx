@@ -4,6 +4,10 @@ import GradientButton from "./GradientButton";
 interface MarketingCardProps {
   title: string;
   description: string;
+  buttons: {
+    text: string;
+    onClick: () => void;
+  }[];
   buttonText: string;
   buttonText2: string;
   image: string;
@@ -15,6 +19,7 @@ interface MarketingCardProps {
 export default function MarketingCard({
   title,
   description,
+  buttons,
   buttonText,
   buttonText2,
   image,
@@ -67,77 +72,46 @@ export default function MarketingCard({
         </h6>
       </div>
       <div className="z-10 flex flex-col sm:flex-row gap-2 md:gap-[12px]">
-        <GradientButton
-          type="secondary"
-          text={expanded ? buttonText : ""}
-          rightIcon={
-            <svg
-              width="14"
-              height="15"
-              viewBox="0 0 14 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 13.8897L13 1.88971M13 1.88971H5M13 1.88971V9.88971"
-                stroke="url(#paint0_linear_1796_2431)"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_1796_2431"
-                  x1="1"
-                  y1="7.88971"
-                  x2="13"
-                  y2="7.88971"
-                  gradientUnits="userSpaceOnUse"
+        {
+          buttons.map((button, index) => (
+            <GradientButton
+              key={index}
+              type="secondary"
+              text={expanded ? button.text : ""}
+              onClick={button.onClick}
+              rightIcon={
+                <svg
+                  width="14"
+                  height="15"
+                  viewBox="0 0 14 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <stop stopColor="#F11F68" />
-                  <stop offset="1" stopColor="#162ABF" />
-                </linearGradient>
-              </defs>
-            </svg>
-          }
-        />
-
-        {expanded && buttonText2 && (
-          <GradientButton
-            type="secondary"
-            text={expanded ? buttonText2 : ""}
-            rightIcon={
-              <svg
-                width="14"
-                height="15"
-                viewBox="0 0 14 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 13.8897L13 1.88971M13 1.88971H5M13 1.88971V9.88971"
-                  stroke="url(#paint0_linear_1796_2431)"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_1796_2431"
-                    x1="1"
-                    y1="7.88971"
-                    x2="13"
-                    y2="7.88971"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stopColor="#F11F68" />
-                    <stop offset="1" stopColor="#162ABF" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            }
-          />
-        )}
+                  <path
+                    d="M1 13.8897L13 1.88971M13 1.88971H5M13 1.88971V9.88971"
+                    stroke="url(#paint0_linear_1796_2431)"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1796_2431"
+                      x1="1"
+                      y1="7.88971"
+                      x2="13"
+                      y2="7.88971"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stopColor="#F11F68" />
+                      <stop offset="1" stopColor="#162ABF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              }
+            />
+          ))
+        }
       </div>
     </div>
   );

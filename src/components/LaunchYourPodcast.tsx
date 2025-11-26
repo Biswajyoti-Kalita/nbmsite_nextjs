@@ -9,9 +9,9 @@ export default function LaunchYourPodcast() {
           <div className="w-full flex flex-col lg:flex-row items-start justify-center gap-[59px]">
             <div className="w-full flex flex-col items-start justify-between max-w-[540px]">
               <Image
-                src="/assets/images/logo-white.png"
+                src="/assets/images/admanager-logo.png"
                 alt="advertiser-left-banner-bg"
-                className="w-auto h-[40px] object-cover"
+                className="w-auto h-[60px] object-cover"
                 width={500}
                 height={500}
               />
@@ -193,6 +193,14 @@ export default function LaunchYourPodcast() {
                         className="h-[44px]"
                         fullWidth
                         buttonType="submit"
+                        rightIcon={
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+  <polyline points="15 3 21 3 21 9"/>
+  <line x1="10" y1="14" x2="21" y2="3"/>
+</svg>
+
+                        }
                       />
                     </div>
                   </div>

@@ -39,7 +39,7 @@
       "image": "/assets/images/johnson.png",
       "title": "Johnson and Johnson",
       "points": ["Awareness"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/johnson.wav"
     }
   },
   "bel": {
@@ -85,7 +85,7 @@
       "image": "/assets/images/bel.png",
       "title": "BEL Group",
       "points": ["Awareness Campaign", "Programmatic"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/bel.mp3"
     },
     "testimonials": [
       {
@@ -140,7 +140,7 @@
       "image": "/assets/images/careem.png",
       "title": "Careem",
       "points": ["Performance Campaign", "DCO"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/careem.mp3"
     }
   },
   "saxo-bank": {
@@ -188,7 +188,7 @@
       "image": "/assets/images/saxo-bank.png",
       "title": "Saxo Bank",
       "points": ["Awareness", "Consideration"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/saxo-bank.mp3"
     }
   },
   "hubpay": {
@@ -232,7 +232,7 @@
       "image": "/assets/images/hubpay.png",
       "title": "Hubpay",
       "points": ["Awareness"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/hubpay.mp3"
     }
   },
   "emirates-airlines": {
@@ -279,7 +279,7 @@
       "image": "/assets/images/Emirates_logo.png",
       "title": "Emirates Airlines",
       "points": ["Awareness"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/emirates.mpga"
     }
   },
   "valentino": {
@@ -322,7 +322,7 @@
       "image": "/assets/images/valentino.png",
       "title": "Valentino",
       "points": ["Awareness"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/valentino.m4a"
     },
     "testimonials": [
       {
@@ -374,7 +374,7 @@
       "image": "/assets/images/centrum.png",
       "title": "Centrum",
       "points": ["Awareness"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/centrum.mp3"
     }
   },
   "annol-real-estate": {
@@ -527,7 +527,7 @@
       "image": "/assets/images/bmw.png",
       "title": "BMW",
       "points": ["DCO", "Performance"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/bmw.mp3"
     }
   },
   "visa": {
@@ -656,7 +656,7 @@
       "image": "/assets/images/p-and-o.png",
       "title": "P&O Ferries",
       "points": ["DCO", "Performance"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/p-n-o.mp3"
     }
   },
   "capital": {
@@ -795,7 +795,7 @@
       "image": "/assets/images/dell.png",
       "title": "Dell",
       "points": ["Awareness", "Host read"],
-      "audio_file": "/assets/audio/sample-audio.mp3"
+      "audio_file": "/assets/audio/dell.mp3"
     },
     "testimonials": [
       {

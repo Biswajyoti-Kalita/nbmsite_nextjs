@@ -4,10 +4,11 @@ import Button from "@/components/Button";
 import GradientButton from "./GradientButton";
 import { useState } from "react";
 import { openShareBriefModal } from "@/util/modalEvents";
+import { useRouter } from "next/navigation";
 
 export default function AdvertiserLaunchCampaign() {
   const [selectedOption, setSelectedOption] = useState("launch-your-campaign");
-
+  const router = useRouter();
   return (
     <div className="w-full border-[0px] lg:border-[2px] border-[#D2D2D2] rounded-[16px] px-0 lg:px-[40px] py-[24px] lg:py-[40px] gap-[40px] flex flex-col items-center justify-center ">
       <div className="w-full flex flex-row items-start lg:items-center justify-start overflow-x-auto gap-[10px]">
@@ -154,6 +155,9 @@ export default function AdvertiserLaunchCampaign() {
                   </svg>
                 }
                 type="primary"
+                onClick={() => {
+                  router.push("https://admanager.fm");
+                }}
               />
             </div>
           </div>
@@ -254,10 +258,10 @@ export default function AdvertiserLaunchCampaign() {
             </div>
             <div>
               <GradientButton
-                text="Share a Brief"                
+                text="Request a Proposal"                
                 type="primary"
                 textClassName="text-[16px] leading-[24px] font-semibold"
-                className="w-[131px] h-[44px]"
+                className=" h-[44px]"
                 onClick={openShareBriefModal}
               />
             </div>

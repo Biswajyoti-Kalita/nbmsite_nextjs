@@ -3,10 +3,13 @@ import AboutUsSection from "@/components/AboutUsSection";
 import BrandsScroller from "@/components/BrandsScroller";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQCard from "@/components/FAQCard";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import MonetizePodcastSection from "@/components/MonetizePodcastSection";
 import Navbar from "@/components/Navbar";
+import PageBanner from "@/components/PageBanner";
+import PopularChannels from "@/components/PopularChannels";
 import PublisherBanner from "@/components/PublisherBanner";
 import PublisherRevenuSection from "@/components/PublisherRevenuSection";
 import TestimonialGroup from "@/components/TestimonialGroup";
@@ -21,8 +24,15 @@ export default function Publishers() {
         linkColor="#FFFEFF"
       />
       <div className="bg-[#6C1DA7] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
-        <PublisherBanner />
-
+        {/* <PublisherBanner /> */}
+        <PageBanner
+          breadcrumb={{ name: "For Publishers", link: "/publishers" }}
+          headline="For Publishers, networks and production houses"
+          title="Monetize Your Catalogue with Global Brand Demand"
+          description="Connect your shows to premium advertisers across 90+ markets and hundreds of active campaigns."
+          image="/assets/images/publisher-right-bg.png"
+          buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Publisher Pack", type: "tertiary", link: "#" }]}
+        />
       </div>
       <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-16 pt-[84px] lg:pt-24 px-[16px] lg:pr-20 pb-12 lg:pl-20">
         <section className="w-full flex flex-col gap-[46px] lg:gap-[64px]">
@@ -37,9 +47,9 @@ export default function Publishers() {
           </div>
           <PublisherRevenuSection />
 
-          <div className="w-full flex flex-col gap-[40px]">
-            <div className="w-full flex items-center justify-center flex-wrap gap-[40px] md:flex-nowrap">
-              <div className="w-full flex flex-col md:w-[50%] gap-[32px] lg:gap-[40px]">
+          <div className="w-full flex flex-col items-center justify-center gap-[40px]">
+            <div className="w-full max-w-[1280px] flex flex-col lg:flex-row items-center justify-center gap-[40px]">
+              <div className="w-full max-w-[589px] flex flex-col gap-[32px] lg:gap-[40px]">
                 <h1 className="w-[100%] capitalize gradient-text font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
                   You’re in good company
                 </h1>
@@ -55,13 +65,7 @@ export default function Publishers() {
                   textClassName="text-[16px] leading-[24px]"
                 />
               </div>
-              <Image
-                src="/assets/images/popular-channels.png"
-                alt="podcasters-image"
-                className="w-full md:w-[50%] h-auto object-cover rounded-[16px]"
-                width={500}
-                height={450}
-              />
+              <PopularChannels />
             </div>
           </div>
         </section>
@@ -116,73 +120,41 @@ export default function Publishers() {
 
 
       <TestimonialGroup />
-      <section className="w-full flex flex-col items-center justify-center">
-        <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">
-          <div className="w-full flex flex-col items-start justify-center gap-[24px]">
-            <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-              <span className="text-[#F11F68] border border-[#F11F68] rounded-[31px] px-3 md:px-4 py-1.5 md:py-1 text-sm md:text-[16px] leading-tight md:leading-[22px] font-medium">
-                FAQs
-              </span>
-              <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
-                Got Questions? We’ve Got Answers!
-              </h1>
-            </div>
-            <div className="w-full flex flex-col items-start justify-center gap-[32px]">
-              <p className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                Here are quick answers to some of the most common questions
-                about Next Audio
-              </p>
-              <div className="flex flex-row gap-[10px]">
-                <span className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-semibold">
-                  Have another question?
-                </span>
-                <span className="gradient-text font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                  Reach Out
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-            {[
-              {
-                title: "Who can join the Next network?",
-                description:
-                  "Any podcast publisher, network, or production house with high-quality shows and active listenership. We support both regional and global content strategies.",
-              },
-              {
-                title:
-                  "How is my inventory monetised?",
-                description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
-              },
-              {
-                title: "What types of brands do you work with?",
-                description:
-                  "We work with global brands, major media agencies, and regional advertisers across industries, including finance, FMCG, travel, tech, health, and more.",
-              },
-              {
-                title:
-                  "Is this a non-exclusive partnership?",
-                description:
-                  "Yes. We operate under a non-exclusive model. You retain full control and can continue monetizing through other platforms or partners.",
-              },
-              {
-                title:
-                  "How do I get started?",
-                description:
-                  "Just get in touch with our team. We’ll review your shows and guide you through onboarding, no platform migration or setup fees required.",
-              },
-            ].map((item, index) => (
-              <FAQCard
-                key={index}
-                title={item.title}
-                description={item.description}
-                open={index === 0}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+
+      <FAQSection
+      
+          faqs= {[
+            {
+              title: "Who can join the Next network?",
+              description:
+                "Any podcast publisher, network, or production house with high-quality shows and active listenership. We support both regional and global content strategies.",
+            },
+            {
+              title:
+                "How is my inventory monetised?",
+              description:
+                "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+            },
+            {
+              title: "What types of brands do you work with?",
+              description:
+                "We work with global brands, major media agencies, and regional advertisers across industries, including finance, FMCG, travel, tech, health, and more.",
+            },
+            {
+              title:
+                "Is this a non-exclusive partnership?",
+              description:
+                "Yes. We operate under a non-exclusive model. You retain full control and can continue monetizing through other platforms or partners.",
+            },
+            {
+              title:
+                "How do I get started?",
+              description:
+                "Just get in touch with our team. We’ll review your shows and guide you through onboarding, no platform migration or setup fees required.",
+            },
+          ]}
+      />
+
       <Footer />
     </div>
   );

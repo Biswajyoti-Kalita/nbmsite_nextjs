@@ -2,9 +2,11 @@ import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQCard from "@/components/FAQCard";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
+import PageBanner from "@/components/PageBanner";
 import PopularChannels from "@/components/PopularChannels";
 import Image from "next/image";
 
@@ -18,54 +20,16 @@ export default function Podcaster() {
       />
 
       <div className="bg-[#511DB5] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
-        <section
-          className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 gap-[80px] items-start justify-start relative lg:max-w-[1440px]"
-          id="home"
-        >
-          <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <Breadcrumb pages={[{ name: "For Podcasters", link: "/podcasters" }]} />
-
-
-            <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]">
-              For Podcasters & Creators
-            </h1>
-            <div className="flex flex-col gap-[32px] items-start justify-start">
-              <div className="flex flex-col items-start justify-start gap-[24px]">
-                <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
-                  Monetize Your Podcast Without Working Harder
-                </h1>
-              </div>
-              <h2 className="font-medium lg:font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-[#FFFEFF]">
-                Where podcasts of any language meet premium advertisers from
-                around the world.
-              </h2>
-              <div className="flex flex-col lg:flex-row gap-[12px] items-start lg:items-center justify-start">
-                <GradientButton
-                  type="secondary"
-                  text="Request a Call Back"
-                  className="h-[44px] w-[184px]"
-                  textClassName="text-[16px] leading-[24px]"
-                />
-                <GradientButton
-                  type="tertiary"
-                  text="Download Podcaster Pack"
-                  className="h-[44px] w-[231px]"
-                  textClassName="text-[16px] leading-[24px]"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="relative lg:absolute right-0 top-4 lg:top-9  bottom-[-30px] max-w-[700px]">
-            <Image
-              src="/assets/images/podcasters-right-banner-bg.png"
-              alt="podcasters-image"
-              className="w-full h-full object-contain"
-              width={500}
-              height={500}
-            />
-          </div>
-        </section>
+        <PageBanner
+        
+        breadcrumb={{ name: "For Podcasters", link: "/podcasters" }}
+        headline="For Podcasters & Creators"
+        title="Monetize Your Podcast Without Working Harder"
+        description="Where podcasts of any language meet premium advertisers from
+        around the world."
+        image="/assets/images/podcasters-right-banner-bg.png"
+        buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Podcaster Pack", type: "tertiary", link: "#" }]}
+        />
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[1440px]">
@@ -87,7 +51,7 @@ export default function Podcaster() {
 
             <div className="w-full flex flex-col items-start justify-center gap-[24px]">
               <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
-                How Podcasters Earn with Next Audio Audio
+                How Podcasters Earn with Next Audio
               </h1>
               <div className="flex flex-col items-start justify-center gap-[12px]">
                 <div className="flex flex-row items-start justify-start gap-[12px]">
@@ -212,7 +176,7 @@ export default function Podcaster() {
                   <div className="flex flex-col lg:flex-row items-start justify-between gap-[16px] w-full">
                     <div className="flex flex-col items-start justify-center gap-[12px] bg-[#FFFEFF] rounded-[16px] p-[24px] min-w-[238px] w-full">
                       <h1 className="font-semibold text-[32px] leading-[40px] tracking-[0.0em] gradient-text">
-                        350+
+                        300+
                       </h1>
                       <h2 className="font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] tracking-[0.0em] text-[#262626]">
                         Brands <br />& agencies
@@ -243,72 +207,38 @@ export default function Podcaster() {
           </section>
 
 
-          <section className="w-full flex flex-col items-center justify-center">
-            <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">
-              <div className="w-full flex flex-col items-start justify-center gap-[24px]">
-                <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-                <span className="text-[#F11F68] border border-[#F11F68] rounded-[31px] px-3 md:px-4 py-1.5 md:py-1 text-sm md:text-[16px] leading-tight md:leading-[22px] font-medium">
-                FAQs
-                  </span>
-                  <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
-                    Got Questions? We’ve Got Answers!
-                  </h1>
-                </div>
-                <div className="w-full flex flex-col items-start justify-center gap-[32px]">
-                  <p className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                    Here are quick answers to some of the most common questions
-                    about Next Audio
-                  </p>
-                  <div className="flex flex-row gap-[10px]">
-                    <span className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-semibold">
-                      Have another question?
-                    </span>
-                    <span className="gradient-text font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                      Reach Out
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-                {[
-                  {
-                    title: "Is this only for host-read ads?",
-                    description:
-                      "No, we run a range of campaigns including programmatic ads and premium brand partnerships. You’ll be considered for both, depending on fit.",
-                  },
-                  {
-                    title:
-                      "Is this exclusive?",
-                    description:
-                      "Not at all. You keep full ownership of your podcast and can continue working with other partners or monetisation tools.",
-                  },
-                  {
-                    title: "What kind of advertisers will I work with?",
-                    description:"We only work with vetted, brand-safe advertisers, including global names and trusted local companies. You always have the final say.",
-                  },
-                  {
-                    title: "How do I get started?",
-                    description: "Simple, just contact us and share your show. Our team will review your podcast and guide you through next steps.",
-                  },
-                  {
-                    title: "What makes a podcast eligible?",
-                    description: "We generally look for shows that have been active for 6+ months with a regular audience of 1,000+ listeners per episode — but we also consider niche formats and strong engagement.",
-                  },
-                  {
-                    title: "How do I get paid?",
-                    description: "Payment depends on the type of campaign, but you’ll receive earnings directly based on bookings and ad delivery.",
-                  }
-                ].map((item, index) => (
-                  <FAQCard
-                    key={index}
-                    title={item.title}
-                    description={item.description}
-                    open={index === 0}
-                  />
-                ))}
-              </div>
-            </div>
-          </section>
+          <FAQSection          
+            faqs={
+              [
+                {
+                  title: "Is this only for host-read ads?",
+                  description:
+                    "No, we run a range of campaigns including programmatic ads and premium brand partnerships. You’ll be considered for both, depending on fit.",
+                },
+                {
+                  title:
+                    "Is this exclusive?",
+                  description:
+                    "Not at all. You keep full ownership of your podcast and can continue working with other partners or monetisation tools.",
+                },
+                {
+                  title: "What kind of advertisers will I work with?",
+                  description:"We only work with vetted, brand-safe advertisers, including global names and trusted local companies. You always have the final say.",
+                },
+                {
+                  title: "How do I get started?",
+                  description: "Simple, just contact us and share your show. Our team will review your podcast and guide you through next steps.",
+                },
+                {
+                  title: "What makes a podcast eligible?",
+                  description: "We generally look for shows that have been active for 6+ months with a regular audience of 1,000+ listeners per episode — but we also consider niche formats and strong engagement.",
+                },
+                {
+                  title: "How do I get paid?",
+                  description: "Payment depends on the type of campaign, but you’ll receive earnings directly based on bookings and ad delivery.",
+                }
+              ]}
+          />
 
           <section className="w-full flex flex-col items-center justify-center py-[84px] lg:py-[96px]  px-[16px] lg:px-[80px] gap-[64px] bg-[#F8F9FA]">
             <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-[32px] lg:gap-[24px] max-w-[1280px] max-h-auto lg:max-h-[94px]">
@@ -322,7 +252,7 @@ export default function Podcaster() {
               </div>
               <div className="w-full flex justify-start lg:justify-end">
                 <GradientButton
-                  text="Explore Podcaster knowledge Hub"
+                  text="Explore Podcaster Knowledge Hub"
                   className="h-[44px] w-[293px]"
                   textClassName="text-[16px] leading-[24px] font-semibold"
                 />

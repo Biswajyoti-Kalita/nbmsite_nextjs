@@ -321,9 +321,9 @@ export default function AudioFunnel() {
                 </div>
               </div>
               <div className="w-full flex flex-col items-start justify-start  py-[10px] px-[16px] gap-[6px]">
-                <Link href="/case-study-library">
+                <Link href="/case-studies/emirates-airlines">
                 <h4 className="font-bold text-[16px] leading-[24px] tracking-[-0.0em] gradient-text flex flex-row items-center justify-center gap-[6px]">
-                  Read Conversion Case Study
+                Read Awareness Case Studies
                   <svg
                     width="14"
                     height="14"
@@ -441,9 +441,9 @@ export default function AudioFunnel() {
                 </div>
               </div>
               <div className="w-full flex flex-col items-start justify-start  py-[10px] px-[16px] gap-[6px]">
-                <Link href="/case-study-library">
+                <Link href="/case-studies/bel">
                   <h4 className="font-bold text-[16px] leading-[24px] tracking-[-0.0em] gradient-text flex flex-row items-center justify-center gap-[6px]">
-                    Read Conversion Case Study
+                  Read Consideration Case Studies
                     <svg
                       width="14"
                       height="14"

@@ -7,7 +7,9 @@ import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import MarketingCardGroup from "@/components/MarketingCardGroup";
 import Navbar from "@/components/Navbar";
+import PageBanner from "@/components/PageBanner";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
+import PopularChannels from "@/components/PopularChannels";
 import Image from "next/image";
 
 export default function AboutUs() {
@@ -19,7 +21,17 @@ export default function AboutUs() {
         linkColor="#FFFEFF"
       />
       <div className="bg-[#F11F68] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
-      <AboutUsBanner />
+      {/* <AboutUsBanner /> */}
+      <PageBanner       
+      breadcrumb={{ name: "About Us", link: "/about-us" }}
+      headline=""
+      title="The Global Partner for Podcast & Digital Audio Advertising"
+      description="Next Audio connects advertisers with premium podcasts and
+                digital audio audiences — while helping creators and publishers
+                grow revenue."
+      image="/assets/images/about_headerBanner_right.png"
+      buttons={[ {text: "Request a Proposal", type: "secondary", showBriefModal: true, classNames: "w-[184px]"}, { text: "Request a Call Back", type: "tertiary", showCallMeBackModal: true, classNames: "w-[231px]" }]}
+      />
       </div>
       <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-16 pt-24 px-[16px] lg:px-[80px] pb-0 lg:pb-12">
         <section className="w-full flex flex-col gap-[46px] lg:gap-[64px]">
@@ -89,7 +101,7 @@ export default function AboutUs() {
           Why We Exist
         </h2>
         <div className="w-full md:w-[60%] flex flex-col gap-[40px]">
-          <p className="text-[#262626] text-[24px] lg:text-[32px] leading-[32px] lg:leading-[40px] font-[500] font-[Switzer]">
+          <p className="text-[#262626] text-[24px] lg:text-[28px] leading-[32px] lg:leading-[40px] font-[500] font-[Switzer]">
             Because podcast and digital audio advertising shouldn&apos;t be
             complicated, opaque, or out of reach. Next Audio connects the dots,
             helping brands scale campaigns and publishers unlock new revenue,
@@ -216,9 +228,11 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
+      </div>
+      <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-[46px] lg:gap-16 pt-[84px] lg:pt-[96px] px-[16px] lg:px-[80px] pb-12">
         <div className="w-full flex flex-col gap-[40px]">
-          <div className="w-full flex items-center justify-center flex-wrap gap-[40px] md:flex-nowrap">
-            <div className="w-full flex flex-col md:w-[50%] gap-[40px]">
+          <div className="w-full flex items-center justify-center flex flex-col lg:flex-row gap-[40px]">
+            <div className="w-full flex flex-col max-w-[589px] gap-[40px]">
               <h1 className="w-[100%] gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
                 Trusted by Leading Brands, Networks, & Creators
               </h1>
@@ -227,13 +241,7 @@ export default function AboutUs() {
                 advertisers, publishers, and podcasters.
               </h6>
             </div>
-            <Image
-              src="/assets/images/about_us_trustright.png"
-              alt="podcasters-image"
-              className="w-full md:w-[50%] h-auto object-cover rounded-[16px]"
-              width={500}
-              height={450}
-            />
+            <PopularChannels />
           </div>
         </div>
       </div>

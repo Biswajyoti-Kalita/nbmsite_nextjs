@@ -202,12 +202,6 @@ export default function PublisherRevenuSection() {
                 className="h-[48px] w-[158px]"
                 textClassName="text-[16px] leading-[24px] "
               />
-              <GradientButton
-                type="secondary"
-                text="Check Out AI Studio"
-                className="h-[48px] w-[182px]"
-                textClassName="text-[16px] leading-[24px] "
-              />
             </div>
           </div>
         </div>

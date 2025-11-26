@@ -96,7 +96,7 @@ export default function Footer() {
               href="/"
               className="text-[#344054] font-normal text-[16px] leading-[24px] hover:text-underline cursor-pointer"
             >
-              © Next Broadcast Media 2025
+              © Next Audio 2025
             </Link>
           </div>
 

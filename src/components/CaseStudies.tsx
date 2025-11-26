@@ -293,6 +293,8 @@ export default function CaseStudies() {
     autoWidth: true,
     autoScroll: false,
     pagination: true,
+    arrows: false,
+    
   };
 
   return (

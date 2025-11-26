@@ -2,12 +2,28 @@
 import { useEffect, useState } from "react";
 import MarketingCard from "./MarketingCard";
 import isMobile from "@/util/util";
+import { useRouter } from "next/navigation";
 
 export default function MarketingCardGroup() {
+    const router = useRouter();
     const [marketingCards, setMarketingCards] = useState([
         {
             title: "Brands & Agencies",
             description: "AI Ad-Studio, DIY Campaign Manager and high performing managed campaign solutions",
+            buttons: [
+                {
+                    text: "Explore Solutions",
+                    onClick: () => {
+                        router.push("/publishers");
+                    }
+                },
+                {
+                    text: "Create free AI Ads",
+                    onClick: () => {
+                        router.push("https://admanager.fm/nbmaistudio");
+                    }
+                }
+            ],
             buttonText: "Explore Solutions",
             buttonText2: "Create free AI Ads",
             image: "/assets/images/card-bg-1.jpg",
@@ -16,6 +32,14 @@ export default function MarketingCardGroup() {
         {
             title: "Publishers & Networks",
             description: "Tap into global advertiser demand and monetise your full podcast catalogue with scalable, multi-format campaigns.",
+            buttons: [
+                {
+                    text: "Explore Our Solutions",
+                    onClick: () => {
+                        router.push("/publishers");
+                    }
+                }
+            ],
             buttonText: "Explore Our Solutions",
             buttonText2: "",
             image: "/assets/images/card-bg-2.jpg",
@@ -24,7 +48,14 @@ export default function MarketingCardGroup() {
         {
             title: "Podcasters & Creators",
             description: "Maximize revenues of your shows with our Host-Read Studio and Brand-matching in our Global Advertiser Network.",
-            buttonText: "Learn More",
+            buttons: [
+                {
+                    text: "Learn More",
+                    onClick: () => {
+                        router.push("/podcasters");
+                    }
+                },
+            ],
             buttonText2: "Register your show",
             image: "/assets/images/card-bg-3.jpg",
             expanded: false

@@ -14,6 +14,11 @@ import QACollapseableContainer from "@/components/QACollapseableContainer";
 import AdvertiserLaunchCampaign from "@/components/AdvertiserLaunchCampaign";
 import LaunchYourPodcast from "@/components/LaunchYourPodcast";
 import PopularChannels from "@/components/PopularChannels";
+import AdvertiserBanner from "@/components/AdvertiserBanner";
+import AdvertiserMapSection from "@/components/AdvertiserMapSection";
+import Link from "next/link";
+import PageBanner from "@/components/PageBanner";
+import FAQSection from "@/components/FAQSection";
 
 export default function Advertisers() {
   return (
@@ -22,55 +27,17 @@ export default function Advertisers() {
 
 
       <div className="bg-[#B11E86] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
-        <section
-          className="w-full mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 items-center justify-between relative lg:max-w-[1440px]"
-          id="home"
-        >
-          <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
+        {/* <AdvertiserBanner /> */}
+        <PageBanner
+          breadcrumb={{ name: "For Advertisers", link: "/advertisers" }}
+          headline="For Brands & Media Agencies"
+          title="High-Impact Audio Ads. Made Easy for Busy Teams"
+          description="Global high-performance podcast and digital audio campaigns,
+              delivered quickly, efficiently, and tailored to your goals."
+          image="/assets/images/advertisers-right-banner-bg.png"
+          buttons={[ {text: "Launch Your Own Campaign", type: "secondary", link: "https://admanager.fm"}, { text: "Request a Proposal", type: "tertiary", showCallMeBackModal: true }]}
+        />
 
-            <Breadcrumb pages={[{ name: "For Advertisers", link: "/advertisers" }]} />
-
-
-            <h1 className="font-medium text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]">
-              For Brands & Media Agencies
-            </h1>
-            <div className="flex flex-col gap-[32px] items-start justify-start">
-              <div className="flex flex-col items-start justify-start gap-[24px]">
-                <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF]">
-                    High-Impact Audio Ads. Made Easy for Busy Teams
-                </h1>
-              </div>
-              <h2 className="font-medium lg:font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-[#FFFEFF]">
-                Global high-performance podcast and digital audio campaigns,
-                delivered quickly, efficiently, and tailored to your goals.
-              </h2>
-              <div className="flex flex-col lg:flex-row gap-[12px] items-start lg:items-center justify-start">
-                <GradientButton
-                  type="secondary"
-                  text="Launch Your Own Campaign"
-                  className="h-[44px]"
-                  textClassName="text-[16px] leading-[24px] font-semibold"
-                />
-                <GradientButton
-                  type="tertiary"
-                  text="Next Audio Managed Campaign Service"
-                  textClassName="text-[16px] leading-[24px] font-semibold"
-                  className="h-[44px]"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className=" relative  lg:absolute right-0 top-0 bottom-0">
-            <Image
-              src="/assets/images/advertisers-right-banner-bg.png"
-              alt="advertisers-image"
-              className="w-full h-full object-cover"
-              width={500}
-              height={500}
-            />
-          </div>
-        </section>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[1440px]">
@@ -262,7 +229,7 @@ export default function Advertisers() {
                   </div>
                 </div>
                 <div>
-                  <GradientButton text="Download Media Kit" className="h-[44px]" textClassName="text-[16px] leading-[24px] font-semibold" />
+                  <GradientButton text="Download More Info" className="h-[44px]" textClassName="text-[16px] leading-[24px] font-semibold" />
                 </div>
               </div>
               <div>
@@ -292,7 +259,7 @@ export default function Advertisers() {
                       </p>
                     </div>
                   </div>
-                  <GradientButton text="Download Media Kit" className="h-[44px]"  textClassName="text-[16px] leading-[24px] font-semibold"/>
+                  <GradientButton text="Download More Information" className="h-[44px]"  textClassName="text-[16px] leading-[24px] font-semibold"/>
                 </div>
                 {/* Right div */}
                 <div className="flex flex-col items-start justify-center gap-[24px]">
@@ -410,74 +377,8 @@ export default function Advertisers() {
               }
             ]} />
           </section>
-          <section className="w-full flex flex-col items-center justify-center pt-[32px] pb-[88px] lg:py-[48px] px-[16px] lg:px-[80px] bg-[#FFFEFF] gap-[64px]">
-            <div className="w-full flex flex-col items-start justify-center gap-[46px] lg:gap-[64px]">
-              <div className="w-full flex flex-col lg:flex-row items-start justify-center gap-[16px] lg:gap-[64px]">
-                <div className="w-full">
-                  <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
-                    Start Planning Your Reach
-                  </h1>
-                </div>
-                <div className="w-full flex flex-col items-start justify-between gap-[32px]">
-                  <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                    From global to hyper-local, our footprint gives you the
-                    flexibility to reach the right listeners in the right
-                    places.
-                  </p>
-                  <GradientButton
-                    text="Request a Proposal"
-                    className="w-[200px] h-[44px]"
-                    textClassName="text-[16px] leading-[24px] font-semibold"
-                    rightIcon={
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M6 18L18 6M18 6H10M18 6V14"
-                          stroke="#FFFEFF"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    }
-                  />
-                </div>
-              </div>
-              <div className="w-full hidden lg:flex flex-col">
-                <div className="w-full gap-[40px] px-[100px] flex flex-row items-start justify-between">
-                  {[
-                    "The Americas",
-                    "UK, Ireland & Europe",
-                    "Middle East",
-                    "Asia-Pacific",
-                    "Africa",
-                  ].map((item, index) => (
-                    <div
-                      key={index}
-                      className="w-full flex flex-col items-start justify-center gap-[6px]  py-[10px] px-[16px] border-[#344054] border-[2px] rounded-[44px]"
-                    >
-                      <h1 className="text-[#344054] text-[16px] leading-[24px] text-center w-full font-medium text-nowrap">
-                        {item}
-                      </h1>
-                    </div>
-                  ))}
-                </div>
-                <Image
-                  src="/assets/images/map-base.svg"
-                  alt="Map"
-                  width={1000}
-                  height={1000}
-                  className="w-full object-cover"
-                />
-              </div>
-            </div>
-          </section>
 
+          <AdvertiserMapSection />
 
           <PodcastCaseStudy title="Podcast Advertising Case Studies & Audio Campaign Results" />
 
@@ -567,7 +468,9 @@ export default function Advertisers() {
                     </h1>
                   </div>
                   <div className="flex flex-row h-full items-start lg:items-end justify-start lg:justify-end">
-                    <GradientButton text="Meet Next Audio" type="secondary" className="h-[44px] w-[184px]" textClassName="text-[16px] leading-[24px] font-semibold" />
+                    <Link href="/about-us">
+                      <GradientButton text="Meet Next Audio" type="secondary" className="h-[44px] w-[184px]" textClassName="text-[16px] leading-[24px] font-semibold" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -590,7 +493,7 @@ export default function Advertisers() {
               </div>
               <div className="w-full flex justify-start lg:justify-end">
                 <GradientButton
-                  text="Explore Podcaster knowledge Hub"
+                  text="Explore Podcaster Knowledge Hub"
                   className="h-[44px] w-[293px]"
                   textClassName="text-[16px] leading-[24px] font-semibold"
                 />
@@ -686,34 +589,7 @@ export default function Advertisers() {
               </div>
             </div>
           </section>
-      <section className="w-full flex flex-col items-center justify-center">
-        <div className="w-full flex flex-col lg:flex-row items-start justify-center py-[84px] lg:py-[96px] px-[16px] lg:px-[80px] gap-[46px] lg:gap-[64px] bg-[#FFFFFF] max-w-[1440px]">
-          <div className="w-full flex flex-col items-start justify-center gap-[24px]">
-            <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-            <span className="text-[#F11F68] border border-[#F11F68] rounded-[31px] px-3 md:px-4 py-1.5 md:py-1 text-sm md:text-[16px] leading-tight md:leading-[22px] font-medium">
-            FAQs
-              </span>
-              <h1 className="gradient-text font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px]">
-                Got Questions? We’ve Got Answers!
-              </h1>
-            </div>
-            <div className="w-full flex flex-col items-start justify-center gap-[32px]">
-              <p className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                Here are quick answers to some of the most common questions
-                about Next Audio
-              </p>
-              <div className="flex flex-row gap-[10px]">
-                <span className="text-[#091A3A] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-semibold">
-                  Have another question?
-                </span>
-                <span className="gradient-text font-semibold text-[20px] leading-[28px]">
-                  Reach Out
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-            {[
+          <FAQSection faqs={[
               {
                 title: "What regions do you operate in?",
                 description:
@@ -742,17 +618,8 @@ export default function Advertisers() {
                 description:
                   "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
               },
-            ].map((item, index) => (
-              <FAQCard
-                key={index}
-                title={item.title}
-                description={item.description}
-                open={index === 0}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+            ]} />
+
       <Footer />
       <ActionSidebar />
     </div>

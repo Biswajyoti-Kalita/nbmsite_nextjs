@@ -202,6 +202,26 @@ body {
 #highlights .splide__pagination, #case-study-testimonial .splide__pagination,  #caseStudies .splide__pagination{
     bottom: -3rem;
   }
+
+  .splide__pagination__page.is-active {
+    width: 48px;
+    background: #B3B2B6;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .splide__pagination__page {
+    background: #D2D2D2;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  .flag-select button span {
+    max-width: 140px;
+  }
+
   @media (max-width: 768px) {
     #highlights .splide__pagination, #case-study-testimonial .splide__pagination, #caseStudies .splide__pagination{
       bottom: -1.5rem;

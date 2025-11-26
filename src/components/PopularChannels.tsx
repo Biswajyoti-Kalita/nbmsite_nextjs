@@ -102,7 +102,7 @@ export default function PopularChannels() {
     perPage: 4,
     autoScroll: {
       speed: 0.8,
-      pauseOnHover: true,
+      pauseOnHover: false,
     },
     arrows: false,
     pagination: false,
@@ -118,7 +118,7 @@ export default function PopularChannels() {
     perPage: 4,
     autoScroll: {
       speed: 0.7,
-      pauseOnHover: true,
+      pauseOnHover: false,
     },
     arrows: false,
     pagination: false,
@@ -133,7 +133,7 @@ export default function PopularChannels() {
     perPage: 4,
     autoScroll: {
       speed: 0.6,
-      pauseOnHover: true,
+      pauseOnHover: false,
     },
     arrows: false,
     pagination: false,

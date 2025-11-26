@@ -191,7 +191,7 @@ export default function CallMeBack() {
                     <div className="w-full flex flex-col items-start justify-start gap-[10px]">
                       <div className="w-full flex flex-col items-start justify-start gap-[6px]">
                         <h4 className="text-[#344054] text-[16px] leading-[32px] font-bold">
-                          Full Name
+                          Full Name <sup className="text-[#F11F68]">*</sup>
                         </h4>
                         <input
                           type="text"
@@ -209,7 +209,7 @@ export default function CallMeBack() {
                       </div>
                       <div className="w-full flex flex-col items-start justify-start gap-[6px]">
                         <h4 className="text-[#344054] text-[16px] leading-[32px] font-bold">
-                          Business / Show Name
+                          Business Name <sup className="text-[#F11F68]">*</sup>
                         </h4>
                         <input
                           type="text"
@@ -227,7 +227,7 @@ export default function CallMeBack() {
                       </div>
                       <div className="w-full flex flex-col items-start justify-start gap-[6px]">
                         <h4 className="text-[#344054] text-[16px] leading-[32px] font-bold">
-                          Email
+                          Business Email <sup className="text-[#F11F68]">*</sup>
                         </h4>
                         <input
                           type="email"
@@ -245,12 +245,12 @@ export default function CallMeBack() {
                           Phone number
                         </h4>
                         <div className="w-full flex flex-row items-start justify-start gap-[12px] rounded-[4px] border-[#D0D5DD] border-1">
-                          <div className="py-[8px] pl-[12px] h-[36px]">
+                          <div className="py-[2px] pl-[4px] h-[36px] text-[#344054]">
                             <ReactFlagsSelect
                               selected={selected}
                               onSelect={(code) => setSelected(code)}
-                              showSelectedLabel={false}
-                              showSecondarySelectedLabel={false}
+                              showSelectedLabel={true}
+                              showSecondarySelectedLabel={true}
                               showOptionLabel={true}
                               className="flag-select"
                               selectButtonClassName="!bg-transparent !border-0 !p-0 hover:opacity-80"

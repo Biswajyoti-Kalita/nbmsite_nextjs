@@ -28,7 +28,7 @@ export default function ShareBrief() {
       languageTargeting: "",
       campaignDates: "",
       budget: "<$2K",
-      preferredFormat: "Dynamic",
+      preferredFormat: ["Dynamic"],
       brief: "",
       uploadedFile: null as File | null,
     }
@@ -58,7 +58,7 @@ export default function ShareBrief() {
           languageTargeting: "",
           campaignDates: "",
           budget: "<$2K",
-          preferredFormat: "Dynamic",
+          preferredFormat: ["Dynamic"],
           brief: "",
           uploadedFile: null,
         }
@@ -138,7 +138,7 @@ export default function ShareBrief() {
         submitFormData.append('languageTargeting', formData.campaignDetails.languageTargeting);
         submitFormData.append('campaignDates', formData.campaignDetails.campaignDates);
         submitFormData.append('budget', formData.campaignDetails.budget);
-        submitFormData.append('preferredFormat', formData.campaignDetails.preferredFormat);
+        submitFormData.append('preferredFormat', JSON.stringify(formData.campaignDetails.preferredFormat));
       } else if (formData.formType === 'write-a-brief') {
         submitFormData.append('brief', formData.campaignDetails.brief);
       } else if (formData.formType === 'upload-file' && formData.campaignDetails.uploadedFile) {
@@ -407,7 +407,7 @@ export default function ShareBrief() {
                   </div>
                 </div>
 
-                <div className="w-full flex flex-col items-start justify-start gap-[6px]">
+                <div className="w-full flex flex-col items-start justify-start gap-[6px] hidden">
                   <h4 className="text-[#344054] text-[16px] leading-[21px] font-bold tracking-[-0.02em]">
                     Full Name
                   </h4>
@@ -500,8 +500,8 @@ export default function ShareBrief() {
                       (format) => (
                         <span
                           key={format}
-                          className={`border ${formData.campaignDetails.preferredFormat == format ?  "border-[#F11F68]" : "border-[#D0D5DD]" }   py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[100px] text-center font-medium`}
-                          onClick={() => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, preferredFormat: format } })}
+                          className={`border ${formData.campaignDetails.preferredFormat.indexOf(format) !== -1 ?  "border-[#F11F68]" : "border-[#D0D5DD]" }   py-[4px] px-[16px] rounded-[4px] h-[32px] text-[#262626] text-[14px] min-w-[100px] text-center font-medium`}
+                          onClick={() => setformData({ ...formData, campaignDetails: { ...formData.campaignDetails, preferredFormat: formData.campaignDetails.preferredFormat.indexOf(format) !== -1 ? formData.campaignDetails.preferredFormat.filter((f: string) => f !== format) : [...formData.campaignDetails.preferredFormat, format] } })}
                         >
                           {format}
                         </span>
@@ -704,7 +704,7 @@ export default function ShareBrief() {
               <div className="w-full flex flex-col items-start justify-start gap-[16px]">
                 <div className="w-full flex flex-col items-start justify-start gap-[6px]">
                   <h4 className="text-[#344054] text-[16px] leading-[32px] font-bold tracking-[-0.02em]">
-                    Full Name
+                    Full Name <sup className="text-[#F11F68]">*</sup>
                   </h4>
                   <input
                     type="text"
@@ -718,7 +718,7 @@ export default function ShareBrief() {
 
                 <div className="w-full flex flex-col items-start justify-start gap-[6px]">
                   <h4 className="text-[#344054] text-[16px] leading-[32px] font-bold tracking-[-0.02em]">
-                    Business / Show Name
+                    Business Name <sup className="text-[#F11F68]">*</sup>
                   </h4>
                   <input
                     type="text"
@@ -732,7 +732,7 @@ export default function ShareBrief() {
 
                 <div className="w-full flex flex-col items-start justify-start gap-[6px]">
                   <h4 className="text-[#344054] text-[16px] leading-[32px] font-bold tracking-[-0.02em]">
-                    Email
+                    Business Email <sup className="text-[#F11F68]">*</sup>
                   </h4>
                   <input
                     type="email"
@@ -749,12 +749,12 @@ export default function ShareBrief() {
                     Phone number
                   </h4>
                   <div className="w-full flex flex-row items-start justify-start gap-[12px] rounded-[4px] border-[#D0D5DD] border-1">
-                    <div className="py-[4px] pl-[12px] h-[36px]">
+                    <div className="py-[4px] pl-[12px] h-[36px] text-[#344054]">
                       <ReactFlagsSelect
                         selected={selected}
                         onSelect={(code) => setSelected(code)}
-                        showSelectedLabel={false}
-                        showSecondarySelectedLabel={false}
+                        showSelectedLabel={true}
+                        showSecondarySelectedLabel={true}
                         showOptionLabel={true}
                         className="flag-select"
                         selectButtonClassName="!bg-transparent !border-0 !p-0 hover:opacity-80"
