@@ -13,7 +13,7 @@ export default function PodcastCaseStudy({
 }: PodcastCaseStudyProps) {
   const router = useRouter();
   return (
-    <section className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 md:py-[80px] px-4 md:px-[96px] gap-8 md:gap-[64px]">
+    <section className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-none lg:rounded-xl py-8 py-[84px] md:py-[80px] px-4 md:px-[96px] gap-[46px] md:gap-[64px]">
       <div className="max-w-[1440px] w-full flex flex-col lg:flex-row justify-between items-start lg:items-center gap-[32px] md:gap-[24px]">
         <div className="lg:max-w-[70%]">
           <h1 className="gradient-text font-semibold text-[34px] leading-[42px] md:text-3xl lg:text-[32px] xl:text-[42px] leading-tight md:leading-[50px]">

@@ -158,7 +158,7 @@ export default function Metric() {
       <div className="w-full flex flex-col items-start justify-center gap-[16px] lg:gap-[24px] px-[16px] lg:px-[80px]">
         <div className="w-full flex flex-col lg:flex-row items-start justify-center gap-[20px] max-w-[1280px]">
           <div className="w-full flex flex-col items-start justify-center gap-[16px]">
-            <h1 className="font-bold gradient-text text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
+            <h1 className="font-semibold gradient-text text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] tracking-[-0.02em]">
               See How Audio Advertising <br />
               Measures Up
             </h1>
@@ -211,14 +211,14 @@ export default function Metric() {
           </div>
         </div>
         {metricsPlatforms.map((metricPlatform, ind) => (
-          <div key={ind} className={`w-full relative flex flex-col items-start justify-center pb-[64px] lg:pb-0`}>
+          <div key={ind} className={`w-full relative flex flex-col items-start justify-center pb-0 lg:pb-[64px] lg:pb-0`}>
             {
               hovereredMetricIndex === ind && (
                 <div className="hidden lg:block absolute top-[-24px] bottom-[-48px] left-0 w-full border-[2px] border-[#F11F68] rounded-[16px] z-20"></div>
               )
             }
             <div className="border-b border-[#E8E8E8] bg-[#F8F9FA] flex gap-[8px] px-[24px] pb-[16px] w-full">
-              <h1 className="text-[#262626] text-[20px] leading-[30px] font-bold w-full text-start lg:text-center">
+              <h1 className="text-[#262626] text-[20px] leading-[30px] font-semibold lg:font-bold w-full text-start lg:text-center">
                 {metricPlatform.title}
               </h1>
             </div>
@@ -229,9 +229,9 @@ export default function Metric() {
                   index % 2 === 0 ? "#F8F9FA" : "#FFFEFF"
                 }] px-[24px] gap-[12px] h-[64px] w-full flex items-center justify-start`}
               >
-                <h1 className="font-semibold text-[#262626] text-[14px] leading-[22px] tracking-[0em] flex flex-row justify-between lg:justify-center w-full">
+                <h1 className="font-medium lg:font-semibold text-[#262626] text-[14px] leading-[22px] tracking-[0em] flex flex-row justify-between lg:justify-center w-full">
                     <span className="block lg:hidden">{metric.name}</span>
-                    <span>
+                    <span className="font-normal">
                     {metric.value}
                     </span>
                 </h1>

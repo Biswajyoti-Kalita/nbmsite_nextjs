@@ -6,7 +6,7 @@ const baseLinkClasses =
 export default function Footer() {
   return (
     <footer className="bg-white w-full">
-      <div className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 md:py-[64px] bg-[#FFFEFF]">
+      <div className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 pt-[64px] md:py-[64px] bg-[#FFFEFF]">
         <div className="grid grid-cols-2 lg:grid-cols-6 justify-between gap-8 md:gap-[54px] w-full">
           <div className="flex col-span-2 flex-col items-start justify-start min-w-[250px] md:min-w-[280px]">
             <Image

@@ -86,9 +86,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
               }
               </Link>
 
-              {
-                !isMobileScreen  &&
-                  <div
+                <div
                   className="hidden lg:flex flex-row w-full items-center gap-[24px] h-[64px] text-base leading-[24px] font-semibold"
                   style={{ color: linkColor }}
                 >
@@ -103,17 +101,16 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                   >
                   <a href="/about-us" className="hover:underline transition-all" style={{ color: linkColor }}>About Us</a>
                 </div>   
-              }
 
 
-              <div className="flex items-center space-x-2 md:space-x-4 lg:space-x-3">
+              <div className="flex tems-center space-x-2 md:space-x-4 lg:space-x-3">
 
-                {isMobileScreen ? (  
+            
                   <button
                     id="toggleBtn"
                     type="button"
                     onClick={() => setisMobileScreenMenuOpen(!isMobileScreenMenuOpen)}
-                    className="block lg:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    className="block lg:hidden m-0 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                   >
                     <span className="sr-only">Open main menu</span>
                     {
@@ -136,20 +133,16 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                       )
                     }
                   </button>
-                ):
-                (
                   <div className="hidden lg:flex flex-row gap-[12px] h-[64px] items-center">
                   <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Request a Proposal" className="h-[48px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showShareBriefModal} />
                   <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[48px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showCallMeBackModal} />
                 </div>
-                )
-                }
               </div>
             </div>
 
             {
-              isMobileScreen && isMobileScreenMenuOpen &&
-              <div className={`max-w-[1440px] mx-auto ${bgColorOnOpen} h-screen px-4 py-2`}>
+              isMobileScreenMenuOpen &&
+              <div className={`max-w-[1440px] block lg:hidden mx-auto ${bgColorOnOpen} h-screen px-4 py-2`}>
                 <div id="mobile-menu" className="lg:hidden px-4 py-2">
                   <ul className="flex flex-col gap-[20px]  my-[40px]">
                     <li>

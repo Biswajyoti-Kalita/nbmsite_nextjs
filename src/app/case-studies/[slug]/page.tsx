@@ -92,7 +92,7 @@ export default async function CaseStudyPage({
           <div className="w-full flex flex-col items-start justify-start gap-4 max-h-[530px] px-0">
           <Breadcrumb 
               pages={[
-                { name: "Why Audio", link: "/why_audio" }, 
+                { name: "Why Audio", link: "/why-audio" }, 
                 { name: "Case Study Library", link: "/case-study-library" },
                 { name: data.name, link: slug }
               ]}

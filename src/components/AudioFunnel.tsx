@@ -37,7 +37,7 @@ export default function AudioFunnel() {
 
   return (
     <section className="pt-[84px] lg:pt-[96px] pb-[48px] px-[16px] lg:px-[80px] flex flex-col items-start justify-start gap-[46px] lg:gap-[64px] bg-[#FFFEFF]">
-      <h1 className="font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
+      <h1 className="font-semibold lg:font-bold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text tracking-[-0.02em]">
         Audio That Delivers Across the Funnel
       </h1>
       <div className="w-full flex flex-col items-start justify-center gap-[40px] border-[0px] lg:border-[1px] border-[#D2D2D2] rounded-[16px] p-[0px] lg:p-[40px] bg-[#FFFEFF]">

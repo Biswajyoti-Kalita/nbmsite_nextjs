@@ -54,7 +54,7 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
                 {caseStudy.right_subtitle}
               </h2>
               <div className="flex flex-col md:flex-row items-start md:items-center justify-start gap-[11px]">
-                <span className="text-[#344054] text-[14px] leading-[16px] md:leading-[22px] font-normal">
+                <span className="text-[#344054] text-[14px] leading-[16px] md:leading-[22px] font-normal py-[8px]">
                   {caseStudy.right_point_1}
                 </span>
                 <span className="hidden md:block">
