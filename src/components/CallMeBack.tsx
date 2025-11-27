@@ -61,7 +61,10 @@ export default function CallMeBack() {
     };
   }, [isOpen]);
 
-  const handleRequest = async () => {
+  const handleRequest = async (e?: React.FormEvent) => {
+    if (e) {
+      e.preventDefault();
+    }
     // Basic validation
     if (!formData.fullName || !formData.email) {
       alert("Please fill in all required fields (Full Name and Email)");
@@ -187,7 +190,7 @@ export default function CallMeBack() {
                   Request a call back
                 </h2>
                 <div className="w-full flex flex-col items-start justify-start gap-[32px] pb-[40px] h-full">
-                  <form onSubmit={handleRequest} className="w-full h-full flex flex-col items-start justify-start gap-[32px]">
+                  <form onSubmit={(e) => handleRequest(e)} className="w-full h-full flex flex-col items-start justify-start gap-[32px]">
                     <div className="w-full flex flex-col items-start justify-start gap-[10px]">
                       <div className="w-full flex flex-col items-start justify-start gap-[6px]">
                         <h4 className="text-[#344054] text-[16px] leading-[32px] font-bold">
