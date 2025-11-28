@@ -1,0 +1,312 @@
+"use client";
+
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import GradientButton from "./GradientButton";
+import { useRouter } from "next/navigation";
+
+interface Analytics {
+  title: string;
+  subtitle: string;
+}
+
+interface FeatureProjectCardProps {
+  id: string;
+  left_title: string;
+  left_image: string;
+  right_title: string;
+  right_subtitle: string;
+  right_point_1: string;
+  right_point_2: string;
+  analytics: Analytics[];
+}
+
+const FeatureProjectCard = (FeatureProject: FeatureProjectCardProps) => {
+  const router = useRouter();
+  return (
+    <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:h-[300px] border-1 border-[#E8E8E8] flex  flex-col md:flex-row items-start justify-start">
+      <div className="flex flex-col items-start p-[24px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl w-full lg:min-w-[300px]">
+        <h1 className="border-[#344054] border-1 rounded-[24px] text-[14px] leading-[22px] text-[#344054] h-[24px] px-[8px]">
+          {FeatureProject.left_title}
+        </h1>
+        <div className="flex flex-row items-center justify-center gap-[16px] w-full">
+          <Image
+            src={FeatureProject.left_image}
+            alt="bel"
+            className="w-[180px] h-[150px] object-contain"
+            width={180}
+            height={150}
+          />
+        </div>
+      </div>
+      <div className="flex flex-col p-[24px] items-start justify-between lg:justify-start gap-[9px] min-h-[376px] lg:min-w-[430px]">
+        <div className="flex flex-col items-start justify-start gap-[19px] w-full">
+          <div className="flex flex-col items-start justify-start gap-[16px] w-full">
+            <div className="bg-[#ABEFC6] py-[4px] px-[10px] rounded-3xl p-8">
+              <span className="text-[#091A3A] text-[14px] leading-[22px] font-normal">
+                {FeatureProject.right_title}
+              </span>
+            </div>
+            <div>
+              <h2 className="text-[#262626] font-semibold text-[22px] leading-[30px] md:text-[26px] md:leading-[34px]">
+                {FeatureProject.right_subtitle}
+              </h2>
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-start gap-[11px]">
+                <span className="text-[#344054] text-[14px] leading-[16px] md:leading-[22px] font-normal py-[8px]">
+                  {FeatureProject.right_point_1}
+                </span>
+                <span className="hidden md:block">
+                  <svg
+                    width="4"
+                    height="4"
+                    viewBox="0 0 4 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="2" cy="2" r="2" fill="#344054" />
+                  </svg>
+                </span>
+                <span className="text-[#344054] text-[14px] leading-[16px] md:leading-[22px] font-normal text-nowrap">
+                  {FeatureProject.right_point_2}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className=" border-[#E8E8E8] border-t-1 p-4 pl-0 w-full">
+            <div className="flex flex-row items-center justify-start gap-[11px] w-full">
+              {FeatureProject.analytics.map(
+                (analytics: Analytics, index: number) => (
+                  <div key={index} className="w-[130px]">
+                    <h4 className="font-medium text-[20px] leading-[26px] text-[#262626] flex items-center justify-start gap-[4px]">
+                      {analytics.title}
+                      <svg
+                        width="14"
+                        height="13"
+                        viewBox="0 0 14 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 12.2923H3.26667C5.50688 12.2923 6.62698 12.2923 7.48263 11.8563C8.23528 11.4728 8.8472 10.8609 9.23069 10.1082C9.66667 9.25259 9.66667 8.13249 9.66667 5.89228L9.66667 1.62561M9.66667 1.62561L6.33333 4.95894M9.66667 1.62561L13 4.95894"
+                          stroke="#0FB89F"
+                          strokeWidth="1.33333"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </h4>
+                    <h6 className="font-normal text-[12px] leading-[20px] text-[#344054]">
+                      {analytics.subtitle}
+                    </h6>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+        </div>
+        <GradientButton
+          text="View Case Study"
+          type="secondary"
+          className="w-[191px]"
+          textClassName="text-[16px] leading-[24px] font-bold"
+          rightIcon={
+            <svg
+              width="14"
+              height="15"
+              viewBox="0 0 14 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 13.959L13 1.95898M13 1.95898H5M13 1.95898V9.95898"
+                stroke="url(#paint0_linear_1858_6122)"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_1858_6122"
+                  x1="1"
+                  y1="7.95898"
+                  x2="13"
+                  y2="7.95898"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#F11F68" />
+                  <stop offset="1" stopColor="#162ABF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          }
+          onClick={() => {
+            router.push(`/case-studies/${FeatureProject.id}`);
+          }}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default function FeaturedProjects() {
+  const [splideWidth, setSplideWidth] = useState(100);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      const featureProjects = document.getElementById("featureProjects");
+      if (featureProjects) {
+        setSplideWidth(featureProjects.clientWidth);
+      }
+    };
+
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      const home = document.getElementById("home");
+      if (home) {
+        setSplideWidth(home.clientWidth);
+      }
+    };
+
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
+  const featureProjects = [
+    {
+      id: "bel",
+      left_title: "FMCG",
+      left_image: "/assets/images/bel.png",
+      right_title: "Targeting mothers of young children",
+      right_subtitle: "BEL Group",
+      right_point_1: "Awareness",
+      right_point_2: "Full-service managed campaign",
+      analytics: [
+        {
+          title: "+30%",
+          subtitle: "Interest Rate",
+        },
+        {
+          title: "95%",
+          subtitle: "Listen Through Rate",
+        },
+      ],
+    },
+    {
+      id:"valentino",
+      left_title: "Luxury",
+      left_image: "/assets/images/valentino.png",
+      right_title: "Targeting HNWI females",
+      right_subtitle: "Valentino",
+      right_point_1: "Awareness",
+      right_point_2: "Full-service managed campaign",
+      analytics: [
+        {
+          title: "+34%",
+          subtitle: "Purchase intention",
+        },
+        {
+          title: "+16%",
+          subtitle: "Brand affection",
+        },
+        {
+          title: "96%",
+          subtitle: "Listen through rate",
+        },
+      ],
+    },
+    {
+      id:"centrum",
+      left_title: "CPG",
+      left_image: "/assets/images/centrum.png",
+      right_title: "Top 15% in attribution",
+      right_subtitle: "Centrum",
+      right_point_1: "Consideration",
+      right_point_2: "Full-service managed campaign",
+      analytics: [
+        {
+          title: "+34%",
+          subtitle: "Purchase intention",
+        },
+        {
+          title: "+24%",
+          subtitle: "Interest Rate",
+        },
+        {
+          title: "+28%",
+          subtitle: "Brand Image",
+        },
+      ],
+    },
+    {
+      id:"accor-hotels",
+      left_title: "Travel & Tourism",
+      left_image: "/assets/images/accor.png",
+      right_title: "Frequent traveller interest targeting",
+      right_subtitle: "Accor Hotels",
+      right_point_1: "Interest",
+      right_point_2: "Produced by AI Studio",
+      analytics: [
+        {
+          title: "96%",
+          subtitle: "Listen through rate",
+        },
+        {
+          title: "+34%",
+          subtitle: "Purchase intention",
+        },
+      ],
+    },
+    {
+      id:"p-and-o",
+      left_title: "Travel & Tourism",
+      left_image: "/assets/images/p-and-o.png",
+      right_title: "Frequent traveller interest targeting",
+      right_subtitle: "P&O Ferries",
+      right_point_1: "Consideration",
+      right_point_2: "DCO",
+      analytics: [
+        {
+          title: "+45%",
+          subtitle: "Consideration",
+        },
+        {
+          title: "96%",
+          subtitle: "Listen through rate",
+        },
+      ],
+    },
+  ];
+
+  const splideOptions3 = {
+    type: "slide" as const,
+    drag: "free" as const,
+    gap: 20,
+    width: splideWidth,
+    autoWidth: true,
+    autoScroll: false,
+    pagination: true,
+    arrows: false,
+    
+  };
+
+  return (
+    <div className="w-full overflow-visible relative" id="featureProjects">
+      <Splide options={splideOptions3} extensions={{ AutoScroll }}>
+        {featureProjects.map((FeatureProject, index) => (
+          <SplideSlide key={index}>
+            <FeatureProjectCard {...FeatureProject} />
+          </SplideSlide>
+        ))}
+      </Splide>
+      <div className="hidden md:block absolute w-[50px] md:w-[120px] h-full top-0 right-[0px] z-5 rounded-lg p-4 bg-gradient-to-l from-white to-transparent"></div>
+    </div>
+  );
+}

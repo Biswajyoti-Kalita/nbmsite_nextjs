@@ -23,13 +23,13 @@ export default function AboutUs() {
       <div className="bg-[#F11F68] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
       {/* <AboutUsBanner /> */}
       <PageBanner       
-      breadcrumb={{ name: "About Us", link: "/about-us" }}
+      breadcrumb={[{ name: "About Us", link: "/about-us" }]}
       headline=""
       title="The Global Partner for Podcast & Digital Audio Advertising"
       description="Next Audio connects advertisers with premium podcasts and
                 digital audio audiences — while helping creators and publishers
                 grow revenue."
-      image="/assets/images/about_headerBanner_right.png"
+      image="/assets/images/about us.png"
       buttons={[ {text: "Request a Proposal", type: "secondary", showBriefModal: true, classNames: "w-[184px]"}, { text: "Request a Call Back", type: "tertiary", showCallMeBackModal: true, classNames: "w-[231px]" }]}
       />
       </div>

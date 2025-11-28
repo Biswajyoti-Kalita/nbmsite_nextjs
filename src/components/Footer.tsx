@@ -46,6 +46,12 @@ export default function Footer() {
             <Link href="https://admanager.fm" target="_blank" className={baseLinkClasses}>
               Admanager
             </Link>
+            <Link href="/diaspora" target="_blank" className={baseLinkClasses}>
+            Diaspora
+            </Link>
+            <Link href="/production" target="_blank" className={baseLinkClasses}>
+              Production
+            </Link>
             </div>
           </div>
 

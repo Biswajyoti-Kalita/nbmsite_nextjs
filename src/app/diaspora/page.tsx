@@ -11,7 +11,7 @@ import PopularChannels from "@/components/PopularChannels";
 import QACollapseableContainer from "@/components/QACollapseableContainer";
 import Image from "next/image";
 
-export default function Dispora() {
+export default function Diaspora() {
   return (
     <div className="min-h-screen h-full flex flex-col items-center justify-center bg-white">
       <Navbar

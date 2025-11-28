@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Metric from "@/components/Metric";
 import Navbar from "@/components/Navbar";
+import PageBanner from "@/components/PageBanner";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,37 +21,19 @@ export default function WhyAudio() {
       />
 
       <div className="bg-[#162ABF] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
-        <section
-          className="w-full p-4 pr-0 pb-[0px] mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] lg:pb-0 grid grid-cols-1 md:grid-cols-2 gap-[80px] items-start justify-start relative lg:max-w-[1440px]"
-          id="home"
-        >
-          <div className="w-full flex flex-col items-start justify-start gap-4 h-auto lg:h-[430px] px-4 lg:px-0">
-            <Breadcrumb pages={[{ name: "Why Audio", link: "/why-audio" }]} />
 
-            <div className="flex flex-col gap-[32px] items-start justify-start">
-              <div className="flex flex-col items-start justify-start gap-[24px]">
-                <h1 className="font-semibold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">
-                  Why Podcast Advertising Works
-                </h1>
-              </div>
-              <h2 className="font-medium lg:font-semibold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[28px] text-[#FFFEFF] tracking-[0em]">
-                You’re sitting on one of the most powerful, underused tools in
+
+        <PageBanner
+          breadcrumb={[{ name:  "Why Audio", link: "/why-audio" }]}
+          headline=""
+          title="Why Podcast Advertising Works"
+          description="You’re sitting on one of the most powerful, underused tools in
                 modern media. Audio delivers measurable results across the full
-                funnel.
-              </h2>
-            </div>
-          </div>
+                funnel."
+          image="/assets/images/why audio.png"
+          buttons={[]}
+        />
 
-          <div className=" relative  lg:absolute right-0 top-0 bottom-0 max-w-[600px]">
-            <Image
-              src="/assets/images/why_audio_bg.png"
-              alt="podcasters-image"
-              className="w-full h-full max-w-[600px] max-h-[600px] object-contain"
-              width={500}
-              height={500}
-            />
-          </div>
-        </section>
       </div>
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[1440px]">

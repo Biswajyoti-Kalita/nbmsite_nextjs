@@ -29,12 +29,12 @@ export default function Advertisers() {
       <div className="bg-[#B11E86] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
         {/* <AdvertiserBanner /> */}
         <PageBanner
-          breadcrumb={{ name: "For Advertisers", link: "/advertisers" }}
+          breadcrumb={[{ name: "For Advertisers", link: "/advertisers" }]}
           headline="For Brands & Media Agencies"
           title="High-Impact Audio Ads. Made Easy for Busy Teams"
           description="Global high-performance podcast and digital audio campaigns,
               delivered quickly, efficiently, and tailored to your goals."
-          image="/assets/images/advertisers-right-banner-bg.png"
+          image="/assets/images/advertiser.png"
           buttons={[ {text: "Launch Your Own Campaign", type: "secondary", link: "https://admanager.fm"}, { text: "Request a Proposal", type: "tertiary", showCallMeBackModal: true }]}
         />
 

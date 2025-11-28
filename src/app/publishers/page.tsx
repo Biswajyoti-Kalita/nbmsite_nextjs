@@ -26,7 +26,7 @@ export default function Publishers() {
       <div className="bg-[#6C1DA7] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
         {/* <PublisherBanner /> */}
         <PageBanner
-          breadcrumb={{ name: "For Publishers", link: "/publishers" }}
+          breadcrumb={[{ name: "For Publishers", link: "/publishers" }]}
           headline="For Publishers, networks and production houses"
           title="Monetize Your Catalogue with Global Brand Demand"
           description="Connect your shows to premium advertisers across 90+ markets and hundreds of active campaigns."

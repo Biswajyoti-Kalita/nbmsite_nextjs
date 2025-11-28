@@ -22,12 +22,12 @@ export default function Podcaster() {
       <div className="bg-[#511DB5] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
         <PageBanner
         
-        breadcrumb={{ name: "For Podcasters", link: "/podcasters" }}
+        breadcrumb={[{ name: "For Podcasters", link: "/podcasters" }]}
         headline="For Podcasters & Creators"
         title="Monetize Your Podcast Without Working Harder"
         description="Where podcasts of any language meet premium advertisers from
         around the world."
-        image="/assets/images/podcasters-right-banner-bg.png"
+        image="/assets/images/podcaster.png"
         buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Podcaster Pack", type: "tertiary", link: "#" }]}
         />
       </div>

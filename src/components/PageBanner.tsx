@@ -6,7 +6,7 @@ import { openCallMeBackModal, openShareBriefModal } from "@/util/modalEvents";
 import Link from "next/link";
 
 interface PageBannerProps {
-    breadcrumb: { name: string; link: string };
+    breadcrumb: { name: string; link: string }[];
     headline: string;
     title: string;
     description: string;
@@ -28,7 +28,7 @@ export default function PageBanner({ breadcrumb, headline, title, description, i
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
-            <Breadcrumb pages={[breadcrumb]} />
+            <Breadcrumb pages={breadcrumb} />
 
             <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF]"> 
               {headline}
