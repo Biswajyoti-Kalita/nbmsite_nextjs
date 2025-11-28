@@ -4,6 +4,7 @@
 import { useState } from "react";
 import GradientButton from "./GradientButton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function KnowledgeHubLib() {
   const [selectedType, setSelectedType] = useState("View All");
@@ -143,6 +144,7 @@ export default function KnowledgeHubLib() {
                         </h2>                        
                       </div>
                     </div>
+                    <Link href="/assets/files/NEW! mics to screen - Next Audio.pdf" target="_blank">
                     <GradientButton
                       text="Download"
                       type="secondary"
@@ -180,6 +182,7 @@ export default function KnowledgeHubLib() {
                         </svg>
                       }
                     />
+                    </Link>
                   </div>
                 </div>
 
@@ -275,6 +278,7 @@ export default function KnowledgeHubLib() {
                         </h2>                        
                       </div>
                     </div>
+                    <Link href="https://www.youtube.com/watch?v=bv1w2R1vBBM&t=4s" target="_blank">
                     <GradientButton
                       text="Download"
                       type="secondary"
@@ -312,6 +316,7 @@ export default function KnowledgeHubLib() {
                         </svg>
                       }
                     />
+                    </Link>
                   </div>
                 </div>
 
@@ -378,43 +383,45 @@ export default function KnowledgeHubLib() {
                         </h2>                        
                       </div>
                     </div>
-                    <GradientButton
-                      text="Download"
-                      type="secondary"
-                      className="w-[142px]"
-                      textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
-                      onClick={() => {}}
-                      rightIcon={
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M8 1V15M8 15L15 8M8 15L1 8"
-                            stroke="url(#paint0_linear_4394_20117)"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <defs>
-                            <linearGradient
-                              id="paint0_linear_4394_20117"
-                              x1="1"
-                              y1="8"
-                              x2="15"
-                              y2="8"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop stopColor="#F11F68" />
-                              <stop offset="1" stopColor="#162ABF" />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      }
-                    />
+                    <Link href="/assets/files/Next Audio Anatomy of an effective podcast ad.pdf" target="_blank">
+                      <GradientButton
+                        text="Download"
+                        type="secondary"
+                        className="w-[142px]"
+                        textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
+                        onClick={() => {}}
+                        rightIcon={
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 1V15M8 15L15 8M8 15L1 8"
+                              stroke="url(#paint0_linear_4394_20117)"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <defs>
+                              <linearGradient
+                                id="paint0_linear_4394_20117"
+                                x1="1"
+                                y1="8"
+                                x2="15"
+                                y2="8"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stopColor="#F11F68" />
+                                <stop offset="1" stopColor="#162ABF" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        }
+                      />
+                    </Link>
                   </div>
                 
                 
@@ -493,6 +500,7 @@ export default function KnowledgeHubLib() {
                         </h2>                        
                       </div>
                     </div>
+                    <Link href="/assets/files/Next Audio Why Podcasts belong on media plans .pdf" target="_blank">
                     <GradientButton
                       text="Download"
                       type="secondary"
@@ -530,6 +538,7 @@ export default function KnowledgeHubLib() {
                         </svg>
                       }
                     />
+                    </Link>
                   </div>
                 </div>
 
@@ -598,43 +607,45 @@ export default function KnowledgeHubLib() {
                         </h2>                        
                       </div>
                     </div>
-                    <GradientButton
-                      text="Download"
-                      type="secondary"
-                      className="w-[142px]"
-                      textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
-                      onClick={() => {}}
-                      rightIcon={
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M8 1V15M8 15L15 8M8 15L1 8"
-                            stroke="url(#paint0_linear_4394_20117)"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <defs>
-                            <linearGradient
-                              id="paint0_linear_4394_20117"
-                              x1="1"
-                              y1="8"
-                              x2="15"
-                              y2="8"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop stopColor="#F11F68" />
-                              <stop offset="1" stopColor="#162ABF" />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      }
-                    />
+                    <Link href="/assets/files/Next Audio Audience profile targeting.pdf" target="_blank">
+                      <GradientButton
+                        text="Download"
+                        type="secondary"
+                        className="w-[142px]"
+                        textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
+                        onClick={() => {}}
+                        rightIcon={
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 1V15M8 15L15 8M8 15L1 8"
+                              stroke="url(#paint0_linear_4394_20117)"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <defs>
+                              <linearGradient
+                                id="paint0_linear_4394_20117"
+                                x1="1"
+                                y1="8"
+                                x2="15"
+                                y2="8"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stopColor="#F11F68" />
+                                <stop offset="1" stopColor="#162ABF" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        }
+                      />
+                    </Link>
                   </div>
                 </div>
     
@@ -709,43 +720,45 @@ export default function KnowledgeHubLib() {
                         </h2>                        
                       </div>
                     </div>
-                    <GradientButton
-                      text="Download"
-                      type="secondary"
-                      className="w-[142px]"
-                      textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
-                      onClick={() => {}}
-                      rightIcon={
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M8 1V15M8 15L15 8M8 15L1 8"
-                            stroke="url(#paint0_linear_4394_20117)"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <defs>
-                            <linearGradient
-                              id="paint0_linear_4394_20117"
-                              x1="1"
-                              y1="8"
-                              x2="15"
-                              y2="8"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop stopColor="#F11F68" />
-                              <stop offset="1" stopColor="#162ABF" />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      }
-                    />
+                    <Link href="/assets/files/2025 - Q4 Media planners guide (1).pdf" target="_blank">
+                      <GradientButton
+                        text="Download"
+                        type="secondary"
+                        className="w-[142px]"
+                        textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
+                        onClick={() => {}}
+                        rightIcon={
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 1V15M8 15L15 8M8 15L1 8"
+                              stroke="url(#paint0_linear_4394_20117)"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <defs>
+                              <linearGradient
+                                id="paint0_linear_4394_20117"
+                                x1="1"
+                                y1="8"
+                                x2="15"
+                                y2="8"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stopColor="#F11F68" />
+                                <stop offset="1" stopColor="#162ABF" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        }
+                      />
+                    </Link>
                   </div>
                 </div>
 
@@ -807,43 +820,45 @@ export default function KnowledgeHubLib() {
                         </h2>                        
                       </div>
                     </div>
-                    <GradientButton
-                      text="Download"
-                      type="secondary"
-                      className="w-[142px]"
-                      textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
-                      onClick={() => {}}
-                      rightIcon={
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M8 1V15M8 15L15 8M8 15L1 8"
-                            stroke="url(#paint0_linear_4394_20117)"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <defs>
-                            <linearGradient
-                              id="paint0_linear_4394_20117"
-                              x1="1"
-                              y1="8"
-                              x2="15"
-                              y2="8"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop stopColor="#F11F68" />
-                              <stop offset="1" stopColor="#162ABF" />
-                            </linearGradient>
-                          </defs>
-                        </svg>
-                      }
-                    />
+                    <Link href="/assets/files/Introduction to Digital Audio Advertising .pdf" target="_blank">
+                      <GradientButton
+                        text="Download"
+                        type="secondary"
+                        className="w-[142px]"
+                        textClassName="text-[16px] leading-[24px] tracking-[0em] text-[#344054]"
+                        onClick={() => {}}
+                        rightIcon={
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 1V15M8 15L15 8M8 15L1 8"
+                              stroke="url(#paint0_linear_4394_20117)"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <defs>
+                              <linearGradient
+                                id="paint0_linear_4394_20117"
+                                x1="1"
+                                y1="8"
+                                x2="15"
+                                y2="8"
+                                gradientUnits="userSpaceOnUse"
+                              >
+                                <stop stopColor="#F11F68" />
+                                <stop offset="1" stopColor="#162ABF" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        }
+                      />
+                    </Link>
                   </div>
                 </div>
 

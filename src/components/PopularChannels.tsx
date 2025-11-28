@@ -12,7 +12,7 @@ export default function PopularChannels() {
     ? [
         [
           "/assets/images/brands/times.png",
-          "/assets/images/brands/anghami.png",
+          "/assets/images/brands/goalhanger.png",
           "/assets/images/brands/syok.png",
           "/assets/images/brands/talk-sports.png",
           "/assets/images/brands/barstool.png",
@@ -34,7 +34,7 @@ export default function PopularChannels() {
           "/assets/images/brands/joox.png",
           "/assets/images/brands/ft.png",
           "/assets/images/brands/podbean.png",
-          "/assets/images/brands/wondery.png",
+          "/assets/images/brands/last_podcast_network.png",
           "/assets/images/brands/right-podcast.png",
           "/assets/images/brands/iheart.png",
           "/assets/images/brands/spreaker.png",
@@ -52,7 +52,7 @@ export default function PopularChannels() {
     : [
         [
           "/assets/images/brands/times.png",
-          "/assets/images/brands/anghami.png",
+          "/assets/images/brands/goalhanger.png",
           "/assets/images/brands/syok.png",
           "/assets/images/brands/talk-sports.png",
           "/assets/images/brands/barstool.png",
@@ -84,7 +84,7 @@ export default function PopularChannels() {
           "/assets/images/brands/joox.png",
           "/assets/images/brands/ft.png",
           "/assets/images/brands/podbean.png",
-          "/assets/images/brands/wondery.png",
+          "/assets/images/brands/last_podcast_network.png",
           "/assets/images/brands/right-podcast.png",
           "/assets/images/brands/iheart.png",
           "/assets/images/brands/spreaker.png",

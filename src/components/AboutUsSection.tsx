@@ -54,7 +54,7 @@ export default function AboutUsSection() {
             />
 
             <AboutUsImageCard
-              title="35,000+"
+              title="55,000+"
               description="Podcasts in the network"
               image="/assets/images/about_us_card_4.jpg"
             />

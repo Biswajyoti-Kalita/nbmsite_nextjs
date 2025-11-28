@@ -118,7 +118,7 @@ export default function Home() {
 
           <AboutUsImageCard title="850+" description="Campaigns delivered" image="/assets/images/about_us_card_3.jpg" />
 
-          <AboutUsImageCard title="35,000+" description="Podcasts in the network" image="/assets/images/about_us_card_4.jpg" />
+          <AboutUsImageCard title="55,000+" description="Podcasts in the network" image="/assets/images/about_us_card_4.jpg" />
 
         </div>
       </section>
