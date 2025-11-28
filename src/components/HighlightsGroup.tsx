@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import GradientButton from "./GradientButton";
+import Link from "next/link";
 
 export default function HighlightsGroup() {
   const [splideWidth, setSplideWidth] = useState(100);
@@ -79,6 +80,7 @@ export default function HighlightsGroup() {
                 </span>
               </div>
             </div>
+            <Link href="/assets/files/2025 - Q4 Media planners guide (1).pdf" target="_blank">
             <GradientButton
               className="w-[142px]"
               text="Download"
@@ -115,6 +117,7 @@ export default function HighlightsGroup() {
                 </svg>
               }
             />
+            </Link>
           </div>
         </div>
       </SplideSlide>
@@ -189,6 +192,7 @@ export default function HighlightsGroup() {
                 </span>
               </div>
             </div>
+            <Link href="/assets/files/NEW! mics to screen - Next Audio.pdf" target="_blank">
             <GradientButton
               className="w-[142px]"
               text="Download"
@@ -225,6 +229,7 @@ export default function HighlightsGroup() {
                 </svg>
               }
             />
+            </Link>
           </div>
         </div>
       </SplideSlide>
@@ -287,6 +292,7 @@ export default function HighlightsGroup() {
                 </span>
               </div>
             </div>
+            <Link href="/assets/files/Next Audio Audience profile targeting.pdf" target="_blank">
             <GradientButton
               className="w-[142px]"
               text="Download"
@@ -323,6 +329,7 @@ export default function HighlightsGroup() {
                 </svg>
               }
             />
+            </Link>
           </div>
         </div>
       </SplideSlide>
