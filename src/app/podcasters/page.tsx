@@ -1,7 +1,5 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import BrandsScroller from "@/components/BrandsScroller";
-import Breadcrumb from "@/components/Breadcrumb";
-import FAQCard from "@/components/FAQCard";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";

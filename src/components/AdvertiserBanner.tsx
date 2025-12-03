@@ -7,7 +7,6 @@ import { openShareBriefModal } from "@/util/modalEvents";
 import Link from "next/link";
 
 export default function AdvertiserBanner() {
-    const router = useRouter();
     return (
         <section
         className="w-full mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] grid grid-cols-1 md:grid-cols-2 items-center justify-between relative lg:max-w-[1440px]"

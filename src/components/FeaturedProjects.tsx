@@ -4,7 +4,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import GradientButton from "./GradientButton";
 import { useRouter } from "next/navigation";
 
 interface FeatureProjectCardProps {

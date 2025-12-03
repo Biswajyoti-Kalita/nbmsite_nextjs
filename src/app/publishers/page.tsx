@@ -1,8 +1,5 @@
-import AboutUsImageCard from "@/components/AboutUsImageCard";
 import AboutUsSection from "@/components/AboutUsSection";
 import BrandsScroller from "@/components/BrandsScroller";
-import Breadcrumb from "@/components/Breadcrumb";
-import FAQCard from "@/components/FAQCard";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
@@ -10,10 +7,8 @@ import MonetizePodcastSection from "@/components/MonetizePodcastSection";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import PopularChannels from "@/components/PopularChannels";
-import PublisherBanner from "@/components/PublisherBanner";
 import PublisherRevenuSection from "@/components/PublisherRevenuSection";
 import TestimonialGroup from "@/components/TestimonialGroup";
-import Image from "next/image";
 
 export default function Publishers() {
   return (

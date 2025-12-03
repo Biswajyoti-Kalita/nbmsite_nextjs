@@ -5,7 +5,6 @@ import ReactFlagsSelect from "react-flags-select";
 import { useRef, useState, useEffect } from "react";
 import { MODAL_EVENTS, closeShareBriefModal } from "@/util/modalEvents";
 import DatePicker from "react-multi-date-picker";
-import type { DateObject } from "react-multi-date-picker";
 
 export default function ShareBrief() {
   const [selected, setSelected] = useState("US");

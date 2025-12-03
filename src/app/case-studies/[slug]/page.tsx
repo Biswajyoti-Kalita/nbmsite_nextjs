@@ -3,7 +3,6 @@ import CaseStudies from "@/components/CaseStudies";
 import CaseStudyTestimonialGroup from "@/components/CaseStudyTestimonialGoup";
 import DiscoverAudioSection from "@/components/DiscoverAudioSection";
 import Footer from "@/components/Footer";
-import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
 import Player from "@/components/Player";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";

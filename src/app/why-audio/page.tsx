@@ -1,6 +1,5 @@
 import ActionSidebar from "@/components/ActionSidebar";
 import AudioFunnel from "@/components/AudioFunnel";
-import Breadcrumb from "@/components/Breadcrumb";
 
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
