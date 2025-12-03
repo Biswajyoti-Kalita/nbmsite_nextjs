@@ -199,7 +199,7 @@ body {
       }
       
 
-#highlights .splide__pagination, #case-study-testimonial .splide__pagination,  #caseStudies .splide__pagination{
+#featureProjects .splide__pagination, #highlights .splide__pagination, #case-study-testimonial .splide__pagination,  #caseStudies .splide__pagination{
     bottom: -3rem;
   }
 

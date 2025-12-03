@@ -21,7 +21,7 @@ export default function KnowledgeHub() {
           title="Podcast Advertising Knowledge Hub"
           description="Guides, reports, articles, and more to help you grow with
                 digital audio advertising."
-          image="/assets/images/knowledge hub.png"
+          image="/assets/images/knowledge_hub.jpg"
           buttons={[]}
         />
       </div>

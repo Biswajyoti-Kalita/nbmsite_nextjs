@@ -27,8 +27,8 @@ export default function Podcaster() {
         title="Monetize Your Podcast Without Working Harder"
         description="Where podcasts of any language meet premium advertisers from
         around the world."
-        image="/assets/images/podcaster.png"
-        buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Podcaster Pack", type: "tertiary", link: "#" }]}
+        image="/assets/images/podcaster.jpg"
+        buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Podcaster Pack", type: "tertiary", link: "/assets/files/Podcaster Media Kit.pdf" }]}
         />
       </div>
       <div className="w-full flex flex-col items-center justify-center">

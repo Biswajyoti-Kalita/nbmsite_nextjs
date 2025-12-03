@@ -29,7 +29,7 @@ export default function AboutUs() {
       description="Next Audio connects advertisers with premium podcasts and
                 digital audio audiences — while helping creators and publishers
                 grow revenue."
-      image="/assets/images/about us.png"
+      image="/assets/images/about_us.jpg"
       buttons={[ {text: "Request a Proposal", type: "secondary", showBriefModal: true, classNames: "w-[184px]"}, { text: "Request a Call Back", type: "tertiary", showCallMeBackModal: true, classNames: "w-[231px]" }]}
       />
       </div>

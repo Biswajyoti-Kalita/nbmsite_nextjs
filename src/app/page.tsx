@@ -155,32 +155,26 @@ export default function Home() {
           data-aos="fade-up"
         >
           <div
-            className="flex  flex-row lg:flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
+            className="flex  flex-row lg:flex-col items-start justify-start gap-[10px] border-0 border-[#E8E8E8] rounded-[16px]  px-4 lg:px-0 w-full"
           >
-            <KnowledgeHubCard description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" image="/assets/images/card-bg.jpg" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
-
-            <KnowledgeHubCard  description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
-                        
-
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7401992989125873665?collapsed=1"  className="min-h-[450px] w-full"   allowfullscreen="" title="Embedded post"></iframe>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7399473677882490881?collapsed=1"  className="min-h-[600px] w-full"   frameBorder={0} allowFullScreen={true} title="Embedded post"></iframe>
           </div>
 
           <div
-            className="flex flex-row lg:flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
+            className="flex  flex-row lg:flex-col items-start justify-start gap-[10px] border-0 border-[#E8E8E8] rounded-[16px]  px-4 lg:px-0 w-full"
           >
-
-
-            <KnowledgeHubCard description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
-            <KnowledgeHubCard description="Digital harmony is achieved through simplicity. Complexity may impress, but simplicity captivates the user's heart❤️" image="/assets/images/card-bg.jpg" authorImage="/assets/images/person.png" author="Shekhar Verma" date="20h" />
-          
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7399289143987531777?collapsed=1"  className="min-h-[500px] w-full"   allowfullscreen="" title="Embedded post"></iframe>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7394402341740986369?collapsed=1"  className="min-h-[550px] w-full"   frameBorder={0} allowFullScreen={true} title="Embedded post"></iframe>
           </div>
-
           <div
-            className="flex flex-row lg:flex-col items-start justify-start gap-[20px] border-[0.74px] border-[#E8E8E8] rounded-[16px] w-[400px] px-4 lg:px-0"
+            className="flex  flex-row lg:flex-col items-start justify-start gap-[10px] border-0 border-[#E8E8E8] rounded-[16px]  px-4 lg:px-0 w-full"
           >
-            <KnowledgeHubCard2 title="Webinar" description="Podcast Advertising vs Social Media Marketing: Which Drives Better Engagement" image="/assets/images/card-bg-22.jpg" date="16 June 2025" />
-            <KnowledgeHubCard2 title="Webinar" description="Podcast Advertising vs Social Media Marketing: Which Drives Better Engagement" image="/assets/images/card-bg-22.jpg"  date="16 June 2025" />
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7393702711478759424?collapsed=1"  className="min-h-[500px] w-full"   allowfullscreen="" title="Embedded post"></iframe>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7391942740739121152?collapsed=1"  className="min-h-[500px] w-full"   frameBorder={0} allowFullScreen={true} title="Embedded post"></iframe>
           </div>
-        </div>
+
+s        </div>
       </section>
         
       <TestimonialGroup />

@@ -4,6 +4,7 @@ import GradientButton from "./GradientButton";
 import QACollapasable from "./QACollapasable";
 import { useState } from "react";
 import { openShareBriefModal } from "@/util/modalEvents";
+import Link from "next/link";
 interface QACollapseableContainerProps {
     data: {
         image: string;
@@ -51,8 +52,8 @@ export default function QACollapseableContainer({ data }: QACollapseableContaine
         }
       </div>
       <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[12px]">
-        <GradientButton text="Share a Brief" className="h-[44px] w-[200px]" onClick={openShareBriefModal} textClassName="text-[16px] leading-[24px] font-semibold" />
-        <GradientButton text="Download Media Kit" type="secondary" className="w-[180px]" textClassName="text-[16px] leading-[24px] font-semibold" />
+        <GradientButton text="Share a Brief" className=" w-[200px]" onClick={openShareBriefModal} textClassName="text-[16px] leading-[24px] font-semibold" />
+        <Link href="/assets/files/Advertiser Media Kit.pdf" target="_blank"><GradientButton text="Download Media Kit" type="secondary" className="w-[180px]" textClassName="text-[16px] leading-[24px] font-semibold" /></Link>
       </div>
     </div>
   </div>

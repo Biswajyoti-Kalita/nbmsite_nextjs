@@ -46,7 +46,7 @@ export default function DisporaBanner() {
 
           <div className=" relative  lg:absolute right-0 top-0 bottom-0 max-w-[700px]">
             <Image
-              src="/assets/images/dispora_bg.png"
+              src="/assets/images/dispora_bg.jpg"
               alt="podcasters-image"
               className="w-full h-full object-cover"
               width={500}

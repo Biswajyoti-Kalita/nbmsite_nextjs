@@ -31,7 +31,7 @@ export default function Publishers() {
           title="Monetize Your Catalogue with Global Brand Demand"
           description="Connect your shows to premium advertisers across 90+ markets and hundreds of active campaigns."
           image="/assets/images/publisher-right-bg.png"
-          buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Publisher Pack", type: "tertiary", link: "#" }]}
+          buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Publisher Pack", type: "tertiary", link: "/assets/files/Publisher Media Kit.pdf" }]}
         />
       </div>
       <div className="w-full bg-white flex flex-column flex-wrap md:flex-row gap-16 pt-[84px] lg:pt-24 px-[16px] lg:pr-20 pb-12 lg:pl-20">

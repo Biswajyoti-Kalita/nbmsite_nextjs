@@ -34,7 +34,7 @@ export default function Production() {
           headline="Podcast Production Services"
           title="Branded podcast and original show production"
           description="From concept to creation, we help businesses and individuals launch professional podcasts your customers want to listen to."
-          image="/assets/images/advertisers-right-banner-bg.png"
+          image="/assets/images/production.jpg"
           buttons={[ {text: "Book a Call", type: "secondary", showCallMeBackModal: true, classNames:"w-[184px]"}, { text: "Share a Brief", type: "tertiary", showBriefModal: true, classNames:"w-[184px]" }]}
         />
 
@@ -73,27 +73,27 @@ export default function Production() {
             </div>
             <QACollapseableContainer data={[
               {
-                image: "/assets/images/targeting.png",
+                image: "/assets/images/creative_development.jpg",
                 title: "Creative Development",
                 description: "We shape your podcast concept, format, and storyline to match your brand’s voice and goals."
               },
               {
-                image: "/assets/images/execution.jpg",
+                image: "/assets/images/end-to-end.jpg",
                 title: "End-to-End Production",
                 description: "From scripting to recording, editing, and sound design, we manage every detail in partnership with you."
               },
               {
-                image: "/assets/images/format.jpg",
+                image: "/assets/images/host-guest.jpg",
                 title: "Host & Guest Management",
                 description: "We help source, prep, and coordinate talent to bring authority and credibility to your show."
               },
               {
-                image: "/assets/images/personalization.jpg",
+                image: "/assets/images/branding-sonic.jpg",
                 title: "Branding & Sonic Identity",
                 description: "Custom artwork and audio branding that make your podcast instantly recognisable and adds authority."
               },
               {
-                image: "/assets/images/targeting.jpg",
+                image: "/assets/images/distribution.jpg",
                 title: "Distribution & Promotion",
                 description: "We launch your show on all major platforms and support growth with PR and promotion."
               }

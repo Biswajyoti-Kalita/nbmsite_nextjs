@@ -229,7 +229,9 @@ export default function Advertisers() {
                   </div>
                 </div>
                 <div>
+                  <Link href="/assets/files/Advertiser Media Kit.pdf" target="_blank">
                   <GradientButton text="Download More Info" className="h-[44px]" textClassName="text-[16px] leading-[24px] font-semibold" />
+                  </Link>
                 </div>
               </div>
               <div>
@@ -259,7 +261,10 @@ export default function Advertisers() {
                       </p>
                     </div>
                   </div>
+                  <Link href="/assets/files/Advertiser Media Kit.pdf" target="_blank">
                   <GradientButton text="Download More Information" className="h-[44px]"  textClassName="text-[16px] leading-[24px] font-semibold"/>
+                  </Link>
+                  
                 </div>
                 {/* Right div */}
                 <div className="flex flex-col items-start justify-center gap-[24px]">

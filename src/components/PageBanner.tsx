@@ -24,7 +24,7 @@ interface PageBannerProps {
 export default function PageBanner({ breadcrumb, headline, title, description, image, buttons }: PageBannerProps) {
     return (
         <section
-          className="w-full p-4 mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] lg:pb-0 grid grid-cols-1 md:grid-cols-2 gap-[80px] items-start justify-start relative lg:max-w-[1440px]"
+          className="w-full mt-[64px] md:mt-[64px] md:mt-0 md:p-[80px] lg:pb-0 grid grid-cols-1 md:grid-cols-2 gap-[80px] items-start justify-start relative lg:max-w-[1440px]"
           id="home"
         >
           <div className="w-full flex flex-col items-start justify-start gap-4 h-[580px] px-4 lg:px-0">
@@ -48,13 +48,16 @@ export default function PageBanner({ breadcrumb, headline, title, description, i
                     <>
 
                     {
-                      button.link && <Link href={button.link}>
+                      button.link && <Link href={button.link}
+                      target={button.link.endsWith(".pdf") ? "_blank" : "_self"}
+                      >                         
                                             <GradientButton
                       key={index}
                       type={button.type}
                       text={button.text}
                       className={` ${button.classNames}`}
                       textClassName="text-[16px] leading-[24px]"
+                  
                     />
                       </Link>
                     }
@@ -86,11 +89,11 @@ export default function PageBanner({ breadcrumb, headline, title, description, i
             </div>
           </div>
 
-          <div className="relative lg:absolute right-[-12px] lg:right-[-60px] top-4 lg:top-9  bottom-0 max-w-[700px]">
+          <div className="relative lg:absolute right-[0px] top-0 lg:top-9  bottom-0 w-full max-w-[600px] flex items-center justify-center">
             <Image
               src={image}
               alt="podcasters-image"
-              className="w-full h-full object-contain"
+              className="w-full h-full max-h-[500px] object-cover rounded-none lg:rounded-l-2xl"
               width={500}
               height={500}
             />

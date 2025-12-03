@@ -6,6 +6,7 @@ import DisporaBanner from "@/components/DisporaBanner";
 import Footer from "@/components/Footer";
 import GradientButton from "@/components/GradientButton";
 import Navbar from "@/components/Navbar";
+import PageBanner from "@/components/PageBanner";
 import PopularChannels from "@/components/PopularChannels";
 
 import QACollapseableContainer from "@/components/QACollapseableContainer";
@@ -21,7 +22,14 @@ export default function Diaspora() {
       />
 
       <div className="bg-[#511DB5] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
-        <DisporaBanner />
+        <PageBanner
+        breadcrumb={[{ name: "For Advertisers", link: "/advertisers" }]}
+        headline="FOR BRANDS & MEDIA AGENCIES"
+        title="Advertise to Multicultural Podcast Listeners"
+        description="Expand your reach to diaspora communities across North America, who over-index in education, income, and global mobility."
+        image="/assets/images/dispora_bg.jpg"
+        buttons={[ {text: "Book a Call", type: "secondary", showCallMeBackModal: true }, {text: "Download More Information", type: "tertiary", link: "https://admanager.fm"}]}
+        />
 
       </div>
       <div className="w-full flex flex-col items-center justify-center">

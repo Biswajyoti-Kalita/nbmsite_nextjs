@@ -30,7 +30,7 @@ export default function WhyAudio() {
           description="You’re sitting on one of the most powerful, underused tools in
                 modern media. Audio delivers measurable results across the full
                 funnel."
-          image="/assets/images/why audio.png"
+          image="/assets/images/why_audio.jpg"
           buttons={[]}
         />
 
