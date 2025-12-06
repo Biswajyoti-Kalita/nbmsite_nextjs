@@ -31,7 +31,7 @@ export default function Advertisers() {
           title="High-Impact Audio Ads. Made Easy for Busy Teams"
           description="Global high-performance podcast and digital audio campaigns,
               delivered quickly, efficiently, and tailored to your goals."
-          image="/assets/images/advertiser.png"
+          image="/assets/images/advertiser.jpg"
           buttons={[ {text: "Launch Your Own Campaign", type: "secondary", link: "https://admanager.fm"}, { text: "Request a Proposal", type: "tertiary", showCallMeBackModal: true }]}
         />
 
