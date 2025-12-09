@@ -4,6 +4,7 @@ import GradientButton from "./GradientButton";
 import { useState } from "react";
 import { openCallMeBackModal } from "@/util/modalEvents";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function PublisherRevenuSection() {
   const [selectedTab, setSelectedTab] = useState("self-serve-tools");
@@ -113,13 +114,14 @@ export default function PublisherRevenuSection() {
                 textClassName="text-[16px] leading-[24px] "
                 onClick={openCallMeBackModal}
               />
+              <Link href="https://admanager.fm" target="_blank">
               <GradientButton
                 type="secondary"
                 text="Check Out AI Studio"
                 className=" w-[182px]"
                 textClassName="text-[16px] leading-[24px] font-semibold"
-                onClick={() => router.push("https://admanager.fm/nbmaistudio")}
               />
+              </Link>              
             </div>
           </div>
         </div>

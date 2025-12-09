@@ -1,12 +1,13 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
+import Link from "next/link";
 
 interface MarketingCardProps {
   title: string;
   description: string;
   buttons: {
     text: string;
-    onClick: () => void;
+    href: string;
   }[];
   image: string;
   expanded: boolean;
@@ -70,11 +71,12 @@ export default function MarketingCard({
       <div className="z-10 flex flex-col sm:flex-row gap-2 md:gap-[12px]">
         {
           buttons.map((button, index) => (
+            <Link href={button.href} target="_blank">
             <GradientButton
               key={index}
               type="secondary"
+              className={`${index !== 0 ?  "hidden md:block" : "block"}`}
               text={expanded ? button.text : ""}
-              onClick={button.onClick}
               rightIcon={
                 <svg
                   width="14"
@@ -106,6 +108,7 @@ export default function MarketingCard({
                 </svg>
               }
             />
+            </Link>
           ))
         }
       </div>

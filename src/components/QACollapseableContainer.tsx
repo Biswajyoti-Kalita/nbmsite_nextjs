@@ -12,9 +12,10 @@ interface QACollapseableContainerProps {
         description: string;
         descriptionHTML?: React.ReactNode;
     }[];
+    mediaKitLink: string;
 }
 
-export default function QACollapseableContainer({ data }: QACollapseableContainerProps) {
+export default function QACollapseableContainer({ data, mediaKitLink }: QACollapseableContainerProps) {
 
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -53,7 +54,7 @@ export default function QACollapseableContainer({ data }: QACollapseableContaine
       </div>
       <div className="w-full flex flex-col lg:flex-row items-start justify-start gap-[12px]">
         <GradientButton text="Share a Brief" className=" w-[200px]" onClick={openShareBriefModal} textClassName="text-[16px] leading-[24px] font-semibold" />
-        <Link href="/assets/files/Advertiser Media Kit.pdf" target="_blank"><GradientButton text="Download Media Kit" type="secondary" className="w-[180px]" textClassName="text-[16px] leading-[24px] font-semibold" /></Link>
+        <Link href={mediaKitLink} target="_blank"><GradientButton text="Download Media Kit" type="secondary" className="w-[180px]" textClassName="text-[16px] leading-[24px] font-semibold" /></Link>
       </div>
     </div>
   </div>

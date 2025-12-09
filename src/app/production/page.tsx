@@ -209,7 +209,7 @@ export default function Production() {
         </div>
       </div>
 
-          <FAQSection faqs={[
+      <FAQSection faqs={[
               {
                 title: "What regions do you operate in?",
                 description:
@@ -219,25 +219,66 @@ export default function Production() {
                 title:
                   "Can I target specific countries, languages, or audience segments?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "Yes. Our platform supports geo-targeting, language preferences, and audience segmentation based on demographics, interests, and listening behaviors, allowing for precise campaign targeting.",
               },
               {
                 title: "What types of audio ads can I run?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "We support various ad formats, including host-read sponsorships, pre-recorded spots, dynamic ad insertions, and branded content series. This flexibility ensures your message resonates effectively with your target",
               },
               {
                 title:
                   "How do I measure the performance of my audio campaigns?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "Our analytics tools provide insights into key metrics such as impressions, click-through rates, listen-through rates, and conversions. We also offer brand lift studies and integration with third-party measurement partners for comprehensive performance evaluation.",
               },
               {
                 title:
                   "What is the minimum budget required to start a campaign?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "We cater to a range of budgets. For self-serve campaigns via our AdManager platform, the minimum spend starts at $250 USD. For managed services, we recommend discussing your goals with our sales team to tailor a solution that fits your needs.",
               },
+              {
+                title: "How do I get started with launching a campaign?",
+                description: "You can begin by signing up on our AdManager platform for self-serve options or contact our sales team for a full-service experience. We'll guide you through the process, from audience targeting to creative development and campaign deployment."
+              },
+              {
+                title: "Which brands have you worked with?",
+                description: "We've partnered with a diverse range of brands across various industries, including [Insert Notable Brands]. Our case studies highlight successful campaigns and can provide insights into our approach and results."
+              },
+              {
+                title: "Can I run a campaign if I have a small budget?",
+                description: "Absolutely. Our self-serve AdManager platform is designed to accommodate smaller budgets, providing access to premium inventory and targeting tools to maximize your campaign's impact."
+              },
+              {
+                title: "Do you offer creative services for ad production?",
+                description: "Yes. Our creative team can assist in developing compelling audio ads, from scripting to production, ensuring your message aligns with your brand and resonates with listeners."
+              },
+              {
+                title: "How does billing work for campaigns?",
+                description: "For self-serve campaigns, billing is handled through the AdManager platform, with charges based on impressions delivered. Managed service campaigns are billed according to the agreed-upon terms outlined in your service agreement."
+              },
+              {
+                title: "How do you ensure brand safety and suitability?",
+                description: "We use third-party verification tools and strict vetting processes to ensure your ads appear in safe, suitable environments. You have full control over targeting and exclusions, and we offer additional filters based on content category, tone, and genre to protect brand integrity."
+              },
+              {
+                title: "What types of audio advertising formats do you support?",
+                htmlDescription: `
+                We offer a full range of audio ad formats to match your campaign goals: <br />
+                <ul style="list-style: disc;padding-left: 30px;">
+                <li><b>Programmatic ads</b> (dynamically inserted) for efficient scale</li>
+                <li><b>Host-read sponsorships</b> for authenticity and deeper engagement</li>
+                <li><b>Branded content and custom podcast series</b> for storytelling</li>
+                <li><b>Short-form or seasonal bursts, </b>or <b>always-on strategies</b></li>
+                </ul> <br /> We’ll help you choose the right format based on your objectives and budget.
+                `,
+                description: ""
+              },
+              {
+                title: "Can you help us create our own branded podcast?",
+                description: "Yes — while it's not our core offering, we do offer end-to-end podcast development for select clients. If you're interested in building a branded show to deepen audience engagement, get in touch and we'll explore the right creative and strategic fit for your brand."
+              }
             ]} />
 
       <Footer />

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "Next Audio ",
   description: "Next Audio is a podcast advertising company that helps brands connect with their audience through podcast advertising.",
   icons: {
-    icon: "/assets/images/logo.png",
+    icon: "/logo.svg",
   },
 };
 

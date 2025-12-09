@@ -11,6 +11,7 @@ import PopularChannels from "@/components/PopularChannels";
 
 import QACollapseableContainer from "@/components/QACollapseableContainer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Diaspora() {
   return (
@@ -23,12 +24,12 @@ export default function Diaspora() {
 
       <div className="bg-[#511DB5] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
         <PageBanner
-        breadcrumb={[{ name: "For Advertisers", link: "/advertisers" }]}
+        breadcrumb={[{ name: "Advertisers", link: "/advertisers" }, { name: "Diaspora", link: "/diaspora" }]}
         headline="FOR BRANDS & MEDIA AGENCIES"
         title="Advertise to Multicultural Podcast Listeners"
         description="Expand your reach to diaspora communities across North America, who over-index in education, income, and global mobility."
         image="/assets/images/dispora_bg.jpg"
-        buttons={[ {text: "Book a Call", type: "secondary", showCallMeBackModal: true }, {text: "Download More Information", type: "tertiary", link: "https://admanager.fm"}]}
+        buttons={[ {text: "Book a Call", type: "secondary", showCallMeBackModal: true }, {text: "Download More Information", type: "tertiary", link: "/assets/files/NextGenVoices2siderDiaspora.pdf"}]}
         />
 
       </div>
@@ -141,12 +142,14 @@ export default function Diaspora() {
                   </div>
                 </div>
                 <div className="w-full mb-2">
+                  <Link href="/assets/files/NextGenVoices2siderDiaspora.pdf" target="_blank">
                   <GradientButton
                     text="Download Media Kit"
                     type="secondary"
                     textClassName="text-[16px] leading-[24px] font-semibold"
                     className=""
                   />
+                  </Link>
                 </div>
               </div>
               <div className="w-full">
@@ -178,6 +181,7 @@ export default function Diaspora() {
               </div>
             </div>
             <QACollapseableContainer
+              mediaKitLink="/assets/files/NextGenVoices2siderDiaspora.pdf"
               data={[
                 {
                   image: "/assets/images/target-community.jpg",

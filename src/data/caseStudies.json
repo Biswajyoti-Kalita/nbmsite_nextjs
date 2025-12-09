@@ -1,4 +1,54 @@
 {
+  "accor-hotels": {
+    "name": "Accor Hotel",
+    "category": "Travel & Tourism",
+    "banner_image": "/assets/images/bel_bg.jpg",
+    "banner_title": "How Accor Hotel Used Podcasts to Reach Frequent Travellers",
+    "banner_subtitle": "A targeted campaign using dynamic insertion across podcasts to boost awareness of Accor hotel Ibis among frequent, budget conscious travellers.",
+    "summary": {
+      "client": "Accor Hotel",
+      "industry": "Travel and Tourism",
+      "campaign_types": "Awareness, Interest",
+      "audio_format": "Podcasts",
+      "audience_profile": "Frequent travellers, budget conscious"
+    },
+    "objective": "Help Accor boost interest of Ibis hotel chain with targeted podcast ads reaching frequent travellers, and budget conscious adults.",
+    "execution": {
+      "title": "The campaign celebrated Ibis&apos; 50th anniversary by amplifying its heritage and modern hospitality through a highly targeted podcast strategy.",
+      "points": [
+        "Ads were delivered across a curated mix of popular local and international podcasts, ensuring strong visibility in high-attention listening moments.",
+        "The selection spanned top genres aligned with travel, lifestyle, culture, and everyday entertainment — reaching listeners during relevant discovery and planning contexts.",
+        "Creative highlighted Ibis&apos; signature blend of comfort, value, and contemporary design, crafted to resonate with young professionals, frequent travellers, and families."
+      ]
+    },
+    "results": [
+      {
+        "title": "An impressive listen-through rate demonstrating sustained listener interest and strong alignment with the target audience.",
+        "subtitle": ""
+      },
+      {
+        "title": "Listen through rate",
+        "subtitle": "96%"
+      }
+    ],
+    "audio": null,
+    "testimonials": [
+      {
+        "quote": "Kiri's Maida podcast was created with the Kiri team to extend the brand's equity, and to be the pillar of kindness and inspiration for progressive moms. In parallel, the programmatic audio ads maximized the podcast's awareness. The campaign drove efficient reach and for a first-time campaign, it truly set a remarkable benchmark.",
+        "stars": 5,
+        "name": "Sarah Kanaan",
+        "designation": "Lead of Zenith",
+        "image": "./assets/images/person.png"
+      },
+      {
+        "quote": "The Maida podcast was an exciting and needed next step for Kiri, to earn our audience's audio attention and to stay ahead of our competitors in a modern way. This is a rising trend with the KSA population showing a growing interest in podcasts.  Maida has allowed us to connect with our audience at a different level, as it brought to life the inspiring yet complex nature of everyday life of the Kiri Progressive Mom, simply told by a role model.",
+        "stars": 5,
+        "name": "Noha Gaber",
+        "designation": "Senior Brand Manager - Kiri",
+        "image": "./assets/images/person.png"
+      }
+    ]
+  },
   "johnson-and-johnson": {
     "name": "Johnson and Johnson",
     "category": "SKINCARE",

@@ -6,6 +6,7 @@ import GradientButton from "./GradientButton";
 import Image from "next/image";
 import isMobile from "@/util/util";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface CaseStudy {
   id: string;
@@ -187,6 +188,7 @@ export default function CaseStudyLib({
                     ))}
                   </div>
                 </div>
+                <Link href={`/case-studies/${study.id}`} target="_blank">
                 <GradientButton
                   text="View Case Study"
                   className="w-[191px]"
@@ -221,9 +223,9 @@ export default function CaseStudyLib({
                       </defs>
                     </svg>
                   }
-                  onClick={() => router.push(`/case-studies/${study.id}`)}
                   textClassName="text-[16px] leading-[24px] font-semibold"
                 />
+                </Link>
               </div>
             </div>
           ))}

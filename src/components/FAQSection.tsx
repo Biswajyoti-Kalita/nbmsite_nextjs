@@ -7,6 +7,7 @@ interface FAQSectionProps {
     faqs: {
         title: string;
         description: string;
+        htmlDescription?: string;
     }[];
 }
 
@@ -45,6 +46,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
                 title={item.title}
                 description={item.description}
                 open={index === 0}
+                htmlDescription={item.htmlDescription}
               />
             ))}
           </div>

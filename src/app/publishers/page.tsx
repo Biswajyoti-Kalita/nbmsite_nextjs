@@ -9,6 +9,7 @@ import PageBanner from "@/components/PageBanner";
 import PopularChannels from "@/components/PopularChannels";
 import PublisherRevenuSection from "@/components/PublisherRevenuSection";
 import TestimonialGroup from "@/components/TestimonialGroup";
+import Link from "next/link";
 
 export default function Publishers() {
   return (
@@ -25,7 +26,7 @@ export default function Publishers() {
           headline="For Publishers, networks and production houses"
           title="Monetize Your Catalogue with Global Brand Demand"
           description="Connect your shows to premium advertisers across 90+ markets and hundreds of active campaigns."
-          image="/assets/images/publisher-right-bg.png"
+          image="/assets/images/publisher.jpg"
           buttons={[ {text: "Request a Call Back", type: "secondary", showCallMeBackModal: true}, { text: "Download Publisher Pack", type: "tertiary", link: "/assets/files/Publisher Media Kit.pdf" }]}
         />
       </div>
@@ -53,12 +54,14 @@ export default function Publishers() {
                   already trust Next Audio to deliver results. If you run high-quality
                   shows with engaged audiences, we’d love to work with you.
                 </h6>
+                <Link href="/assets/files/Publisher Media Kit.pdf" target="_blank">
                 <GradientButton
                   type="primary"
                   text="Download Publisher Kit"
                   className="h-[48px] max-w-[200px]"
                   textClassName="text-[16px] leading-[24px]"
                 />
+                </Link>
               </div>
               <PopularChannels />
             </div>
@@ -101,12 +104,14 @@ export default function Publishers() {
                 </h1>
               </div>
               <div className="flex flex-row h-full items-start lg:items-end justify-start lg:justify-end">
+                <Link href="/about-us">
                 <GradientButton
                   text="Meet Next Audio"
                   type="secondary"
                   className="h-[44px] w-[148px]"
                   textClassName="text-[16px] leading-[24px]"
                 />
+                </Link>
               </div>
             </div>
           </div>
@@ -122,31 +127,39 @@ export default function Publishers() {
             {
               title: "Who can join the Next network?",
               description:
-                "Any podcast publisher, network, or production house with high-quality shows and active listenership. We support both regional and global content strategies.",
+                "Any podcast studio, production house, or network with active, quality shows. Both global and regional content welcome.",
             },
             {
               title:
-                "How is my inventory monetised?",
+                "How do I earn revenue?",
               description:
-                "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                "Your shows become eligible for host-read, sponsorship, and programmatic campaigns. You stay in control.",
             },
             {
-              title: "What types of brands do you work with?",
+              title: "Can I choose which ads run on my shows?",
               description:
-                "We work with global brands, major media agencies, and regional advertisers across industries, including finance, FMCG, travel, tech, health, and more.",
-            },
-            {
-              title:
-                "Is this a non-exclusive partnership?",
-              description:
-                "Yes. We operate under a non-exclusive model. You retain full control and can continue monetizing through other platforms or partners.",
+                " Yes — if you choose to, your shows can be listed in Host-Read Studio and AdManager.",
             },
             {
               title:
-                "How do I get started?",
+                "Is NBM exclusive?",
               description:
-                "Just get in touch with our team. We’ll review your shows and guide you through onboarding, no platform migration or setup fees required.",
+                "No. We're fully non-exclusive. You can keep working with other partners too.",
             },
+            {
+              title:
+                "What kind of advertisers do you work with?",
+              description:
+                " From household-name brands to niche startups — spanning industries like travel, tech, finance, and lifestyle.",
+            },
+            {
+              title: "Do you offer branded content?",
+              description: "Yes. We pitch select studios and shows for deeper partnerships, including co-created branded series."
+            },
+            {
+              title: "How do I get started?",
+              description: "Book a call with our publisher team to discuss onboarding and explore upcoming campaign opportunities."
+            }
           ]}
       />
 

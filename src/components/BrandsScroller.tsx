@@ -55,7 +55,7 @@ export default function BrandsScroller() {
     type: 'loop' as const,
     drag: 'free' as const,
     gap: 30,
-    width: splideWidth < 700 ? 100 : splideWidth - 300,
+    width: splideWidth < 700 ? splideWidth -160: splideWidth - 300,
     autoWidth: true,
     autoScroll: {
       speed: 0.8,
@@ -67,7 +67,7 @@ export default function BrandsScroller() {
     type: 'loop' as const,
     drag: 'free' as const,
     gap: 30,
-    width: splideWidth < 700 ? 100 : splideWidth - 300,
+    width: splideWidth < 700 ? 200 : splideWidth - 300,
     autoWidth: true,
     autoScroll: {
       speed: -0.8,
@@ -84,7 +84,7 @@ export default function BrandsScroller() {
         className="flex flex-row gap-4 md:gap-8 items-start md:items-center mb-6 md:mb-8 max-w-[1280px]"
         data-aos="fade-up"
       >
-        <div className="min-w-[150px] md:min-w-[200px]">
+        <div className="min-w-[120px] md:min-w-[200px]">
           <h6 className="color-1 font-semibold text-[14px] leading-[22px] md:text-base md:text-lg">
             Trusted by
           </h6>
@@ -92,7 +92,7 @@ export default function BrandsScroller() {
             300+ brands
           </h5>
         </div>
-        <div className="relative max-w-[50%] md:max-w-full">                                                                    
+        <div className="relative w-full md:max-w-full">                                                                    
           <div className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[150px] top-0 -left-5 z-5 rounded-lg p-4 [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_20.9%,#ffffff_99.44%)]"></div>
           <div className="overflow-hidden" style={{maxWidth: '90%'}}>
           <Splide
@@ -125,7 +125,7 @@ export default function BrandsScroller() {
         className="flex flex-row gap-4 md:gap-8 items-start md:items-center mb-6 md:mb-8 max-w-[1280px]"
         data-aos="fade-up"
       >
-        <div className="min-w-[150px] md:min-w-[200px]">
+        <div className="min-w-[130px] md:min-w-[200px]">
           <h6 className="color-1 font-semibold text-[14px] leading-[22px] md:text-base md:text-lg">
             Reaching
           </h6>
@@ -133,7 +133,7 @@ export default function BrandsScroller() {
             850M listeners
           </h5>
         </div>
-        <div className="relative max-w-[50%] md:max-w-full">
+        <div className="relative w-full md:max-w-full">
           <div className="absolute w-[50px] md:w-[100px] h-[100px] md:h-[150px] top-0 -left-5 z-5 rounded-lg p-4 [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_20.9%,#ffffff_99.44%)]"></div>
           <div className="overflow-hidden" style={{maxWidth: '90%'}}>
           <Splide

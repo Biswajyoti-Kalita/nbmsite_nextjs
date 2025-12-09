@@ -5,9 +5,10 @@ interface FAQCardProps {
     title: string;
     description: string;
     open?: boolean;
+    htmlDescription?: string;
 }
 
-export default function FAQCard({ title, description, open }: FAQCardProps) {
+export default function FAQCard({ title, description, open, htmlDescription = "" }: FAQCardProps) {
     const [isOpen, setIsOpen] = useState(open || false);
     return (
         <div className="w-full flex flex-col items-start justify-center border-[#E5E5E5] border-[1px] rounded-[16px] bg-[#FFFEFF]">
@@ -31,7 +32,7 @@ export default function FAQCard({ title, description, open }: FAQCardProps) {
             </h1>
             <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 px-[24px] pb-[24px]' : 'max-h-0 opacity-0'}`}>
                 <p className="text-[#344054] text-[16px] leading-[24px] font-normal">
-                    {description}
+                    {htmlDescription ? <div dangerouslySetInnerHTML={{ __html: htmlDescription }} /> : description}
                 </p>
             </div>
         </div>

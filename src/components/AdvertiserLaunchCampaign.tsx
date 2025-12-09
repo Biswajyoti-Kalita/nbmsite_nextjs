@@ -5,6 +5,7 @@ import GradientButton from "./GradientButton";
 import { useState } from "react";
 import { openShareBriefModal } from "@/util/modalEvents";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function AdvertiserLaunchCampaign() {
   const [selectedOption, setSelectedOption] = useState("launch-your-campaign");
@@ -134,6 +135,7 @@ export default function AdvertiserLaunchCampaign() {
               </div>
             </div>
             <div>
+              <Link href="https://admanager.fm" target="_blank">
               <GradientButton
                 text="Start with Self-Serve"
                 textClassName="text-[16px] leading-[24px] font-semibold"
@@ -155,10 +157,8 @@ export default function AdvertiserLaunchCampaign() {
                   </svg>
                 }
                 type="primary"
-                onClick={() => {
-                  router.push("https://admanager.fm");
-                }}
               />
+              </Link>
             </div>
           </div>
         </div>

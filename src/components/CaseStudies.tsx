@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import GradientButton from "./GradientButton";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface Analytics {
   title: string;
@@ -26,7 +27,7 @@ interface CaseStudyCardProps {
 const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
   const router = useRouter();
   return (
-    <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:h-[300px] border-1 border-[#E8E8E8] flex  flex-col md:flex-row items-start justify-start">
+    <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:max-h-[320px] border-1 border-[#E8E8E8] flex  flex-col md:flex-row items-start justify-start">
       <div className="flex flex-col items-start p-[24px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl w-full lg:min-w-[300px]">
         <h1 className="border-[#344054] border-1 rounded-[24px] text-[14px] leading-[22px] text-[#344054] h-[24px] px-[8px]">
           {caseStudy.left_title}
@@ -106,6 +107,7 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
             </div>
           </div>
         </div>
+        <Link href={`/case-studies/${caseStudy.id}`} target="_blank">
         <GradientButton
           text="View Case Study"
           type="secondary"
@@ -141,10 +143,8 @@ const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
               </defs>
             </svg>
           }
-          onClick={() => {
-            router.push(`/case-studies/${caseStudy.id}`);
-          }}
-        />
+          />
+          </Link>
       </div>
     </div>
   );

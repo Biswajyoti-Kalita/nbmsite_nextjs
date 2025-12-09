@@ -298,7 +298,9 @@ export default async function CaseStudyPage({
             </div>
           </section>
 
-          <section className="w-full flex flex-col items-center justify-between bg-[#FFFEFF] gap-[46px] lg:gap-[64px] pt-[48px] pb-[0px] lg:pb-[96px] px-[0px] lg:px-[16px] lg:px-[80px]">
+          {
+            data.audio && 
+            <section className="w-full flex flex-col items-center justify-between bg-[#FFFEFF] gap-[46px] lg:gap-[64px] pt-[48px] pb-[0px] lg:pb-[96px] px-[0px] lg:px-[16px] lg:px-[80px]">
             <div className="w-full relative flex flex-col lg:flex-row items-start justify-center max-w-[1280px] gap-[24px] lg:gap-[64px] py-[84px] px-[16px] lg:p-[64px] rounded-[16px] bg-gradient-to-r from-[#FFEDFB] to-[#E8ECFF]">
               <div
                 className="w-full h-full bg-cover bg-center absolute inset-0 z-0 opacity-20 bg-top left-0 top-0"
@@ -377,6 +379,7 @@ export default async function CaseStudyPage({
               </div>
             </div>
           </section>
+}
 
           {
             data.testimonials && data.testimonials.length > 0 && (

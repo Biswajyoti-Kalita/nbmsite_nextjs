@@ -126,7 +126,7 @@ export default function Footer() {
 
           <div className="order-first lg:order-last">
             <h1 className="text-[#344054] font-normal text-[16px] leading-[24px] flex flex-row gap-[18px] justify-end lg:justify-start lg:items-center">
-              <span>
+              <Link href="https://www.linkedin.com/company/next-broadcast-media" target="_blank">
                 <svg
                   width="20"
                   height="21"
@@ -139,8 +139,8 @@ export default function Footer() {
                     fill="#344054"
                   />
                 </svg>
-              </span>
-              <span>
+              </Link>
+              <Link href="https://www.youtube.com/@next-broadcast-media" target="_blank">
                 <svg
                   width="20"
                   height="21"
@@ -169,8 +169,8 @@ export default function Footer() {
                     </clipPath>
                   </defs>
                 </svg>
-              </span>
-              <span>
+              </Link>
+              <Link href="https://www.tiktok.com/@nextbroadcastmedia" target="_blank">
                 <svg
                   width="20"
                   height="20"
@@ -212,7 +212,7 @@ export default function Footer() {
                     </clipPath>
                   </defs>
                 </svg>
-              </span>
+              </Link>
             </h1>
           </div>
 

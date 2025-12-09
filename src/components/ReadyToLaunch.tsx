@@ -38,11 +38,13 @@ export default function ReadyToLaunch() {
                   <span className="gradient-text text-[16px] leading-[24px] font-semibold">Call me back</span>
                 </button>
 
+                <Link href="/assets/files/Advertiser Media Kit.pdf" target="_blank">
                 <button
-                  className="border-[#FFFEFF] border-2 py-[10px] px-[16px] rounded-[4px] w-[200px]"
+                  className="border-[#FFFEFF] border-2 py-[10px] px-[16px] rounded-[4px] w-[200px] cursor-pointer"
                 >
                   <span className="text-[#FFFEFF] text-[16px] leading-[24px] font-semibold">Download Media Kit</span>
                 </button>
+                </Link>
 
                 <Link
                   href="https://admanager.fm/nbmaistudio"

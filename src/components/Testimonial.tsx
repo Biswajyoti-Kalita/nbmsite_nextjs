@@ -18,7 +18,7 @@ export default function Testimonial({
   designation,
 }: TestimonialProps) {
   return (
-    <div className="testimonial-card h-full bg-color-4 border-color-4 p-4 md:p-8 relative mb-5 max-w-[380px] md:h-[455px] flex flex-col justify-between items-between">
+    <div className="testimonial-card h-full bg-color-4 border-color-4 p-4 md:p-8 relative mb-5 max-w-[380px] md:h-[530px] flex flex-col justify-between items-between">
       <div>
         <Image
           src="/assets/images/quotes.png"

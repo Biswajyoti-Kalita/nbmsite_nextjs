@@ -13,15 +13,11 @@ export default function MarketingCardGroup() {
             buttons: [
                 {
                     text: "Explore Solutions",
-                    onClick: () => {
-                        router.push("/publishers");
-                    }
+                    href: "/advertisers",
                 },
                 {
                     text: "Create free AI Ads",
-                    onClick: () => {
-                        router.push("https://admanager.fm/nbmaistudio");
-                    }
+                    href: "https://admanager.fm",
                 }
             ],
             buttonText: "Explore Solutions",
@@ -35,9 +31,7 @@ export default function MarketingCardGroup() {
             buttons: [
                 {
                     text: "Explore Our Solutions",
-                    onClick: () => {
-                        router.push("/publishers");
-                    }
+                    href: "/publishers",
                 }
             ],
             buttonText: "Explore Our Solutions",
@@ -51,9 +45,7 @@ export default function MarketingCardGroup() {
             buttons: [
                 {
                     text: "Learn More",
-                    onClick: () => {
-                        router.push("/podcasters");
-                    }
+                    href: "/podcasters",
                 },
             ],
             buttonText2: "Register your show",

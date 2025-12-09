@@ -12,6 +12,7 @@ import AboutUsImageCard from "@/components/AboutUsImageCard";
 import GradientButton from "@/components/GradientButton";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import ReadyToLaunch from "@/components/ReadyToLaunch";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -82,6 +83,7 @@ export default function Home() {
               Discover how we support advertisers, podcasters, and publishers
               with global reach and trusted audio advertising solutions.
             </p>
+            <Link href="/about-us" className="w-full">
             <GradientButton            
               text="Learn About Next Audio"
               className="h-[44px] px-4"
@@ -102,9 +104,10 @@ export default function Home() {
                   strokeLinejoin="round"
                 />
               </svg>
-              }
-            
-              />  
+              }            
+              />
+              </Link>
+              
           </div>
         </div>
         <div
@@ -144,7 +147,7 @@ export default function Home() {
             <h6
               className="text-[#344054] text-base md:text-lg lg:text-[20px] leading-[24px] md:leading-[28px] font-normal"
             >
-              Insights, tools, and trends from our blog, webinars, and LinkedIn
+              Insights, tools, and trends from our LinkedIn feed, webinars, and LinkedIn
               feed
             </h6>
           </div>

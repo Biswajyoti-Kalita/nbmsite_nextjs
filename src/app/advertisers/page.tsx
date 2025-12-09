@@ -16,6 +16,7 @@ import AdvertiserMapSection from "@/components/AdvertiserMapSection";
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 import FAQSection from "@/components/FAQSection";
+import Insights from "@/components/Insights";
 
 export default function Advertisers() {
   return (
@@ -356,7 +357,9 @@ export default function Advertisers() {
                 </p>
               </div>
             </div>
-            <QACollapseableContainer data={[
+            <QACollapseableContainer
+            mediaKitLink="/assets/files/Advertiser Media Kit.pdf"            
+            data={[
               {
                 image: "/assets/images/targeting.png",
                 title: "Targeting",
@@ -399,6 +402,7 @@ export default function Advertisers() {
                   </div>
                 </div>
                 <div>
+                  <Link href="/why-audio" className="cursor-pointer">
                   <span className="gradient-text py-[10px] px-[16px] flex flex-row items-center justify-center gap-[6px] text-[16px] leading-[24px]">
                     Discover why audio advertising
                     <svg
@@ -430,6 +434,7 @@ export default function Advertisers() {
                       </defs>
                     </svg>
                   </span>
+                  </Link>
                 </div>
               </div>
               <div>
@@ -482,115 +487,7 @@ export default function Advertisers() {
           <TestimonialGroup />
         </div>
       </div>
-
-      <section className="w-full flex flex-col items-center justify-center py-[84px] lg:py-[96px]  px-[16px] lg:px-[80px] gap-[64px] bg-[#F8F9FA]">
-            <div className="w-full flex flex-col lg:flex-row items-end justify-between gap-[32px] lg:gap-[24px] max-w-[1280px] max-h-auto lg:max-h-[94px]">
-              <div className="flex flex-col items-start justify-center gap-[16px] w-full">
-                <h1 className="font-semibold text-[34px] lg:text-[42px] leading-[42px] lg:leading-[50px] gradient-text">
-                  Insights That Matter to You
-                </h1>
-                <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                Advice to help you grow and earn from your podcast.
-                </h6>
-              </div>
-              <div className="w-full flex justify-start lg:justify-end">
-                <GradientButton
-                  text="Explore Podcaster Knowledge Hub"
-                  className="h-[44px] w-[293px]"
-                  textClassName="text-[16px] leading-[24px] font-semibold"
-                />
-              </div>
-            </div>
-            <div className="w-full flex flex-row overflow-x-auto items-start justify-between gap-[16px] lg:gap-[20px] max-w-[1280px]">
-
-              <div className="w-full relative min-w-[630px] min-h-[314px] lg:min-h-[323px]">
-                <div
-                  className="bg-cover bg-center w-full md:w-[630px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${"/assets/images/insight-3.jpg"})`,
-                  }}
-                >
-                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(136,48,252,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-                  <div className="relative z-10 flex flex-col justify-between h-full">
-                    <div className="w-full">
-                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                        Webinar
-                      </span>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-[10px]">
-                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                        16 June 2025
-                      </h6>
-                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                        Podcast Advertising vs Social Media Marketing: Which
-                        Drives Better Engagement
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
-                <div
-                  className="bg-cover bg-center w-full md:w-[300px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${"/assets/images/card-bg-22.jpg"})`,
-                  }}
-                >
-                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-                  <div className="relative z-10 flex flex-col justify-between h-full">
-                    <div className="w-full">
-                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                        Webinar
-                      </span>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-[10px]">
-                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                        16 June 2025
-                      </h6>
-                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                        Podcast Advertising vs Social Media Marketing: Which
-                        Drives Better Engagement
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full relative min-w-[300px] min-h-[314px] lg:min-h-[323px]">
-                <div
-                  className="bg-cover bg-center w-full md:w-[300px] h-[314px] lg:h-[323px] p-[24px] flex flex-col justify-between rounded-2xl relative overflow-hidden"
-                  style={{
-                    backgroundImage: `url(${"/assets/images/insight-2.png"})`,
-                  }}
-                >
-                  <div className="absolute inset-0 rounded-2xl z-0 rounded-lg p-4 shadow-md [background:linear-gradient(268.96deg,rgba(241,31,104,0.2)_100.9%,#ffffff_99.44%)]"></div>
-
-                  <div className="relative z-10 flex flex-col justify-between h-full">
-                    <div className="w-full">
-                      <span className="px-2.5 py-1.5 text-[#FFFEFF] rounded-3xl border border-[#FFFEFF] text-sm">
-                        Webinar
-                      </span>
-                    </div>
-
-                    <div className="w-full flex flex-col gap-[10px]">
-                      <h6 className="font-normal text-[16px] leading-[24px] text-[#E8E8E8]">
-                        16 June 2025
-                      </h6>
-                      <h6 className="font-medium text-[18px] leading-[26px] text-[#FFFEFF]">
-                        Podcast Advertising vs Social Media Marketing: Which
-                        Drives Better Engagement
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      <Insights />
           <FAQSection faqs={[
               {
                 title: "What regions do you operate in?",
@@ -601,25 +498,66 @@ export default function Advertisers() {
                 title:
                   "Can I target specific countries, languages, or audience segments?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "Yes. Our platform supports geo-targeting, language preferences, and audience segmentation based on demographics, interests, and listening behaviors, allowing for precise campaign targeting.",
               },
               {
                 title: "What types of audio ads can I run?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "We support various ad formats, including host-read sponsorships, pre-recorded spots, dynamic ad insertions, and branded content series. This flexibility ensures your message resonates effectively with your target",
               },
               {
                 title:
                   "How do I measure the performance of my audio campaigns?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "Our analytics tools provide insights into key metrics such as impressions, click-through rates, listen-through rates, and conversions. We also offer brand lift studies and integration with third-party measurement partners for comprehensive performance evaluation.",
               },
               {
                 title:
                   "What is the minimum budget required to start a campaign?",
                 description:
-                  "Next Audio is a platform that allows you to create and manage your podcast advertising campaigns.",
+                  "We cater to a range of budgets. For self-serve campaigns via our AdManager platform, the minimum spend starts at $250 USD. For managed services, we recommend discussing your goals with our sales team to tailor a solution that fits your needs.",
               },
+              {
+                title: "How do I get started with launching a campaign?",
+                description: "You can begin by signing up on our AdManager platform for self-serve options or contact our sales team for a full-service experience. We'll guide you through the process, from audience targeting to creative development and campaign deployment."
+              },
+              {
+                title: "Which brands have you worked with?",
+                description: "We've partnered with a diverse range of brands across various industries, including [Insert Notable Brands]. Our case studies highlight successful campaigns and can provide insights into our approach and results."
+              },
+              {
+                title: "Can I run a campaign if I have a small budget?",
+                description: "Absolutely. Our self-serve AdManager platform is designed to accommodate smaller budgets, providing access to premium inventory and targeting tools to maximize your campaign's impact."
+              },
+              {
+                title: "Do you offer creative services for ad production?",
+                description: "Yes. Our creative team can assist in developing compelling audio ads, from scripting to production, ensuring your message aligns with your brand and resonates with listeners."
+              },
+              {
+                title: "How does billing work for campaigns?",
+                description: "For self-serve campaigns, billing is handled through the AdManager platform, with charges based on impressions delivered. Managed service campaigns are billed according to the agreed-upon terms outlined in your service agreement."
+              },
+              {
+                title: "How do you ensure brand safety and suitability?",
+                description: "We use third-party verification tools and strict vetting processes to ensure your ads appear in safe, suitable environments. You have full control over targeting and exclusions, and we offer additional filters based on content category, tone, and genre to protect brand integrity."
+              },
+              {
+                title: "What types of audio advertising formats do you support?",
+                htmlDescription: `
+                We offer a full range of audio ad formats to match your campaign goals: <br />
+                <ul style="list-style: disc;padding-left: 30px;">
+                <li><b>Programmatic ads</b> (dynamically inserted) for efficient scale</li>
+                <li><b>Host-read sponsorships</b> for authenticity and deeper engagement</li>
+                <li><b>Branded content and custom podcast series</b> for storytelling</li>
+                <li><b>Short-form or seasonal bursts, </b>or <b>always-on strategies</b></li>
+                </ul> <br /> We’ll help you choose the right format based on your objectives and budget.
+                `,
+                description: ""
+              },
+              {
+                title: "Can you help us create our own branded podcast?",
+                description: "Yes — while it's not our core offering, we do offer end-to-end podcast development for select clients. If you're interested in building a branded show to deepen audience engagement, get in touch and we'll explore the right creative and strategic fit for your brand."
+              }
             ]} />
 
       <Footer />
