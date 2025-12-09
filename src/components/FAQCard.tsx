@@ -30,10 +30,11 @@ export default function FAQCard({ title, description, open, htmlDescription = ""
                     </span>
                 )}
             </h1>
-            <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 px-[24px] pb-[24px]' : 'max-h-0 opacity-0'}`}>
+            <div className={`overflow-hidden text-[#344054] text-[16px] leading-[24px] font-normal transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[500px] opacity-100 px-[24px] pb-[24px]' : 'max-h-0 opacity-0'}`}>
                 <p className="text-[#344054] text-[16px] leading-[24px] font-normal">
-                    {htmlDescription ? <div dangerouslySetInnerHTML={{ __html: htmlDescription }} /> : description}
+                    {description}
                 </p>
+                {htmlDescription ? <div dangerouslySetInnerHTML={{ __html: htmlDescription }} /> : null}
             </div>
         </div>
     )

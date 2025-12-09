@@ -62,7 +62,9 @@ export default function Production() {
                 </p>
               </div>
             </div>
-            <QACollapseableContainer data={[
+            <QACollapseableContainer
+            mediaKitLink="/assets/files/Advertiser Media Kit.pdf"
+            data={[
               {
                 image: "/assets/images/creative_development.jpg",
                 title: "Creative Development",

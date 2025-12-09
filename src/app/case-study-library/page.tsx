@@ -34,7 +34,7 @@ interface CaseStudy {
     title: string;
     points: string[];
     audio_file: string;
-  };
+  } |  null;
   testimonials?: {
     quote: string;
     stars: number;

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import GradientButton from "./GradientButton";
 import Image from "next/image";
 import isMobile from "@/util/util";
-import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 
 interface CaseStudy {
@@ -37,7 +37,7 @@ interface CaseStudy {
     title: string;
     points: string[];
     audio_file: string;
-  };
+  } |  null;
   testimonials?: {
     quote: string;
     stars: number;
@@ -54,7 +54,7 @@ export default function CaseStudyLib({
 }: {
   caseStudies: CaseStudy[];
 }) {
-  const router = useRouter();
+
   // const [originalData, setoriginalData] = useState(caseStudies);
   const originalData = caseStudies;
   const [filteredData, setFilteredData] = useState(caseStudies);
@@ -149,7 +149,7 @@ export default function CaseStudyLib({
                   {study.category}
                 </span>
                 <Image
-                  src={study.audio.image}
+                  src={study.audio?.image || ""}
                   alt={study.name}
                   className="w-full max-w-[180px] h-full max-h-[150px] object-contain mb-6"
                   width={180}
@@ -163,7 +163,7 @@ export default function CaseStudyLib({
                     {study.name}
                   </h3>
                   <div className="flex flex-row gap-[11px] items-center">
-                    {study.audio.points.map((point, index) => (
+                    {study.audio && study.audio.points.map((point, index) => (
                       <div
                         className="flex flex-row gap-[11px] items-center"
                         key={`${study.id}-${index}`}
@@ -171,7 +171,7 @@ export default function CaseStudyLib({
                         <span className="font-normal text-[14px] leading-[22px] tracking-[0em] text-[#344054]">
                           {point}
                         </span>
-                        {index < study.audio.points.length - 1 && (
+                        {study.audio && index < study.audio?.points.length - 1 && (
                           <span>
                             <svg
                               width="4"

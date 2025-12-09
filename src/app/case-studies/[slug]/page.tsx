@@ -38,7 +38,7 @@ interface CaseStudy {
     title: string;
     points: string[];
     audio_file: string;
-  };
+  } |  null;
   testimonials?: {
     quote: string;
     stars: number;
@@ -357,7 +357,7 @@ export default async function CaseStudyPage({
                           <span className="font-normal text-[14px] leading-[22px] lg:leading-[16px] tracking-[0em] text-[#344054]">
                             {point}
                           </span>
-                          {index < data.audio.points.length - 1 && (
+                          {data.audio && index < data.audio.points.length - 1 && (
                             <span>
                               <svg
                                 width="4"

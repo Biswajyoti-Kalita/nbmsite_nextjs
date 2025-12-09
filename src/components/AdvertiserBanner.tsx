@@ -2,7 +2,7 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
 import Breadcrumb from "./Breadcrumb";
-import { useRouter } from "next/navigation";
+
 import { openShareBriefModal } from "@/util/modalEvents";
 import Link from "next/link";
 

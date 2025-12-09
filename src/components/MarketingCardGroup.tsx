@@ -2,10 +2,8 @@
 import { useEffect, useState } from "react";
 import MarketingCard from "./MarketingCard";
 import isMobile from "@/util/util";
-import { useRouter } from "next/navigation";
 
 export default function MarketingCardGroup() {
-    const router = useRouter();
     const [marketingCards, setMarketingCards] = useState([
         {
             title: "Brands & Agencies",

@@ -4,12 +4,12 @@ import Button from "@/components/Button";
 import GradientButton from "./GradientButton";
 import { useState } from "react";
 import { openShareBriefModal } from "@/util/modalEvents";
-import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 
 export default function AdvertiserLaunchCampaign() {
   const [selectedOption, setSelectedOption] = useState("launch-your-campaign");
-  const router = useRouter();
+
   return (
     <div className="w-full border-[0px] lg:border-[2px] border-[#D2D2D2] rounded-[16px] px-0 lg:px-[40px] py-[24px] lg:py-[40px] gap-[40px] flex flex-col items-center justify-center ">
       <div className="w-full flex flex-row items-start lg:items-center justify-start overflow-x-auto gap-[10px]">

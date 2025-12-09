@@ -2,8 +2,6 @@ import Navbar from "@/components/Navbar";
 import MarketingCardGroup from "@/components/MarketingCardGroup";
 import BrandsScroller from "@/components/BrandsScroller";
 
-import KnowledgeHubCard from "@/components/KnowledgeHubCard";
-import KnowledgeHubCard2 from "@/components/KnowledgeHubCard2";
 import TestimonialGroup from "@/components/TestimonialGroup";
 import Footer from "@/components/Footer";
 import Image from "next/image";

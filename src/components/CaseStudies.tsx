@@ -5,7 +5,7 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import GradientButton from "./GradientButton";
-import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 
 interface Analytics {
@@ -25,7 +25,6 @@ interface CaseStudyCardProps {
 }
 
 const CaseStudyCard = (caseStudy: CaseStudyCardProps) => {
-  const router = useRouter();
   return (
     <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:max-h-[320px] border-1 border-[#E8E8E8] flex  flex-col md:flex-row items-start justify-start">
       <div className="flex flex-col items-start p-[24px] justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl w-full lg:min-w-[300px]">

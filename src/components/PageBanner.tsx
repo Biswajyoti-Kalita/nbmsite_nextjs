@@ -45,7 +45,7 @@ export default function PageBanner({ breadcrumb, headline, title, description, i
 
                 {
                   buttons.map((button, index) => (
-                    <>
+                    <div key={index}>
 
                     {
                       button.link && <Link href={button.link}
@@ -81,7 +81,7 @@ export default function PageBanner({ breadcrumb, headline, title, description, i
                         onClick={openCallMeBackModal}
                       />
                     }
-                    </>
+                    </div>
                   ))
                 }
 

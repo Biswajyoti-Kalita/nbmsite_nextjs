@@ -1,10 +1,9 @@
-import Breadcrumb from "@/components/Breadcrumb";
 import Footer from "@/components/Footer";
 import HighlightsGroup from "@/components/HighlightsGroup";
 import KnowledgeHubLib from "@/components/KnowledgeHubLib";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
-import Image from "next/image";
+
 
 export default function KnowledgeHub() {
   return (

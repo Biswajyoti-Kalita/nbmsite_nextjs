@@ -3,7 +3,7 @@
 import isMobile from "@/util/util";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 
 const isMobileScreen = isMobile();
@@ -12,8 +12,8 @@ export default function ActionSidebar() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [openActions, setopenActions] = useState(false);
 
-  const router = useRouter();
 
+  
   useEffect(() => {
     // Find the About Us section by its ID
     const aboutUsSection = document.getElementById("about-us");

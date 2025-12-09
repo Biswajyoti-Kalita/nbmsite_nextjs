@@ -71,7 +71,7 @@ export default function MarketingCard({
       <div className="z-10 flex flex-col sm:flex-row gap-2 md:gap-[12px]">
         {
           buttons.map((button, index) => (
-            <Link href={button.href} target="_blank">
+            <Link href={button.href} target="_blank" key={index}>
             <GradientButton
               key={index}
               type="secondary"

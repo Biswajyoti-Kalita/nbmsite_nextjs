@@ -3,12 +3,10 @@ import Image from "next/image";
 import GradientButton from "./GradientButton";
 import { useState } from "react";
 import { openCallMeBackModal } from "@/util/modalEvents";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function PublisherRevenuSection() {
   const [selectedTab, setSelectedTab] = useState("self-serve-tools");
-  const router = useRouter();
   return (
     <div className="w-full flex flex-col gap-[40px] md:p-[40px] border-0 lg:border-1 border-[#D2D2D2] rounded-[16px]">
       <div className="w-full flex gap-[10px] flex-row overflow-x-scroll">

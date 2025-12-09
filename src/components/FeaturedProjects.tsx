@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+
 
 interface FeatureProjectCardProps {
   left_image: string;
@@ -14,7 +14,7 @@ interface FeatureProjectCardProps {
 }
 
 const FeatureProjectCard = (FeatureProject: FeatureProjectCardProps) => {
-  const router = useRouter();
+
   return (
     <div className="rounded-2xl bg-[#FFFEFF] w-full md:w-[740px] h-auto md:h-[250px] border-1 border-[#E8E8E8] flex  flex-col md:flex-row items-start justify-start">
       <div className="flex flex-col items-start justify-start gap-[16px] border-[#E8E8E8] border-r-1 h-full rounded-2xl w-full lg:min-w-[300px]">
