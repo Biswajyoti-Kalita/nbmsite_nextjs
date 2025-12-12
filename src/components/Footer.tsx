@@ -1,3 +1,5 @@
+"use client";
+import { openCallMeBackModal } from "@/util/modalEvents";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,10 +48,10 @@ export default function Footer() {
             <Link href="https://admanager.fm" target="_blank" className={baseLinkClasses}>
               Admanager
             </Link>
-            <Link href="/diaspora" target="_blank" className={baseLinkClasses}>
+            <Link href="/diaspora" className={baseLinkClasses}>
             Diaspora
             </Link>
-            <Link href="/production" target="_blank" className={baseLinkClasses}>
+            <Link href="/production" className={baseLinkClasses}>
               Production
             </Link>
             </div>
@@ -83,7 +85,7 @@ export default function Footer() {
             <Link href="/about-us" className={baseLinkClasses}>
               About Us
             </Link>
-            <Link href="/contact-us" className={baseLinkClasses}>
+            <Link href={`#`} onClick={openCallMeBackModal} className={baseLinkClasses}>
               Contact Us
             </Link>
             <Link href="/why-audio" className={baseLinkClasses}>

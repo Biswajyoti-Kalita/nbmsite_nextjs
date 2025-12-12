@@ -2,6 +2,7 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
 import { openCallMeBackModal, openShareBriefModal } from "@/util/modalEvents";
+import Link from "next/link";
 
 export default function DiscoverAudioSection() {
     return (
@@ -29,12 +30,14 @@ export default function DiscoverAudioSection() {
                   textClassName="text-[#FFFFFF] text-[16px] leading-[24px] font-semibold"
                   onClick={openShareBriefModal}
                 />
+                <Link href="/advertisers" className="z-10">
                 <GradientButton
                   text="Learn More"
                   type="tertiary"
                   className="z-10 w-[131px] h-[44px]"
                   textClassName="text-[#FFFFFF]"
                 />
+                </Link>
               </div>
             </div>
             <div className="max-h-[440x] lg:max-h-[362px] w-full lg:w-auto rounded-[16px]">

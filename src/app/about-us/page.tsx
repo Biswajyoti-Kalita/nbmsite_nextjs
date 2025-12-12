@@ -49,8 +49,7 @@ export default function AboutUs() {
               Global Scale. Local Precision.
             </h1>
             <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-              Two ways your shows can earn: be visible to buyers in our tools,
-              and get pitched for high-value brand campaigns.
+            We help advertisers, podcasters and publishers succeed in every market they operate in.
             </span>
           </div>
           <div
@@ -285,7 +284,7 @@ export default function AboutUs() {
             </span>
           </div>
           <div className="font-[Switzer] font-[600] text-[16px] leading-[24px] text-[#F11F68] hover:underline  cursor-pointer">
-            hello@nextbroadcast.com
+            hello@nextaud.io
           </div>
         </div>
       </div>

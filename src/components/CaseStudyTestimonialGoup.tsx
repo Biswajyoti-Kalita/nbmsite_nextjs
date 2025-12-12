@@ -18,30 +18,21 @@ const CaseStudyTestimonial = (props: CaseStudyTestimonialInterface) => {
       <div className="w-full max-w-[1024px] min-h-[400px] flex flex-col items-center justify-between gap-[32px]">
         <div>
           <p className="font-semibold text-[24px] lg:text-[32px] leading-[30px] lg:leading-[40px] tracking-[-0.02em] lg:tracking-[0em] text-[#FFFFFF] text-center min-h-[200px]">
-            Kiri’s Maida podcast was created with the Kiri team to extend the
-            brand’s equity, and to be the pillar of kindness and inspiration for
-            progressive moms. In parallel, the programmatic audio ads maximized
-            the podcast’s awareness. The campaign drove efficient reach and for
-            a first-time campaign, it truly set a remarkable benchmark.
+           {props.quote}
           </p>
         </div>
         <div className="w-full flex flex-col items-center justify-center gap-[16px]">
           <div className="relative w-[56px] h-[56px] overflow-hidden border-[1px] border-[#F11F68] bg-[#FFF9FE] rounded-full font-bold flex items-center justify-center text-[25px] leading-[36px] tracking-[-0.01em] text-[#344054]">
             <span>
-              {"S K"
-                .split(" ")
-                .filter((word) => isNaN(Number(word)))
-                .filter((w, i) => i < 2)
-                .map((word) => word[0])
-                .join("")}
+              {props.name.split(" ").filter((word) => isNaN(Number(word))).filter((w, i) => i < 2).map((word) => word[0]).join("")}
             </span>
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-[4px]">
             <h1 className="font-semibold text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#FFFFFF]">
-              Sarah Kanaan
+              {props.name}
             </h1>
             <h1 className="font-normal text-[14px] lg:text-[16px] leading-[22px] lg:leading-[24px] tracking-[0em] text-[#E8E8E8]">
-              Lead of Zenith
+              {props.designation}
             </h1>
           </div>
           <h1 className="flex flex-row items-center justify-center gap-[4px]">

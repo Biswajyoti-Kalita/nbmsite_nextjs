@@ -9,9 +9,11 @@ import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import caseStudies from "@/data/caseStudies.json";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 interface CaseStudy {
   name: string;
+  description: string;
   category: string;
   banner_image: string;
   banner_title: string;
@@ -53,6 +55,32 @@ const dataMap = caseStudies as CaseStudies;
 export async function generateStaticParams() {
   // Generate all static paths (pre-rendered pages)
   return Object.keys(caseStudies).map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const data = dataMap[slug];
+
+  if (!data) {
+    return {
+      title: "Case Study Not Found",
+      description: "The requested case study could not be found.",
+    };
+  }
+
+  // Use banner_subtitle as description, or create one from available data
+  const description = data.description;
+  return {
+    title: `${data.name} | Case Study`,
+    description: description,
+    alternates: {
+      canonical: `/case-studies/${slug}`,
+    },
+  };
 }
 
 export default async function CaseStudyPage({
@@ -99,7 +127,7 @@ export default async function CaseStudyPage({
 
             <div className="w-full max-w-[768px] flex flex-col items-start justify-start gap-[8px] lg:gap-[16px]">
               <h1 className="font-medium uppercase text-[14px] lg:text-[16px] leading-[22px] lg:leading-[32px] text-[#FFFEFF] py-[4px]">
-                Podcast Advertising case study: {data.category}
+                Podcast Advertising Case Study: {data.category}
               </h1>
               <div className="flex flex-col items-start justify-start gap-[24px]">
                 <h1 className="font-bold text-[48px] lg:text-[60px] leading-[54px] lg:leading-[72px] text-[#FFFEFF] tracking-[-0.02em]">

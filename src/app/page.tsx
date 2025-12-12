@@ -145,8 +145,7 @@ export default function Home() {
             <h6
               className="text-[#344054] text-base md:text-lg lg:text-[20px] leading-[24px] md:leading-[28px] font-normal"
             >
-              Insights, tools, and trends from our LinkedIn feed, webinars, and LinkedIn
-              feed
+              Insights, tools, and trends from our LinkedIn feed and webinars
             </h6>
           </div>
         </div>  
@@ -175,7 +174,7 @@ export default function Home() {
             <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7391942740739121152?collapsed=1"  className="min-h-[550px] w-full" allowFullScreen={true} title="Embedded post"></iframe>
           </div>
 
-s        </div>
+        </div>
       </section>
         
       <TestimonialGroup />

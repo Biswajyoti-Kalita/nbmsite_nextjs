@@ -10,15 +10,16 @@ export default function Insights() {
             Insights That Matter to You
           </h1>
           <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-            Advice to help you grow and earn from your podcast.
+          Guides to help you integrate podcasts into your media mix and measure what matters.
           </h6>
         </div>
         <div className="w-full flex justify-start lg:justify-end">
+          <Link href="/knowledge-hub">
           <GradientButton
-            text="Explore Podcaster Knowledge Hub"
+            text="Explore Knowledge Hub"
             className="h-[44px] w-[293px]"
             textClassName="text-[16px] leading-[24px] font-semibold"
-          />
+          /></Link>
         </div>
       </div>
       <div className="w-full flex flex-row overflow-x-auto items-start justify-between gap-[16px] lg:gap-[20px] max-w-[1280px]">

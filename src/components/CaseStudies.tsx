@@ -190,7 +190,7 @@ export default function CaseStudies() {
       analytics: [
         {
           title: "+30%",
-          subtitle: "Interest Rate",
+          subtitle: "Brand Interest",
         },
         {
           title: "95%",
@@ -217,7 +217,7 @@ export default function CaseStudies() {
         },
         {
           title: "96%",
-          subtitle: "Listen through rate",
+          subtitle: "Listen Through Rate",
         },
       ],
     },
@@ -236,7 +236,7 @@ export default function CaseStudies() {
         },
         {
           title: "+24%",
-          subtitle: "Interest Rate",
+          subtitle: "Brand Interest",
         },
         {
           title: "+28%",
@@ -255,7 +255,7 @@ export default function CaseStudies() {
       analytics: [
         {
           title: "96%",
-          subtitle: "Listen through rate",
+          subtitle: "Listen Through Rate",
         },
         {
           title: "+34%",
@@ -278,7 +278,7 @@ export default function CaseStudies() {
         },
         {
           title: "96%",
-          subtitle: "Listen through rate",
+          subtitle: "Listen Through Rate",
         },
       ],
     },

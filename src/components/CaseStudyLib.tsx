@@ -149,7 +149,7 @@ export default function CaseStudyLib({
                   {study.category}
                 </span>
                 <Image
-                  src={study.audio?.image || ""}
+                  src={study.audio?.image || study.banner_image}
                   alt={study.name}
                   className="w-full max-w-[180px] h-full max-h-[150px] object-contain mb-6"
                   width={180}

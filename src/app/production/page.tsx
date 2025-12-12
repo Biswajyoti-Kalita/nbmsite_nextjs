@@ -104,10 +104,10 @@ export default function Production() {
               <div className="w-full z-20 flex flex-col items-start justify-center gap-[40px] p-[32px] lg:p-[64px] rounded-[16px]">
                 <div>
                   <h1 className="text-[#D6E4FF] text-[34px] leading-[42px] font-semibold">
-                  <b>73% </b> of podcast listeners say they trust 
+                  <b>73% </b>of podcast listeners say they trust 
                   </h1>
                   <h1 className="text-[#D6E4FF] text-[34px] leading-[42px] font-semibold">
-                    cthe brands they hear in podcasts (Edison/IAB)
+                    the brands they hear in podcasts (Edison/IAB)
                   </h1>
                 </div>
                 <div className="w-full flex flex-col lg:flex-row items-start lg:items-end justify-start lg:justify-end gap-[64px]">

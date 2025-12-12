@@ -277,11 +277,6 @@ export default function Diaspora() {
                         <b>US Profile:</b> Median HH income ~$102k; High share
                         in management, business, science, & arts
                       </li>
-                      Network Unique Users: ≥ 3.7 million
-                      <li>
-                        <b>US Profile:</b> Median HH income ~$102k; High share
-                        in management, business, science, & arts
-                      </li>
                     </ul>
                   ),
                 },

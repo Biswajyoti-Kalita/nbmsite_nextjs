@@ -141,7 +141,7 @@ export default function Podcaster() {
                 </div>
                 <div className="hidden lg:block w-full mb-2">
                   <GradientButton
-                    text="Download Podcaster Info Sheet"
+                    text="Info Sheet"
                     type="secondary"
                     className=""
                     textClassName="text-[16px] leading-[24px]"

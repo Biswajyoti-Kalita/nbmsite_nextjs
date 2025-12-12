@@ -142,7 +142,7 @@ export default function Publishers() {
             },
             {
               title:
-                "Is NBM exclusive?",
+                "Is Next Audio exclusive?",
               description:
                 "No. We're fully non-exclusive. You can keep working with other partners too.",
             },

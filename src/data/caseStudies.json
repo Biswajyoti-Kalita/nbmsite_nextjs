@@ -1,6 +1,7 @@
 {
   "accor-hotels": {
     "name": "Accor Hotel",
+    "description": "Learn how a travel and tourism brand used dynamic podcast ads to drive awareness and achieve measurable results targeting frequent travellers. ",
     "category": "Travel & Tourism",
     "banner_image": "/assets/images/accor-hotel.jpg",
     "banner_title": "How Accor Hotel Used Podcasts to Reach Frequent Travellers",
@@ -27,7 +28,7 @@
         "subtitle": ""
       },
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "96%"
       }
     ],
@@ -51,6 +52,7 @@
   },
   "johnson-and-johnson": {
     "name": "Johnson and Johnson",
+    "description": "Learn how a skincare brand used dynamic podcast ads to drive awareness and achieve measurable results targeting health conscious adults",
     "category": "SKINCARE",
     "banner_image": "/assets/images/johnson_bg.png",
     "banner_title": "How Johnson & Johnson Boosted Skincare Awareness with Audio",
@@ -94,6 +96,7 @@
   },
   "bel": {
     "name": "Bel",
+    "description": "Learn how a FMCG brand used podcast ads to drive purchase consideration and achieve measurable results targeting mothers.",
     "category": "FMCG",
     "banner_image": "/assets/images/bel_bg.jpg",
     "banner_title": "How Bel Groupe Reached Saudi Mothers with Podcast Ads",
@@ -115,7 +118,7 @@
     },
     "results": [
       {
-        "title": "Maida podcast featured in Apple Podcasts app 'New and Noteworthy&apos section",
+        "title": "Maida podcast featured in Apple Podcasts app 'New and Noteworthy' section",
         "subtitle": ""
       },
       {
@@ -123,7 +126,7 @@
         "subtitle": "5%"
       },
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "95%"
       },
       {
@@ -156,6 +159,7 @@
   },
   "careem": {
     "name": "Careem",
+    "description": "Learn how an e-commerce brand used personalised podcast ads to drive app downloads and awareness targeting busy professionals and families. ",
     "category": "E-commerce",
     "banner_image": "/assets/images/careem.jpg",
     "banner_title": "How Careem Used Podcasts to Drive App Downloads",
@@ -178,7 +182,7 @@
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "96%"
       },
       {
@@ -195,6 +199,7 @@
   },
   "saxo-bank": {
     "name": "Saxo Bank",
+    "description": "Learn how a global bank used dynamic podcast ads to drive awareness and consideration targeting HNWIs and finance professionals. ",
     "category": "Finance",
     "banner_image": "/assets/images/saxo-bank.jpg",
     "banner_title": "How Saxo Bank Reached Affluent Investors Through Podcast Ads",
@@ -218,11 +223,11 @@
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "97%"
       },
       {
-        "title": "Above average interest rate",
+        "title": "Above average Brand Interest",
         "subtitle": "29%"
       },
       {
@@ -243,6 +248,7 @@
   },
   "hubpay": {
     "name": "Hubpay",
+    "description": "Learn how a fintech startup used digital audio ads to drive awareness targeting expats living in other countries. ",
     "category": "FINTECH",
     "banner_image": "/assets/images/hubpay_bg.png",
     "banner_title": "How Hubpay Used Audio to Engage Expat Audiences",
@@ -266,7 +272,7 @@
     },
     "results": [
       {
-        "title": "Interest rate (vs control)",
+        "title": "Brand Interest (vs control)",
         "subtitle": "+23 pts"
       },
       {
@@ -287,6 +293,7 @@
   },
   "emirates-airlines": {
     "name": "Emirates Airlines",
+    "description": "Learn how an airline used digital audio ads to drive awareness targeting South Asian expats living in the UK. ",
     "category": "TRAVEL AIRLINE",
     "banner_image": "/assets/images/emirates-airlines.jpg",
     "banner_title": "How Emirates Airline Engaged South Asian Listeners in London",
@@ -309,11 +316,11 @@
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "97%"
       },
       {
-        "title": "Above average interest rate",
+        "title": "Above average Brand Interest",
         "subtitle": "23%"
       },
       {
@@ -334,6 +341,7 @@
   },
   "valentino": {
     "name": "Valentino",
+    "description": "Learn how a luxury fashion and beauty brand used digital audio ads to drive awareness targeting females. ",
     "category": "Beauty & Fragrance",
     "banner_image": "/assets/images/valentino_bg.png",
     "banner_title": "How Valentino Captured the Attention of Young Women in the Gulf",
@@ -356,7 +364,7 @@
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "96%"
       },
       {
@@ -386,6 +394,7 @@
   },
   "centrum": {
     "name": "Centrum",
+    "description":"Learn how a health and wellness brand used digital audio ads to drive awareness targeting females. ",
     "category": "Health & Wellness",
     "banner_image": "/assets/images/centrum_bg.jpg",
     "banner_title": "Centrum Builds Brand Visibility Through Podcast Targeting",
@@ -429,6 +438,7 @@
   },
   "annol-real-estate": {
     "name": "Anonymous",
+    "description":"Learn how a property real-estate brand used dynamic podcast ads to drive awareness targeting affluent adults. ",
     "category": "REAL ESTATE",
     "banner_image": "/assets/images/annol-real-estate-bg.jpg",
     "banner_title": "Driving Property Interest with Long-Term Podcast Campaigns",
@@ -476,6 +486,7 @@
   },
   "panadol": {
     "name": "Panadol",
+    "description": "Learn how a global CPG brand used dynamic podcast ads to drive awareness of a health product targeting adults. ",
     "category": "Healthcare",
     "banner_image": "/assets/images/haleon_bg.jpg",
     "banner_title": "How Panadol Used Audio to Build Brand Awareness",
@@ -535,6 +546,7 @@
   },
   "bmw": {
     "name": "BMW",
+    "description": "Learn how an automotive brand used personalised dynamic creative podcast ads targeting affluent premium car buyers to take a test drive. ",
     "category": "Automotive",
     "banner_image": "/assets/images/bmw_bg.jpg",
     "banner_title": "How BMW Used Podcast Ads to Drive Awareness for Its New iX",
@@ -582,6 +594,7 @@
   },
   "visa": {
     "name": "Visa",
+    "description": "Learn how a banking and finance brand used podcast sponsorships to target female entrepreneurs. ",
     "category": "Financial Services",
     "banner_image": "/assets/images/bmw_bg.jpg",
     "banner_title": "How Visa Reached Female Entrepreneurs Through Branded Content",
@@ -604,7 +617,7 @@
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "95%"
       },
       {
@@ -625,6 +638,7 @@
   },
   "travel-switzerland": {
     "name": "Travel Switzerland",
+    "description": "Learn how a tourism board used podcast ads to drive awareness targeting adults with high disposable income. ",
     "category": "Travel & Tourism",
     "banner_image": "/assets/images/switzerland_bg.jpg",
     "banner_title": "How Switzerland Used Podcasts to Inspire High-Intent Travelers",
@@ -640,14 +654,14 @@
     "execution": {
       "title": "The campaign focused on high-reach, high-resonance Arabic-language podcasts to connect with affluent Gulf-based audiences in a personal, trusted format.",
       "points": [
-        "30-second creatives were produced by NBM in Arabic for cultural relevance and clarity.",
+        "30-second creatives were produced by Next Audio in Arabic for cultural relevance and clarity.",
         "Ads were placed across the region's top-performing Arabic podcasts to ensure high listener engagement and contextual relevance.",
         "Targeting focused on lifestyle and leisure genres to appeal to travel-interested audiences."
       ]
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "98%"
       },
       {
@@ -664,6 +678,7 @@
   },
   "p-and-o": {
     "name": "P & O",
+    "description": "Learn how a cruise-line travel brand used personalised DCO podcast ads to drive awareness targeting travellers, families, and older tourers.",
     "category": "Travel & Tourism",
     "banner_image": "/assets/images/p-and-o_bg.jpg",
     "banner_title": "How P&O Ferries Used Podcasts to Engage Diverse Travel Audiences",
@@ -686,7 +701,7 @@
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "96%"
       },
       {
@@ -711,6 +726,7 @@
   },
   "capital": {
     "name": "Capital.com",
+    "description": "Learn how a fintech brand used podcast ads and sponsorships to drive awareness targeting investors and traders. ",
     "category": "FINANCE",
     "banner_image": "/assets/images/capital_bg.jpg",
     "banner_title": "How Capital.com Reached New Retail Investors Through Podcast Sponsorship and Ads",
@@ -724,7 +740,7 @@
     },
     "objective": "Expand brand visibility and consideration across the GCC by engaging finance-savvy podcast listeners with dynamic, relevant audio messages.",
     "execution": {
-      "title": "Capital.com partnered with NBM to deliver a multi-strategy podcast campaign designed to simplify complex financial topics and connect with audiences through trusted local voices.",
+      "title": "Capital.com partnered with Next Audio to deliver a multi-strategy podcast campaign designed to simplify complex financial topics and connect with audiences through trusted local voices.",
       "points": [
         "A branded episode on the popular Arabic show Think with Hessa positioned Capital.com at the heart of a conversation on smart investing, hosted by a respected regional voice.",
         "Host-read sponsorships ran on local favourites such as Studio Al Jumhour and Papersamwich, bringing financial education into authentic, everyday moments.",
@@ -734,7 +750,7 @@
     },
     "results": [
       {
-        "title": "Listen through rate",
+        "title": "Listen Through Rate",
         "subtitle": "94%"
       },
       {
@@ -764,6 +780,7 @@
   },
   "cadbury": {
     "name": "Cadbury",
+    "description": "Learn how a FMCG brand used podcast ads to drive awareness and achieve measurable results targeting adults.",
     "category": "FMCG",
     "banner_image": "/assets/images/cadbury_bg.png",
     "banner_title": "How Cadbury Flake Drove Engagement and Brand Affinity with Audio Ads",
@@ -811,6 +828,7 @@
   },
   "dell": {
     "name": "Dell",
+    "description": "Learn how a consumer tech company used podcast ads and host reads to drive awareness and achieve measurable results in a B2B campaign.",
     "category": "B2B & Technology",
     "banner_image": "/assets/images/dell_bg.jpg",
     "banner_title": "How VMware Reached Global Tech Decision Makers Through Podcast Sponsorships",

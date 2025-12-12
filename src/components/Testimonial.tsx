@@ -68,8 +68,7 @@ export default function Testimonial({
         </div>
         <h4 className="color-5 font-semibold text-[20px] lg:text-[24px] leading-[28px] lg:leading-[32px] tracking-[-0.01em]">{title}</h4>
         <h5 className="color-5 font-normal text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] my-2">
-          {quote}
-          data
+          {quote}          
         </h5>
       </div>
       <div className="flex flex-row gap-4 mt-8">

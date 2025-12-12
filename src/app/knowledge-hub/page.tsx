@@ -15,7 +15,7 @@ export default function KnowledgeHub() {
       />
       <div className="bg-[#091A3A] flex flex-col items-center justify-center w-full pt-[50px] lg:pt-0">
       <PageBanner
-          breadcrumb={[{ name:  "Why Audio", link: "/why_audio" }, { name: "Knowledge hub central library", link: "/knowledge-hub" }]}
+          breadcrumb={[{ name:  "Why Audio", link: "/why-audio" }, { name: "Knowledge hub central library", link: "/knowledge-hub" }]}
           headline=""
           title="Podcast Advertising Knowledge Hub"
           description="Guides, reports, articles, and more to help you grow with
@@ -28,7 +28,7 @@ export default function KnowledgeHub() {
       <section className="w-full bg-[#F8F9FA] flex flex-col items-center justify-center rounded-xl py-8 lg:py-[0px] px-4 md:px-[80px] gap-[10px]">
         <div className="w-full flex flex-col justify-start items-start max-w-[1280px] gap-[40px] py-[96px]">
           <h1 className="font-bold text-[24px] lg:text-[32px] leading-[32px] lg:leading-[40px] text-[#262626]">
-            Highlighs
+            Highlights
           </h1>
           <div className="w-full flex flex-row justify-between items-center gap-[20px]" id="highlights">
             <HighlightsGroup />

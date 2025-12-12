@@ -84,7 +84,7 @@ export default function AdvertiserLaunchCampaign() {
                       />
                     </svg>
                     <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                      Create you ad
+                      Create your ad
                     </h6>
                   </div>
 
