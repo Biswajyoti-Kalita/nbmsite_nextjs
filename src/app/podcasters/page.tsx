@@ -54,7 +54,7 @@ export default function Podcaster() {
               </h1>
               <div className="flex flex-col items-start justify-center gap-[12px]">
                 <div className="flex flex-row items-start justify-start gap-[12px]">
-                  <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} className="w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
+                  <Image src="/assets/images/checkicon.png" alt="check-circle" width={28} height={28} className="w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
                   <h1>
                     <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                       Dynamically inserted ads:
@@ -76,7 +76,7 @@ export default function Podcaster() {
                 </div>
 
                 <div className="flex flex-row items-start justify-start gap-[12px]">
-                <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} className="w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
+                <Image src="/assets/images/checkicon.png" alt="check-circle" width={28} height={28} className="w-[24px] h-[24px] lg:w-[28px] lg:h-[28px]" />
 
                   <h1>
                     <span className="font-semibold text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
@@ -107,7 +107,7 @@ export default function Podcaster() {
                       </p>
                       <div className="flex flex-col items-start justify-center gap-[12px]">
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
-                          <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} />
+                          <Image src="/assets/images/checkicon.png" alt="check-circle" width={28} height={28} />
 
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                             Have been consistently publishing for 6 months or
@@ -116,14 +116,14 @@ export default function Podcaster() {
                         </h1>
 
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
-                        <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} />
+                        <Image src="/assets/images/checkicon.png" alt="check-circle" width={28} height={28} />
                         <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                             Reach 1,000+ monthly listeners
                           </span>
                         </h1>
 
                         <h1 className="flex flex-row items-center justify-start gap-[12px]">
-                          <Image src="/assets/images/check-icon.png" alt="check-circle" width={28} height={28} className="w-[28px] h-[28px]" />
+                          <Image src="/assets/images/checkicon.png" alt="check-circle" width={28} height={28} className="w-[28px] h-[28px]" />
                           <span className="font-normal text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em]">
                             Cover a highly niche topic or audience (e.g.
                             medical, aerospace, regional, etc.)
