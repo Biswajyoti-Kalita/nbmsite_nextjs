@@ -11,6 +11,7 @@ import GradientButton from "@/components/GradientButton";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import ReadyToLaunch from "@/components/ReadyToLaunch";
 import Link from "next/link";
+import WelcomeToast from "@/components/WelcomeToast";
 
 export default function Home() {
   return (
@@ -183,6 +184,7 @@ export default function Home() {
       <ActionSidebar />
     </div>
     <Footer />
+    <WelcomeToast />
     </div>
   );
 }
