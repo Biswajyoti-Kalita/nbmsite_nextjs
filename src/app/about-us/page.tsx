@@ -284,7 +284,7 @@ export default function AboutUs() {
             </span>
           </div>
           <div className="font-[Switzer] font-[600] text-[16px] leading-[24px] text-[#F11F68] hover:underline  cursor-pointer">
-            hello@nextaud.io
+            suzi@nextbroadcast.media
           </div>
         </div>
       </div>
