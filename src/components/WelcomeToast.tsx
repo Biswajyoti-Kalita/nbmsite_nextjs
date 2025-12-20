@@ -43,7 +43,7 @@ export default function WelcomeToast() {
       <div className="bg-[#262626] shadow-lg px-4 py-3 md:px-6 md:py-4 flex flex-col items-center gap-4 w-full">
         <div>
             <h1 className='text-[#D0FF3C] text-2xl md:text-4xl font-bold text-center'>Same company. New name.</h1>
-            <h5 className='text-sm md:text-base text-center'>Next Audio <span className='text-[#9e9e9e]'>is the new name and digital experience for </span>Next Broadcast Media. <span className='text-[#9e9e9e]'>Welcome</span  ></h5>
+            <h5 className='text-sm md:text-base text-white text-center'>Next Audio <span className='text-[#9e9e9e]'>is the new name and digital experience for </span>Next Broadcast Media. <span className='text-[#9e9e9e]'>Welcome</span  ></h5>
         </div>
         <button
           onClick={handleClose}
