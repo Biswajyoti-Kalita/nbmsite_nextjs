@@ -231,8 +231,7 @@ export default async function CaseStudyPage({
                 </h1>
               </div>
               <div className="w-full flex flex-col items-start justify-start gap-[16px]">
-                <p className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]">
-                  {data.execution.title}
+                <p className="font-medium text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0em] text-[#262626]" dangerouslySetInnerHTML={{ __html: data.execution.title }}>                
                 </p>
                 <div className="w-full flex flex-col items-start justify-start gap-[12px]">
                   {data.execution.points.map((point: string, index: number) => (
@@ -280,7 +279,7 @@ export default async function CaseStudyPage({
                   <path
                     d="M444.968 489.76L0 -27.7646H853.978V148.264L417.572 152.243C397.463 152.426 377.089 158.61 364.172 174.022C329.466 215.431 341.901 255.531 364.99 282.992C377.359 297.703 396.906 303.169 416.126 303.169H853.978V489.76H444.968Z"
                     fill="#ECD2FF"
-                    fill-opacity="0.14"
+                    fillOpacity="0.14"
                   />
                 </svg>
               </div>
@@ -295,7 +294,7 @@ export default async function CaseStudyPage({
                   <path
                     d="M0 90.002C74.5537 22.0844 268.757 -73.0003 449.14 90.002H0Z"
                     fill="#ECD2FF"
-                    fill-opacity="0.14"
+                    fillOpacity="0.14"
                   />
                 </svg>
               </div>
@@ -345,8 +344,8 @@ export default async function CaseStudyPage({
                 <div className="flex flex-row items-center justify-center gap-[24px]">
                   <div className="w-[295px] lg:w-[164px] h-[295px] lg:h-[164px] flex items-center justify-center gap-[4px] rounded-[6px] border border-[#E8E8E8] bg-[#FFFFFF]">
                     <Image
-                      src={data.audio.image}
-                      alt="bel"
+                      src={data.audio.image || "/assets/images/listen-ad-2.jpg"}
+                      alt={data.audio.title || "Audio Image"}
                       width={76}
                       height={64}
                       className=" w-auto max-w-[115px] h-auto max-h-[95px] lg:max-w-[76px] lg:max-h-[64px]"

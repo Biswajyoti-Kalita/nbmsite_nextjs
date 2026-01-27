@@ -201,49 +201,45 @@
     "name": "Saxo Bank",
     "description": "Learn how a global bank used dynamic podcast ads to drive awareness and consideration targeting HNWIs and finance professionals. ",
     "category": "Finance",
-    "banner_image": "/assets/images/saxo-bank.jpg",
-    "banner_title": "How Saxo Bank Reached Affluent Investors Through Podcast Ads",
-    "banner_subtitle": "A brand-building campaign designed to drive high-value traffic by targeting globally minded, finance-savvy expats through premium podcast content.",
+    "banner_image": "/assets/images/saxo-bank.webp",
+    "banner_title": "How Saxo Bank Engaged Affluent Investors and Expats in the UAE",
+    "banner_subtitle": "A targeted podcast advertising campaign reaching finance-savvy professionals and high-net-worth investors through premium English and Arabic audio content.",
     "summary": {
       "client": "Saxo Bank",
-      "industry": "Finance",
-      "campaign_types": "Awareness campaign, Consideration campaign",
+      "industry": "Finance & Banking",
+      "campaign_types": "Awareness & Conversion,Programmatic Podcast Advertising",
       "audio_format": "Podcasts",
-      "audience_profile": "Affluent expats, HNWIs, finance professionals"
+      "audience_profile": "Affluent professionals, expat investors, finance-savvy adults in the UAE"
     },
-    "objective": "Raise awareness and drive quality traffic to Saxo's platform by targeting financially savvy, globally minded expats and professionals seeking smarter ways to grow and manage their wealth.",
+    "objective": "Saxo Bank aimed to increase awareness and drive high-value traffic to its investment platform by reaching financially savvy, globally minded professionals and expat investors in the UAE.",
     "execution": {
-      "title": "This multi-language campaign focused on reach and relevance through:",
+      "title": "Next Audio delivered a programmatic podcast advertising campaign across English and Arabic content, tailored by listener origin and content language.<br /><br />The campaign focused on high-quality financial and news podcasts, including titles such as The Intelligence by The Economist and BBC Business Daily, to reach audiences actively engaged with global markets, investing, and wealth management.",
       "points": [
-        "Podcast placements targeting affluent, high-net-worth adults aged 25+.",
-        "Dynamic language targeting in both English and Arabic to reach diverse expat audiences.",
-        "Premium inventory across top finance and global affairs podcasts, including The Economist and BBC Global News.",
-        "Contextual targeting by listener origin, language, and expat status to engage British, Indian, European, and Australian audiences."
+        "English and Arabic podcast placements",
+        "Targeting by finance interest, wealth indicators, and expat status",
+        "Premium business and news podcast inventory",
+        "Programmatic audio delivery"
       ]
     },
     "results": [
       {
-        "title": "Listen Through Rate",
-        "subtitle": "97%"
+        "title": "Above-average interest rate",
+        "subtitle": ""
       },
       {
-        "title": "Above average Brand Interest",
-        "subtitle": "29%"
+        "title": "Increase in brand image",
+        "subtitle": ""
       },
       {
-        "title": "Improvement in brand image",
-        "subtitle": "19%"
-      },
-      {
-        "title": "Uplift in consideration",
-        "subtitle": "27%"
+        "title": "Boost in consideration vs non-exposed audiences",
+        "subtitle": ""
       }
     ],
     "audio": {
       "image": "/assets/images/saxo-bank.png",
       "title": "Saxo Bank",
       "points": ["Awareness", "Consideration"],
-      "audio_file": "/assets/audio/saxo-bank.mp3"
+      "audio_file": "/assets/audio/saxo-bank.wav"
     }
   },
   "hubpay": {
@@ -300,7 +296,7 @@
     "banner_subtitle": "A language-led campaign tailored to expats in the UK, delivering standout engagement and brand impact for Emirates Airline.",
     "summary": {
       "client": "Emirates Airlines",
-      "industry": "Travel/Airlines",
+      "industry": "Travel and Tourism",
       "campaign_types": "Awareness campaign",
       "audio_format": "Podcasts, music, web radio",
       "audience_profile": "South Asian adults aged 18+ in the UK"
@@ -836,7 +832,7 @@
     "summary": {
       "client": "Dell",
       "industry": "Technology",
-      "campaign_types": "Awareness campaign, Host reads",
+      "campaign_types": "Awareness campaign, Host read",
       "audio_format": "Podcasts",
       "audience_profile": "C-suite, tech and business decision makers"
     },
@@ -874,5 +870,352 @@
         "image": "./assets/images/person.png"
       }
     ]
+  },
+  "pegasus-airlines": {
+    "name": "Pegasus Airlines",
+    "description": "How Pegasus Airlines Reached Premium Travellers Across the GCC",
+    "category": "Travel & Tourism",
+    "banner_image": "/assets/images/pegasus-airlines.jpg",
+    "banner_title": "How Pegasus Airlines Reached Premium Travellers Across the GCC",
+    "banner_subtitle": "A programmatic podcast advertising campaign targeting high-net-worth individuals and frequent travellers in the GCC, delivering strong engagement and attention.",
+    "summary": {
+      "client": "Pegasus Airlines",
+      "industry": "Travel & Tourism",
+      "campaign_types": "Awareness, Programmatic Podcast Advertising",
+      "audio_format": "Podcasts",
+      "audience_profile": "Business owners, HNWIs, investors, and premium travellers across the GCC"
+    },
+    "objective": "Pegasus Airlines wanted to increase brand awareness and consideration among high-net-worth individuals and frequent travellers across the GCC. The objective was to position Pegasus as a strong airline choice for both business and leisure travel by reaching audiences already engaged with premium podcast content.",
+    "execution": {
+      "title": "Next Audio delivered a programmatic podcast advertising campaign across premium business, travel, and lifestyle podcasts with strong reach among affluent GCC audiences.<br /><br />Using interest-based and demographic targeting, the campaign focused on reaching business owners, investors, and frequent travellers in sound-on, high-attention environments. <br /><br />Audio ads were dynamically inserted into relevant podcast episodes, ensuring consistent delivery while maintaining a high-quality listener experience aligned with the brand's premium positioning.",
+      "points": [
+        "Programmatic podcast advertising", "targeting by travel interest, business mindset, and wealth indicators", "premium podcast inventory across the GCC", "high-attention, non-interruptive audio placements."
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen-Through Rate (LTR)",
+        "subtitle": "95.75%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/pegasus.jpg",
+      "title": "Pegasus Airlines",
+      "points": ["Awareness, Programmatic Podcast Advertising"],
+      "audio_file": "/assets/audio/pegasus-airlines.mp3"
+    }
+  },
+  "saudia-alfursan": {
+    "name": "Saudia",
+    "description": "How Saudia Promoted the AlFursan Loyalty Program to Frequent Travellers in Saudi Arabia",
+    "category": "Travel & Tourism",
+    "banner_image": "/assets/images/saudia-alfursan.jpg",
+    "banner_title": "How Saudia Promoted the AlFursan Loyalty Program to Frequent Travellers in Saudi Arabia",
+    "banner_subtitle": "A bilingual podcast advertising campaign designed to raise awareness of Saudia's loyalty program among KSA nationals, expats, and frequent flyers.",
+    "summary": {
+      "client": "Saudia",
+      "industry": "Travel & Tourism",
+      "campaign_types": "Awareness, Programmatic Podcast Advertising",
+      "audio_format": "Podcasts",
+      "audience_profile": "KSA nationals, expats, and frequent travellers aged 25+"
+    },
+    "objective": "Saudia aimed to raise awareness of its AlFursan loyalty program among frequent travellers, business professionals, and aviation enthusiasts in Saudi Arabia. The goal was to highlight the benefits of the loyalty program and drive consideration among audiences with a high propensity to travel.",
+    "execution": {
+      "title": "Next Audio produced two audio creatives in Arabic and English, tailored to Saudi Arabia's bilingual listening audience. Ads were distributed across top-performing Arabic and English podcasts in the business, entrepreneurship, travel, and culture categories.<br /><br />The campaign leveraged contextual and interest-based targeting to reach frequent travellers and professionals during long-form listening moments, where audio storytelling could clearly communicate the value of the AlFursan program.",
+      "points": [
+        "Arabic and English audio creative",
+        "Podcast placements across business, travel, and culture categories",
+        "Targeting KSA residents with high travel frequency",
+        "Programmatic delivery for scale and efficiency"
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen-through rate / brand lift metrics",
+        "subtitle": "INFO NEEDED"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/saudia.jpg",
+      "title": "Saudia",
+      "points": ["Awareness", "Programmatic Podcast Advertising"],
+      "audio_file": "/assets/audio/saudia-alfursan.mp3"
+    }
+  },
+  "dubai-tourism": {
+    "name": "Dubai Tourism",
+    "description": "How Dubai Tourism Repositioned Dubai as a Global Business Hub for UK Entrepreneurs",
+    "category": "Travel & Tourism",
+    "banner_image": "/assets/images/dubai-tourism.jpg",
+    "banner_title": "How Dubai Tourism Repositioned Dubai as a Global Business Hub for UK Entrepreneurs",
+    "banner_subtitle": "A bespoke branded podcast episode targeting founders and innovation leaders in the UK, using long-form storytelling to shift perception beyond luxury tourism.",
+    "summary": {
+      "client": "Dubai Tourism",
+      "industry": "Travel & Tourism",
+      "campaign_types": "Awareness, Host-Read Branded Podcast Episode",
+      "audio_format": "Podcasts",
+      "audience_profile": "UK-based founders, entrepreneurs, startup leaders, and innovation professionals"
+    },
+    "objective": "Dubai Tourism wanted to shift perceptions of Dubai from a luxury travel destination to a serious global hub for entrepreneurship, innovation, and business growth. The objective was to engage entrepreneurial audiences in the UK with a deeper narrative around Dubai's economic ambition and long-term vision.",
+    "execution": {
+      "title": "Next Audio partnered with Secret Leaders, one of the UK's leading podcasts for entrepreneurs and changemakers, to create a bespoke host-read branded episode.<br /><br />The episode, titled \"How Dubai Changed the World in 64 Years,\" used long-form storytelling to explore Dubai's transformation from a fishing village into one of the world's most influential business and innovation centres. By integrating the message into trusted editorial content, the campaign delivered credibility, depth, and cultural relevance.",
+      "points": [
+        "Bespoke host-read branded podcast episode",
+        "Long-form storytelling format",
+        "UK-based entrepreneurial audience",
+        "High-completion, trusted podcast environment"
+      ]
+    },
+    "results": [
+      {
+        "title": "Episode listens / completion rate / engagement metrics",
+        "subtitle": "INFO NEEDED"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/dubai-tourism-thumb.jpg",
+      "title": "Dubai Tourism",
+      "points": ["Awareness", "Host-Read Branded Podcast Episode"],
+      "audio_file": "/assets/audio/dubai-tourism.mp3"
+    }
+  },
+  "standard-chartered-priority-banking": {
+    "name": "Standard Chartered",
+    "description": "How Standard Chartered Raised Awareness of Priority Banking Among High-Value Audiences in the UAE",
+    "category": "Finance & Banking",
+    "banner_image": "/assets/images/standard-chartered-priority-banking.jpg",
+    "banner_title": "How Standard Chartered Raised Awareness of Priority Banking Among High-Value Audiences in the UAE",
+    "banner_subtitle": "A programmatic podcast campaign targeting entrepreneurs, investors, and frequent travellers to promote the benefits of Priority Banking.",
+    "summary": {
+      "client": "Standard Chartered",
+      "industry": "Finance & Banking",
+      "campaign_types": "Awareness, Programmatic Podcast Advertising",
+      "audio_format": "Podcasts",
+      "audience_profile": "Entrepreneurs, investors, HNWIs, and frequent travellers in the UAE"
+    },
+    "objective": "Standard Chartered wanted to increase awareness of its Priority Banking offering and communicate the value of its personalised services and exclusive benefits to high-value audiences.",
+    "execution": {
+      "title": "Next Audio placed programmatic audio ads across business-focused podcast inventory, reaching affluent listeners in high-attention environments. Creative messaging included a direct call-to-action encouraging listeners to explore the benefits of Priority Banking.",
+      "points": [
+        "Programmatic podcast advertising",
+        "Business and finance podcast placements",
+        "Targeting by wealth and professional interest",
+        "Direct-response messaging"
+      ]
+    },
+    "results": [
+      {
+        "title": "Listen-Through Rate (LTR)",
+        "subtitle": "96%"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/standard-chartered.jpg",
+      "title": "Standard Chartered",
+      "points": ["Awareness", "Programmatic Podcast Advertising"],
+      "audio_file": "/assets/audio/standard-chartered-priority-banking.mp3"
+    }
+  },
+  "american-express": {
+    "name": "American Express",
+    "description": "How American Express Increased Awareness of the Platinum Card Through Podcast Sponsorships",
+    "category": "Finance & Banking",
+    "banner_image": "/assets/images/american-express.jpg",
+    "banner_title": "How American Express Increased Awareness of the Platinum Card Through Podcast Sponsorships",
+    "banner_subtitle": "A host-led podcast sponsorship and Sponsored Stories campaign using trusted voices to showcase real-world Platinum Card benefits.",
+    "summary": {
+      "client": "American Express",
+      "industry": "Finance & Banking",
+      "campaign_types": "Awareness, Podcast Sponsorships & Sponsored Stories",
+      "audio_format": "Podcasts",
+      "audience_profile": "UK podcast listeners"
+    },
+    "objective": "American Express aimed to increase awareness and positive perception of its Platinum Card by highlighting real-world benefits as audiences emerged from lockdown.",
+    "execution": {
+      "title": "Next Audio delivered a sponsorship-led podcast campaign, followed by Sponsored Stories across multiple podcasts. Hosts shared personal experiences using their American Express Platinum Card, creating authentic, story-led endorsements.<br /><br />This approach leveraged trusted podcast voices to humanise the brand and connect benefits to real-life moments.",
+      "points": [
+        "Podcast sponsorships",
+        "Host-led Sponsored Stories",
+        "Personal, experience-driven creative"
+      ]
+    },
+    "results": [
+      {
+        "title": "High ad recall",
+        "subtitle": ""
+      },
+      {
+        "title": "Increased agreement that the card is rewarding",
+        "subtitle": ""
+      }
+    ],
+    "audio": null
+  },
+  "adidas": {
+    "name": "Adidas",
+    "description": "How Adidas Drove Interest in the NMD Launch Among Urban Gen Z Audiences",
+    "category": "Fashion / Lifestyle",
+    "banner_image": "/assets/images/adidas.jpg",
+    "banner_title": "How Adidas Drove Interest in the NMD Launch Among Urban Gen Z Audiences",
+    "banner_subtitle": "A dynamic podcast advertising campaign targeting active, style-conscious listeners, supported by brand lift measurement.",
+    "summary": {
+      "client": "Adidas",
+      "industry": "Fashion / Lifestyle",
+      "campaign_types": "Awareness, Programmatic Podcast Advertising",
+      "audio_format": "Podcasts",
+      "audience_profile": "Active, style-conscious consumers and streetwear enthusiasts"
+    },
+    "objective": "Adidas wanted to drive awareness and demand for the launch of the NMD sneaker range among urban, style-conscious audiences in the UAE.",
+    "execution": {
+      "title": "Next Audio ran dynamic audio ads across podcasts in the sports, fitness, lifestyle, culture, and business categories. The campaign was supported by a Brand Lift Study to measure changes in awareness, consideration, and brand favourability.",
+      "points": [
+        "Dynamic podcast audio ads",
+        "Lifestyle and culture podcast placements",
+        "Brand Lift Study measurement"
+      ]
+    },
+    "results": [
+      {
+        "title": "Uplift in interest",
+        "subtitle": "(*Brand Lift Study)"
+      },
+      {
+        "title": "Ad likability above benchmark",
+        "subtitle": "(*Brand Lift Study)"
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/adidas.jpg",
+      "title": "Adidas",
+      "points": ["Awareness", "Programmatic Podcast Advertising"],
+      "audio_file": "/assets/audio/adidas.mp3"
+    }
+  },
+  "brain-performance-centre": {
+    "name": "Brain & Performance Centre",
+    "description": "How Brain Centre Drove Qualified Website Traffic Through Podcast Advertising",
+    "category": "Healthcare / Wellness",
+    "banner_image": "/assets/images/brain-performance-centre.webp",
+    "banner_title": "How Brain Centre Drove Qualified Website Traffic Through Podcast Advertising",
+    "banner_subtitle": "A performance-led audio campaign targeting affluent, health-conscious adults and expats across the UAE.",
+    "summary": {
+      "client": "Brain & Performance Centre",
+      "industry": "Healthcare / Wellness",
+      "campaign_types": "Consideration & Performance Audio",
+      "audio_format": "Podcasts",
+      "audience_profile": "Affluent, health-conscious adults and expats aged 35+"
+    },
+    "objective": "Brain & Performance Centre aimed to raise awareness and drive high-quality website visits from health-conscious and affluent audiences in the UAE.",
+    "execution": {
+      "title": "Next Audio delivered podcast advertising across Arabic and English content, tailored by audience origin and content language. Placements were selected to reach business professionals and health-focused listeners in high-attention environments.",
+      "points": [
+        "Arabic and English podcast placements",
+        "Targeting by health interest and profession",
+        "Focus on qualified traffic and performance outcomes"
+      ]
+    },
+    "results": [
+      {
+        "title": "Reduced cost per website visit",
+        "subtitle": ""
+      },
+      {
+        "title": "High listen-through rate",
+        "subtitle": ""
+      },
+      {
+        "title": "Increased engagement",
+        "subtitle": ""
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/brain-centre-dubai.webp",
+      "title": "Brain & Performance Centre",
+      "points": ["Consideration", "Performance"],
+      "audio_file": "/assets/audio/brain-performance-centre.mp3"
+    }
+  },
+  "calpol-haleon": {
+    "name": "Calpol",
+    "description": "How Calpol Built Brand Awareness Through Podcast Advertising in South Africa",
+    "category": "CPG / Healthcare",
+    "banner_image": "/assets/images/haleon_bg.jpg",
+    "banner_title": "How Calpol Built Brand Awareness Through Podcast Advertising in South Africa",
+    "banner_subtitle": "A multi-platform audio campaign using long-form voice storytelling to drive recall, brand image, and interest.",
+    "summary": {
+      "client": "Haleon (Calpol)",
+      "industry": "CPG / Healthcare",
+      "campaign_types": "Awareness, Programmatic Audio",
+      "audio_format": "Podcasts, web radio, streaming",
+      "audience_profile": "Adults aged 18–55 in South Africa"
+    },
+    "objective": "Haleon wanted to drive awareness and positive brand perception for Calpol Tablets among adult consumers in South Africa.",
+    "execution": {
+      "title": "Next Audio distributed a 30-second English audio creative across podcasts, web radio, and streaming platforms. Podcast advertising was selected to enable longer-form storytelling, emotional connection, and higher ad recall compared to skippable formats.",
+      "points": [
+        "Podcast, web radio, and streaming distribution",
+        "30-second audio creative",
+        "Focus on recall and brand storytelling"
+      ]
+    },
+    "results": [
+      {
+        "title": "Uplift in recall",
+        "subtitle": ""
+      },
+      {
+        "title": "Uplift in brand image",
+        "subtitle": ""
+      },
+      {
+        "title": "Uplift in interest",
+        "subtitle": ""
+      }
+    ],
+    "audio": {
+      "image": "/assets/images/haleon.png",
+      "title": "Calpol",
+      "points": ["Awareness", "Programmatic Audio"],
+      "audio_file": "/assets/audio/calpol-haleon.mp3"
+    }
+  },
+  "volkswagen": {
+    "name": "Volkswagen",
+    "description": "How Volkswagen Increased Awareness and Consideration for Its SUV Range in Belgium",
+    "category": "Automotive",
+    "banner_image": "/assets/images/volkswagen.jpg",
+    "banner_title": "How Volkswagen Increased Awareness and Consideration for Its SUV Range in Belgium",
+    "banner_subtitle": "A multilingual podcast advertising campaign promoting the VW SUV range to French- and Dutch-speaking audiences across Belgium.",
+    "summary": {
+      "client": "Volkswagen",
+      "industry": "Automotive",
+      "campaign_types": "Awareness & Consideration, Programmatic Podcast Advertising",
+      "audio_format": "Podcasts",
+      "audience_profile": "French- and Dutch-speaking listeners in Belgium"
+    },
+    "objective": "Volkswagen aimed to promote its SUV range and the T-Roc model by highlighting fast delivery times and a €2,000 trade-in incentive to listeners across Belgium.",
+    "execution": {
+      "title": "Next Audio delivered dynamically inserted 10-second audio ads across podcast inventory, reaching listeners on mobile, desktop, and smart speakers. Ads were tailored to local language markets to maximise relevance and clarity.",
+      "points": [
+        "Dynamic podcast audio ads",
+        "Multilingual delivery (French and Dutch)",
+        "Cross-device podcast listening"
+      ]
+    },
+    "results": [
+      {
+        "title": "Uplift in interest",
+        "subtitle": ""
+      },
+      {
+        "title": "Uplift in brand image",
+        "subtitle": ""
+      },
+      {
+        "title": "Uplift in consideration",
+        "subtitle": ""
+      }
+    ],
+    "audio": null
   }
 }

@@ -99,7 +99,7 @@ export default function AudioFunnel() {
                           y2="107.122"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#F11F68" />
+                          <stop stopColor="#F11F68" />
                           <stop offset="1" stopColor="#8B123C" />
                         </linearGradient>
                       </defs>
@@ -215,8 +215,8 @@ export default function AudioFunnel() {
                           y2="61.975"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#B11E86" />
-                          <stop offset="1" stop-color="#4B0D39" />
+                          <stop stopColor="#B11E86" />
+                          <stop offset="1" stopColor="#4B0D39" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -347,8 +347,8 @@ export default function AudioFunnel() {
                         y2="7"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#F11F68" />
-                        <stop offset="1" stop-color="#162ABF" />
+                        <stop stopColor="#F11F68" />
+                        <stop offset="1" stopColor="#162ABF" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -467,8 +467,8 @@ export default function AudioFunnel() {
                           y2="7"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#F11F68" />
-                          <stop offset="1" stop-color="#162ABF" />
+                          <stop stopColor="#F11F68" />
+                          <stop offset="1" stopColor="#162ABF" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -588,8 +588,8 @@ export default function AudioFunnel() {
                           y2="7"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#F11F68" />
-                          <stop offset="1" stop-color="#162ABF" />
+                          <stop stopColor="#F11F68" />
+                          <stop offset="1" stopColor="#162ABF" />
                         </linearGradient>
                       </defs>
                     </svg>

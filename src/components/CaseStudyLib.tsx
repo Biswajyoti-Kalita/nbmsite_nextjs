@@ -63,7 +63,7 @@ export default function CaseStudyLib({
 
   const filters = [
     "All",
-    ...originalData.map((study) => study.summary.campaign_types).toString().split(',').map((campaignType) => campaignType.trim())
+    ...originalData.map((study) => study.summary.campaign_types).toString().toLowerCase().split(',').map((campaignType) => campaignType.trim().toLowerCase())
   ].filter((filter) => filter !== "").filter((filter, index, self) => self.indexOf(filter) === index);
 
   const industries = [
@@ -79,11 +79,11 @@ export default function CaseStudyLib({
     if (selectedIndustry === "View All" && selectedFilter === "All") {
       setFilteredData(originalData);
     } else if (selectedIndustry === "View All") {
-      setFilteredData(originalData.filter((study) => study.summary.campaign_types.toString().split(',').map((campaignType) => campaignType.trim()).includes(selectedFilter)));
+      setFilteredData(originalData.filter((study) => study.summary.campaign_types.toLowerCase().toString().split(',').map((campaignType) => campaignType.trim()).includes(selectedFilter)));
     } else if (selectedFilter === "All") {
       setFilteredData(originalData.filter((study) => study.summary.industry.toString().split(',').map((industry) => industry.trim()).includes(selectedIndustry)));
     } else {
-      setFilteredData(originalData.filter((study) => study.summary.industry.toString().split(',').map((industry) => industry.trim()).includes(selectedIndustry) && study.summary.campaign_types.toString().split(',').map((campaignType) => campaignType.trim()).includes(selectedFilter)));
+      setFilteredData(originalData.filter((study) => study.summary.industry.toString().split(',').map((industry) => industry.trim()).includes(selectedIndustry) && study.summary.campaign_types.toLowerCase().toString().split(',').map((campaignType) => campaignType.trim()).includes(selectedFilter)));
     }
   }, [selectedIndustry, selectedFilter, originalData]);
 
@@ -129,7 +129,7 @@ export default function CaseStudyLib({
           {filters.map((filter, idx) => (
             <button
               key={idx}
-              className={`px-4 text-[14px] leading-[24px] whitespace-nowrap h-[44px] rounded-full border border-[2px] font-medium ${selectedFilter === filter ? "bg-[#FFEDFB] text-[#F11F68] border-[#F11F68]" : "border-[#344054] text-[#344054]"}`}
+              className={`capitalize px-4 text-[14px] leading-[24px] whitespace-nowrap h-[44px] rounded-full border border-[2px] font-medium ${selectedFilter === filter ? "bg-[#FFEDFB] text-[#F11F68] border-[#F11F68]" : "border-[#344054] text-[#344054]"}`}
               onClick={() => setSelectedFilter(filter)}
             >
               {filter}
@@ -217,8 +217,8 @@ export default function CaseStudyLib({
                           y2="7"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#F11F68" />
-                          <stop offset="1" stop-color="#162ABF" />
+                          <stop stopColor="#F11F68" />
+                          <stop offset="1" stopColor="#162ABF" />
                         </linearGradient>
                       </defs>
                     </svg>
