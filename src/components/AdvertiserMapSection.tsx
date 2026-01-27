@@ -100,7 +100,7 @@ export default function AdvertiserMapSection() {
                   {
                     name: "Canada",
                     flag: "/assets/images/flags/canada.svg",
-                    reach: "194 m",
+                    reach: "19.4 m",
                   },
                   {
                     name: "Chile",
