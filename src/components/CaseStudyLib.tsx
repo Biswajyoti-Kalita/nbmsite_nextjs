@@ -87,6 +87,22 @@ export default function CaseStudyLib({
     }
   }, [selectedIndustry, selectedFilter, originalData]);
 
+  useEffect(() => {
+
+    console.log('checking location objective ',window.location.search);
+    if (window.location.search.includes("objective")) {
+      const objective = window.location.search.split("objective=")[1];
+      console.log('objective ',objective);
+      if(objective === "Awareness") {
+        setSelectedFilter("awareness");
+      } else if (objective === "Consideration") {
+        setSelectedFilter("consideration campaign");
+      } else if (objective === "Performance") {
+        setSelectedFilter("performance campaign");
+      }
+    }
+  }, []);
+
 
   return (
     <div className="flex flex-col lg:flex-row gap-8 lg:px-6 py-12 bg-[#FFFEFF] text-[#262626] w-full max-w-[1280px]">
@@ -129,7 +145,7 @@ export default function CaseStudyLib({
           {filters.map((filter, idx) => (
             <button
               key={idx}
-              className={`capitalize px-4 text-[14px] leading-[24px] whitespace-nowrap h-[44px] rounded-full border border-[2px] font-medium ${selectedFilter === filter ? "bg-[#FFEDFB] text-[#F11F68] border-[#F11F68]" : "border-[#344054] text-[#344054]"}`}
+              className={`${filter} capitalize px-4 text-[14px] leading-[24px] whitespace-nowrap h-[44px] rounded-full border border-[2px] font-medium ${selectedFilter === filter ? "bg-[#FFEDFB] text-[#F11F68] border-[#F11F68]" : "border-[#344054] text-[#344054]"}`}
               onClick={() => setSelectedFilter(filter)}
             >
               {filter}
