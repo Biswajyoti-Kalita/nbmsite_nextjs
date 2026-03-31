@@ -11,7 +11,9 @@ import GradientButton from "@/components/GradientButton";
 import PodcastCaseStudy from "@/components/PodcastCaseStudy";
 import ReadyToLaunch from "@/components/ReadyToLaunch";
 import Link from "next/link";
+import { Suspense } from "react";
 import WelcomeToast from "@/components/WelcomeToast";
+import LaunchRequestForm from "@/components/LaunchRequestForm";
 
 export default function Home() {
   return (
@@ -185,6 +187,9 @@ export default function Home() {
     </div>
     <Footer />
     <WelcomeToast />
+    <Suspense fallback={null}>
+      <LaunchRequestForm />
+    </Suspense>
     </div>
   );
 }
