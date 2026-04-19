@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { sendEmail } from '@/lib/email';
+import { getPostHogClient } from '@/lib/posthog-server';
 
 export async function POST(request: NextRequest) {
   try {
@@ -73,6 +74,17 @@ export async function POST(request: NextRequest) {
       console.error('Email sending failed:', emailError);
       // Don't fail the request if email fails
     }
+
+    const posthog = getPostHogClient();
+    posthog.capture({
+      distinctId: email,
+      event: 'callback_requested_server',
+      properties: {
+        business_name: businessName || null,
+        country_code: countryCode || null,
+        request_id: callMeBackRecord.id,
+      },
+    });
 
     return NextResponse.json(
       {

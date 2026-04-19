@@ -7,6 +7,7 @@ import Image from "next/image";
 import isMobile from "@/util/util";
 
 import Link from "next/link";
+import posthog from "posthog-js";
 
 interface CaseStudy {
   id: string;
@@ -118,7 +119,7 @@ export default function CaseStudyLib({
               <span
                 key={index}
                 className={`${selectedIndustry === industry ? "bg-[#F8F9FA] " : " text-[#667085] "} w-full font-medium text-[16px] cursor-pointer hover:text-[#262626] hover:bg-[#F8F9FA] transition-colors px-[8px] py-[12px] rounded-[6px]`}
-                onClick={() => setSelectedIndustry(industry)}
+                onClick={() => { setSelectedIndustry(industry); posthog.capture("case_study_filter_applied", { filter_type: "industry", filter_value: industry }); }}
               >
                 {industry}
               </span>
@@ -146,7 +147,7 @@ export default function CaseStudyLib({
             <button
               key={idx}
               className={`${filter} capitalize px-4 text-[14px] leading-[24px] whitespace-nowrap h-[44px] rounded-full border border-[2px] font-medium ${selectedFilter === filter ? "bg-[#FFEDFB] text-[#F11F68] border-[#F11F68]" : "border-[#344054] text-[#344054]"}`}
-              onClick={() => setSelectedFilter(filter)}
+              onClick={() => { setSelectedFilter(filter); posthog.capture("case_study_filter_applied", { filter_type: "campaign_type", filter_value: filter }); }}
             >
               {filter}
             </button>
@@ -204,7 +205,7 @@ export default function CaseStudyLib({
                     ))}
                   </div>
                 </div>
-                <Link href={`/case-studies/${study.id}`} target="_blank">
+                <Link href={`/case-studies/${study.id}`} target="_blank" onClick={() => posthog.capture("case_study_viewed", { case_study_id: study.id, case_study_name: study.name, category: study.category })}>
                 <GradientButton
                   text="View Case Study"
                   className="w-[191px]"

@@ -5,6 +5,7 @@ import isMobile from "@/util/util";
 import Image from "next/image";
 import Link from "next/link";
 import { openCallMeBackModal, openShareBriefModal } from "@/util/modalEvents";
+import posthog from "posthog-js";
 
 
 const isMobileScreen = isMobile();
@@ -23,11 +24,13 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
 
   const showShareBriefModal = () => {
     setisMobileScreenMenuOpen(false); // Close mobile menu if open
+    posthog.capture("request_proposal_clicked", { source: "navbar" });
     openShareBriefModal();
   }
 
   const showCallMeBackModal = () => {
     setisMobileScreenMenuOpen(false); // Close mobile menu if open
+    posthog.capture("call_me_back_clicked", { source: "navbar" });
     openCallMeBackModal();
   }
 

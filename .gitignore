@@ -46,3 +46,4 @@ package-lock.json
 /src/generated/prisma
 
 public/uploads
+.env.local

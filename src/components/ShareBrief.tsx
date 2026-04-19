@@ -5,6 +5,7 @@ import ReactFlagsSelect from "react-flags-select";
 import { useRef, useState, useEffect } from "react";
 import { MODAL_EVENTS, closeShareBriefModal } from "@/util/modalEvents";
 import DatePicker from "react-multi-date-picker";
+import posthog from "posthog-js";
 
 export default function ShareBrief() {
   const [selected, setSelected] = useState("US");
@@ -106,6 +107,7 @@ export default function ShareBrief() {
       e.preventDefault();
     }
     if (step === 1 && formRefStep1.current?.checkValidity()) {
+      posthog.capture("brief_form_step_completed", { step: 1 });
       setStep(2);
     } else if (step === 1 && formRefStep1.current) {
       // Trigger browser validation UI
@@ -152,12 +154,18 @@ export default function ShareBrief() {
       const result = await response.json();
       
       if (result.success) {
+        posthog.capture("brief_submitted", {
+          form_type: formData.formType,
+          business_name: formData.businessName,
+        });
         setrequestSent(true);
       } else {
+        posthog.captureException(new Error(result.error || "Brief submission failed"));
         alert('Failed to submit brief. Please try again.');
         console.error('Submission error:', result.error);
       }
     } catch (error) {
+      posthog.captureException(error);
       console.error('Error submitting brief:', error);
       alert('An error occurred while submitting your brief. Please try again.');
     } finally {
@@ -359,7 +367,7 @@ export default function ShareBrief() {
                   ? "bg-#FFF9FE border border-[#F11F68] rounded-[4px] text-[#262626]"
                   : "text-[#344054]"
               } font-medium text-[14px] leading-[22px] py-[4px] px-[16px] text-nowrap w-auto lg:w-full text-center `}
-              onClick={() => setformType("complete-a-form")}
+              onClick={() => { setformType("complete-a-form"); posthog.capture("brief_form_type_selected", { form_type: "complete-a-form" }); }}
             >
               Complete a Form
             </span>
@@ -370,7 +378,7 @@ export default function ShareBrief() {
                   ? "bg-#FFF9FE border border-[#F11F68] rounded-[4px] text-[#262626]"
                   : "text-[#344054]"
               } font-medium text-[14px] leading-[22px] py-[4px] px-[16px] text-nowrap w-auto lg:w-full text-center `}
-              onClick={() => setformType("write-a-brief")}
+              onClick={() => { setformType("write-a-brief"); posthog.capture("brief_form_type_selected", { form_type: "write-a-brief" }); }}
             >
               Write a Brief
             </span>
@@ -381,7 +389,7 @@ export default function ShareBrief() {
                   ? "bg-#FFF9FE border border-[#F11F68] rounded-[4px] text-[#262626]"
                   : "text-[#344054]"
               } font-medium text-[14px] leading-[22px] py-[4px] px-[16px] text-nowrap w-auto lg:w-full text-center `}
-              onClick={() => setformType("upload-file")}
+              onClick={() => { setformType("upload-file"); posthog.capture("brief_form_type_selected", { form_type: "upload-file" }); }}
             >
               Upload a File
             </span>

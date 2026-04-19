@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import WaveSurfer from "wavesurfer.js";
+import posthog from "posthog-js";
 
 interface PlayerProps {
   audioUrl: string;
@@ -18,9 +19,14 @@ export default function Player({ audioUrl }: PlayerProps) {
 
   const playPause = () => {
     if (waveform) {
+      const wasPlaying = waveform.isPlaying();
       waveform.playPause().then(() => {
-        console.log(waveform.isPlaying());
-        setIsPlaying(waveform.isPlaying());
+        const nowPlaying = waveform.isPlaying();
+        console.log(nowPlaying);
+        setIsPlaying(nowPlaying);
+        if (!wasPlaying && nowPlaying) {
+          posthog.capture("audio_sample_played", { audio_url: audioUrl });
+        }
       }).catch(() => {
         setIsPlaying(false);
       });

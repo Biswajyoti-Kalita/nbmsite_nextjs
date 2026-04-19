@@ -3,6 +3,7 @@ import { prisma } from '@/lib/prisma';
 import { sendEmail } from '@/lib/email';
 import { writeFile, mkdir } from 'fs/promises';
 import { join } from 'path';
+import { getPostHogClient } from '@/lib/posthog-server';
 
 export async function POST(request: NextRequest) {
   try {
@@ -142,6 +143,18 @@ export async function POST(request: NextRequest) {
       console.error('Email sending failed:', emailError);
       // Don't fail the request if email fails
     }
+
+    const posthog = getPostHogClient();
+    posthog.capture({
+      distinctId: email,
+      event: 'brief_submitted_server',
+      properties: {
+        form_type: formType,
+        business_name: businessName || null,
+        budget: budget || null,
+        brief_id: briefRecord.id,
+      },
+    });
 
     return NextResponse.json(
       {

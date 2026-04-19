@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import posthog from "posthog-js";
 
 const FunnelChip = ({
   title,
@@ -45,17 +46,17 @@ export default function AudioFunnel() {
           <FunnelChip
             title="Top of Funnel"
             isActive={activeFunnel === "top_of_funnel"}
-            onClick={() => setActiveFunnel("top_of_funnel")}
+            onClick={() => { setActiveFunnel("top_of_funnel"); posthog.capture("audio_funnel_tab_selected", { funnel_stage: "top_of_funnel" }); }}
           />
           <FunnelChip
             title="Mid-Funnel"
             isActive={activeFunnel === "middle_of_funnel"}
-            onClick={() => setActiveFunnel("middle_of_funnel")}
+            onClick={() => { setActiveFunnel("middle_of_funnel"); posthog.capture("audio_funnel_tab_selected", { funnel_stage: "middle_of_funnel" }); }}
           />
           <FunnelChip
             title="Bottom of Funnel"
             isActive={activeFunnel === "bottom_of_funnel"}
-            onClick={() => setActiveFunnel("bottom_of_funnel")}
+            onClick={() => { setActiveFunnel("bottom_of_funnel"); posthog.capture("audio_funnel_tab_selected", { funnel_stage: "bottom_of_funnel" }); }}
           />
         </div>
         <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-[40px] lg:gap-[10px] max-w-[1280px] border-t border-b lg:border-[0px] border-[#D2D2D2] py-[32px] lg:py-[0px]">

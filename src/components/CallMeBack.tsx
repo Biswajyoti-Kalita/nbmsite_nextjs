@@ -4,6 +4,7 @@ import GradientButton from "./GradientButton";
 import ReactFlagsSelect from "react-flags-select";
 import { useState, useEffect } from "react";
 import { MODAL_EVENTS, closeCallMeBackModal } from "@/util/modalEvents";
+import posthog from "posthog-js";
 
 export default function CallMeBack() {
   const [selected, setSelected] = useState("US");
@@ -92,12 +93,18 @@ export default function CallMeBack() {
       const result = await response.json();
 
       if (result.success) {
+        posthog.capture("callback_requested", {
+          business_name: formData.businessName,
+          country_code: selected,
+        });
         setrequestSent(true);
       } else {
+        posthog.captureException(new Error(result.error || "Callback request failed"));
         alert("Failed to submit request. Please try again.");
         console.error("Submission error:", result.error);
       }
     } catch (error) {
+      posthog.captureException(error);
       console.error("Error submitting callback request:", error);
       alert(
         "An error occurred while submitting your request. Please try again."
