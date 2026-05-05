@@ -4,6 +4,7 @@ import "./globals.css";
 import AOSProvider from "../components/AOSProvider";
 import CallMeBack from "../components/CallMeBack";
 import ShareBrief from "../components/ShareBrief";
+import CampaignEnquiryPopup from "../components/CampaignEnquiryPopup";
 
 const switzer = localFont({
   src: [
@@ -140,6 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {children}
           <CallMeBack />
           <ShareBrief />
+          <CampaignEnquiryPopup />
         </AOSProvider>
       </body>
     </html>
