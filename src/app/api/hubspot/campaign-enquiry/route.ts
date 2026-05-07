@@ -86,6 +86,7 @@ export async function POST(request: NextRequest) {
       { name: "firstname", value: firstName },
       { name: "email", value: email },
       { name: "what_are_you_advertising", value: advertisingLine },
+      { name: "what_you_are_advertising", value: advertisingLine },
       { name: "popup_version", value: popupVersion },
       ...(budgetRange ? [{ name: "budget_range", value: budgetRange }] : []),
     ];
