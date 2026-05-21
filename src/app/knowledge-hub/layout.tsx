@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Knowledge Hub",
-  description: "Podcast advertising advice, practical guides and downloadable resources for advertisers, podcasters and publishers from the Next Audio experts.",
+  title: "Podcast Advertising Guides & Playbooks",
+  description:
+    "Podcast advertising guides and playbooks for media planners and brands. Campaign planning, audience targeting, format selection, and measurement benchmarks.",
   openGraph: {
     title: "Knowledge Hub | Next Audio",
-    description: "Podcast advertising advice, practical guides and downloadable resources for advertisers, podcasters and publishers from the Next Audio experts.",
+    description:
+      "Podcast advertising guides and playbooks for media planners and brands. Campaign planning, audience targeting, format selection, and measurement benchmarks.",
     url: "/knowledge-hub",
   },
   alternates: {

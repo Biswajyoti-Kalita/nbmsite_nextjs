@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us ",
-  description: "Next Audio is a global podcast and digital-audio advertising company servicing advertisers, creators and publishers through trusted tools, premium inventory and data-driven expertise.",
+  title: {
+    absolute: "About Next Audio | Global Podcast Advertising Company",
+  },
+  description:
+    "Next Audio is the global podcast advertising partner for brands, agencies, publishers, and creators. 55,000+ shows. 90+ markets. 850+ campaigns delivered.",
   openGraph: {
     title: "About Us | Next Audio",
-    description: "Next Audio is a global podcast and digital-audio advertising company servicing advertisers, creators and publishers through trusted tools, premium inventory and data-driven expertise.",
+    description:
+      "Next Audio is the global podcast advertising partner for brands, agencies, publishers, and creators. 55,000+ shows. 90+ markets. 850+ campaigns delivered.",
     url: "/about-us",
   },
   alternates: {

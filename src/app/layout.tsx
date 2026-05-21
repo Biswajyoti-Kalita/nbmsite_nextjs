@@ -25,10 +25,11 @@ const switzer = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nextaud.io"),
   title: {
-    default: "Next Audio ",
+    default: "Podcast Advertising Agency | Global Audio Ads | Next Audio",
     template: "%s | Next Audio",
   },
-  description: "Next Audio is a podcast and digital-audio advertising company that helps brands run targeted, measurable ad campaigns and enables podcasters and publishers to monetise content.",
+  description:
+    "Podcast and audio advertising for brands and agencies. 850+ campaigns delivered across 55,000+ shows in 90+ markets. Fully managed from strategy to verified measurement.",
   keywords: [
     "podcast advertising",
     "digital audio advertising",
@@ -73,7 +74,8 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "Next Audio",
     title: "Next Audio",
-    description: "Next Audio is a podcast advertising company that helps brands connect with their audience through podcast advertising. Reach millions of listeners with targeted podcast ads.",
+    description:
+      "Podcast and audio advertising for brands and agencies. 850+ campaigns delivered across 55,000+ shows in 90+ markets. Fully managed from strategy to verified measurement.",
     images: [
       {
         url: "/assets/images/og-image.jpg", // You'll need to add this image

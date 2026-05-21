@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Production",
-  description: "Create branded podcasts with full production support, from concept and scripting to recording, editing, guest booking and distribution. Build shows that grow your brand.",
+  title: "Podcast Production Services | Brands & Creators",
+  description:
+    "Podcast production for brands and independent creators. Scripting, recording, sound design, and distribution, from concept to your first published episode.",
   openGraph: {
     title: "Production | Next Audio",
-    description: "Create branded podcasts with full production support, from concept and scripting to recording, editing, guest booking and distribution. Build shows that grow your brand.",
+    description:
+      "Podcast production for brands and independent creators. Scripting, recording, sound design, and distribution, from concept to your first published episode.",
     url: "/production",
   },
   alternates: {

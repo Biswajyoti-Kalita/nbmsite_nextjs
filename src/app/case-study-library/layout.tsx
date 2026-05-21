@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Case Study Library",
-  description: "Explore podcast case studies across industries, formats and markets. See how brands used host-read, dynamic and branded content campaigns to deliver results.",
+  title: "Podcast Advertising Case Studies & Results",
+  description:
+    "Valentino +34% purchase intention. BEL Group +30% brand interest. P&O Ferries +45% consideration. Podcast advertising results across 25+ brands and sectors.",
   openGraph: {
     title: "Case Study Library | Next Audio",
-    description: "Explore podcast case studies across industries, formats and markets. See how brands used host-read, dynamic and branded content campaigns to deliver results.",
+    description:
+      "Valentino +34% purchase intention. BEL Group +30% brand interest. P&O Ferries +45% consideration. Podcast advertising results across 25+ brands and sectors.",
     url: "/case-study-library",
   },
   alternates: {

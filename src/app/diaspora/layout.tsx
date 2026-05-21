@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Diaspora",
-  description: "Reach global cultural audiences with podcast advertising using premium shows, language and regional targeting, and brand-safe delivery across international communities.",
+  title: "Diaspora Podcast Advertising | North America",
+  description:
+    "Target Middle Eastern, South Asian, African, and Asian diaspora audiences in North America. Host-read and programmatic podcast ads for multicultural campaigns.",
   openGraph: {
     title: "Diaspora | Next Audio",
-    description: "Reach global cultural audiences with podcast advertising using premium shows, language and regional targeting, and brand-safe delivery across international communities.",
+    description:
+      "Target Middle Eastern, South Asian, African, and Asian diaspora audiences in North America. Host-read and programmatic podcast ads for multicultural campaigns.",
     url: "/diaspora",
   },
   alternates: {

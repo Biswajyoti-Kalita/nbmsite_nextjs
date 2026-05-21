@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Podcasters - Monetize Your Podcast Without Working Harder",
-  description: "Monetise your podcast with host-read ads and dynamic insertion. Connect with quality advertisers, manage sponsorships easily, and earn from your content with transparent payouts.",
+  title: "Monetize Your Podcast With Ads & Sponsorships",
+  description:
+    "Connect your show to premium advertisers and earn from host-read sponsorships and programmatic ads. Keep full ownership. No brand outreach or relationship management required.",
   openGraph: {
     title: "For Podcasters - Monetize Your Podcast Without Working Harder | Next Audio",
-    description: "Monetise your podcast with host-read ads and dynamic insertion. Connect with quality advertisers, manage sponsorships easily, and earn from your content with transparent payouts.",
+    description:
+      "Connect your show to premium advertisers and earn from host-read sponsorships and programmatic ads. Keep full ownership. No brand outreach or relationship management required.",
     url: "/podcasters",
   },
   alternates: {

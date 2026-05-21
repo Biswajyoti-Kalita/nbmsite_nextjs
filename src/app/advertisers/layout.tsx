@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Advertisers - High-Impact Audio Ads Made Easy",
-  description: "Buy podcast advertising with premium global inventory, precise targeting, host-read or dynamic formats, and transparent campaign measurement.",
+  title: "Podcast Ad Campaigns for Brands & Agencies",
+  description:
+    "Managed podcast advertising for brands and agencies. 850+ campaigns delivered across 90+ markets. Independent measurement and verified results included as standard.",
   openGraph: {
     title: "For Advertisers - High-Impact Audio Ads Made Easy | Next Audio",
-    description: "Buy podcast advertising with premium global inventory, precise targeting, host-read or dynamic formats, and transparent campaign measurement.",
+    description:
+      "Managed podcast advertising for brands and agencies. 850+ campaigns delivered across 90+ markets. Independent measurement and verified results included as standard.",
     url: "/advertisers",
   },
   alternates: {
