@@ -15,9 +15,45 @@ import { Suspense } from "react";
 import WelcomeToast from "@/components/WelcomeToast";
 import LaunchRequestForm from "@/components/LaunchRequestForm";
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Next Audio",
+  url: "https://nextaud.io",
+  logo: "https://nextaud.io/logo.png",
+  description:
+    "Next Audio is a podcast and digital audio advertising company. We help brands and agencies plan, buy, and scale podcast advertising as a proper, measurable media channel.",
+  email: "suzi@nextaud.io",
+  areaServed: ["AE", "SA", "QA", "KW", "BH", "OM", "EG", "LU", "GB", "SG", "US"],
+  sameAs: ["https://www.linkedin.com/company/next-audio"],
+};
+
+const managedCampaignsServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Managed Podcast Advertising Campaigns",
+  provider: {
+    "@type": "Organization",
+    name: "Next Audio",
+    url: "https://nextaud.io",
+  },
+  description:
+    "Full-service podcast advertising strategy, buying, and measurement. From brief to campaign delivery and verified reporting across 55,000+ shows in 90+ markets.",
+  areaServed: "Worldwide",
+  url: "https://nextaud.io/advertisers",
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen h-full  w-full flex flex-col items-center justify-center bg-white">
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(managedCampaignsServiceSchema) }}
+    />
     <div className="bg-white w-full lg:max-w-[1440px]">
       <Navbar bgColor="bg-white" bgColorOnOpen="bg-[#F11F68]" isPrimary={true} isHome={true} />
 
