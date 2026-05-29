@@ -3,13 +3,14 @@ import Image from "next/image";
 import GradientButton from "./GradientButton";
 import ReactFlagsSelect from "react-flags-select";
 import { useRef, useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { MODAL_EVENTS, closeShareBriefModal } from "@/util/modalEvents";
 import DatePicker from "react-multi-date-picker";
 import posthog from "posthog-js";
 
 export default function ShareBrief() {
+  const router = useRouter();
   const [selected, setSelected] = useState("US");
-  const [requestSent, setrequestSent] = useState(false);
   const [formType, setformType] = useState("complete-a-form");
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,6 @@ export default function ShareBrief() {
     const handleOpen = () => setIsOpen(true);
     const handleClose = () => {
       setIsOpen(false);
-      setrequestSent(false);
       setStep(1);
       setformData({
         formType: "complete-a-form",
@@ -158,7 +158,8 @@ export default function ShareBrief() {
           form_type: formData.formType,
           business_name: formData.businessName,
         });
-        setrequestSent(true);
+        closeShareBriefModal();
+        router.push("/thank-you?source=brief");
       } else {
         posthog.captureException(new Error(result.error || "Brief submission failed"));
         alert('Failed to submit brief. Please try again.');
@@ -171,11 +172,6 @@ export default function ShareBrief() {
     } finally {
       setIsSubmitting(false);
     }
-  };
-
-  const handleCancel = () => {
-    setrequestSent(false);
-    closeShareBriefModal();
   };
 
   const validateFile = (file: File): boolean => {
@@ -267,53 +263,6 @@ export default function ShareBrief() {
         className="relative w-full lg:w-auto max-w-[900px] max-h-auto flex flex-row items-end lg:items-center justify-center overflow-y-auto shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {requestSent ? (
-          <div className="w-full max-w-[630px] flex flex-col items-start justify-start gap-[32px] p-4 lg:p-[40px] bg-[#FFFFFF] rounded-[16px] mt-[50px] lg:mt-0">
-            <div className="w-full flex flex-col items-start justify-start gap-[20px]">
-              <div className="bg-[#FFEDFB] rounded-[5px] w-[48px] h-[48px] flex items-center justify-center">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.125 13.75L11.875 17.5L19.375 10M26.25 13.75C26.25 20.6536 20.6536 26.25 13.75 26.25C6.84644 26.25 1.25 20.6536 1.25 13.75C1.25 6.84644 6.84644 1.25 13.75 1.25C20.6536 1.25 26.25 6.84644 26.25 13.75Z"
-                    stroke="#F11F68"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <div className="w-full flex flex-col items-start justify-start gap-[12px]">
-                <h2 className="text-[#262626] text-[20px] lg:text-[24px] leading-[28px] lg:leading-[32px] font-extrabold">
-                  Your brief has been submitted
-                </h2>
-                <p className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] font-normal">
-                  Someone from the team will get back to you shortly
-                </p>
-              </div>
-            </div>
-            <div className="w-full flex flex-row items-start justify-start gap-[12px]">
-              <button
-                className="gradient-text w-full py-[10px] px-[16px] rounded-[4px]"
-                onClick={handleCancel}
-              >
-                Cancel
-              </button>
-              <GradientButton
-                text="Confirm"
-                type="primary"
-                className="w-full h-[42px]"
-                textClassName="text-[16px] leading-[24px] font-normal"
-                fullWidth={true}
-                onClick={handleCancel}
-              />
-            </div>
-          </div>
-        ) : (
           <div className="w-full relative min-w-full lg:min-w-[650px] overflow-y-auto max-h-[90vh] flex flex-col items-start justify-start gap-[20px] px-[16px] py-[20px] lg:p-[40px] bg-[#FFFEFF] rounded-[16px]">
             <Image
               src="/assets/images/close.png"
@@ -809,7 +758,6 @@ export default function ShareBrief() {
         )}
       </div>
           </div>
-        )}
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 type PopupVersion = "v1" | "v2";
-type PopupState = "form" | "success";
+type PopupState = "form";
 
 type BudgetRange =
   | ""
@@ -70,6 +70,7 @@ function safeSetSessionStorageItem(key: string, value: string) {
 
 export default function CampaignEnquiryPopup() {
   const pathname = usePathname();
+  const router = useRouter();
 
   const isExcludedRoute = useMemo(() => {
     const p = pathname || "/";
@@ -211,7 +212,8 @@ export default function CampaignEnquiryPopup() {
       }
 
       safeSetLocalStorageItem(STORAGE_KEYS.submitted, "true");
-      setState("success");
+      close();
+      router.push("/thank-you?source=campaign-enquiry");
     } catch (err) {
       setSubmitError(err instanceof Error ? err.message : "Something went wrong.");
     } finally {
@@ -242,18 +244,7 @@ export default function CampaignEnquiryPopup() {
           ×
         </button>
 
-        {state === "success" ? (
-          <div className="flex flex-col gap-3 pr-6">
-            <h2 className="text-[#262626] text-[22px] sm:text-[26px] leading-[28px] sm:leading-[34px] font-extrabold">
-              You&apos;ll hear from us within 48 hours.
-            </h2>
-            <p className="text-[#344054] text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] font-normal">
-              We will reply with show recommendations and initial thoughts on your
-              campaign. Check your inbox — including your spam folder.
-            </p>
-          </div>
-        ) : (
-          <form onSubmit={submit} className="flex flex-col gap-5">
+        <form onSubmit={submit} className="flex flex-col gap-5">
             <div className="flex flex-col gap-2 pr-6">
               <h2 className="text-[#262626] text-[22px] sm:text-[26px] leading-[28px] sm:leading-[34px] font-extrabold">
                 {headline}
@@ -361,7 +352,6 @@ export default function CampaignEnquiryPopup() {
               </div>
             </div>
           </form>
-        )}
       </div>
     </div>
   );
