@@ -1,3 +1,9 @@
 adswizz.com, 430, DIRECT
 adswizz.com, 430, RESELLER
 adswizz.com, 80, RESELLER
+katzdigital.com,318,DIRECT
+katzdigital.com,80,DIRECT
+katzdigital.com,318,RESELLER
+katzdigital.com,80,RESELLER
+tritondigital.com, 111653, DIRECT, 19b4454d0b87b58b
+OWNERDOMAIN=www.nextbroadcast.media
