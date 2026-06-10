@@ -339,7 +339,7 @@ export default function KnowledgeHubLib() {
 
                       <div className="absolute left-0 right-0 z-20 top-[89px] flex flex-col justify-center items-center gap-[18px] h-[125px]">
                         <Image
-                          src="/assets/images/admanager-logo.png"
+                          src="/assets/images/earo-logo.png"
                           alt="graphic"
                           width={246}
                           height={58}
@@ -688,7 +688,7 @@ export default function KnowledgeHubLib() {
                         Graphic
                       </span>
                       <Image
-                        src="/assets/images/admanager-logo.png"
+                        src="/assets/images/earo-logo.png"
                         alt="play"
                         width={157}
                         height={37}

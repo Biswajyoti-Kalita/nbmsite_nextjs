@@ -64,10 +64,10 @@ export default function Podcaster() {
                       Get listed in{" "}
                       <a
                         target="_blank"
-                        href="https://admanager.fm"
+                        href="https://app.earo.ai"
                         className="text-[#344054] underline"
                       >
-                        AdManager.FM
+                        EARO
                       </a>
                       , our self-serve platform used by agencies and brands
                       worldwide.

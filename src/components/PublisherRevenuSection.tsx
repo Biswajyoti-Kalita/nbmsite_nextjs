@@ -48,7 +48,7 @@ export default function PublisherRevenuSection() {
 
             <div className="flex flex-col items-start justify-center gap-[16px]">
               <h5 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                Connect your ad inventory to advertisers using AdManager to book
+                Connect your ad inventory to advertisers using EARO to book
                 programmatic podcast campaigns.
               </h5>
               <div className="flex flex-row items-center justify-start gap-[12px]">
@@ -60,7 +60,7 @@ export default function PublisherRevenuSection() {
                   height={26}
                 ></Image>
                 <h6 className="text-[#344054] text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px]">
-                  Live exposure to buyers across DV360 and our AdManager
+                  Live exposure to buyers across DV360 and our EARO
                   platform
                 </h6>
               </div>
@@ -112,7 +112,7 @@ export default function PublisherRevenuSection() {
                 textClassName="text-[16px] leading-[24px] "
                 onClick={openCallMeBackModal}
               />
-              <Link href="https://admanager.fm" target="_blank">
+              <Link href="https://app.earo.ai" target="_blank">
               <GradientButton
                 type="secondary"
                 text="Check Out AI Studio"

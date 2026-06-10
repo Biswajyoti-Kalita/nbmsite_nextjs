@@ -33,7 +33,7 @@ export default function Advertisers() {
           description="Global high-performance podcast and digital audio campaigns,
               delivered quickly, efficiently, and tailored to your goals."
           image="/assets/images/advertiser.jpg"
-          buttons={[ {text: "Launch Your Own Campaign", type: "secondary", link: "https://admanager.fm"}, { text: "Request a Proposal", type: "tertiary", showCallMeBackModal: true }]}
+          buttons={[ {text: "Launch Your Own Campaign", type: "secondary", link: "https://app.earo.ai"}, { text: "Request a Proposal", type: "tertiary", showCallMeBackModal: true }]}
         />
 
       </div>
@@ -515,11 +515,11 @@ export default function Advertisers() {
                 title:
                   "What is the minimum budget required to start a campaign?",
                 description:
-                  "We cater to a range of budgets. For self-serve campaigns via our AdManager platform, the minimum spend starts at $250 USD. For managed services, we recommend discussing your goals with our sales team to tailor a solution that fits your needs.",
+                  "We cater to a range of budgets. For self-serve campaigns via our EARO platform, the minimum spend starts at $250 USD. For managed services, we recommend discussing your goals with our sales team to tailor a solution that fits your needs.",
               },
               {
                 title: "How do I get started with launching a campaign?",
-                description: "You can begin by signing up on our AdManager platform for self-serve options or contact our sales team for a full-service experience. We'll guide you through the process, from audience targeting to creative development and campaign deployment."
+                description: "You can begin by signing up on our EARO platform for self-serve options or contact our sales team for a full-service experience. We'll guide you through the process, from audience targeting to creative development and campaign deployment."
               },
               {
                 title: "Which brands have you worked with?",
@@ -527,7 +527,7 @@ export default function Advertisers() {
               },
               {
                 title: "Can I run a campaign if I have a small budget?",
-                description: "Absolutely. Our self-serve AdManager platform is designed to accommodate smaller budgets, providing access to premium inventory and targeting tools to maximize your campaign's impact."
+                description: "Absolutely. Our self-serve EARO platform is designed to accommodate smaller budgets, providing access to premium inventory and targeting tools to maximize your campaign's impact."
               },
               {
                 title: "Do you offer creative services for ad production?",
@@ -535,7 +535,7 @@ export default function Advertisers() {
               },
               {
                 title: "How does billing work for campaigns?",
-                description: "For self-serve campaigns, billing is handled through the AdManager platform, with charges based on impressions delivered. Managed service campaigns are billed according to the agreed-upon terms outlined in your service agreement."
+                description: "For self-serve campaigns, billing is handled through the EARO platform, with charges based on impressions delivered. Managed service campaigns are billed according to the agreed-upon terms outlined in your service agreement."
               },
               {
                 title: "How do you ensure brand safety and suitability?",

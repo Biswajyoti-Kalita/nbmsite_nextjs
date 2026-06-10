@@ -47,7 +47,7 @@ export default function ReadyToLaunch() {
                 </Link>
 
                 <Link
-                  href="https://admanager.fm/nbmaistudio"
+                  href="https://app.earo.ai/"
                   target="_blank"
                   className="border-[#FFFEFF] text-center border-2 py-[10px] px-[16px] rounded-[4px] w-[200px]"
                 >

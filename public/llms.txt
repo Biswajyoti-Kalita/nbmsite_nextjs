@@ -22,6 +22,7 @@ We are not a platform. We do not sell inventory. We make podcast advertising act
 ## Services
 - Managed Campaigns: full-service execution from $10K
 - AdManager: self-serve platform
+- EARO: self-serve platform
 - Host-Read Studio: creator marketplace for host-read sponsorships
 ## Key Pages
 - Homepage: https://nextaud.io

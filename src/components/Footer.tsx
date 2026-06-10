@@ -42,11 +42,11 @@ export default function Footer() {
               Solutions
             </h1>
             <div className="flex flex-col">
-            <Link href="https://admanager.fm/nbmaistudio" target="_blank" className={baseLinkClasses}>
+            <Link href="https://app.earo.ai" target="_blank" className={baseLinkClasses}>
               AI Ad Studio
             </Link>
-            <Link href="https://admanager.fm" target="_blank" className={baseLinkClasses}>
-              Admanager
+            <Link href="https://app.earo.ai" target="_blank" className={baseLinkClasses}>
+              EARO
             </Link>
             <Link href="/diaspora" className={baseLinkClasses}>
             Diaspora

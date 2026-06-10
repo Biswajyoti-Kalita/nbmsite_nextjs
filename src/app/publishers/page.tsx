@@ -138,7 +138,7 @@ export default function Publishers() {
             {
               title: "Can I choose which ads run on my shows?",
               description:
-                " Yes — if you choose to, your shows can be listed in Host-Read Studio and AdManager.",
+                " Yes — if you choose to, your shows can be listed in Host-Read Studio and EARO.",
             },
             {
               title:

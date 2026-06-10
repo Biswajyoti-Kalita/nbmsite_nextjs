@@ -9,7 +9,7 @@ export default function LaunchYourPodcast() {
           <div className="w-full flex flex-col lg:flex-row items-start justify-center gap-[59px]">
             <div className="w-full flex flex-col items-start justify-between max-w-[540px]">
               <Image
-                src="/assets/images/admanager-logo.png"
+                src="/assets/images/earo-logo.png"
                 alt="advertiser-left-banner-bg"
                 className="w-auto h-[60px] object-cover"
                 width={500}
@@ -86,7 +86,7 @@ export default function LaunchYourPodcast() {
               <div className="bg-white rounded-2xl w-full md:max-w-[540px] p-[16px] lg:p-8">
                 <form
                   className="bg-white w-full flex flex-col text-center justify-center items-center"
-                  action="https://admanager.fm/nbmaistudio"
+                  action="https://app.earo.ai/"
                   target="_blank"
                 >
                   <div className="flex items-center gap-1.5">
