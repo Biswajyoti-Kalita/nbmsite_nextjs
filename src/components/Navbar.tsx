@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import isMobile from "@/util/util";
 import Image from "next/image";
 import Link from "next/link";
-import { openCallMeBackModal, openShareBriefModal } from "@/util/modalEvents";
+import { openCallMeBackModal, openHubspotModal } from "@/util/modalEvents";
 import posthog from "posthog-js";
 
 
@@ -22,10 +22,10 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
   const [isMobileScreenMenuOpen, setisMobileScreenMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const showShareBriefModal = () => {
+  const showHubspotForm = () => {
     setisMobileScreenMenuOpen(false); // Close mobile menu if open
     posthog.capture("request_proposal_clicked", { source: "navbar" });
-    openShareBriefModal();
+    openHubspotModal();
   }
 
   const showCallMeBackModal = () => {
@@ -137,7 +137,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                     }
                   </button>
                   <div className="hidden lg:flex flex-row gap-[12px] h-[64px] items-center">
-                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Request a Proposal" className="h-[48px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showShareBriefModal} />
+                  <GradientButton type={ isPrimary ? "secondary" : "tertiary"} text="Download Media Kit" className="h-[48px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showHubspotForm} />
                   <GradientButton type={ isPrimary ? "primary" : "secondary"} text="Сall Me Back" className="h-[48px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showCallMeBackModal} />
                 </div>
               </div>
@@ -173,7 +173,7 @@ export default function Navbar({ bgColor = "bg-white", bgColorOnOpen = "bg-[#F11
                   </ul>
                   <div className="flex flex-row gap-[20px] justify-center items-center w-full">
                     <div className="w-full flex flex-row justify-center items-center">
-                      <GradientButton type="tertiary" text="Request a Proposal" className="w-[160px] h-[40px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showShareBriefModal}/>
+                      <GradientButton type="tertiary" text="Request a Proposal" className="w-[160px] h-[40px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={showHubspotForm}/>
                     </div>
                     <div className="w-full flex flex-row justify-center items-center">
                       <GradientButton type="secondary" text="Сall Me Back" className="w-[160px] h-[40px]" textClassName="text-[16px] leading-[24px] font-semibold" onClick={() => showCallMeBackModal()} />

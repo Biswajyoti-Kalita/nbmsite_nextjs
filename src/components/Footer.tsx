@@ -1,11 +1,16 @@
 "use client";
-import { openCallMeBackModal } from "@/util/modalEvents";
+import { openCallMeBackModal, openHubspotModal } from "@/util/modalEvents";
 import Image from "next/image";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 const baseLinkClasses =
   "py-[6px] lg:py-[8px] text-[#344054] hover:underline cursor-pointer";
 export default function Footer() {
+  const showHubspotForm = () => {
+    posthog.capture("media_kit_download_clicked", { source: "footer" });
+    openHubspotModal();
+  }
   return (
     <footer className="bg-white w-full">
       <div className="flex flex-col lg:flex-row gap-8 md:gap-[64px] px-4 md:px-[80px] py-8 pt-[64px] md:py-[64px] bg-[#FFFEFF]">
@@ -68,7 +73,7 @@ export default function Footer() {
             <Link href="/case-study-library" className={baseLinkClasses}>
               Case Studies
             </Link>
-            <Link href="/advertisers" className={baseLinkClasses}>
+            <Link href={"#"} onClick={showHubspotForm} className={baseLinkClasses}>
               Advertiser Media Kit
             </Link>
             <Link href="/publishers" className={baseLinkClasses}>

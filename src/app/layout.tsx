@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import AOSProvider from "../components/AOSProvider";
 import CallMeBack from "../components/CallMeBack";
+import HubspotFormModal from "../components/HubspotFormModal";
 import ShareBrief from "../components/ShareBrief";
 import CampaignEnquiryPopup from "../components/CampaignEnquiryPopup";
 
@@ -143,6 +144,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {children}
           <CallMeBack />
           <ShareBrief />
+          <HubspotFormModal />
           <CampaignEnquiryPopup />
         </AOSProvider>
       </body>
