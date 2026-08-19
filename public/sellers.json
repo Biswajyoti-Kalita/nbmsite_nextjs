@@ -1,1175 +1,2594 @@
 {
-  "sellers":
-    [
-      {
-        "seller_id": "651",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": " أصيل"
-      },
-      {
-        "seller_id": "710",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": " بودكاست إرث فِكري"
-      },
-      {
-        "seller_id": "636",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": " كبرني بودكاست "
-      },
-      {
-        "seller_id": "614",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "!!هو في إيه يا جماعة؟"
-      },
-      {
-        "seller_id": "533",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "!هان"
-      },
-      {
-        "seller_id": "145",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "10 Yardat | ١٠ ياردات"
-      },
-      {
-        "seller_id": "83",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "1001 Nights | ألف ليلة وليلة"
-      },
-      {
-        "seller_id": "761",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "2025 مسلسل أغنى رجل في العالم"
-      },
-      {
-        "seller_id": "427",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "35mm | 35ملم"
-      },
-      {
-        "seller_id": "528",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "5 Minute English Talk"
-      },
-      {
-        "seller_id": "643",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "5 Minute English Vocabulary Show"
-      },
-      {
-        "seller_id": "714",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "A3det Cinema - قعدة سينما"
-      },
-      {
-        "seller_id": "796",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Ahraz | أحراز"
-      },
-      {
-        "seller_id": "799",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Ahwal | أحوال"
-      },
-      {
-        "seller_id": "345",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Al Qaed Al Sagheer Podcast | بودكاست القائد الصغير"
-      },
-      {
-        "seller_id": "149",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Al Qarra | القارّة"
-      },
-      {
-        "seller_id": "129",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "All Ears English Podcast"
-      },
-      {
-        "seller_id": "89",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Alsilah | الصلة"
-      },
-      {
-        "seller_id": "709",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ASH | پادکست اش"
-      },
-      {
-        "seller_id": "75",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Awwal Shi Bonsoir | أول شي بونسوار"
-      },
-      {
-        "seller_id": "804",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Bar Bahr | بر بحر"
-      },
-      {
-        "seller_id": "91",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Binbir Gece Masalları"
-      },
-      {
-        "seller_id": "793",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Built to Rise"
-      },
-      {
-        "seller_id": "706",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "CRIME TIME I کرایم تایم"
-      },
-      {
-        "seller_id": "393",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Dardasha Unfiltered with Eiten Zeerban"
-      },
-      {
-        "seller_id": "771",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "dastaminophen| پادكست داستامينوفن"
-      },
-      {
-        "seller_id": "629",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Dina G."
-      },
-      {
-        "seller_id": "488",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Dom Tak | دُمْ تَكْ"
-      },
-      {
-        "seller_id": "487",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Eib | عيب"
-      },
-      {
-        "seller_id": "745",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "El Daheeh - الدحيح"
-      },
-      {
-        "seller_id": "483",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "El-Podcasters"
-      },
-      {
-        "seller_id": "801",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Eyab | إياب"
-      },
-      {
-        "seller_id": "746",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Fayek W Rayek | فايق و رايق"
-      },
-      {
-        "seller_id": "622",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Female Formula by Alia Khafaga"
-      },
-      {
-        "seller_id": "151",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "FormulaCast | فورمولا كاست"
-      },
-      {
-        "seller_id": "615",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "G.Talks - The Podcast for Dreamers"
-      },
-      {
-        "seller_id": "447",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Get Real مع Karol I Alfan"
-      },
-      {
-        "seller_id": "153",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Goal Engleezi | جول إنجليزي"
-      },
-      {
-        "seller_id": "79",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Hakeh Sareeh | حكي صريح"
-      },
-      {
-        "seller_id": "482",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "HPM Podcast"
-      },
-      {
-        "seller_id": "433",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Indian Noir Horror Podcast"
-      },
-      {
-        "seller_id": "93",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Ismi | اسمي"
-      },
-      {
-        "seller_id": "85",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Juha | جحا"
-      },
-      {
-        "seller_id": "161",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Kan Ya Ma Kora | كان يا ما كورة"
-      },
-      {
-        "seller_id": "620",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Kefaya Ba2a | كفاية بقى"
-      },
-      {
-        "seller_id": "693",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Khaled talks"
-      },
-      {
-        "seller_id": "81",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Khilqit Binit | خلقت بنت"
-      },
-      {
-        "seller_id": "721",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "LalaLand | لالالند"
-      },
-      {
-        "seller_id": "673",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Lisan Arabi لسان عربي"
-      },
-      {
-        "seller_id": "155",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Man 2 Man | مان 2 مان"
-      },
-      {
-        "seller_id": "813",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Maqsouda | مقصودة"
-      },
-      {
-        "seller_id": "819",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Mija | بنتي"
-      },
-      {
-        "seller_id": "183",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "mishbilshibshib | مش بالشبشب"
-      },
-      {
-        "seller_id": "623",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Omam  - أُمم مع ميرنا الزيني"
-      },
-      {
-        "seller_id": "773",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "One On One with Kris Fade"
-      },
-      {
-        "seller_id": "373",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Our Darkest Day"
-      },
-      {
-        "seller_id": "135",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "PaperSamwich ساندوتش ورقي"
-      },
-      {
-        "seller_id": "201",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Podcast Telfaz - بودكاست تلفاز"
-      },
-      {
-        "seller_id": "720",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Ravi | پادکست فارسی راوی"
-      },
-      {
-        "seller_id": "740",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Sage Takes Thyme"
-      },
-      {
-        "seller_id": "610",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Sekke Podcast | پادکست سکه"
-      },
-      {
-        "seller_id": "674",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Shab Tab شب تاب"
-      },
-      {
-        "seller_id": "820",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Sharayet | شرايط"
-      },
-      {
-        "seller_id": "87",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Sindbad | سندباد"
-      },
-      {
-        "seller_id": "69",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Sirat Om | سيرة أم"
-      },
-      {
-        "seller_id": "697",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Sunroof | سان روف"
-      },
-      {
-        "seller_id": "73",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Taboo | تابو"
-      },
-      {
-        "seller_id": "741",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Talk of Shame"
-      },
-      {
-        "seller_id": "63",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Taqat Hob | طاقة حب"
-      },
-      {
-        "seller_id": "103",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "The 40 Thieves | الأربعون حرامي"
-      },
-      {
-        "seller_id": "105",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "The Basement | القبو"
-      },
-      {
-        "seller_id": "107",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "The Code | الشفرة"
-      },
-      {
-        "seller_id": "470",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "The Refugee Boss | اللاجئ المدير"
-      },
-      {
-        "seller_id": "513",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Think With Hessa"
-      },
-      {
-        "seller_id": "823",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Tiki-taka | تيكي تاكا"
-      },
-      {
-        "seller_id": "109",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Vikings: The Nine Realms | فايكنغز: العوالم التسعة"
-      },
-      {
-        "seller_id": "111",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Watr | وتر"
-      },
-      {
-        "seller_id": "696",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "With NourAldin"
-      },
-      {
-        "seller_id": "825",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Ya Rayeh | يا رايح"
-      },
-      {
-        "seller_id": "113",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Yalla"
-      },
-      {
-        "seller_id": "639",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ّمن النهارده مع حنان البهي"
-      },
-      {
-        "seller_id": "645",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "اسألوا التاريخ"
-      },
-      {
-        "seller_id": "726",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "افلام و مسلسلات"
-      },
-      {
-        "seller_id": "849",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأربعون النووية"
-      },
-      {
-        "seller_id": "213",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأعمال الكاملة لـ د. أحمد خالد توفيق"
-      },
-      {
-        "seller_id": "215",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأعمال الكاملة لـ د. مصطفى محمود"
-      },
-      {
-        "seller_id": "217",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأعمال الكاملة لـ عباس محمود العقاد"
-      },
-      {
-        "seller_id": "788",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأعمال الكاملة لـ فيودور دوستويفسكي"
-      },
-      {
-        "seller_id": "786",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأعمال الكاملة لـ نجيب محفوظ"
-      },
-      {
-        "seller_id": "221",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأعمال الكاملة لـ وليام شكسبير"
-      },
-      {
-        "seller_id": "827",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الرأي والرغي الآخر مع برناديت"
-      },
-      {
-        "seller_id": "381",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الرسول"
-      },
-      {
-        "seller_id": "459",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "السهرة الإذاعية | Radio Nights"
-      },
-      {
-        "seller_id": "787",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الشمائل المحمدية"
-      },
-      {
-        "seller_id": "522",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "العفاسي بودكاست - Alafasy Podcast"
-      },
-      {
-        "seller_id": "792",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "القرآن الكريم بصوت الشيخ أنس العمادي"
-      },
-      {
-        "seller_id": "117",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "المختلون | Almukhtaloon"
-      },
-      {
-        "seller_id": "634",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "انتهت حلول الأرض مع محمد شحاتة"
-      },
-      {
-        "seller_id": "591",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ایستگاه فضایی"
-      },
-      {
-        "seller_id": "826",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "إذًا أعزائي"
-      },
-      {
-        "seller_id": "743",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "إيه العلاقة"
-      },
-      {
-        "seller_id": "141",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "أزرق"
-      },
-      {
-        "seller_id": "265",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "أسمار"
-      },
-      {
-        "seller_id": "207",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "أغرب القضايا"
-      },
-      {
-        "seller_id": "209",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ألف ليلة وليلة"
-      },
-      {
-        "seller_id": "698",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بدون ورق"
-      },
-      {
-        "seller_id": "341",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بصمة صوت"
-      },
-      {
-        "seller_id": "273",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بعد التسعين"
-      },
-      {
-        "seller_id": "339",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بكل حب"
-      },
-      {
-        "seller_id": "846",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بودكاست البحث عن معنى"
-      },
-      {
-        "seller_id": "484",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بودكاست الصحة النفسية"
-      },
-      {
-        "seller_id": "739",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بودكاست روايتهم"
-      },
-      {
-        "seller_id": "794",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "بودكاست عقلية"
-      },
-      {
-        "seller_id": "676",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "پادکستِ سیالکتیک"
-      },
-      {
-        "seller_id": "578",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "پادکست پرچم سفید"
-      },
-      {
-        "seller_id": "555",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "پادکست چم"
-      },
-      {
-        "seller_id": "579",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "پادکست داتس - dots podcast"
-      },
-      {
-        "seller_id": "724",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "پادکست روانشناسی - رنگ روان | Range Ravan"
-      },
-      {
-        "seller_id": "701",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "پادکست فارسی فیکشن Fiction Podcast"
-      },
-      {
-        "seller_id": "556",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "پادکست مداخله | Modakheleh Podcast"
-      },
-      {
-        "seller_id": "650",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "تاريخ على الهامش"
-      },
-      {
-        "seller_id": "385",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "جرائم وغموض"
-      },
-      {
-        "seller_id": "329",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "جناية | Jinaya"
-      },
-      {
-        "seller_id": "317",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "جولان مع محمد الشثري"
-      },
-      {
-        "seller_id": "764",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "حكاوي صحاب الأرض"
-      },
-      {
-        "seller_id": "732",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "حواديت قبل النوم"
-      },
-      {
-        "seller_id": "734",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "خلاصة بزنس | مال - ربح - استثمار"
-      },
-      {
-        "seller_id": "576",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "دچار"
-      },
-      {
-        "seller_id": "531",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "رادیو بتهوون"
-      },
-      {
-        "seller_id": "441",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "رعب"
-      },
-      {
-        "seller_id": "655",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "رقي"
-      },
-      {
-        "seller_id": "225",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "روائع المسلسلات الإذاعية"
-      },
-      {
-        "seller_id": "523",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "رياض الصالحين"
-      },
-      {
-        "seller_id": "699",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "زیرزمین"
-      },
-      {
-        "seller_id": "227",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ساعة لقلبك"
-      },
-      {
-        "seller_id": "708",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "سكطعش"
-      },
-      {
-        "seller_id": "536",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "سلسلة ببساطة | تاريخ العالم كله منذ بداية الكون وحتى الآن"
-      },
-      {
-        "seller_id": "524",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "سلسلة رجل المستحيل"
-      },
-      {
-        "seller_id": "451",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "سلسلة سافاري"
-      },
-      {
-        "seller_id": "449",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "سلسلة فانتازيا"
-      },
-      {
-        "seller_id": "453",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "سلسلة ما وراء الطبيعة"
-      },
-      {
-        "seller_id": "705",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "شخصية عادية جداً"
-      },
-      {
-        "seller_id": "755",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "شقة التعاون"
-      },
-      {
-        "seller_id": "477",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "صارت معي"
-      },
-      {
-        "seller_id": "231",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "صور من حياة الصحابيات"
-      },
-      {
-        "seller_id": "660",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ضد مجهول"
-      },
-      {
-        "seller_id": "405",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "عالم القصص"
-      },
-      {
-        "seller_id": "850",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "علوم العافية | Oloom Al Afiya"
-      },
-      {
-        "seller_id": "506",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "عمر"
-      },
-      {
-        "seller_id": "443",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "عن الحب"
-      },
-      {
-        "seller_id": "733",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "غير مباشر"
-      },
-      {
-        "seller_id": "534",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "فاهم"
-      },
-      {
-        "seller_id": "738",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "فنجان و قهوة مع مريم فتحي"
-      },
-      {
-        "seller_id": "572",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "قاب تاریخ"
-      },
-      {
-        "seller_id": "476",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "قصتها القصيرة"
-      },
-      {
-        "seller_id": "474",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "قصرة+ | +Gosra"
-      },
-      {
-        "seller_id": "520",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "قصص الأنبياء"
-      },
-      {
-        "seller_id": "833",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "قصص من فلسطين"
-      },
-      {
-        "seller_id": "848",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "قفير"
-      },
-      {
-        "seller_id": "687",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "كتب صوتية"
-      },
-      {
-        "seller_id": "331",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "كنبة السبت"
-      },
-      {
-        "seller_id": "491",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "كنوز السيرة للشيخ عثمان الخميس"
-      },
-      {
-        "seller_id": "735",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "لُطف"
-      },
-      {
-        "seller_id": "421",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "لحظة مع ميس"
-      },
-      {
-        "seller_id": "835",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مَنبِت | Manbet"
-      },
-      {
-        "seller_id": "508",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مُلخص كتاب"
-      },
-      {
-        "seller_id": "723",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "محفوف"
-      },
-      {
-        "seller_id": "468",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مركز الأخبار"
-      },
-      {
-        "seller_id": "769",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مسلسل  كوكب تاني"
-      },
-      {
-        "seller_id": "765",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مسلسل المتر براءة"
-      },
-      {
-        "seller_id": "766",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مسلسل أخطر خطير"
-      },
-      {
-        "seller_id": "756",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مسلسل حلم حليم 2025"
-      },
-      {
-        "seller_id": "333",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مسودة"
-      },
-      {
-        "seller_id": "665",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "معتدل"
-      },
-      {
-        "seller_id": "666",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مغامرات إبن بطوطة"
-      },
-      {
-        "seller_id": "211",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مغامرات شيرلوك هولمز"
-      },
-      {
-        "seller_id": "847",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "من أنا؟"
-      },
-      {
-        "seller_id": "717",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "من أول السطر - Men Awel El Satr Podcast"
-      },
-      {
-        "seller_id": "529",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "من زكاها - تطوير الذات"
-      },
-      {
-        "seller_id": "695",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "من، زن"
-      },
-      {
-        "seller_id": "327",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "مهارات"
-      },
-      {
-        "seller_id": "223",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "موسوعة الأدب العالمي"
-      },
-      {
-        "seller_id": "237",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "موسوعة الكتب الصوتية"
-      },
-      {
-        "seller_id": "757",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "نَفْس"
-      },
-      {
-        "seller_id": "143",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "هدوء"
-      },
-      {
-        "seller_id": "688",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ورق كاست"
-      },
-      {
-        "seller_id": "667",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "وسق"
-      },
-      {
-        "seller_id": "510",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "وصف الجنة"
-      },
-      {
-        "seller_id": "656",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "ياكم العلم"
-      },
-      {
-        "seller_id": "431",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Travel Stories with Moush"
-      },
-      {
-        "seller_id": "139",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "استشارة مع سارة | EM3Sarah"
-      },
-      {
-        "seller_id": "219",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "الأعمال الكاملة لـ عبدالرحمن الأبنودي"
-      },
-      {
-        "seller_id": "229",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "صور من حياة الصحابة"
-      },
-      {
-        "seller_id": "321",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "قبس مع خالد اليحيا"
-      },
-      {
-        "seller_id": "469",
-        "name": "<legal entity NextAudio pays for this show>",
-        "seller_type": "PUBLISHER",
-        "comment": "Business Midnights"
-      }
-    ]
+  "sellers": [
+    {
+      "seller_id": "528",
+      "name": "5MM",
+      "seller_type": "PUBLISHER",
+      "comment": "5 Minute English Talk",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "643",
+      "name": "5MM",
+      "seller_type": "PUBLISHER",
+      "comment": "5 Minute English Vocabulary Show",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "793",
+      "name": "5MM",
+      "seller_type": "PUBLISHER",
+      "comment": "Built to Rise",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "714",
+      "name": "A3DET CINEMA",
+      "seller_type": "PUBLISHER",
+      "comment": "A3det Cinema - قعدة سينما",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "213",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الأعمال الكاملة لـ د. أحمد خالد توفيق",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "225",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "روائع المسلسلات الإذاعية",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "451",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "سلسلة سافاري",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "520",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "قصص الأنبياء",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "491",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "كنوز السيرة للشيخ عثمان الخميس",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "237",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "موسوعة الكتب الصوتية",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "508",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "مُلخص كتاب",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "209",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "ألف ليلة وليلة",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "788",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الأعمال الكاملة لـ فيودور دوستويفسكي",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "227",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "ساعة لقلبك",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "233",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "Unknown",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "207",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "أغرب القضايا",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "215",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الأعمال الكاملة لـ د. مصطفى محمود",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "524",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "سلسلة رجل المستحيل",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "453",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "سلسلة ما وراء الطبيعة",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "786",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الأعمال الكاملة لـ نجيب محفوظ",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "211",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "مغامرات شيرلوك هولمز",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "792",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "القرآن الكريم بصوت الشيخ أنس العمادي",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "449",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "سلسلة فانتازيا",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "229",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "صور من حياة الصحابة",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "506",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "عمر",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "523",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "رياض الصالحين",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "223",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "موسوعة الأدب العالمي",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "510",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "وصف الجنة",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "217",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الأعمال الكاملة لـ عباس محمود العقاد",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "219",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الأعمال الكاملة لـ عبدالرحمن الأبنودي",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "221",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الأعمال الكاملة لـ وليام شكسبير",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "231",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "صور من حياة الصحابيات",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "787",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "الشمائل المحمدية",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "789",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "حياة السلف",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "521",
+      "name": "Podcast Record",
+      "seller_type": "PUBLISHER",
+      "comment": "مسك الخطاب",
+      "domain": "podcastrecord.co"
+    },
+    {
+      "seller_id": "536",
+      "name": "Abdul Qadir",
+      "seller_type": "PUBLISHER",
+      "comment": "سلسلة ببساطة | تاريخ العالم كله منذ بداية الكون وحتى الآن",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "660",
+      "name": "Abdulaziz Khamaali",
+      "seller_type": "PUBLISHER",
+      "comment": "ضد مجهول",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "652",
+      "name": "Abdulaziz Khamaali",
+      "seller_type": "PUBLISHER",
+      "comment": "جريمة وحكاية",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "671",
+      "name": "Abdulaziz Khamaali",
+      "seller_type": "PUBLISHER",
+      "comment": "عقلية محارب",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "732",
+      "name": "Adhm Amin",
+      "seller_type": "PUBLISHER",
+      "comment": "حواديت قبل النوم",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "129",
+      "name": "AEE",
+      "seller_type": "PUBLISHER",
+      "comment": "All Ears English Podcast",
+      "domain": "allearsenglish.com"
+    },
+    {
+      "seller_id": "532",
+      "name": "AHMAD SACCA",
+      "seller_type": "PUBLISHER",
+      "comment": "Tatleh - تطلي",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "794",
+      "name": "AKLIYA",
+      "seller_type": "PUBLISHER",
+      "comment": "بودكاست عقلية",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "473",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "البودكاست المفضل",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "443",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "عن الحب",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "477",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "صارت معي",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "476",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "قصتها القصيرة",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "474",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "قصرة+ | +Gosra",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "471",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "المرصد",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "439",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "حكي بنات",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "441",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "رعب",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "468",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "مركز الأخبار",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "470",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "The Refugee Boss | اللاجئ المدير",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "467",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "مجهول | Majhool",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "478",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "بالعراقي مع سجد",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "472",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "بريفينج",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "469",
+      "name": "AL AAN TV",
+      "seller_type": "PUBLISHER",
+      "comment": "Business Midnights مع Farah",
+      "domain": "alaan.net"
+    },
+    {
+      "seller_id": "205",
+      "name": "ALBODCAST",
+      "seller_type": "PUBLISHER",
+      "comment": "albodcast | البودكاست",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "696",
+      "name": "ALFAN NETWORK",
+      "seller_type": "PUBLISHER",
+      "comment": "With NourAldin",
+      "domain": "alfangroup.com"
+    },
+    {
+      "seller_id": "522",
+      "name": "ALFAN NETWORK",
+      "seller_type": "PUBLISHER",
+      "comment": "العفاسي بودكاست - Alafasy Podcast",
+      "domain": "alfangroup.com"
+    },
+    {
+      "seller_id": "447",
+      "name": "ALFAN NETWORK",
+      "seller_type": "PUBLISHER",
+      "comment": "Get Real مع Karol I Alfan",
+      "domain": "alfangroup.com"
+    },
+    {
+      "seller_id": "461",
+      "name": "ALFAN NETWORK",
+      "seller_type": "PUBLISHER",
+      "comment": "بودكاست اسماعيل تمر",
+      "domain": "alfangroup.com"
+    },
+    {
+      "seller_id": "511",
+      "name": "ANNAHAR",
+      "seller_type": "PUBLISHER",
+      "comment": "Annahar Podcast",
+      "domain": "annahar.com"
+    },
+    {
+      "seller_id": "500",
+      "name": "ANQOR",
+      "seller_type": "PUBLISHER",
+      "comment": "The Creative 1s Podcast",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "650",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "تاريخ على الهامش",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "530",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "الساعة 11:00 م",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "648",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "ترويحة",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "663",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "فينوس",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "646",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "الخلاصة",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "668",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "يلا تنام",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "655",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "رقي",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "653",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "أعلام",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "647",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "The Bag",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "658",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "خطوة لقدام",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "654",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "حكايا ورق الزيتون",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "644",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "Skill Up Start Up",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "662",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "مختصر الحكاية",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "661",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "ضجيج العقل",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "657",
+      "name": "ARBAEAH",
+      "seller_type": "PUBLISHER",
+      "comment": "خبر ورد غطاه",
+      "domain": "arbaeah.com"
+    },
+    {
+      "seller_id": "645",
+      "name": "ASK HISTORY",
+      "seller_type": "PUBLISHER",
+      "comment": "اسألوا التاريخ",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "739",
+      "name": "Aware Media",
+      "seller_type": "PUBLISHER",
+      "comment": "بودكاست روايتهم",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "486",
+      "name": "BELOW THE FOLD",
+      "seller_type": "PUBLISHER",
+      "comment": "Below The Fold - Marketing & Advertising Show",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "698",
+      "name": "BIDON WARAK ",
+      "seller_type": "PUBLISHER",
+      "comment": "بدون ورق",
+      "domain": "sard.group"
+    },
+    {
+      "seller_id": "715",
+      "name": "CLOWNINGTALKATIVE",
+      "seller_type": "PUBLISHER",
+      "comment": "تهريج",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "718",
+      "name": "CLOWNINGTALKATIVE",
+      "seller_type": "PUBLISHER",
+      "comment": "تخبطات",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "498",
+      "name": "CONVERSATION WITH LOULOU",
+      "seller_type": "PUBLISHER",
+      "comment": "with Loulou",
+      "domain": "withloulou.com"
+    },
+    {
+      "seller_id": "737",
+      "name": "DINA AL DESOUKY",
+      "seller_type": "PUBLISHER",
+      "comment": "Belhadawa Podcast",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "483",
+      "name": "El-Podcasters",
+      "seller_type": "PUBLISHER",
+      "comment": "El-Podcasters",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "731",
+      "name": "EMAN HELAL",
+      "seller_type": "PUBLISHER",
+      "comment": "انجليزي ع السريع - إيمان هلال",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "534",
+      "name": "Fahem",
+      "seller_type": "PUBLISHER",
+      "comment": "فاهم",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "745",
+      "name": "GDM",
+      "seller_type": "PUBLISHER",
+      "comment": "El Daheeh - الدحيح",
+      "domain": "gdservicesgroup.com"
+    },
+    {
+      "seller_id": "746",
+      "name": "GDM",
+      "seller_type": "PUBLISHER",
+      "comment": "Fayek W Rayek | فايق و رايق",
+      "domain": "gdservicesgroup.com"
+    },
+    {
+      "seller_id": "622",
+      "name": "GDM",
+      "seller_type": "PUBLISHER",
+      "comment": "Female Formula by Alia Khafaga",
+      "domain": "gdservicesgroup.com"
+    },
+    {
+      "seller_id": "755",
+      "name": "GDM",
+      "seller_type": "PUBLISHER",
+      "comment": "شقة التعاون",
+      "domain": "gdservicesgroup.com"
+    },
+    {
+      "seller_id": "747",
+      "name": "GDM",
+      "seller_type": "PUBLISHER",
+      "comment": "Start-up Millionaire | ستارت اب مليونير",
+      "domain": "gdservicesgroup.com"
+    },
+    {
+      "seller_id": "754",
+      "name": "GDM",
+      "seller_type": "PUBLISHER",
+      "comment": "Prince ElLayaly | برنس الليالي",
+      "domain": "gdservicesgroup.com"
+    },
+    {
+      "seller_id": "752",
+      "name": "GDM",
+      "seller_type": "PUBLISHER",
+      "comment": "بودكاست عسل و طحينة",
+      "domain": "gdservicesgroup.com"
+    },
+    {
+      "seller_id": "63",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Taqat Hob | طاقة حب",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "79",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Hakeh Sareeh | حكي صريح",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "73",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Taboo | تابو",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "77",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "TMR",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "75",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Awwal Shi Bonsoir | أول شي بونسوار",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "69",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Sirat Om | سيرة أم",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "81",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Khilqit Binit | خلقت بنت",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "339",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "بكل حب",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "337",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "الّلي سعى جنى",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "65",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Nataloo Talks | ناتالو معكن",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "341",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "بصمة صوت",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "61",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Hyphenated Journey",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "67",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Startup Confessionals",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "71",
+      "name": "HAKAWATI",
+      "seller_type": "PUBLISHER",
+      "comment": "Gateways to Awakening",
+      "domain": "hakawati.fm"
+    },
+    {
+      "seller_id": "735",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "لُطف",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "757",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "نَفْس",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "651",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "أصيل",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "665",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "معتدل",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "666",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "مغامرات إبن بطوطة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "733",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "غير مباشر",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "667",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "وسق",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "829",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "Nafas | نَفَس",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "513",
+      "name": "HESSA",
+      "seller_type": "PUBLISHER",
+      "comment": "Think With Hessa",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "137",
+      "name": "HG",
+      "seller_type": "PUBLISHER",
+      "comment": "Hamburger Generation | جيل الهمبرجر",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "656",
+      "name": "HEKAYA",
+      "seller_type": "PUBLISHER",
+      "comment": "ياكم العلم",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "482",
+      "name": "HPM",
+      "seller_type": "PUBLISHER",
+      "comment": "HPM Podcast",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "726",
+      "name": "HUSSEIN HAKEM",
+      "seller_type": "PUBLISHER",
+      "comment": "افلام و مسلسلات",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "433",
+      "name": "INDIAN NOIR",
+      "seller_type": "PUBLISHER",
+      "comment": "Indian Noir Horror Podcast",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "708",
+      "name": "JAMAL AL MOUSSSA",
+      "seller_type": "PUBLISHER",
+      "comment": "سكطعش",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "693",
+      "name": "KHALED TALKS",
+      "seller_type": "PUBLISHER",
+      "comment": "Khaled talks",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "702",
+      "name": "KOTOB SAWTIYA",
+      "seller_type": "PUBLISHER",
+      "comment": "كتب صوتية",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "704",
+      "name": "KOTOB SAWTIYA",
+      "seller_type": "PUBLISHER",
+      "comment": "في ظلال السيرة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "703",
+      "name": "KOTOB SAWTIYA",
+      "seller_type": "PUBLISHER",
+      "comment": "بريد الجمعة للدكتور عبد الوهاب مطاوع",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "707",
+      "name": "KOTOB SAWTIYA",
+      "seller_type": "PUBLISHER",
+      "comment": "صوت مختلف",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "773",
+      "name": "KrisFade",
+      "seller_type": "PUBLISHER",
+      "comment": "One On One with Kris Fade",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "201",
+      "name": "LAYAL",
+      "seller_type": "PUBLISHER",
+      "comment": "Podcast Telfaz - بودكاست تلفاز",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "673",
+      "name": "LISAN ARABI",
+      "seller_type": "PUBLISHER",
+      "comment": "Lisan Arabi لسان عربي",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "808",
+      "name": "Loosely Adapted",
+      "seller_type": "PUBLISHER",
+      "comment": "Loosely Adapted",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "723",
+      "name": "MAHFOUF",
+      "seller_type": "PUBLISHER",
+      "comment": "محفوف",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "738",
+      "name": "MARIAM FATHI",
+      "seller_type": "PUBLISHER",
+      "comment": "فنجان و قهوة مع مريم فتحي",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "712",
+      "name": "MERAKI",
+      "seller_type": "PUBLISHER",
+      "comment": "مع نجيب",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "484",
+      "name": "MHP",
+      "seller_type": "PUBLISHER",
+      "comment": "بودكاست الصحة النفسية",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "183",
+      "name": "MISHBILSHIBSHIB",
+      "seller_type": "PUBLISHER",
+      "comment": "mishbilshibshib | مش بالشبشب",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "688",
+      "name": "MOHAMMED FARES",
+      "seller_type": "PUBLISHER",
+      "comment": "ورق كاست",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "431",
+      "name": "MOUSH TRAVELS",
+      "seller_type": "PUBLISHER",
+      "comment": "Travel Stories with Moush",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "583",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "رختکن بازنده",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "701",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست فارسی فیکشن Fiction Podcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "591",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "ایستگاه فضایی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "706",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "CRIME TIME I کرایم تایم",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "771",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "dastaminophen| پادكست داستامينوفن",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "575",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "MimmPodcast | پادکست میم",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "594",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "اتاق فردا",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "719",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "اتاق فکر",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "589",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "خداحافظ آفریقا",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "577",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "دایره داستان",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "584",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "دغدغه ایران",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "685",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "زیستن با ادبیات | عبدالجبار کاکایی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "572",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "قاب تاریخ",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "695",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "من، زن",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "585",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "هاگیرواگیر",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "553",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست بنفش | Banafsh Podcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "763",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست جنون Junoonpodcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "578",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست پرچم سفید",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "694",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست چهارفصل | دیالوگ فیلم و موسیقی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "669",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست کارناوال | Carnaval Podcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "676",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکستِ سیالکتیک",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "700",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "کته کتاب",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "699",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "زیرزمین",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "709",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "ASH | پادکست اش",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "682",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Radio Sitcom Podcast پادکست رادیو سیتکام",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "679",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Jenaei Khani | جنایی خوانی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "609",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "بخارا",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "587",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "عصر حجر",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "593",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "کیف پول",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "683",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "لاس وگاس | Las Vegas",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "697",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Sunroof | سان روف",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "722",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "رادیو عجایب",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "691",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "ری وار",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "678",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست اتاق تراپی | The Therapy Room",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "579",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست داتس - dots podcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "555",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست چم",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "604",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "کروموزوم ایکس",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "603",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Radio-Masir| رادیو مسیر",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "730",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "ال-کست | El-Cast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "576",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "دچار",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "590",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "متاورس",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "713",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "information serum - پادکست پزشکی سرم اطلاعات",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "607",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "روزها در راه",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "556",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست مداخله | Modakheleh Podcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "588",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Joure-digar | پادکست جور دیگر",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "728",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Iran Talk | ایران",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "586",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "سهند ایرانمهر",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "729",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "نقال باشی - Naghal Bashi",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "772",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست های نیما آزادی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "533",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "!هان",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "559",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پیشنهاد کتاب",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "557",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست قرن بیستم | Gharn-e-Bistom Podcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "692",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Ammoniac | آمونیاک",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "610",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Sekke Podcast | پادکست سکه",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "677",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "انتخاب | The Choice Podcast",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "561",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "فلسفه تحلیلی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "599",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "نوستالژیکا",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "725",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "دکلره",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "581",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "بی کتابی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "674",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "Shab Tab شب تاب",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "670",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "کهکشان",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "547",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "چالش",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "602",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "تماشای غروب",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "580",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "PJCAST",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "531",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "رادیو بتهوون",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "558",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست کتاب",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "605",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "بیدار",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "727",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "چین",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "541",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "عصر چریک",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "538",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "ثانیه",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "573",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "مدرسه ذهن و آگاهی",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "540",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "رک",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "552",
+      "name": "NEWSHACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "میزانسن",
+      "domain": "newshacast.com"
+    },
+    {
+      "seller_id": "705",
+      "name": "NOUF AZIZ",
+      "seller_type": "PUBLISHER",
+      "comment": "شخصية عادية جداً",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "751",
+      "name": "NOURHAN",
+      "seller_type": "PUBLISHER",
+      "comment": "بودكاست يعني ايه لازم؟ مع نور يوسف",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "529",
+      "name": "OSAMA GAD",
+      "seller_type": "PUBLISHER",
+      "comment": "من زكاها - تطوير الذات",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "734",
+      "name": "OSAMA GAD",
+      "seller_type": "PUBLISHER",
+      "comment": "خلاصة بزنس | مال - ربح - استثمار",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "135",
+      "name": "PAPERSAMWHICH",
+      "seller_type": "PUBLISHER",
+      "comment": "PaperSamwich ساندوتش ورقي",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "790",
+      "name": "PAPERSAMWHICH",
+      "seller_type": "PUBLISHER",
+      "comment": "Zamakani زمكاني",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "761",
+      "name": "PODCAST MASR",
+      "seller_type": "PUBLISHER",
+      "comment": "2025 مسلسل أغنى رجل في العالم",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "766",
+      "name": "PODCAST MASR",
+      "seller_type": "PUBLISHER",
+      "comment": "مسلسل أخطر خطير",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "765",
+      "name": "PODCAST MASR",
+      "seller_type": "PUBLISHER",
+      "comment": "مسلسل المتر براءة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "770",
+      "name": "PODCAST MASR",
+      "seller_type": "PUBLISHER",
+      "comment": "مسلسل الفهلوي",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "756",
+      "name": "PODCAST MASR",
+      "seller_type": "PUBLISHER",
+      "comment": "مسلسل حلم حليم 2025",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "762",
+      "name": "PODCAST MASR",
+      "seller_type": "PUBLISHER",
+      "comment": "2025 مسلسل شركة الإستشارات الأجرامية",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "463",
+      "name": "PODCAST NOW",
+      "seller_type": "PUBLISHER",
+      "comment": "النثرة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "117",
+      "name": "PODRAMACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "المختلون | Almukhtaloon",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "459",
+      "name": "PODRAMACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "السهرة الإذاعية | Radio Nights",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "764",
+      "name": "PODRAMACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "حكاوي صحاب الأرض",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "768",
+      "name": "PODRAMACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "العراف",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "427",
+      "name": "PODRAMACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "35mm | 35ملم",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "767",
+      "name": "PODRAMACAST",
+      "seller_type": "PUBLISHER",
+      "comment": "أزمة غادة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "335",
+      "name": "POETRYHOOD",
+      "seller_type": "PUBLISHER",
+      "comment": "The Poetryhood | الحيّ الشعري",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "717",
+      "name": "RADWA MOUSSA",
+      "seller_type": "PUBLISHER",
+      "comment": "من أول السطر - Men Awel El Satr Podcast",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "724",
+      "name": "RANGE RAVAN",
+      "seller_type": "PUBLISHER",
+      "comment": "پادکست روانشناسی - رنگ روان | Range Ravan",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "720",
+      "name": "RAVI",
+      "seller_type": "PUBLISHER",
+      "comment": "Ravi | پادکست فارسی راوی",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "721",
+      "name": "RAVI",
+      "seller_type": "PUBLISHER",
+      "comment": "LalaLand | لالالند",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "147",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "Al Qafas | القفص",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "149",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "Al Qarra | القارّة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "159",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "I Don't Know Sports | أنا ما بفهم بالرياضة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "155",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "Man 2 Man | مان 2 مان",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "163",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "Step Back | ستب باك",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "153",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "Goal Engleezi | جول إنجليزي",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "145",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "10 Yardat | ١٠ ياردات",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "151",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "FormulaCast | فورمولا كاست",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "161",
+      "name": "SAJ",
+      "seller_type": "PUBLISHER",
+      "comment": "Kan Ya Ma Kora | كان يا ما كورة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "710",
+      "name": "SHAYMA",
+      "seller_type": "PUBLISHER",
+      "comment": "بودكاست إرث فِكري",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "659",
+      "name": "SHOATT",
+      "seller_type": "PUBLISHER",
+      "comment": "شوط",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "83",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "1001 Nights | ألف ليلة وليلة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "89",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Alsilah | الصلة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "85",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Juha | جحا",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "87",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Sindbad | سندباد",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "105",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "The Basement | القبو",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "107",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "The Code | الشفرة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "421",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "لحظة مع ميس",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "800",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Almostajad | المُستجَد",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "803",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "BULAQ | بولاق",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "103",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "The 40 Thieves | الأربعون حرامي",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "487",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Eib | عيب",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "801",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Eyab | إياب",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "401",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "صحتك أهم مع براء",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "405",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "عالم القصص",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "393",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Dardasha Unfiltered with Eiten Zeerban",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "488",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Dom Tak | دُمْ تَكْ",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "99",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Party Platter | ثلث مشكل",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "385",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "جرائم وغموض",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "349",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "سوبر ماما",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "827",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "الرأي والرغي الآخر مع برناديت",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "812",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Maloom | معلوم",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "833",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "قصص من فلسطين",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "838",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "نفس، خطوة، مرآه",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "835",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "مَنبِت | Manbet",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "93",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Ismi | اسمي",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "109",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Vikings: The Nine Realms | فايكنغز: العوالم التسعة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "419",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "كرسي الإثنين",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "804",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Bar Bahr | بر بحر",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "806",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Indymedia | إندِميديا",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "816",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Masaha | مساحة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "818",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Matryoshka | ماتريوشكا",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "373",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Our Darkest Day",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "826",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "إذًا أعزائي",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "347",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "بيت التنين",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "425",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "مرحلة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "369",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Her Voice | صوتها",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "91",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Binbir Gece Masalları",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "798",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Blank Maps | خرائط اللامكان",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "111",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Watr | وتر",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "357",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "ناعم و فلفول",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "375",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "أبو عبدو الحكواتي",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "387",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "حياتنا كورة مع محمد عواد",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "830",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "دَيْن ورا دَيْن | Dayn Wara Dayn",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "796",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Ahraz | أحراز",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "809",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Mahdoom | مهضوم",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "381",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "الرسول",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "407",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "علامات فارقة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "417",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "قهوة وخبرية مع مايا حجيج",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "351",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "محطات",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "395",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "رحلة المصارعة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "834",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "ما العمل",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "409",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "عمالقة الطريق",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "813",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Maqsouda | مقصودة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "823",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Tiki-taka | تيكي تاكا",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "820",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Sharayet | شرايط",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "365",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Basel Meets",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "413",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "قصص لعبناها",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "831",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "كواليس صوت: كيف نصنع البودكاست",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "361",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "3 Points عالصبح",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "345",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Al Qaed Al Sagheer Podcast | بودكاست القائد الصغير",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "113",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Yalla",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "799",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Ahwal | أحوال",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "805",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Harrer | حرِّر",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "825",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Ya Rayeh | يا رايح",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "363",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "٧ بهارات",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "343",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "الخلافة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "429",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "نبات | Nabat",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "371",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Legendary Rock Stories",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "389",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "خبراء النجاح",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "377",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "أحاديث بتشبهنا",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "101",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Secret of Art | سر الارت",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "828",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "The Parliament | البرلمان",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "814",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Market Matters",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "490",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Saad | صاد",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "95",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Millennial Mirrors",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "359",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "واحد صفر",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "367",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Beirut Blast",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "817",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Mashghool | مشغول",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "415",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "قصص وحكايات",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "810",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Maida | مائدة",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "836",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "مد وجزر | Mad wa Jazr",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "423",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "ما وراء",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "353",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "مع بن ماجد",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "819",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Mija | بنتي",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "397",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "زايد",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "379",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "الجرعة المثلى - The Perfect Dose",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "797",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Creating Opportunities",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "822",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Taalimna | تعليمنا",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "403",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "عالم الMMA",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "824",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Visualizing Conflict | تصوير النزاعات",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "97",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "CTRL | تحكم",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "795",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "A Conversation With | حوار مع",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "815",
+      "name": "SOWT",
+      "seller_type": "PUBLISHER",
+      "comment": "Marvellous Talks | مارفيلوس توكس",
+      "domain": "sowt.com"
+    },
+    {
+      "seller_id": "203",
+      "name": "THE PULP",
+      "seller_type": "PUBLISHER",
+      "comment": "The Pulp",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "620",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Kefaya Ba2a | كفاية بقى",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "629",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Dina G.",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "615",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "G.Talks - The Podcast for Dreamers",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "636",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "كبرني بودكاست",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "623",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Omam  - أُمم مع ميرنا الزيني",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "684",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "الحل إيه؟ مع د. رباب المهدي",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "807",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Khatwetein Li Wara - خطوتين لورا",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "639",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "ّمن النهارده مع حنان البهي",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "614",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "!!هو في إيه يا جماعة؟",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "625",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Poetry Beyond Borders - شعر بلا حدود",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "635",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "ة مربوطة",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "618",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Emy Convos",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "634",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "انتهت حلول الأرض مع محمد شحاتة",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "613",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "2043 Podcast",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "628",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "The Potcast Show",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "624",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "People of Now",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "631",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "elleKHAN Podcast",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "621",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Family Talks - كلام عائلي",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "612",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "كلام بالعقل مع د.باسم سليمان",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "616",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "G.Talks - The Podcast for Dreamers - TWIST",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "632",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "اشتري مني",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "619",
+      "name": "TPP",
+      "seller_type": "PUBLISHER",
+      "comment": "Gouna Film Pod",
+      "domain": "tppgroup.co"
+    },
+    {
+      "seller_id": "743",
+      "name": "WOMENA",
+      "seller_type": "PUBLISHER",
+      "comment": "إيه العلاقة",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "741",
+      "name": "WOMENA",
+      "seller_type": "PUBLISHER",
+      "comment": "Talk of Shame",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "740",
+      "name": "WOMENA",
+      "seller_type": "PUBLISHER",
+      "comment": "Sage Takes Thyme",
+      "domain": "nextaud.io"
+    },
+    {
+      "seller_id": "736",
+      "name": "WOMENA",
+      "seller_type": "PUBLISHER",
+      "comment": "Boo 3al Taboo",
+      "domain": "nextaud.io"
+    }
+  ]
 }
