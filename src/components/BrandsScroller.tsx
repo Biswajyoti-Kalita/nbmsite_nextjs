@@ -3,9 +3,31 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
-export default function BrandsScroller() {
+type BrandsScrollerProps = {
+  /** Solid edge-fade color. Defaults to white for pages on a white background. */
+  fadeColor?: string;
+};
+
+function hexToRgba(hex: string, alpha: number): string {
+  const normalized = hex.replace('#', '');
+  const full =
+    normalized.length === 3
+      ? normalized
+          .split('')
+          .map((c) => c + c)
+          .join('')
+      : normalized;
+  const r = parseInt(full.slice(0, 2), 16);
+  const g = parseInt(full.slice(2, 4), 16);
+  const b = parseInt(full.slice(4, 6), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+export default function BrandsScroller({
+  fadeColor = '#ffffff',
+}: BrandsScrollerProps) {
   const [splideWidth, setSplideWidth] = useState(0);
 
   useEffect(() => {
@@ -20,6 +42,13 @@ export default function BrandsScroller() {
     window.addEventListener('resize', updateWidth);
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
+
+  const edgeFadeStyle = useMemo(
+    () => ({
+      background: `linear-gradient(268.96deg, ${hexToRgba(fadeColor, 0.2)} 20.9%, ${fadeColor} 99.44%)`,
+    }),
+    [fadeColor]
+  );
 
   const brands1 = [
     { src: '/assets/images/brands/loreal.png', alt: 'Loreal', width: 119, height: 25 },
@@ -92,8 +121,11 @@ export default function BrandsScroller() {
             300+ brands
           </h5>
         </div>
-        <div className="relative w-full md:max-w-full">                                                                    
-          <div className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[150px] top-0 -left-5 z-5 rounded-lg p-4 [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_20.9%,#ffffff_99.44%)]"></div>
+        <div className="relative w-full md:max-w-full">
+          <div
+            className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[150px] top-0 -left-5 z-5 rounded-lg p-4"
+            style={edgeFadeStyle}
+          />
           <div className="overflow-hidden" style={{maxWidth: '90%'}}>
           <Splide
             options={splideOptions1}
@@ -117,7 +149,10 @@ export default function BrandsScroller() {
             ))}
           </Splide>
           </div>
-          <div className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[150px] top-0 -right-5 z-5 rounded-lg p-4 [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_20.9%,#ffffff_99.44%)]"></div>
+          <div
+            className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[150px] top-0 -right-5 z-5 rounded-lg p-4"
+            style={edgeFadeStyle}
+          />
         </div>
       </div>
 
@@ -134,7 +169,10 @@ export default function BrandsScroller() {
           </h5>
         </div>
         <div className="relative w-full md:max-w-full">
-          <div className="absolute w-[50px] md:w-[100px] h-[100px] md:h-[150px] top-0 -left-5 z-5 rounded-lg p-4 [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_20.9%,#ffffff_99.44%)]"></div>
+          <div
+            className="absolute w-[50px] md:w-[100px] h-[100px] md:h-[150px] top-0 -left-5 z-5 rounded-lg p-4"
+            style={edgeFadeStyle}
+          />
           <div className="overflow-hidden" style={{maxWidth: '90%'}}>
           <Splide
             options={splideOptions2}
@@ -155,7 +193,10 @@ export default function BrandsScroller() {
             ))}
           </Splide>
           </div>
-          <div className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[100px] top-0 -right-5 z-5 rounded-lg p-4 [background:linear-gradient(268.96deg,rgba(255,255,255,0.2)_20.9%,#ffffff_99.44%)]"></div>
+          <div
+            className="absolute w-[50px] md:w-[150px] h-[100px] md:h-[100px] top-0 -right-5 z-5 rounded-lg p-4"
+            style={edgeFadeStyle}
+          />
         </div>
       </div>
     </section>

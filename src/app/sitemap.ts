@@ -18,6 +18,8 @@ const STATIC_ROUTES: {
   { path: "/audio-plan", changeFrequency: "monthly", priority: 0.7 },
   { path: "/knowledge-hub", changeFrequency: "weekly", priority: 0.8 },
   { path: "/case-study-library", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/bfcm", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/bfcm/retail-ecommerce", changeFrequency: "weekly", priority: 0.8 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

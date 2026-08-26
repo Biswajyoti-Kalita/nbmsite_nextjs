@@ -26,6 +26,7 @@ const DEFAULT_EXCLUDED_PATH_PREFIXES = [
   "/confirmation",
   "/confirmed",
   "/submitted",
+  "/bfcm",
 ] as const;
 
 function getCookie(name: string): string | null {
