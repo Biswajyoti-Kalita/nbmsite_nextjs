@@ -135,7 +135,7 @@ export default function AdvertiserLaunchCampaign() {
               </div>
             </div>
             <div>
-              <Link href="https://app.earo.ai" target="_blank">
+              <Link href="https://earo.ai" target="_blank">
               <GradientButton
                 text="Start with Self-Serve"
                 textClassName="text-[16px] leading-[24px] font-semibold"

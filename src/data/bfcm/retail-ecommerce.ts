@@ -6,7 +6,7 @@ export const retailEcommerceContent: BfcmCategoryContent = {
   shortName: "retail & e-commerce",
   icon: "retail",
   ready: true,
-  heroTitle: "Your retail & e-commerce BFCM podcast mix",
+  heroTitle: "Retail & E-commerce BFCM podcast mix",
   audienceIntro:
     "From natural genre fits to less obvious places your customers spend time.",
   brandSafetyNote:
@@ -106,7 +106,7 @@ export const retailEcommerceContent: BfcmCategoryContent = {
       headline: "IKEA",
       description: "93% ad completion rate on its UAE podcast campaign",
       source: "Next Audio · Campaign data",
-      href: "/assets/files/ikea-bfcm-case-study.pdf",
+      href: "https://22605202.fs1.hubspotusercontent-na1.net/hubfs/22605202/Ikea%20x%20Next%20Audio.pdf",
     },
   ],
 };

@@ -20,6 +20,31 @@ const STATIC_ROUTES: {
   { path: "/case-study-library", changeFrequency: "weekly", priority: 0.8 },
   { path: "/bfcm", changeFrequency: "weekly", priority: 0.85 },
   { path: "/bfcm/retail-ecommerce", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/bfcm/fashion-apparel", changeFrequency: "weekly", priority: 0.8 },
+  {
+    path: "/bfcm/beauty-health-wellness",
+    changeFrequency: "weekly",
+    priority: 0.8,
+  },
+  { path: "/bfcm/finance-fintech", changeFrequency: "weekly", priority: 0.8 },
+  {
+    path: "/bfcm/technology-electronics",
+    changeFrequency: "weekly",
+    priority: 0.8,
+  },
+  { path: "/bfcm/b2b-saas", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/bfcm/telecoms", changeFrequency: "weekly", priority: 0.8 },
+  {
+    path: "/bfcm/food-beverage-delivery",
+    changeFrequency: "weekly",
+    priority: 0.8,
+  },
+  {
+    path: "/bfcm/travel-hospitality",
+    changeFrequency: "weekly",
+    priority: 0.8,
+  },
+  { path: "/bfcm/automotive", changeFrequency: "weekly", priority: 0.8 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

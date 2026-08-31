@@ -86,7 +86,7 @@ export default function LaunchYourPodcast() {
               <div className="bg-white rounded-2xl w-full md:max-w-[540px] p-[16px] lg:p-8">
                 <form
                   className="bg-white w-full flex flex-col text-center justify-center items-center"
-                  action="https://app.earo.ai/"
+                  action="https://earo.ai/"
                   target="_blank"
                 >
                   <div className="flex items-center gap-1.5">

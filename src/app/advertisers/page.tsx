@@ -33,7 +33,7 @@ export default function Advertisers() {
           description="Global high-performance podcast and digital audio campaigns,
               delivered quickly, efficiently, and tailored to your goals."
           image="/assets/images/advertiser.jpg"
-          buttons={[ {text: "Launch Your Own Campaign", type: "secondary", link: "https://app.earo.ai"}, { text: "Request a Proposal", type: "tertiary", showCallMeBackModal: true }]}
+          buttons={[ {text: "Launch Your Own Campaign", type: "secondary", link: "https://earo.ai"}, { text: "Request a Proposal", type: "tertiary", showCallMeBackModal: true }]}
         />
 
       </div>

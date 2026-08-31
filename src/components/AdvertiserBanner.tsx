@@ -31,7 +31,7 @@ export default function AdvertiserBanner() {
               delivered quickly, efficiently, and tailored to your goals.
             </h2>
             <div className="flex flex-col lg:flex-row gap-[12px] items-start lg:items-center justify-start">
-                <Link href="https://app.earo.ai">
+                <Link href="https://earo.ai">
                 <GradientButton
                 type="secondary"
                 text="Launch Your Own Campaign"

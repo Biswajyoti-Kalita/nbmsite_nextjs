@@ -55,7 +55,7 @@ export default function AudienceInsights({
         <h2 className="gradient-text text-[22px] md:text-[26px] leading-[1.25] font-bold mb-2">
           Where we&apos;d look for your audience
         </h2>
-        <p className="text-[#5B4B73] text-[14px] md:text-[15px] leading-[1.5] italic">
+        <p className="text-[#5B4B73] text-[16px] md:text-[15px] leading-[1.5]">
           {intro}
         </p>
       </div>
@@ -66,7 +66,7 @@ export default function AudienceInsights({
         ))}
       </div>
 
-      <p className="text-[#6B5B80] text-[13px] leading-[1.5] mt-auto pt-2">
+      <p className="text-[#6B5B80] font-medium text-[16px] leading-[1.5] pt-5">
         {brandSafetyNote}
       </p>
     </div>

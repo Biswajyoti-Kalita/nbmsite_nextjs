@@ -112,7 +112,7 @@ export default function PublisherRevenuSection() {
                 textClassName="text-[16px] leading-[24px] "
                 onClick={openCallMeBackModal}
               />
-              <Link href="https://app.earo.ai" target="_blank">
+              <Link href="https://earo.ai" target="_blank">
               <GradientButton
                 type="secondary"
                 text="Check Out AI Studio"

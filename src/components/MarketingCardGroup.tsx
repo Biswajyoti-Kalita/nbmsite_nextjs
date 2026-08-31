@@ -15,7 +15,7 @@ export default function MarketingCardGroup() {
                 },
                 {
                     text: "Create free AI Ads",
-                    href: "https://app.earo.ai",
+                    href: "https://earo.ai",
                 }
             ],
             buttonText: "Explore Solutions",

@@ -337,6 +337,11 @@ body {
   animation-duration: 0.75s;
 }
 
+.bfcm-snapshot-scroll {
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .bfcm-fade-up,
   .bfcm-category-tile,

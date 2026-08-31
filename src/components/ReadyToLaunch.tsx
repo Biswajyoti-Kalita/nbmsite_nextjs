@@ -47,7 +47,7 @@ export default function ReadyToLaunch() {
                 </Link>
 
                 <Link
-                  href="https://app.earo.ai/"
+                  href="https://earo.ai/"
                   target="_blank"
                   className="border-[#FFFEFF] text-center border-2 py-[10px] px-[16px] rounded-[4px] w-[200px]"
                 >

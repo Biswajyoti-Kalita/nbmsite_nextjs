@@ -64,7 +64,7 @@ export default function Podcaster() {
                       Get listed in{" "}
                       <a
                         target="_blank"
-                        href="https://app.earo.ai"
+                        href="https://earo.ai"
                         className="text-[#344054] underline"
                       >
                         EARO
